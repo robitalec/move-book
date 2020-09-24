@@ -48,3 +48,20 @@ saveRDS(details, 'data-sources/details.Rds')
 # From: https://github.com/benscarlson/rmoveapi
 # Certain studies require you to accept license terms before downloading any data. One way to do this is to accept these terms on movebank.com. Terms can also be accepted over the api by using accept_license=TRUE in the request for data.
 
+
+data.table(study = studies)[, .N, by = study][grepl('Vulture', study) & grepl('Movements', study)]
+# study     N
+# <char> <int>
+# 1:  VultureMovements     1
+# 2: Vulture Movements     1
+# 3: VultureMovements2     1
+getMovebankStudy('VultureMovements', login = login)
+# Error in getMovebankID(study, login) :
+# There was more than one study with the name: VultureMovements
+# Calls: getMovebankStudy -> getMovebankStudy -> getMovebankID -> getMovebankID
+getMovebankStudy('Vulture Movements', login = login)
+# Error in getMovebankID(study, login) :
+# There was more than one study with the name: Vulture Movements
+# Calls: getMovebankStudy -> getMovebankStudy -> getMovebankID -> getMovebankID
+
+lapply(studies[1:5], getMovebankID, login = login)
