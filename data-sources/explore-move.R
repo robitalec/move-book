@@ -44,4 +44,6 @@ details <- rbindlist(lapply(substudies[1:5], getMovebankStudy, login = login),
 										 fill = TRUE, use.names = TRUE)
 
 
+# From: https://github.com/benscarlson/rmoveapi
+# Certain studies require you to accept license terms before downloading any data. One way to do this is to accept these terms on movebank.com. Terms can also be accepted over the api by using accept_license=TRUE in the request for data.
 
