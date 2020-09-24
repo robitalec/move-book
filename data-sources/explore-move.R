@@ -40,9 +40,10 @@ morethanone <- data.table(study = studies)[, .N, by = study][N > 1]
 # Only unique studies
 substudies <- studies[!studies %in% morethanone$study &
 												!grepl('Test', studies)]
-details <- rbindlist(lapply(substudies[1:5], getMovebankStudy, login = login),
+details <- rbindlist(lapply(substudies, getMovebankStudy, login = login),
 										 fill = TRUE, use.names = TRUE)
 
+saveRDS(details, 'data-sources/details.Rds')
 
 # From: https://github.com/benscarlson/rmoveapi
 # Certain studies require you to accept license terms before downloading any data. One way to do this is to accept these terms on movebank.com. Terms can also be accepted over the api by using accept_license=TRUE in the request for data.
