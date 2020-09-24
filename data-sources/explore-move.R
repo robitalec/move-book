@@ -12,14 +12,17 @@ library(move)
 # Credentials -------------------------------------------------------------
 # install.packages('keyring')
 
-# keyring::key_set(service = 'movebank',
-# 								 username = 'robitalec')
+service = 'movebank'
+username = 'robitalec'
+
+
+# keyring::key_set(service = service, username = username)
 
 library(keyring)
 
 
-
 # Explore -----------------------------------------------------------------
-movebankLogin(key_list)
+login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
+
 # Get all the studies
-studies <- getMovebankStudies()
+studies <- getMovebankStudies(login)
