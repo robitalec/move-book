@@ -37,5 +37,11 @@ details <- rbindlist(lapply(studies, getMovebankStudy, login = login))
 # How many times does this occur? 17 unique studies, 88 rows (2020-09-04)
 morethanone <- data.table(study = studies)[, .N, by = study][N > 1]
 
-substudies <- studies[!studies %in% morethanone$study]
+# Only unique studies
+substudies <- studies[!studies %in% morethanone$study &
+												!grepl('Test', studies)]
+details <- rbindlist(lapply(substudies[1:5], getMovebankStudy, login = login),
+										 fill = TRUE, use.names = TRUE)
+
+
 
