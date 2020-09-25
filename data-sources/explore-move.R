@@ -75,11 +75,12 @@ data.table(studies)[c(16, 18:30, 35, 61:69, 72, 73, 435, 544, 744, 996, 1067, 24
 
 # Details with try --------------------------------------------------------
 get_details <- function(study) {
-	tryCatch(error = function(cond) return(list(error = as.character(cond))),
-					 warning = function(cond) return(list(warning = as.character(cond))),
-					 list(getMovebankStudy(study, login = login)))
+	tryCatch(expr = getMovebankStudy(study, login = login),
+					 error = function(cond) return(list(error = as.character(cond))),
+					 warning = function(cond) return(list(warning = as.character(cond))))
 }
-details <- rbindlist(lapply(studies[1:100], get_details),
+
+details <- rbindlist(lapply(studies, get_details),
 										 fill = TRUE, use.names = TRUE)
 
 saveRDS(details, 'data-sources/details.Rds')
