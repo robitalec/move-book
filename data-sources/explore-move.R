@@ -42,7 +42,6 @@ substudies <- studies[!studies %in% morethanone$study &
 details <- rbindlist(lapply(substudies, getMovebankStudy, login = login),
 										 fill = TRUE, use.names = TRUE)
 
-saveRDS(details, 'data-sources/details.Rds')
 
 # From: https://github.com/benscarlson/rmoveapi
 # Certain studies require you to accept license terms before downloading any data. One way to do this is to accept these terms on movebank.com. Terms can also be accepted over the api by using accept_license=TRUE in the request for data.
@@ -71,3 +70,16 @@ getMovebankStudy('Vulture Movements', login = login)
 
 # Nonsense study names
 data.table(studies)[c(16, 18:30, 35, 61:69, 72, 73, 435, 544, 744, 996, 1067, 2455, 2706, 3036:3037, 3365, 3390:3395, 3453:3481, 3498, 3677, 4033, 4059)]
+
+
+
+# Details with try --------------------------------------------------------
+get_details <- function(study) {
+	tryCatch(error = function(cond) return(list(error = as.character(cond))),
+					 warning = function(cond) return(list(warning = as.character(cond))),
+					 list(getMovebankStudy(study, login = login)))
+}
+details <- rbindlist(lapply(studies[1:100], get_details),
+										 fill = TRUE, use.names = TRUE)
+
+saveRDS(details, 'data-sources/details.Rds')
