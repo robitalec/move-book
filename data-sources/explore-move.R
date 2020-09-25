@@ -25,6 +25,8 @@ login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
 # Get all the studies
 studies <- getMovebankStudies(login)
 
+
+## Skip down to next section with try block
 # Movebank has no automated/complete database to download
 # Therefore, we'll loop through all the studies, get the details,
 # and summarize how much data is actually accessible
