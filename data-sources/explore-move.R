@@ -65,3 +65,10 @@ getMovebankStudy('Vulture Movements', login = login)
 # Calls: getMovebankStudy -> getMovebankStudy -> getMovebankID -> getMovebankID
 
 lapply(studies[1:5], getMovebankID, login = login)
+
+getMovebankStudy('Vulture Movements', login = login)
+
+
+
+# Nonsense study names
+data.table(studies)[c(16, 18:30, 35, 61:69, 72, 73, 435, 544, 744, 996, 1067, 2455, 2706, 3036:3037, 3365, 3390:3395, 3453:3481, 3498, 3677, 4033, 4059)]
