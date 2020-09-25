@@ -9,17 +9,14 @@ library(move)
 
 library(data.table)
 
+library(keyring)
+
 
 # Credentials -------------------------------------------------------------
-# install.packages('keyring')
-
 service = 'movebank'
 username = 'robitalec'
 
-
 # keyring::key_set(service = service, username = username)
-
-library(keyring)
 
 
 # Explore -----------------------------------------------------------------
