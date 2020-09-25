@@ -84,3 +84,4 @@ details <- rbindlist(lapply(studies, get_details),
 										 fill = TRUE, use.names = TRUE)
 
 saveRDS(details, 'data-sources/details.Rds')
+fwrite(details, 'data-sources/details.csv')
