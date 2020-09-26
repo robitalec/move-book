@@ -130,3 +130,17 @@ details[, .N, suspend_go_public_date]
 details[, .N, suspend_license_terms]
 
 details[, .N, principal_investigator_email]
+
+
+View(details[taxon_ids == 'Rangifer tarandus', .(
+	name,
+	license_terms,
+	sensor_type_ids,
+	number_of_individuals,
+	number_of_deployed_locations,
+	principal_investigator_name,
+	there_are_data_which_i_cannot_see,
+	i_have_download_access,
+	timestamp_first_deployed_location,
+	timestamp_last_deployed_location
+)])
