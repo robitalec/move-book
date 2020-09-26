@@ -100,6 +100,8 @@ details[, .N, i_can_see_data]
 details[, .N, there_are_data_which_i_cannot_see]
 details[, .N, i_have_download_access]
 
+details[, .N, sensor_type_ids]
+
 # TODO try again after sign licenses
 
 # TODO: try and get range, some not matching default POSIXct format
@@ -110,6 +112,12 @@ details[timestamp_first_deployed_location != "" &
 
 hist <- function(...) ggplot2::qplot(..., type = 'histograph')
 details[, hist(number_of_deployments)]
+details[, hist(number_of_individuals)]
+details[, hist(number_of_tags)]
+details[, hist(number_of_deployed_locations)]
+
+details[, .N, taxon_ids]
+
 
 # TODO
 # details[, mapview(main_location_lat)]
