@@ -85,3 +85,39 @@ details <- rbindlist(lapply(studies, get_details),
 
 saveRDS(details, 'data-sources/details.Rds')
 fwrite(details, 'data-sources/details.csv')
+
+
+# Warning message:
+# 	In require_bit64_if_needed(ans) :
+# 	Some columns are type 'integer64' but package bit64 is not installed. Those columns will print as strange looking floating point data. There is no need to reload the data. Simply install.packages('bit64') to obtain the integer64 print method and print the data again.
+# Calls: fread -> require_bit64_if_needed
+
+colnames(details)
+details[, .N, go_public_license_type]
+details[, .N, has_quota]
+
+details[, .N, i_can_see_data]
+details[, .N, there_are_data_which_i_cannot_see]
+details[, .N, i_have_download_access]
+
+# TODO try again after sign licenses
+
+# TODO: try and get range, some not matching default POSIXct format
+details[timestamp_first_deployed_location != "" &
+					timestamp_last_deployed_location != "", .N,
+				as.POSIXct(timestamp_last_deployed_location) -
+					as.POSIXct(timestamp_first_deployed_location)]
+
+
+
+# TODO
+# details[, mapview(main_location_lat)]
+
+# to explore further
+details[, .N, license_type]
+details[, .N, license_terms]
+
+details[, .N, suspend_go_public_date]
+details[, .N, suspend_license_terms]
+
+details[, .N, principal_investigator_email]
