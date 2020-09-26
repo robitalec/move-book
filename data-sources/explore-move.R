@@ -108,7 +108,8 @@ details[timestamp_first_deployed_location != "" &
 				as.POSIXct(timestamp_last_deployed_location) -
 					as.POSIXct(timestamp_first_deployed_location)]
 
-
+hist <- function(...) ggplot2::qplot(..., type = 'histograph')
+details[, hist(number_of_deployments)]
 
 # TODO
 # details[, mapview(main_location_lat)]
