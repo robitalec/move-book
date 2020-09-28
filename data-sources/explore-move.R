@@ -86,7 +86,7 @@ details <- rbindlist(lapply(studies, get_details),
 saveRDS(details, 'data-sources/details.Rds')
 fwrite(details, 'data-sources/details.csv')
 
-
+details <- fread('data-sources/details.csv')
 # Warning message:
 # 	In require_bit64_if_needed(ans) :
 # 	Some columns are type 'integer64' but package bit64 is not installed. Those columns will print as strange looking floating point data. There is no need to reload the data. Simply install.packages('bit64') to obtain the integer64 print method and print the data again.
@@ -153,11 +153,8 @@ details[taxon_ids == 'Rangifer tarandus', .(
 
 details[taxon_ids == 'Rangifer tarandus' & i_have_download_access]
 
-
-
-
 details[order(taxon_ids)][(i_have_download_access), View(.SD), .SDcols = c('taxon_ids', 'number_of_individuals', 'i_have_download_access', 'license_terms')]
 
 
 
-download all and narrow down to useful then worry about license/contact later?
+# download all and narrow down to useful then worry about license/contact later?
