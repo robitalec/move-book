@@ -91,6 +91,7 @@ details <- fread('data-sources/details.csv')
 # 	In require_bit64_if_needed(ans) :
 # 	Some columns are type 'integer64' but package bit64 is not installed. Those columns will print as strange looking floating point data. There is no need to reload the data. Simply install.packages('bit64') to obtain the integer64 print method and print the data again.
 # Calls: fread -> require_bit64_if_needed
+install.packages('bit64')
 
 colnames(details)
 details[, .N, go_public_license_type]
