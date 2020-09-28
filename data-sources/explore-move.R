@@ -144,3 +144,20 @@ View(details[taxon_ids == 'Rangifer tarandus', .(
 	timestamp_first_deployed_location,
 	timestamp_last_deployed_location
 )])
+
+details[taxon_ids == 'Rangifer tarandus', .(
+	name,
+	license_terms,
+	i_have_download_access
+)]
+
+details[taxon_ids == 'Rangifer tarandus' & i_have_download_access]
+
+
+
+
+details[order(taxon_ids)][(i_have_download_access), View(.SD), .SDcols = c('taxon_ids', 'number_of_individuals', 'i_have_download_access', 'license_terms')]
+
+
+
+download all and narrow down to useful then worry about license/contact later?
