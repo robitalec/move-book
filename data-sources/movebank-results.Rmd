@@ -1,0 +1,35 @@
+---
+title: Movebank Results
+output: github_document
+author: Alec Robitaille
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include = FALSE}
+knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
+
+knitr::opts_chunk$set(echo = TRUE,
+											eval = TRUE)
+```
+
+
+
+
+```{r}
+# Packages ----------------------------------------------------------------
+library(data.table)
+library(taxize)
+library(ggplot2)
+
+# Data --------------------------------------------------------------------
+details <- fread('data-sources/details.csv')
+```
+
+
+`taxon_ids` column
+
+```{r}
+details[is.null(taxon_ids), .N]
+details[is.na(taxon_ids), .N]
+details[taxon_ids == '', .N]
+```
