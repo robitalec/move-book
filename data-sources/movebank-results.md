@@ -13,14 +13,13 @@ Alec Robitaille
 
 `taxon_ids` column
 
-    details[is.null(taxon_ids), .N]
+    details[, .N, .(is.na(taxon_ids), taxon_ids == '')]
 
-    ## [1] 0
+<div class="kable-table">
 
-    details[is.na(taxon_ids), .N]
+| is.na | taxon\_ids |    N |
+|:------|:-----------|-----:|
+| FALSE | FALSE      | 2434 |
+| FALSE | TRUE       | 1644 |
 
-    ## [1] 0
-
-    details[taxon_ids == '', .N]
-
-    ## [1] 1644
+</div>

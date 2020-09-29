@@ -31,7 +31,7 @@ details <- fread('data-sources/details.csv')
 `taxon_ids` column
 
 ```{r}
-details[is.null(taxon_ids), .N]
-details[is.na(taxon_ids), .N]
-details[taxon_ids == '', .N]
+details[, .N, .(is.na(taxon_ids), taxon_ids == '')]
 ```
+
+
