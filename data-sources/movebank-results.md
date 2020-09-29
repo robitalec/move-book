@@ -10,6 +10,8 @@ Alec Robitaille
 
     # Data --------------------------------------------------------------------
     details <- fread('data-sources/details.csv')
+    taxes <- fread('data-sources/taxes.csv')
+    DT <- fread('data-sources/taxed-details.csv')
 
 `taxon_ids` column
 
@@ -23,3 +25,13 @@ Alec Robitaille
 | FALSE | TRUE       | 1644 |
 
 </div>
+
+Out of 1644 rows with seemingly valid `taxon_ids`, there are up to 17
+species listed in any row. Eg.
+
+    details[id == 422952928]$taxon_ids
+
+    ## [1] "Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus"
+
+Grabbing the family and class, then combining the taxonomies with the
+study details dataset, we have 4784 species by study rows.

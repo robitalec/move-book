@@ -25,6 +25,8 @@ library(ggplot2)
 
 # Data --------------------------------------------------------------------
 details <- fread('data-sources/details.csv')
+taxes <- fread('data-sources/taxes.csv')
+DT <- fread('data-sources/taxed-details.csv')
 ```
 
 
@@ -44,4 +46,6 @@ details[id == 422952928]$taxon_ids
 
 Grabbing the family and class, then combining the taxonomies with the study details dataset, we have `r DT[, .N]` species by study rows. 
 
+
+TODO: N access, family, class, access by taxonomy etc
 
