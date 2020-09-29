@@ -18,14 +18,21 @@ details[is.null(taxon_ids), .N]
 details[is.na(taxon_ids), .N]
 details[taxon_ids == '', .N]
 
+
+
 # Loop over each
 sort_resolved <- function(tax) {
 	data.table(gnr_resolve(tax))[, .SD[order(score)][1], user_supplied_name]
 }
 
-cols <- c('user_supplied_name', 'submitted_name', 'matched_name', 'data_source_title',
-					'score')
-details[1:100, lapply(strsplit(taxon_ids, ','), sort_resolved), by = taxon_ids]
+cols <- c('user_supplied_name', 'submitted_name', 'matched_name',
+					'data_source_title', 'score')
+subdet <- details[taxon_ids != '']
+taxes <- subdet[, rbindlist(lapply(strsplit(taxon_ids, ','), sort_resolved),
+														fill = TRUE, use.names = TRUE),
+								by = taxon_ids]
+taxes
+
 
 
 resolved <- lapply(details$taxon_ids[sample(details[, .N], 5)],
