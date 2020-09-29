@@ -1,0 +1,1560 @@
+taxon_ids,user_supplied_name,submitted_name,matched_name,data_source_title,score
+"Aves ,Grus grus,Anthropoides paradiseus",Aves ,Aves,Aves,Catalogue of Life,0.75
+"Aves ,Grus grus,Anthropoides paradiseus",Grus grus,Grus grus,Grus grus,NCBI,0.988
+"Aves ,Grus grus,Anthropoides paradiseus",Anthropoides paradiseus,Anthropoides paradiseus,Anthropoides paradiseus,NCBI,0.988
+Grus grus,Grus grus,Grus grus,Grus grus,NCBI,0.988
+Anthropoides virgo,Anthropoides virgo,Anthropoides virgo,Anthropoides virgo,NCBI,0.988
+Grus leucogeranus,Grus leucogeranus,Grus leucogeranus,Grus leucogeranus,NCBI,0.988
+"Grus vipio,Anthropoides virgo",Grus vipio,Grus vipio,Grus vipio,Freebase,0.988
+"Grus vipio,Anthropoides virgo",Anthropoides virgo,Anthropoides virgo,Anthropoides virgo,NCBI,0.988
+Felidae,Felidae,Felidae,Felidae,Catalogue of Life,0.75
+Rhincodon typus,Rhincodon typus,Rhincodon typus,Rhincodon typus,NCBI,0.988
+Homo sapiens,Homo sapiens,Homo sapiens,Homo sapiens,NCBI,0.988
+Phoca vitulina,Phoca vitulina,Phoca vitulina,Phoca vitulina,NCBI,0.988
+Phoca,Phoca,Phoca,Phoca,Catalogue of Life,0.75
+Neochen jubata,Neochen jubata,Neochen jubata,Neochen jubata,NCBI,0.988
+"Anser albifrons,Anser fabalis,Anser cygnoides",Anser albifrons,Anser albifrons,Anser albifrons,NCBI,0.988
+"Anser albifrons,Anser fabalis,Anser cygnoides",Anser fabalis,Anser fabalis,Anser fabalis,NCBI,0.988
+"Anser albifrons,Anser fabalis,Anser cygnoides",Anser cygnoides,Anser cygnoides,Anser cygnoides,NCBI,0.988
+Erinaceus europaeus,Erinaceus europaeus,Erinaceus europaeus,Erinaceus europaeus,NCBI,0.988
+Larus fuscus,Larus fuscus,Larus fuscus,Larus fuscus,NCBI,0.988
+Pandion haliaetus,Pandion haliaetus,Pandion haliaetus,Pandion haliaetus,NCBI,0.988
+Morus bassanus,Morus bassanus,Morus bassanus,Morus bassanus,NCBI,0.988
+Larus argentatus,Larus argentatus,Larus argentatus,Larus argentatus,NCBI,0.988
+Numenius arquata,Numenius arquata,Numenius arquata,Numenius arquata,NCBI,0.988
+Anas penelope,Anas penelope,Anas penelope,Anas penelope,Freebase,0.988
+"Larus fuscus,Larus argentatus",Larus fuscus,Larus fuscus,Larus fuscus,NCBI,0.988
+"Larus fuscus,Larus argentatus",Larus argentatus,Larus argentatus,Larus argentatus,NCBI,0.988
+Buteo buteo,Buteo buteo,Buteo buteo,Buteo buteo,NCBI,0.988
+"Phaetusa simplex,Rynchops niger",Phaetusa simplex,Phaetusa simplex,Phaetusa simplex,NCBI,0.988
+"Phaetusa simplex,Rynchops niger",Rynchops niger,Rynchops niger,Rynchops niger,NCBI,0.988
+"Eidolon helvum,Eidolon dupreanum",Eidolon helvum,Eidolon helvum,Eidolon helvum,NCBI,0.988
+"Eidolon helvum,Eidolon dupreanum",Eidolon dupreanum,Eidolon dupreanum,Eidolon dupreanum,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila",Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila",Anas discors,Anas discors,Anas discors,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila",Anas cyanoptera,Anas cyanoptera,Anas cyanoptera,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila",Anas americana,Anas americana,Anas americana,Freebase,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila",Anas clypeata,Anas clypeata,Anas clypeata,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila",Aythya valisineria,Aythya valisineria,Aythya valisineria,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila",Aythya marila,Aythya marila,Aythya marila,NCBI,0.988
+Ephippiorhynchus senegalensis,Ephippiorhynchus senegalensis,Ephippiorhynchus senegalensis,Ephippiorhynchus senegalensis,NCBI,0.988
+"Gavia stellata,Morus bassanus,Melanitta perspicillata",Gavia stellata,Gavia stellata,Gavia stellata,NCBI,0.988
+"Gavia stellata,Morus bassanus,Melanitta perspicillata",Morus bassanus,Morus bassanus,Morus bassanus,NCBI,0.988
+"Gavia stellata,Morus bassanus,Melanitta perspicillata",Melanitta perspicillata,Melanitta perspicillata,Melanitta perspicillata,NCBI,0.988
+Nyctalus noctula,Nyctalus noctula,Nyctalus noctula,Nyctalus noctula,NCBI,0.988
+Ursus arctos,Ursus arctos,Ursus arctos,Ursus arctos,NCBI,0.988
+Rangifer tarandus,Rangifer tarandus,Rangifer tarandus,Rangifer tarandus,NCBI,0.988
+Turdus migratorius,Turdus migratorius,Turdus migratorius,Turdus migratorius,NCBI,0.988
+Canis lupus,Canis lupus,Canis lupus,Canis lupus,NCBI,0.988
+Alces alces,Alces alces,Alces alces,Alces alces,NCBI,0.988
+Ovis dalli,Ovis dalli,Ovis dalli,Ovis dalli,NCBI,0.988
+Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila chrysaetos,Haliaeetus leucocephalus",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila chrysaetos,Haliaeetus leucocephalus",Haliaeetus leucocephalus,Haliaeetus leucocephalus,Haliaeetus leucocephalus,NCBI,0.988
+Rallus,Rallus,Rallus,Rallus,Catalogue of Life,0.75
+"Ciconia ciconia,Homo sapiens",Ciconia ciconia,Ciconia ciconia,Ciconia ciconia,NCBI,0.988
+"Ciconia ciconia,Homo sapiens",Homo sapiens,Homo sapiens,Homo sapiens,NCBI,0.988
+Turdus merula,Turdus merula,Turdus merula,Turdus merula,NCBI,0.988
+Accipiter cooperii,Accipiter cooperii,Accipiter cooperii,Accipiter cooperii,NCBI,0.988
+Circus aeruginosus,Circus aeruginosus,Circus aeruginosus,Circus aeruginosus,NCBI,0.988
+Erinaceus,Erinaceus,Erinaceus,Erinaceus,Catalogue of Life,0.75
+Elephas maximus,Elephas maximus,Elephas maximus,Elephas maximus,NCBI,0.988
+Bubalus bubalis,Bubalus bubalis,Bubalus bubalis,Bubalus bubalis,NCBI,0.988
+"Caretta caretta,Chelonia mydas",Caretta caretta,Caretta caretta,Caretta caretta,NCBI,0.988
+"Caretta caretta,Chelonia mydas",Chelonia mydas,Chelonia mydas,Chelonia mydas,NCBI,0.988
+Ardea alba,Ardea alba,Ardea alba,Ardea alba,NCBI,0.988
+Limosa limosa,Limosa limosa,Limosa limosa,Limosa limosa,NCBI,0.988
+Animalia,Animalia,Animalia,Animalia,Catalogue of Life,0.75
+Alle alle,Alle alle,Alle alle,Alle alle,NCBI,0.988
+Pygoscelis adeliae,Pygoscelis adeliae,Pygoscelis adeliae,Pygoscelis adeliae,NCBI,0.988
+Columba livia,Columba livia,Columba livia,Columba livia,NCBI,0.988
+Aegypius monachus,Aegypius monachus,Aegypius monachus,Aegypius monachus,NCBI,0.988
+"Panthera leo,Panthera pardus,Acinonyx jubatus,Lycaon pictus",Panthera leo,Panthera leo,Panthera leo,NCBI,0.988
+"Panthera leo,Panthera pardus,Acinonyx jubatus,Lycaon pictus",Panthera pardus,Panthera pardus,Panthera pardus,NCBI,0.988
+"Panthera leo,Panthera pardus,Acinonyx jubatus,Lycaon pictus",Acinonyx jubatus,Acinonyx jubatus,Acinonyx jubatus,NCBI,0.988
+"Panthera leo,Panthera pardus,Acinonyx jubatus,Lycaon pictus",Lycaon pictus,Lycaon pictus,Lycaon pictus,NCBI,0.988
+Cuculus gularis,Cuculus gularis,Cuculus gularis,Cuculus gularis,NCBI,0.988
+Loxodonta africana,Loxodonta africana,Loxodonta africana,Loxodonta africana,NCBI,0.988
+"Andropadus importunus,Cossypha semirufa,Laniarius aethiopicus,Oriolus larvatus,Pycnonotus barbatus,Turdus tephronotus,Turdoides rubiginosa",Andropadus importunus,Andropadus importunus,Andropadus importunus,NCBI,0.988
+"Andropadus importunus,Cossypha semirufa,Laniarius aethiopicus,Oriolus larvatus,Pycnonotus barbatus,Turdus tephronotus,Turdoides rubiginosa",Cossypha semirufa,Cossypha semirufa,Cossypha semirufa,NCBI,0.988
+"Andropadus importunus,Cossypha semirufa,Laniarius aethiopicus,Oriolus larvatus,Pycnonotus barbatus,Turdus tephronotus,Turdoides rubiginosa",Laniarius aethiopicus,Laniarius aethiopicus,Laniarius aethiopicus,NCBI,0.988
+"Andropadus importunus,Cossypha semirufa,Laniarius aethiopicus,Oriolus larvatus,Pycnonotus barbatus,Turdus tephronotus,Turdoides rubiginosa",Oriolus larvatus,Oriolus larvatus,Oriolus larvatus,NCBI,0.988
+"Andropadus importunus,Cossypha semirufa,Laniarius aethiopicus,Oriolus larvatus,Pycnonotus barbatus,Turdus tephronotus,Turdoides rubiginosa",Pycnonotus barbatus,Pycnonotus barbatus,Pycnonotus barbatus,NCBI,0.988
+"Andropadus importunus,Cossypha semirufa,Laniarius aethiopicus,Oriolus larvatus,Pycnonotus barbatus,Turdus tephronotus,Turdoides rubiginosa",Turdus tephronotus,Turdus tephronotus,Turdus tephronotus,NCBI,0.988
+"Andropadus importunus,Cossypha semirufa,Laniarius aethiopicus,Oriolus larvatus,Pycnonotus barbatus,Turdus tephronotus,Turdoides rubiginosa",Turdoides rubiginosa,Turdoides rubiginosa,Turdoides rubiginosa,Freebase,0.988
+Saxicola torquatus,Saxicola torquatus,Saxicola torquatus,Saxicola torquatus,Freebase,0.988
+"Trigonoceps occipitalis,Gyps africanus",Trigonoceps occipitalis,Trigonoceps occipitalis,Trigonoceps occipitalis,NCBI,0.988
+"Trigonoceps occipitalis,Gyps africanus",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+"Gyps rueppellii,Gyps africanus",Gyps rueppellii,Gyps rueppellii,Gyps rueppellii,NCBI,0.988
+"Gyps rueppellii,Gyps africanus",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+Gyps africanus,Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+Lycaon pictus,Lycaon pictus,Lycaon pictus,Lycaon pictus,NCBI,0.988
+Dasyprocta punctata,Dasyprocta punctata,Dasyprocta punctata,Dasyprocta punctata,NCBI,0.988
+Lepus europaeus,Lepus europaeus,Lepus europaeus,Lepus europaeus,NCBI,0.988
+"Procyon lotor,Vulpes vulpes,Lepus europaeus",Procyon lotor,Procyon lotor,Procyon lotor,NCBI,0.988
+"Procyon lotor,Vulpes vulpes,Lepus europaeus",Vulpes vulpes,Vulpes vulpes,Vulpes vulpes,NCBI,0.988
+"Procyon lotor,Vulpes vulpes,Lepus europaeus",Lepus europaeus,Lepus europaeus,Lepus europaeus,NCBI,0.988
+Procyon lotor,Procyon lotor,Procyon lotor,Procyon lotor,NCBI,0.988
+Aquila adalberti,Aquila adalberti,Aquila adalberti,Aquila adalberti,NCBI,0.988
+Aquila fasciata,Aquila fasciata,Aquila fasciata,Aquila fasciata,Freebase,0.988
+Alca torda,Alca torda,Alca torda,Alca torda,NCBI,0.988
+Aldabrachelys gigantea,Aldabrachelys gigantea,Aldabrachelys gigantea,Aldabrachelys gigantea,NCBI,0.988
+Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+Lepidochelys kempii,Lepidochelys kempii,Lepidochelys kempii,Lepidochelys kempii,NCBI,0.988
+"Canis aureus,Vulpes bengalensis",Canis aureus,Canis aureus,Canis aureus,NCBI,0.988
+"Canis aureus,Vulpes bengalensis",Vulpes bengalensis,Vulpes bengalensis,Vulpes bengalensis,NCBI,0.988
+"Caretta caretta,Chelonia ,Chelonia mydas,Lepidochelys kempii",Caretta caretta,Caretta caretta,Caretta caretta,NCBI,0.988
+"Caretta caretta,Chelonia ,Chelonia mydas,Lepidochelys kempii",Chelonia ,Chelonia,Chelonia,Catalogue of Life,0.75
+"Caretta caretta,Chelonia ,Chelonia mydas,Lepidochelys kempii",Chelonia mydas,Chelonia mydas,Chelonia mydas,NCBI,0.988
+"Caretta caretta,Chelonia ,Chelonia mydas,Lepidochelys kempii",Lepidochelys kempii,Lepidochelys kempii,Lepidochelys kempii,NCBI,0.988
+Ciconia,Ciconia,Ciconia,Ciconia,Catalogue of Life,0.75
+Papio,Papio,Papio,Papio,Catalogue of Life,0.75
+Alligator mississippiensis,Alligator mississippiensis,Alligator mississippiensis,Alligator mississippiensis,NCBI,0.988
+Botaurus lentiginosus,Botaurus lentiginosus,Botaurus lentiginosus,Botaurus lentiginosus,NCBI,0.988
+Neovison vison,Neovison vison,Neovison vison,Neovison vison,NCBI,0.988
+Haematopus palliatus,Haematopus palliatus,Haematopus palliatus,Haematopus palliatus,NCBI,0.988
+Setophaga ruticilla,Setophaga ruticilla,Setophaga ruticilla,Setophaga ruticilla,NCBI,0.988
+Eudocimus albus,Eudocimus albus,Eudocimus albus,Eudocimus albus,NCBI,0.988
+Pelecanus erythrorhynchos,Pelecanus erythrorhynchos,Pelecanus erythrorhynchos,Pelecanus erythrorhynchos,NCBI,0.988
+Scolopax minor,Scolopax minor,Scolopax minor,Scolopax minor,NCBI,0.988
+Falco amurensis,Falco amurensis,Falco amurensis,Falco amurensis,NCBI,0.988
+Anas acuta,Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+Anas crecca,Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+Vultur gryphus,Vultur gryphus,Vultur gryphus,Vultur gryphus,NCBI,0.988
+Lycalopex culpaeus,Lycalopex culpaeus,Lycalopex culpaeus,Lycalopex culpaeus,NCBI,0.988
+Anguilla anguilla,Anguilla anguilla,Anguilla anguilla,Anguilla anguilla,NCBI,0.988
+Anser albifrons,Anser albifrons,Anser albifrons,Anser albifrons,NCBI,0.988
+Thalassoica antarctica,Thalassoica antarctica,Thalassoica antarctica,Thalassoica antarctica,NCBI,0.988
+Hylophylax naevioides,Hylophylax naevioides,Hylophylax naevioides,Hylophylax naevioides,NCBI,0.988
+Formicarius analis,Formicarius analis,Formicarius analis,Formicarius analis,NCBI,0.988
+"Ammotragus lervia,Ovis ammon",Ammotragus lervia,Ammotragus lervia,Ammotragus lervia,NCBI,0.988
+"Ammotragus lervia,Ovis ammon",Ovis ammon,Ovis ammon,Ovis ammon,NCBI,0.988
+"Grus grus,Phoeniconaias minor,Phoenicopterus roseus",Grus grus,Grus grus,Grus grus,NCBI,0.988
+"Grus grus,Phoeniconaias minor,Phoenicopterus roseus",Phoeniconaias minor,Phoeniconaias minor,Phoeniconaias minor,Encyclopedia of Life,0.988
+"Grus grus,Phoeniconaias minor,Phoenicopterus roseus",Phoenicopterus roseus,Phoenicopterus roseus,Phoenicopterus roseus,NCBI,0.988
+"Aquila chrysaetos,Milvus milvus,Aegypius monachus,Pandion haliaetus,Aquila adalberti,Aquila fasciata",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila chrysaetos,Milvus milvus,Aegypius monachus,Pandion haliaetus,Aquila adalberti,Aquila fasciata",Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+"Aquila chrysaetos,Milvus milvus,Aegypius monachus,Pandion haliaetus,Aquila adalberti,Aquila fasciata",Aegypius monachus,Aegypius monachus,Aegypius monachus,NCBI,0.988
+"Aquila chrysaetos,Milvus milvus,Aegypius monachus,Pandion haliaetus,Aquila adalberti,Aquila fasciata",Pandion haliaetus,Pandion haliaetus,Pandion haliaetus,NCBI,0.988
+"Aquila chrysaetos,Milvus milvus,Aegypius monachus,Pandion haliaetus,Aquila adalberti,Aquila fasciata",Aquila adalberti,Aquila adalberti,Aquila adalberti,NCBI,0.988
+"Aquila chrysaetos,Milvus milvus,Aegypius monachus,Pandion haliaetus,Aquila adalberti,Aquila fasciata",Aquila fasciata,Aquila fasciata,Aquila fasciata,Freebase,0.988
+Aquila,Aquila,Aquila,Aquila,Catalogue of Life,0.75
+"Aquila chrysaetos,Aquila fasciata",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila chrysaetos,Aquila fasciata",Aquila fasciata,Aquila fasciata,Aquila fasciata,Freebase,0.988
+"Gyps fulvus,Hieraaetus fasciatus,Aquila fasciata",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Gyps fulvus,Hieraaetus fasciatus,Aquila fasciata",Hieraaetus fasciatus,Hieraaetus fasciatus,Hieraaetus fasciatus,NCBI,0.988
+"Gyps fulvus,Hieraaetus fasciatus,Aquila fasciata",Aquila fasciata,Aquila fasciata,Aquila fasciata,Freebase,0.988
+"Hieraaetus fasciatus,Aquila fasciata",Hieraaetus fasciatus,Hieraaetus fasciatus,Hieraaetus fasciatus,NCBI,0.988
+"Hieraaetus fasciatus,Aquila fasciata",Aquila fasciata,Aquila fasciata,Aquila fasciata,Freebase,0.988
+"Aquila chrysaetos,Hieraaetus fasciatus",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila chrysaetos,Hieraaetus fasciatus",Hieraaetus fasciatus,Hieraaetus fasciatus,Hieraaetus fasciatus,NCBI,0.988
+Hieraaetus fasciatus,Hieraaetus fasciatus,Hieraaetus fasciatus,Hieraaetus fasciatus,NCBI,0.988
+Aquila heliaca,Aquila heliaca,Aquila heliaca,Aquila heliaca,NCBI,0.988
+Rynchops niger,Rynchops niger,Rynchops niger,Rynchops niger,NCBI,0.988
+Elanoides forficatus,Elanoides forficatus,Elanoides forficatus,Elanoides forficatus,NCBI,0.988
+"Pluvialis squatarola,Numenius phaeopus",Pluvialis squatarola,Pluvialis squatarola,Pluvialis squatarola,NCBI,0.988
+"Pluvialis squatarola,Numenius phaeopus",Numenius phaeopus,Numenius phaeopus,Numenius phaeopus,NCBI,0.988
+Vulpes lagopus,Vulpes lagopus,Vulpes lagopus,Vulpes lagopus,NCBI,0.988
+Lepus arcticus,Lepus arcticus,Lepus arcticus,Lepus arcticus,NCBI,0.988
+Falco peregrinus,Falco peregrinus,Falco peregrinus,Falco peregrinus,NCBI,0.988
+Pluvialis dominica,Pluvialis dominica,Pluvialis dominica,Pluvialis dominica,NCBI,0.988
+Calidris alpina,Calidris alpina,Calidris alpina,Calidris alpina,NCBI,0.988
+Calidris melanotos,Calidris melanotos,Calidris melanotos,Calidris melanotos,NCBI,0.988
+Phalaropus fulicarius,Phalaropus fulicarius,Phalaropus fulicarius,Phalaropus fulicarius,Freebase,0.988
+Calidris pusilla,Calidris pusilla,Calidris pusilla,Calidris pusilla,NCBI,0.988
+Numenius phaeopus,Numenius phaeopus,Numenius phaeopus,Numenius phaeopus,NCBI,0.988
+Stercorarius parasiticus,Stercorarius parasiticus,Stercorarius parasiticus,Stercorarius parasiticus,NCBI,0.988
+Sterna paradisaea,Sterna paradisaea,Sterna paradisaea,Sterna paradisaea,NCBI,0.988
+"Arctocephalus gazella,Arctocephalus tropicalis",Arctocephalus gazella,Arctocephalus gazella,Arctocephalus gazella,NCBI,0.988
+"Arctocephalus gazella,Arctocephalus tropicalis",Arctocephalus tropicalis,Arctocephalus tropicalis,Arctocephalus tropicalis,NCBI,0.988
+Arctocephalus tropicalis,Arctocephalus tropicalis,Arctocephalus tropicalis,Arctocephalus tropicalis,NCBI,0.988
+Ardea insignis,Ardea insignis,Ardea insignis,Ardea insignis,NCBI,0.988
+Ardeola idae,Ardeola idae,Ardeola idae,Ardeola idae,NCBI,0.988
+Ardeola ralloides,Ardeola ralloides,Ardeola ralloides,Ardeola ralloides,NCBI,0.988
+"Prunella modularis,Sylvia atricapilla",Prunella modularis,Prunella modularis,Prunella modularis,NCBI,0.988
+"Prunella modularis,Sylvia atricapilla",Sylvia atricapilla,Sylvia atricapilla,Sylvia atricapilla,NCBI,0.988
+Hirundo rustica,Hirundo rustica,Hirundo rustica,Hirundo rustica,NCBI,0.988
+"Phalacrocoracidae ,Phalacrocorax aristotelis,Larus argentatus,Larus michahellis",Phalacrocoracidae ,Phalacrocoracidae,Phalacrocoracidae,Catalogue of Life,0.75
+"Phalacrocoracidae ,Phalacrocorax aristotelis,Larus argentatus,Larus michahellis",Phalacrocorax aristotelis,Phalacrocorax aristotelis,Phalacrocorax aristotelis,Freebase,0.988
+"Phalacrocoracidae ,Phalacrocorax aristotelis,Larus argentatus,Larus michahellis",Larus argentatus,Larus argentatus,Larus argentatus,NCBI,0.988
+"Phalacrocoracidae ,Phalacrocorax aristotelis,Larus argentatus,Larus michahellis",Larus michahellis,Larus michahellis,Larus michahellis,NCBI,0.988
+Aegolius acadicus,Aegolius acadicus,Aegolius acadicus,Aegolius acadicus,NCBI,0.988
+"Sula dactylatra,Fregata aquila",Sula dactylatra,Sula dactylatra,Sula dactylatra,NCBI,0.988
+"Sula dactylatra,Fregata aquila",Fregata aquila,Fregata aquila,Fregata aquila,NCBI,0.988
+"Galeocerdo cuvier,Carcharhinus galapagensis",Galeocerdo cuvier,Galeocerdo cuvier,Galeocerdo cuvier,NCBI,0.988
+"Galeocerdo cuvier,Carcharhinus galapagensis",Carcharhinus galapagensis,Carcharhinus galapagensis,Carcharhinus galapagensis,NCBI,0.988
+Megaptera novaeangliae,Megaptera novaeangliae,Megaptera novaeangliae,Megaptera novaeangliae,NCBI,0.988
+Anastomus oscitans,Anastomus oscitans,Anastomus oscitans,Anastomus oscitans,NCBI,0.988
+Ciconia episcopus,Ciconia episcopus,Ciconia episcopus,Ciconia episcopus,NCBI,0.988
+Asio flammeus,Asio flammeus,Asio flammeus,Asio flammeus,NCBI,0.988
+"Pica ,Pica pica",Pica ,Pica,Pica,Catalogue of Life,0.75
+"Pica ,Pica pica",Pica pica,Pica pica,Pica pica,NCBI,0.988
+Branta bernicla,Branta bernicla,Branta bernicla,Branta bernicla,NCBI,0.988
+Fratercula arctica,Fratercula arctica,Fratercula arctica,Fratercula arctica,NCBI,0.988
+Gavia stellata,Gavia stellata,Gavia stellata,Gavia stellata,NCBI,0.988
+Melanitta perspicillata,Melanitta perspicillata,Melanitta perspicillata,Melanitta perspicillata,NCBI,0.988
+Stenella frontalis,Stenella frontalis,Stenella frontalis,Stenella frontalis,NCBI,0.988
+Acipenser oxyrinchus,Acipenser oxyrinchus,Acipenser oxyrinchus,Acipenser oxyrinchus,NCBI,0.988
+"Falco tinnunculus,Lanius excubitor,Turdus merula,Garrulus glandarius,Passer hispaniolensis,Pycnonotus xanthopygos,Sylvia atricapilla,Chloris chloris",Falco tinnunculus,Falco tinnunculus,Falco tinnunculus,NCBI,0.988
+"Falco tinnunculus,Lanius excubitor,Turdus merula,Garrulus glandarius,Passer hispaniolensis,Pycnonotus xanthopygos,Sylvia atricapilla,Chloris chloris",Lanius excubitor,Lanius excubitor,Lanius excubitor,NCBI,0.988
+"Falco tinnunculus,Lanius excubitor,Turdus merula,Garrulus glandarius,Passer hispaniolensis,Pycnonotus xanthopygos,Sylvia atricapilla,Chloris chloris",Turdus merula,Turdus merula,Turdus merula,NCBI,0.988
+"Falco tinnunculus,Lanius excubitor,Turdus merula,Garrulus glandarius,Passer hispaniolensis,Pycnonotus xanthopygos,Sylvia atricapilla,Chloris chloris",Garrulus glandarius,Garrulus glandarius,Garrulus glandarius,NCBI,0.988
+"Falco tinnunculus,Lanius excubitor,Turdus merula,Garrulus glandarius,Passer hispaniolensis,Pycnonotus xanthopygos,Sylvia atricapilla,Chloris chloris",Passer hispaniolensis,Passer hispaniolensis,Passer hispaniolensis,NCBI,0.988
+"Falco tinnunculus,Lanius excubitor,Turdus merula,Garrulus glandarius,Passer hispaniolensis,Pycnonotus xanthopygos,Sylvia atricapilla,Chloris chloris",Pycnonotus xanthopygos,Pycnonotus xanthopygos,Pycnonotus xanthopygos,NCBI,0.988
+"Falco tinnunculus,Lanius excubitor,Turdus merula,Garrulus glandarius,Passer hispaniolensis,Pycnonotus xanthopygos,Sylvia atricapilla,Chloris chloris",Sylvia atricapilla,Sylvia atricapilla,Sylvia atricapilla,NCBI,0.988
+"Falco tinnunculus,Lanius excubitor,Turdus merula,Garrulus glandarius,Passer hispaniolensis,Pycnonotus xanthopygos,Sylvia atricapilla,Chloris chloris",Chloris chloris,Chloris chloris,Chloris chloris,NCBI,0.988
+"Grus ,Tyto ,Acrocephalus arundinaceus",Grus ,Grus,Grus,Catalogue of Life,0.75
+"Grus ,Tyto ,Acrocephalus arundinaceus",Tyto ,Tyto,Tyto,Catalogue of Life,0.75
+"Grus ,Tyto ,Acrocephalus arundinaceus",Acrocephalus arundinaceus,Acrocephalus arundinaceus,Acrocephalus arundinaceus,NCBI,0.988
+Phasianus colchicus,Phasianus colchicus,Phasianus colchicus,Phasianus colchicus,NCBI,0.988
+Acrocephalus stentoreus,Acrocephalus stentoreus,Acrocephalus stentoreus,Acrocephalus stentoreus,NCBI,0.988
+"Acrocephalus arundinaceus,Acrocephalus stentoreus",Acrocephalus arundinaceus,Acrocephalus arundinaceus,Acrocephalus arundinaceus,NCBI,0.988
+"Acrocephalus arundinaceus,Acrocephalus stentoreus",Acrocephalus stentoreus,Acrocephalus stentoreus,Acrocephalus stentoreus,NCBI,0.988
+Apus affinis,Apus affinis,Apus affinis,Apus affinis,NCBI,0.988
+Falco,Falco,Falco,Falco,Catalogue of Life,0.75
+Grus,Grus,Grus,Grus,Catalogue of Life,0.75
+Lanius collurio,Lanius collurio,Lanius collurio,Lanius collurio,NCBI,0.988
+Pisodonophis,Pisodonophis,Pisodonophis,Pisodonophis,Catalogue of Life,0.75
+Pipistrellus kuhlii,Pipistrellus kuhlii,Pipistrellus kuhlii,Pipistrellus kuhlii,NCBI,0.988
+Pycnonotus xanthopygos,Pycnonotus xanthopygos,Pycnonotus xanthopygos,Pycnonotus xanthopygos,NCBI,0.988
+"Elanus caeruleus,Falco tinnunculus,Martes foina",Elanus caeruleus,Elanus caeruleus,Elanus caeruleus,NCBI,0.988
+"Elanus caeruleus,Falco tinnunculus,Martes foina",Falco tinnunculus,Falco tinnunculus,Falco tinnunculus,NCBI,0.988
+"Elanus caeruleus,Falco tinnunculus,Martes foina",Martes foina,Martes foina,Martes foina,NCBI,0.988
+"Rousettus egyptiacus,Rousettus aegyptiacus",Rousettus egyptiacus,Rousettus egyptiacus,Rousettus egyptiacus,Encyclopedia of Life,0.988
+"Rousettus egyptiacus,Rousettus aegyptiacus",Rousettus aegyptiacus,Rousettus aegyptiacus,Rousettus aegyptiacus,NCBI,0.988
+Rousettus aegyptiacus,Rousettus aegyptiacus,Rousettus aegyptiacus,Rousettus aegyptiacus,NCBI,0.988
+Tyto alba,Tyto alba,Tyto alba,Tyto alba,NCBI,0.988
+Tyto,Tyto,Tyto,Tyto,Catalogue of Life,0.75
+Acrocephalus arundinaceus,Acrocephalus arundinaceus,Acrocephalus arundinaceus,Acrocephalus arundinaceus,NCBI,0.988
+Vanellus spinosus,Vanellus spinosus,Vanellus spinosus,Vanellus spinosus,Freebase,0.988
+Ichthyaetus audouinii,Ichthyaetus audouinii,Ichthyaetus audouinii,Ichthyaetus audouinii,NCBI,0.988
+Buteo jamaicensis,Buteo jamaicensis,Buteo jamaicensis,Buteo jamaicensis,NCBI,0.988
+Phylloscopus sibillatrix,Phylloscopus sibillatrix,Phylloscopus sibillatrix,Phylloscopus sibillatrix,Open Tree of Life Reference Taxonomy,0.988
+Milvus migrans,Milvus migrans,Milvus migrans,Milvus migrans,NCBI,0.988
+"Polemaetus bellicosus,Acryllium vulturinum",Polemaetus bellicosus,Polemaetus bellicosus,Polemaetus bellicosus,NCBI,0.988
+"Polemaetus bellicosus,Acryllium vulturinum",Acryllium vulturinum,Acryllium vulturinum,Acryllium vulturinum,NCBI,0.988
+Balaenoptera musculus,Balaenoptera musculus,Balaenoptera musculus,Balaenoptera musculus,NCBI,0.988
+Aves,Aves,Aves,Aves,Catalogue of Life,0.75
+"Balaenoptera borealis,Balaenoptera physalus,Balaenoptera musculus,Physeter macrocephalus",Balaenoptera borealis,Balaenoptera borealis,Balaenoptera borealis,NCBI,0.988
+"Balaenoptera borealis,Balaenoptera physalus,Balaenoptera musculus,Physeter macrocephalus",Balaenoptera physalus,Balaenoptera physalus,Balaenoptera physalus,NCBI,0.988
+"Balaenoptera borealis,Balaenoptera physalus,Balaenoptera musculus,Physeter macrocephalus",Balaenoptera musculus,Balaenoptera musculus,Balaenoptera musculus,NCBI,0.988
+"Balaenoptera borealis,Balaenoptera physalus,Balaenoptera musculus,Physeter macrocephalus",Physeter macrocephalus,Physeter macrocephalus,Physeter macrocephalus,Freebase,0.988
+Papio hamadryas,Papio hamadryas,Papio hamadryas,Papio hamadryas,NCBI,0.988
+"Bos taurus,Meles meles",Bos taurus,Bos taurus,Bos taurus,NCBI,0.988
+"Bos taurus,Meles meles",Meles meles,Meles meles,Meles meles,NCBI,0.988
+Haliaeetus leucocephalus,Haliaeetus leucocephalus,Haliaeetus leucocephalus,Haliaeetus leucocephalus,NCBI,0.988
+Geronticus eremita,Geronticus eremita,Geronticus eremita,Geronticus eremita,NCBI,0.988
+Carnivora,Carnivora,Carnivora,Carnivora,Catalogue of Life,0.75
+Bungarus fasciatus,Bungarus fasciatus,Bungarus fasciatus,Bungarus fasciatus,NCBI,0.988
+Chen caerulescens,Chen caerulescens,Chen caerulescens,Chen caerulescens,Freebase,0.988
+Acrocephalus scirpaceus,Acrocephalus scirpaceus,Acrocephalus scirpaceus,Acrocephalus scirpaceus,NCBI,0.988
+Procnias nudicollis,Procnias nudicollis,Procnias nudicollis,Procnias nudicollis,NCBI,0.988
+Branta leucopsis,Branta leucopsis,Branta leucopsis,Branta leucopsis,NCBI,0.988
+Limosa lapponica,Limosa lapponica,Limosa lapponica,Limosa lapponica,NCBI,0.988
+"Pteropus alecto,Pteropus poliocephalus",Pteropus alecto,Pteropus alecto,Pteropus alecto,NCBI,0.988
+"Pteropus alecto,Pteropus poliocephalus",Pteropus poliocephalus,Pteropus poliocephalus,Pteropus poliocephalus,NCBI,0.988
+Pteropus alecto,Pteropus alecto,Pteropus alecto,Pteropus alecto,NCBI,0.988
+Pteropus poliocephalus,Pteropus poliocephalus,Pteropus poliocephalus,Pteropus poliocephalus,NCBI,0.988
+Pteropus scapulatus,Pteropus scapulatus,Pteropus scapulatus,Pteropus scapulatus,NCBI,0.988
+"Pteropus alecto,Pteropus poliocephalus,Pteropus scapulatus",Pteropus alecto,Pteropus alecto,Pteropus alecto,NCBI,0.988
+"Pteropus alecto,Pteropus poliocephalus,Pteropus scapulatus",Pteropus poliocephalus,Pteropus poliocephalus,Pteropus poliocephalus,NCBI,0.988
+"Pteropus alecto,Pteropus poliocephalus,Pteropus scapulatus",Pteropus scapulatus,Pteropus scapulatus,Pteropus scapulatus,NCBI,0.988
+Pluvialis squatarola,Pluvialis squatarola,Pluvialis squatarola,Pluvialis squatarola,NCBI,0.988
+Dasyprocta,Dasyprocta,Dasyprocta,Dasyprocta,Catalogue of Life,0.75
+Numenius americanus,Numenius americanus,Numenius americanus,Numenius americanus,NCBI,0.988
+Larus michahellis,Larus michahellis,Larus michahellis,Larus michahellis,NCBI,0.988
+Accipiter gentilis,Accipiter gentilis,Accipiter gentilis,Accipiter gentilis,NCBI,0.988
+Anser fabalis,Anser fabalis,Anser fabalis,Anser fabalis,NCBI,0.988
+Gypaetus barbatus,Gypaetus barbatus,Gypaetus barbatus,Gypaetus barbatus,NCBI,0.988
+Myotis bechsteini,Myotis bechsteini,Myotis bechsteini,Myotis bechsteini,AnAge,0.988
+Spizaetus,Spizaetus,Spizaetus,Spizaetus,Catalogue of Life,0.75
+Houbaropsis bengalensis,Houbaropsis bengalensis,Houbaropsis bengalensis,Houbaropsis bengalensis,Freebase,0.988
+Cygnus columbianus,Cygnus columbianus,Cygnus columbianus,Cygnus columbianus,NCBI,0.988
+"Cygnus ,Cygnus columbianus",Cygnus ,Cygnus,Cygnus,Catalogue of Life,0.75
+"Cygnus ,Cygnus columbianus",Cygnus columbianus,Cygnus columbianus,Cygnus columbianus,NCBI,0.988
+"Pterocles alchata,Pterocles senegallus",Pterocles alchata,Pterocles alchata,Pterocles alchata,NCBI,0.988
+"Pterocles alchata,Pterocles senegallus",Pterocles senegallus,Pterocles senegallus,Pterocles senegallus,Freebase,0.988
+"Anthracoceros albirostris,Buceros bicornis,Aceros nipalensis",Anthracoceros albirostris,Anthracoceros albirostris,Anthracoceros albirostris,NCBI,0.988
+"Anthracoceros albirostris,Buceros bicornis,Aceros nipalensis",Buceros bicornis,Buceros bicornis,Buceros bicornis,NCBI,0.988
+"Anthracoceros albirostris,Buceros bicornis,Aceros nipalensis",Aceros nipalensis,Aceros nipalensis,Aceros nipalensis,NCBI,0.988
+Catharus bicknelli,Catharus bicknelli,Catharus bicknelli,Catharus bicknelli,NCBI,0.988
+Pterodroma sandwichensis,Pterodroma sandwichensis,Pterodroma sandwichensis,Pterodroma sandwichensis,NCBI,0.988
+Catharus minimus,Catharus minimus,Catharus minimus,Catharus minimus,NCBI,0.988
+Catharus guttatus,Catharus guttatus,Catharus guttatus,Catharus guttatus,NCBI,0.988
+Catharus ustulatus,Catharus ustulatus,Catharus ustulatus,Catharus ustulatus,NCBI,0.988
+Catharus fuscescens,Catharus fuscescens,Catharus fuscescens,Catharus fuscescens,NCBI,0.988
+Hylocichla mustelina,Hylocichla mustelina,Hylocichla mustelina,Hylocichla mustelina,NCBI,0.988
+"Chelonia mydas,Dermochelys coriacea",Chelonia mydas,Chelonia mydas,Chelonia mydas,NCBI,0.988
+"Chelonia mydas,Dermochelys coriacea",Dermochelys coriacea,Dermochelys coriacea,Dermochelys coriacea,NCBI,0.988
+"Anas ,Anas platyrhynchos",Anas ,Anas,Anas,Catalogue of Life,0.75
+"Anas ,Anas platyrhynchos",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+Gyps bengalensis,Gyps bengalensis,Gyps bengalensis,Gyps bengalensis,NCBI,0.988
+"Aquila clanga,Pernis apivorus",Aquila clanga,Aquila clanga,Aquila clanga,Freebase,0.988
+"Aquila clanga,Pernis apivorus",Pernis apivorus,Pernis apivorus,Pernis apivorus,NCBI,0.988
+"Aquila pomarina,Pandion haliaetus",Aquila pomarina,Aquila pomarina,Aquila pomarina,Freebase,0.988
+"Aquila pomarina,Pandion haliaetus",Pandion haliaetus,Pandion haliaetus,Pandion haliaetus,NCBI,0.988
+Haliaeetus albicilla,Haliaeetus albicilla,Haliaeetus albicilla,Haliaeetus albicilla,NCBI,0.988
+Larus dominicanus,Larus dominicanus,Larus dominicanus,Larus dominicanus,NCBI,0.988
+Canis mesomelas,Canis mesomelas,Canis mesomelas,Canis mesomelas,NCBI,0.988
+Ursus americanus,Ursus americanus,Ursus americanus,Ursus americanus,NCBI,0.988
+"Harpyhaliaetus coronatus,Geranoaetus melanoleucus",Harpyhaliaetus coronatus,Harpyhaliaetus coronatus,Harpyhaliaetus coronatus,NCBI,0.988
+"Harpyhaliaetus coronatus,Geranoaetus melanoleucus",Geranoaetus melanoleucus,Geranoaetus melanoleucus,Geranoaetus melanoleucus,NCBI,0.988
+Sylvia atricapilla,Sylvia atricapilla,Sylvia atricapilla,Sylvia atricapilla,NCBI,0.988
+Centropus grillii,Centropus grillii,Centropus grillii,Centropus grillii,NCBI,0.988
+Nycticorax nycticorax,Nycticorax nycticorax,Nycticorax nycticorax,Nycticorax nycticorax,NCBI,0.988
+"Nycticorax ,Nycticorax nycticorax",Nycticorax ,Nycticorax,Nycticorax,Catalogue of Life,0.75
+"Nycticorax ,Nycticorax nycticorax",Nycticorax nycticorax,Nycticorax nycticorax,Nycticorax nycticorax,NCBI,0.988
+Platalea minor,Platalea minor,Platalea minor,Platalea minor,NCBI,0.988
+Lyrurus tetrix,Lyrurus tetrix,Lyrurus tetrix,Lyrurus tetrix,NCBI,0.988
+Chroicocephalus ridibundus,Chroicocephalus ridibundus,Chroicocephalus ridibundus,Chroicocephalus ridibundus,NCBI,0.988
+Laridae,Laridae,Laridae,Laridae,Catalogue of Life,0.75
+Rissa tridactyla,Rissa tridactyla,Rissa tridactyla,Rissa tridactyla,NCBI,0.988
+Setophaga,Setophaga,Setophaga,Setophaga,Catalogue of Life,0.75
+Melanitta nigra,Melanitta nigra,Melanitta nigra,Melanitta nigra,NCBI,0.988
+Ciconia nigra,Ciconia nigra,Ciconia nigra,Ciconia nigra,NCBI,0.988
+"Cathartes aura,Coragyps atratus",Cathartes aura,Cathartes aura,Cathartes aura,NCBI,0.988
+"Cathartes aura,Coragyps atratus",Coragyps atratus,Coragyps atratus,Coragyps atratus,NCBI,0.988
+Pterodroma nigripennis,Pterodroma nigripennis,Pterodroma nigripennis,Pterodroma nigripennis,NCBI,0.988
+"Globicephala macrorhynchus,Mesoplodon densirostris",Globicephala macrorhynchus,Globicephala macrorhynchus,Globicephala macrorhynchus,NCBI,0.988
+"Globicephala macrorhynchus,Mesoplodon densirostris",Mesoplodon densirostris,Mesoplodon densirostris,Mesoplodon densirostris,NCBI,0.988
+Mesoplodon densirostris,Mesoplodon densirostris,Mesoplodon densirostris,Mesoplodon densirostris,NCBI,0.988
+"Balaenoptera physalus,Balaenoptera musculus",Balaenoptera physalus,Balaenoptera physalus,Balaenoptera physalus,NCBI,0.988
+"Balaenoptera physalus,Balaenoptera musculus",Balaenoptera musculus,Balaenoptera musculus,Balaenoptera musculus,NCBI,0.988
+Anthropoides paradiseus,Anthropoides paradiseus,Anthropoides paradiseus,Anthropoides paradiseus,NCBI,0.988
+"Chiroxiphia caudata,Pyriglena leucoptera,Sclerurus scansor",Chiroxiphia caudata,Chiroxiphia caudata,Chiroxiphia caudata,NCBI,0.988
+"Chiroxiphia caudata,Pyriglena leucoptera,Sclerurus scansor",Pyriglena leucoptera,Pyriglena leucoptera,Pyriglena leucoptera,NCBI,0.988
+"Chiroxiphia caudata,Pyriglena leucoptera,Sclerurus scansor",Sclerurus scansor,Sclerurus scansor,Sclerurus scansor,NCBI,0.988
+Ara glaucogularis,Ara glaucogularis,Ara glaucogularis,Ara glaucogularis,NCBI,0.988
+Balaenoptera,Balaenoptera,Balaenoptera,Balaenoptera,Catalogue of Life,0.75
+Anas discors,Anas discors,Anas discors,Anas discors,NCBI,0.988
+"Aquila chrysaetos,Hieraaetus fasciatus,Aquila fasciata",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila chrysaetos,Hieraaetus fasciatus,Aquila fasciata",Hieraaetus fasciatus,Hieraaetus fasciatus,Hieraaetus fasciatus,NCBI,0.988
+"Aquila chrysaetos,Hieraaetus fasciatus,Aquila fasciata",Aquila fasciata,Aquila fasciata,Aquila fasciata,Freebase,0.988
+Isoodon obesulus,Isoodon obesulus,Isoodon obesulus,Isoodon obesulus,NCBI,0.988
+Hieraaetus pennatus,Hieraaetus pennatus,Hieraaetus pennatus,Hieraaetus pennatus,NCBI,0.988
+"Gyps coprotheres,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Gyps coprotheres,Gyps coprotheres,Gyps coprotheres,NCBI,0.988
+"Gyps coprotheres,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+"Gyps coprotheres,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Necrosyrtes monachus,Necrosyrtes monachus,Necrosyrtes monachus,NCBI,0.988
+"Gyps coprotheres,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Torgos tracheliotus,Torgos tracheliotus,Torgos tracheliotus,Encyclopedia of Life,0.988
+Tursiops truncatus,Tursiops truncatus,Tursiops truncatus,Tursiops truncatus,NCBI,0.988
+Balaena mysticetus,Balaena mysticetus,Balaena mysticetus,Balaena mysticetus,NCBI,0.988
+Branta ruficollis,Branta ruficollis,Branta ruficollis,Branta ruficollis,NCBI,0.988
+Anatidae,Anatidae,Anatidae,Anatidae,Catalogue of Life,0.75
+Seiurus aurocapilla,Seiurus aurocapilla,Seiurus aurocapilla,Seiurus aurocapilla,NCBI,0.988
+Buteo platypterus,Buteo platypterus,Buteo platypterus,Buteo platypterus,NCBI,0.988
+Grus rubicunda,Grus rubicunda,Grus rubicunda,Grus rubicunda,Freebase,0.988
+"Ursus arctos,Ursus americanus",Ursus arctos,Ursus arctos,Ursus arctos,NCBI,0.988
+"Ursus arctos,Ursus americanus",Ursus americanus,Ursus americanus,Ursus americanus,NCBI,0.988
+Sula leucogaster,Sula leucogaster,Sula leucogaster,Sula leucogaster,NCBI,0.988
+Pelecanus occidentalis,Pelecanus occidentalis,Pelecanus occidentalis,Pelecanus occidentalis,NCBI,0.988
+Tryngites subruficollis,Tryngites subruficollis,Tryngites subruficollis,Tryngites subruficollis,Freebase,0.988
+Calidris ruficollis,Calidris ruficollis,Calidris ruficollis,Calidris ruficollis,NCBI,0.988
+Bufo bufo,Bufo bufo,Bufo bufo,Bufo bufo,NCBI,0.988
+Gyps fulvus,Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+Apus melba,Apus melba,Apus melba,Apus melba,Encyclopedia of Life,0.988
+Burhinus grallarius,Burhinus grallarius,Burhinus grallarius,Burhinus grallarius,NCBI,0.988
+Burhinus oedicnemus,Burhinus oedicnemus,Burhinus oedicnemus,Burhinus oedicnemus,NCBI,0.988
+Buteo,Buteo,Buteo,Buteo,Catalogue of Life,0.75
+"Gypaetus ,Gypaetus barbatus",Gypaetus ,Gypaetus,Gypaetus,Catalogue of Life,0.75
+"Gypaetus ,Gypaetus barbatus",Gypaetus barbatus,Gypaetus barbatus,Gypaetus barbatus,NCBI,0.988
+Caracara cheriway,Caracara cheriway,Caracara cheriway,Caracara cheriway,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii",Anser albifrons,Anser albifrons,Anser albifrons,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii",Chen caerulescens,Chen caerulescens,Chen caerulescens,Freebase,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii",Chen rossii,Chen rossii,Chen rossii,Freebase,0.988
+Calonectris diomedea,Calonectris diomedea,Calonectris diomedea,Calonectris diomedea,NCBI,0.988
+Branta canadensis,Branta canadensis,Branta canadensis,Branta canadensis,NCBI,0.988
+Charadrius hiaticula,Charadrius hiaticula,Charadrius hiaticula,Charadrius hiaticula,NCBI,0.988
+Canidae,Canidae,Canidae,Canidae,Catalogue of Life,0.75
+Canis latrans,Canis latrans,Canis latrans,Canis latrans,NCBI,0.988
+Syncerus caffer,Syncerus caffer,Syncerus caffer,Syncerus caffer,NCBI,0.988
+Tetrao urogallus,Tetrao urogallus,Tetrao urogallus,Tetrao urogallus,NCBI,0.988
+Gyps coprotheres,Gyps coprotheres,Gyps coprotheres,Gyps coprotheres,NCBI,0.988
+"Hydrochaeris hydrochaeris,Hydrochoerus hydrochaeris",Hydrochaeris hydrochaeris,Hydrochaeris hydrochaeris,Hydrochaeris hydrochaeris,AnAge,0.988
+"Hydrochaeris hydrochaeris,Hydrochoerus hydrochaeris",Hydrochoerus hydrochaeris,Hydrochoerus hydrochaeris,Hydrochoerus hydrochaeris,NCBI,0.988
+Caretta caretta,Caretta caretta,Caretta caretta,Caretta caretta,NCBI,0.988
+Eretmochelys imbricata,Eretmochelys imbricata,Eretmochelys imbricata,Eretmochelys imbricata,NCBI,0.988
+Lynx rufus,Lynx rufus,Lynx rufus,Lynx rufus,NCBI,0.988
+"Chrysocyon brachyurus,Leopardus pardalis,Puma concolor,Leopardus tigrinus,Puma yagouaroundi",Chrysocyon brachyurus,Chrysocyon brachyurus,Chrysocyon brachyurus,NCBI,0.988
+"Chrysocyon brachyurus,Leopardus pardalis,Puma concolor,Leopardus tigrinus,Puma yagouaroundi",Leopardus pardalis,Leopardus pardalis,Leopardus pardalis,NCBI,0.988
+"Chrysocyon brachyurus,Leopardus pardalis,Puma concolor,Leopardus tigrinus,Puma yagouaroundi",Puma concolor,Puma concolor,Puma concolor,NCBI,0.988
+"Chrysocyon brachyurus,Leopardus pardalis,Puma concolor,Leopardus tigrinus,Puma yagouaroundi",Leopardus tigrinus,Leopardus tigrinus,Leopardus tigrinus,NCBI,0.988
+"Chrysocyon brachyurus,Leopardus pardalis,Puma concolor,Leopardus tigrinus,Puma yagouaroundi",Puma yagouaroundi,Puma yagouaroundi,Puma yagouaroundi,NCBI,0.988
+"Carollia castanea,Carollia perspicillata",Carollia castanea,Carollia castanea,Carollia castanea,NCBI,0.988
+"Carollia castanea,Carollia perspicillata",Carollia perspicillata,Carollia perspicillata,Carollia perspicillata,NCBI,0.988
+Larus cachinnans,Larus cachinnans,Larus cachinnans,Larus cachinnans,NCBI,0.988
+Sterna,Sterna,Sterna,Sterna,Catalogue of Life,0.75
+Vireo cassinii,Vireo cassinii,Vireo cassinii,Vireo cassinii,NCBI,0.988
+Felis catus,Felis catus,Felis catus,Felis catus,NCBI,0.988
+"Milvus milvus,Neophron percnopterus,Aegypius monachus",Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+"Milvus milvus,Neophron percnopterus,Aegypius monachus",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+"Milvus milvus,Neophron percnopterus,Aegypius monachus",Aegypius monachus,Aegypius monachus,Aegypius monachus,NCBI,0.988
+"Neophron percnopterus,Aquila adalberti",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+"Neophron percnopterus,Aquila adalberti",Aquila adalberti,Aquila adalberti,Aquila adalberti,NCBI,0.988
+"Ciconia nigra,Neophron percnopterus",Ciconia nigra,Ciconia nigra,Ciconia nigra,NCBI,0.988
+"Ciconia nigra,Neophron percnopterus",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+"Cervus ,Cervus elaphus",Cervus ,Cervus,Cervus,Catalogue of Life,0.75
+"Cervus ,Cervus elaphus",Cervus elaphus,Cervus elaphus,Cervus elaphus,NCBI,0.988
+Cervus elaphus,Cervus elaphus,Cervus elaphus,Cervus elaphus,NCBI,0.988
+Acinonyx jubatus,Acinonyx jubatus,Acinonyx jubatus,Acinonyx jubatus,NCBI,0.988
+Puffinus yelkouan,Puffinus yelkouan,Puffinus yelkouan,Puffinus yelkouan,NCBI,0.988
+Pygoscelis antarcticus,Pygoscelis antarcticus,Pygoscelis antarcticus,Pygoscelis antarcticus,NCBI,0.988
+Chlamydotis undulata,Chlamydotis undulata,Chlamydotis undulata,Chlamydotis undulata,NCBI,0.988
+Ciconia abdimii,Ciconia abdimii,Ciconia abdimii,Ciconia abdimii,NCBI,0.988
+Ciconia ciconia,Ciconia ciconia,Ciconia ciconia,Ciconia ciconia,NCBI,0.988
+Anas cyanoptera,Anas cyanoptera,Anas cyanoptera,Anas cyanoptera,NCBI,0.988
+Circaetus gallicus,Circaetus gallicus,Circaetus gallicus,Circaetus gallicus,NCBI,0.988
+Circus pygargus,Circus pygargus,Circus pygargus,Circus pygargus,NCBI,0.988
+Circus maillardi,Circus maillardi,Circus maillardi,Circus maillardi,NCBI,0.988
+Stenella clymene,Stenella clymene,Stenella clymene,Stenella clymene,NCBI,0.988
+Nasua narica,Nasua narica,Nasua narica,Nasua narica,NCBI,0.988
+Pecari tajacu,Pecari tajacu,Pecari tajacu,Pecari tajacu,NCBI,0.988
+Ochotona collaris,Ochotona collaris,Ochotona collaris,Ochotona collaris,NCBI,0.988
+Columba leuconota,Columba leuconota,Columba leuconota,Columba leuconota,NCBI,0.988
+Mergus merganser,Mergus merganser,Mergus merganser,Mergus merganser,NCBI,0.988
+Cuculus canorus,Cuculus canorus,Cuculus canorus,Cuculus canorus,NCBI,0.988
+Delphinus delphis,Delphinus delphis,Delphinus delphis,Delphinus delphis,NCBI,0.988
+Somateria mollissima,Somateria mollissima,Somateria mollissima,Somateria mollissima,NCBI,0.988
+"Somateria mollissima,Somateria spectabilis",Somateria mollissima,Somateria mollissima,Somateria mollissima,NCBI,0.988
+"Somateria mollissima,Somateria spectabilis",Somateria spectabilis,Somateria spectabilis,Somateria spectabilis,NCBI,0.988
+Uria aalge,Uria aalge,Uria aalge,Uria aalge,NCBI,0.988
+Chordeiles minor,Chordeiles minor,Chordeiles minor,Chordeiles minor,NCBI,0.988
+Corvus corax,Corvus corax,Corvus corax,Corvus corax,NCBI,0.988
+Tringa totanus,Tringa totanus,Tringa totanus,Tringa totanus,NCBI,0.988
+Tadorna tadorna,Tadorna tadorna,Tadorna tadorna,Tadorna tadorna,NCBI,0.988
+Gallinago gallinago,Gallinago gallinago,Gallinago gallinago,Gallinago gallinago,NCBI,0.988
+"Gallinago gallinago,Larus canus",Gallinago gallinago,Gallinago gallinago,Gallinago gallinago,NCBI,0.988
+"Gallinago gallinago,Larus canus",Larus canus,Larus canus,Larus canus,NCBI,0.988
+Sterna hirundo,Sterna hirundo,Sterna hirundo,Sterna hirundo,NCBI,0.988
+Columba palumbus,Columba palumbus,Columba palumbus,Columba palumbus,NCBI,0.988
+Protonotaria citrea,Protonotaria citrea,Protonotaria citrea,Protonotaria citrea,NCBI,0.988
+Oporornis agilis,Oporornis agilis,Oporornis agilis,Oporornis agilis,NCBI,0.988
+"Aquila ,Aquila pomarina",Aquila ,Aquila,Aquila,Catalogue of Life,0.75
+"Aquila ,Aquila pomarina",Aquila pomarina,Aquila pomarina,Aquila pomarina,Freebase,0.988
+Anser brachyrhynchus,Anser brachyrhynchus,Anser brachyrhynchus,Anser brachyrhynchus,NCBI,0.988
+"Coragyps atratus,Buteo swainsoni",Coragyps atratus,Coragyps atratus,Coragyps atratus,NCBI,0.988
+"Coragyps atratus,Buteo swainsoni",Buteo swainsoni,Buteo swainsoni,Buteo swainsoni,NCBI,0.988
+Corvus corone,Corvus corone,Corvus corone,Corvus corone,NCBI,0.988
+Corvus splendens,Corvus splendens,Corvus splendens,Corvus splendens,NCBI,0.988
+"Branta leucopsis,Anser albifrons,Anser anser",Branta leucopsis,Branta leucopsis,Branta leucopsis,NCBI,0.988
+"Branta leucopsis,Anser albifrons,Anser anser",Anser albifrons,Anser albifrons,Anser albifrons,NCBI,0.988
+"Branta leucopsis,Anser albifrons,Anser anser",Anser anser,Anser anser,Anser anser,NCBI,0.988
+Balearica pavonina,Balearica pavonina,Balearica pavonina,Balearica pavonina,NCBI,0.988
+Grus nigricollis,Grus nigricollis,Grus nigricollis,Grus nigricollis,NCBI,0.988
+Thalasseus bergii,Thalasseus bergii,Thalasseus bergii,Thalasseus bergii,NCBI,0.988
+Ziphius cavirostris,Ziphius cavirostris,Ziphius cavirostris,Ziphius cavirostris,NCBI,0.988
+Cygnus olor,Cygnus olor,Cygnus olor,Cygnus olor,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas penelope,Anas penelope,Anas penelope,Freebase,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas clypeata,Anas clypeata,Anas clypeata,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas querquedula",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas querquedula",Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas querquedula",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas querquedula",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas querquedula",Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+"Anas acuta,Anas penelope",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anas acuta,Anas penelope",Anas penelope,Anas penelope,Anas penelope,Freebase,0.988
+"Anas acuta,Anas crecca,Anas clypeata",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anas acuta,Anas crecca,Anas clypeata",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Anas acuta,Anas crecca,Anas clypeata",Anas clypeata,Anas clypeata,Anas clypeata,NCBI,0.988
+"Anas platyrhynchos,Anas acuta",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Anas acuta",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anas acuta,Anas crecca",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anas acuta,Anas crecca",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Anas platyrhynchos,Anas crecca,Anas querquedula",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Anas crecca,Anas querquedula",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Anas platyrhynchos,Anas crecca,Anas querquedula",Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+Anas querquedula,Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+Bos taurus,Bos taurus,Bos taurus,Bos taurus,NCBI,0.988
+"Leopardus pardalis,Puma concolor,Tayassu pecari",Leopardus pardalis,Leopardus pardalis,Leopardus pardalis,NCBI,0.988
+"Leopardus pardalis,Puma concolor,Tayassu pecari",Puma concolor,Puma concolor,Puma concolor,NCBI,0.988
+"Leopardus pardalis,Puma concolor,Tayassu pecari",Tayassu pecari,Tayassu pecari,Tayassu pecari,NCBI,0.988
+Numenius tahitiensis,Numenius tahitiensis,Numenius tahitiensis,Numenius tahitiensis,NCBI,0.988
+Pluvialis fulva,Pluvialis fulva,Pluvialis fulva,Pluvialis fulva,NCBI,0.988
+Erignathus barbatus,Erignathus barbatus,Erignathus barbatus,Erignathus barbatus,NCBI,0.988
+"Anser albifrons,Chen caerulescens",Anser albifrons,Anser albifrons,Anser albifrons,NCBI,0.988
+"Anser albifrons,Chen caerulescens",Chen caerulescens,Chen caerulescens,Chen caerulescens,Freebase,0.988
+Anas gracilis,Anas gracilis,Anas gracilis,Anas gracilis,NCBI,0.988
+Dendrocygna arcuata,Dendrocygna arcuata,Dendrocygna arcuata,Dendrocygna arcuata,NCBI,0.988
+Acherontiini,Acherontiini,Acherontiini,Acherontiini,Wikispecies,0.75
+Cuon alpinus,Cuon alpinus,Cuon alpinus,Cuon alpinus,NCBI,0.988
+Somateria fischeri,Somateria fischeri,Somateria fischeri,Somateria fischeri,NCBI,0.988
+Lemur catta,Lemur catta,Lemur catta,Lemur catta,NCBI,0.988
+"Equus ,Bison bonasus",Equus ,Equus,Equus,Catalogue of Life,0.75
+"Equus ,Bison bonasus",Bison bonasus,Bison bonasus,Bison bonasus,NCBI,0.988
+Rostrhamus sociabilis,Rostrhamus sociabilis,Rostrhamus sociabilis,Rostrhamus sociabilis,NCBI,0.988
+Testudo,Testudo,Testudo,Testudo,Catalogue of Life,0.75
+Bison bison,Bison bison,Bison bison,Bison bison,NCBI,0.988
+Dendragapus obscurus,Dendragapus obscurus,Dendragapus obscurus,Dendragapus obscurus,NCBI,0.988
+Balaenoptera acutorostrata,Balaenoptera acutorostrata,Balaenoptera acutorostrata,Balaenoptera acutorostrata,NCBI,0.988
+Sula dactylatra,Sula dactylatra,Sula dactylatra,Sula dactylatra,NCBI,0.988
+"Ciconia nigra,Aquila clanga,Aquila pomarina",Ciconia nigra,Ciconia nigra,Ciconia nigra,NCBI,0.988
+"Ciconia nigra,Aquila clanga,Aquila pomarina",Aquila clanga,Aquila clanga,Aquila clanga,Freebase,0.988
+"Ciconia nigra,Aquila clanga,Aquila pomarina",Aquila pomarina,Aquila pomarina,Aquila pomarina,Freebase,0.988
+Bubo bubo,Bubo bubo,Bubo bubo,Bubo bubo,NCBI,0.988
+"Bubo ,Bubo bubo",Bubo ,Bubo,Bubo,Catalogue of Life,0.75
+"Bubo ,Bubo bubo",Bubo bubo,Bubo bubo,Bubo bubo,NCBI,0.988
+Odocoileus hemionus,Odocoileus hemionus,Odocoileus hemionus,Odocoileus hemionus,NCBI,0.988
+"Aquila heliaca,Aquila nipalensis",Aquila heliaca,Aquila heliaca,Aquila heliaca,NCBI,0.988
+"Aquila heliaca,Aquila nipalensis",Aquila nipalensis,Aquila nipalensis,Aquila nipalensis,NCBI,0.988
+Caprimulgus vociferus,Caprimulgus vociferus,Caprimulgus vociferus,Caprimulgus vociferus,Freebase,0.988
+"Meleagris ,Meleagris gallopavo",Meleagris ,Meleagris,Meleagris,Catalogue of Life,0.75
+"Meleagris ,Meleagris gallopavo",Meleagris gallopavo,Meleagris gallopavo,Meleagris gallopavo,NCBI,0.988
+Anodorhynchus leari,Anodorhynchus leari,Anodorhynchus leari,Anodorhynchus leari,NCBI,0.988
+Falco naumanni,Falco naumanni,Falco naumanni,Falco naumanni,NCBI,0.988
+"Alca torda,Fratercula arctica",Alca torda,Alca torda,Alca torda,NCBI,0.988
+"Alca torda,Fratercula arctica",Fratercula arctica,Fratercula arctica,Fratercula arctica,NCBI,0.988
+"Cerdocyon ,Cerdocyon thous,Chrysocyon brachyurus,Lycalopex vetulus",Cerdocyon ,Cerdocyon,Cerdocyon,Catalogue of Life,0.75
+"Cerdocyon ,Cerdocyon thous,Chrysocyon brachyurus,Lycalopex vetulus",Cerdocyon thous,Cerdocyon thous,Cerdocyon thous,NCBI,0.988
+"Cerdocyon ,Cerdocyon thous,Chrysocyon brachyurus,Lycalopex vetulus",Chrysocyon brachyurus,Chrysocyon brachyurus,Chrysocyon brachyurus,NCBI,0.988
+"Cerdocyon ,Cerdocyon thous,Chrysocyon brachyurus,Lycalopex vetulus",Lycalopex vetulus,Lycalopex vetulus,Lycalopex vetulus,NCBI,0.988
+Reptilia,Reptilia,Reptilia,Reptilia,Catalogue of Life,0.75
+"Chrysocyon brachyurus,Lycalopex vetulus",Chrysocyon brachyurus,Chrysocyon brachyurus,Chrysocyon brachyurus,NCBI,0.988
+"Chrysocyon brachyurus,Lycalopex vetulus",Lycalopex vetulus,Lycalopex vetulus,Lycalopex vetulus,NCBI,0.988
+"Tremarctos ornatus,Tapirus pinchaque",Tremarctos ornatus,Tremarctos ornatus,Tremarctos ornatus,NCBI,0.988
+"Tremarctos ornatus,Tapirus pinchaque",Tapirus pinchaque,Tapirus pinchaque,Tapirus pinchaque,NCBI,0.988
+"Ardeidae ,Ardea herodias,Egretta thula,Ardea alba",Ardeidae ,Ardeidae,Ardeidae,Catalogue of Life,0.75
+"Ardeidae ,Ardea herodias,Egretta thula,Ardea alba",Ardea herodias,Ardea herodias,Ardea herodias,NCBI,0.988
+"Ardeidae ,Ardea herodias,Egretta thula,Ardea alba",Egretta thula,Egretta thula,Egretta thula,NCBI,0.988
+"Ardeidae ,Ardea herodias,Egretta thula,Ardea alba",Ardea alba,Ardea alba,Ardea alba,NCBI,0.988
+Eidolon helvum,Eidolon helvum,Eidolon helvum,Eidolon helvum,NCBI,0.988
+Elanus caeruleus,Elanus caeruleus,Elanus caeruleus,Elanus caeruleus,NCBI,0.988
+Falco eleonorae,Falco eleonorae,Falco eleonorae,Falco eleonorae,NCBI,0.988
+Indotestudo elongata,Indotestudo elongata,Indotestudo elongata,Indotestudo elongata,NCBI,0.988
+Pelecanus crispus,Pelecanus crispus,Pelecanus crispus,Pelecanus crispus,NCBI,0.988
+Gyps himalayensis,Gyps himalayensis,Gyps himalayensis,Gyps himalayensis,NCBI,0.988
+Pelecanus onocrotalus,Pelecanus onocrotalus,Pelecanus onocrotalus,Pelecanus onocrotalus,NCBI,0.988
+Otis tarda,Otis tarda,Otis tarda,Otis tarda,NCBI,0.988
+"Gyps ,Gyps coprotheres",Gyps ,Gyps,Gyps,Catalogue of Life,0.75
+"Gyps ,Gyps coprotheres",Gyps coprotheres,Gyps coprotheres,Gyps coprotheres,NCBI,0.988
+Fregata magnificens,Fregata magnificens,Fregata magnificens,Fregata magnificens,NCBI,0.988
+Equus caballus,Equus caballus,Equus caballus,Equus caballus,NCBI,0.988
+Botaurus stellaris,Botaurus stellaris,Botaurus stellaris,Botaurus stellaris,NCBI,0.988
+Fulica atra,Fulica atra,Fulica atra,Fulica atra,NCBI,0.988
+Lynx lynx,Lynx lynx,Lynx lynx,Lynx lynx,NCBI,0.988
+Platalea leucorodia,Platalea leucorodia,Platalea leucorodia,Platalea leucorodia,NCBI,0.988
+Scolopax rusticola,Scolopax rusticola,Scolopax rusticola,Scolopax rusticola,NCBI,0.988
+Capreolus capreolus,Capreolus capreolus,Capreolus capreolus,Capreolus capreolus,NCBI,0.988
+Caprimulgus europaeus,Caprimulgus europaeus,Caprimulgus europaeus,Caprimulgus europaeus,NCBI,0.988
+Coracias garrulus,Coracias garrulus,Coracias garrulus,Coracias garrulus,NCBI,0.988
+Streptopelia turtur,Streptopelia turtur,Streptopelia turtur,Streptopelia turtur,NCBI,0.988
+Amphibia,Amphibia,Amphibia,Amphibia,Catalogue of Life,0.75
+"Gyps coprotheres,Necrosyrtes monachus",Gyps coprotheres,Gyps coprotheres,Gyps coprotheres,NCBI,0.988
+"Gyps coprotheres,Necrosyrtes monachus",Necrosyrtes monachus,Necrosyrtes monachus,Necrosyrtes monachus,NCBI,0.988
+"Gyps coprotheres,Gyps africanus",Gyps coprotheres,Gyps coprotheres,Gyps coprotheres,NCBI,0.988
+"Gyps coprotheres,Gyps africanus",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+"Falco vespertinus,Falco amurensis",Falco vespertinus,Falco vespertinus,Falco vespertinus,NCBI,0.988
+"Falco vespertinus,Falco amurensis",Falco amurensis,Falco amurensis,Falco amurensis,NCBI,0.988
+"Vireo olivaceus,Hylocichla mustelina,Catharus ustulatus",Vireo olivaceus,Vireo olivaceus,Vireo olivaceus,NCBI,0.988
+"Vireo olivaceus,Hylocichla mustelina,Catharus ustulatus",Hylocichla mustelina,Hylocichla mustelina,Hylocichla mustelina,NCBI,0.988
+"Vireo olivaceus,Hylocichla mustelina,Catharus ustulatus",Catharus ustulatus,Catharus ustulatus,Catharus ustulatus,NCBI,0.988
+"Circus cyaneus,Falco peregrinus,Falco columbarius",Circus cyaneus,Circus cyaneus,Circus cyaneus,NCBI,0.988
+"Circus cyaneus,Falco peregrinus,Falco columbarius",Falco peregrinus,Falco peregrinus,Falco peregrinus,NCBI,0.988
+"Circus cyaneus,Falco peregrinus,Falco columbarius",Falco columbarius,Falco columbarius,Falco columbarius,NCBI,0.988
+"Dumetella carolinensis,Protonotaria citrea,Vireo olivaceus,Catharus ustulatus",Dumetella carolinensis,Dumetella carolinensis,Dumetella carolinensis,NCBI,0.988
+"Dumetella carolinensis,Protonotaria citrea,Vireo olivaceus,Catharus ustulatus",Protonotaria citrea,Protonotaria citrea,Protonotaria citrea,NCBI,0.988
+"Dumetella carolinensis,Protonotaria citrea,Vireo olivaceus,Catharus ustulatus",Vireo olivaceus,Vireo olivaceus,Vireo olivaceus,NCBI,0.988
+"Dumetella carolinensis,Protonotaria citrea,Vireo olivaceus,Catharus ustulatus",Catharus ustulatus,Catharus ustulatus,Catharus ustulatus,NCBI,0.988
+Pteropodidae,Pteropodidae,Pteropodidae,Pteropodidae,Catalogue of Life,0.75
+Acerodon jubatus,Acerodon jubatus,Acerodon jubatus,Acerodon jubatus,NCBI,0.988
+Pteropus lylei,Pteropus lylei,Pteropus lylei,Pteropus lylei,NCBI,0.988
+"Tadorna ferruginea,Anas querquedula,Anas clypeata",Tadorna ferruginea,Tadorna ferruginea,Tadorna ferruginea,NCBI,0.988
+"Tadorna ferruginea,Anas querquedula,Anas clypeata",Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+"Tadorna ferruginea,Anas querquedula,Anas clypeata",Anas clypeata,Anas clypeata,Anas clypeata,NCBI,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas querquedula,Anas clypeata",Tadorna ferruginea,Tadorna ferruginea,Tadorna ferruginea,NCBI,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas querquedula,Anas clypeata",Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas querquedula,Anas clypeata",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas querquedula,Anas clypeata",Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas querquedula,Anas clypeata",Anas clypeata,Anas clypeata,Anas clypeata,NCBI,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas querquedula",Tadorna ferruginea,Tadorna ferruginea,Tadorna ferruginea,NCBI,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas querquedula",Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas querquedula",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas querquedula",Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+"Anas platyrhynchos,Anas acuta,Anas falcata,Anas crecca,Anas formosa,Anas penelope,Anas querquedula,Anas poecilorhyncha",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Anas acuta,Anas falcata,Anas crecca,Anas formosa,Anas penelope,Anas querquedula,Anas poecilorhyncha",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anas platyrhynchos,Anas acuta,Anas falcata,Anas crecca,Anas formosa,Anas penelope,Anas querquedula,Anas poecilorhyncha",Anas falcata,Anas falcata,Anas falcata,Freebase,0.988
+"Anas platyrhynchos,Anas acuta,Anas falcata,Anas crecca,Anas formosa,Anas penelope,Anas querquedula,Anas poecilorhyncha",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Anas platyrhynchos,Anas acuta,Anas falcata,Anas crecca,Anas formosa,Anas penelope,Anas querquedula,Anas poecilorhyncha",Anas formosa,Anas formosa,Anas formosa,Freebase,0.988
+"Anas platyrhynchos,Anas acuta,Anas falcata,Anas crecca,Anas formosa,Anas penelope,Anas querquedula,Anas poecilorhyncha",Anas penelope,Anas penelope,Anas penelope,Freebase,0.988
+"Anas platyrhynchos,Anas acuta,Anas falcata,Anas crecca,Anas formosa,Anas penelope,Anas querquedula,Anas poecilorhyncha",Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+"Anas platyrhynchos,Anas acuta,Anas falcata,Anas crecca,Anas formosa,Anas penelope,Anas querquedula,Anas poecilorhyncha",Anas poecilorhyncha,Anas poecilorhyncha,Anas poecilorhyncha,NCBI,0.988
+"Anser indicus,Tadorna ferruginea,Anas acuta,Anas crecca,Larus brunnicephalus,Larus ichthyaetus",Anser indicus,Anser indicus,Anser indicus,NCBI,0.988
+"Anser indicus,Tadorna ferruginea,Anas acuta,Anas crecca,Larus brunnicephalus,Larus ichthyaetus",Tadorna ferruginea,Tadorna ferruginea,Tadorna ferruginea,NCBI,0.988
+"Anser indicus,Tadorna ferruginea,Anas acuta,Anas crecca,Larus brunnicephalus,Larus ichthyaetus",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anser indicus,Tadorna ferruginea,Anas acuta,Anas crecca,Larus brunnicephalus,Larus ichthyaetus",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Anser indicus,Tadorna ferruginea,Anas acuta,Anas crecca,Larus brunnicephalus,Larus ichthyaetus",Larus brunnicephalus,Larus brunnicephalus,Larus brunnicephalus,NCBI,0.988
+"Anser indicus,Tadorna ferruginea,Anas acuta,Anas crecca,Larus brunnicephalus,Larus ichthyaetus",Larus ichthyaetus,Larus ichthyaetus,Larus ichthyaetus,birds_of_tanzania,0.988
+"Anser indicus,Tadorna ferruginea,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anser indicus,Anser indicus,Anser indicus,NCBI,0.988
+"Anser indicus,Tadorna ferruginea,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Tadorna ferruginea,Tadorna ferruginea,Tadorna ferruginea,NCBI,0.988
+"Anser indicus,Tadorna ferruginea,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+"Anser indicus,Tadorna ferruginea,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anser indicus,Tadorna ferruginea,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Anser indicus,Tadorna ferruginea,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas penelope,Anas penelope,Anas penelope,Freebase,0.988
+"Anser indicus,Tadorna ferruginea,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+"Anser indicus,Tadorna ferruginea,Anas strepera,Anas acuta,Anas crecca,Anas penelope,Anas querquedula,Anas clypeata",Anas clypeata,Anas clypeata,Anas clypeata,NCBI,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas penelope,Anas querquedula",Tadorna ferruginea,Tadorna ferruginea,Tadorna ferruginea,NCBI,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas penelope,Anas querquedula",Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas penelope,Anas querquedula",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas penelope,Anas querquedula",Anas penelope,Anas penelope,Anas penelope,Freebase,0.988
+"Tadorna ferruginea,Anas strepera,Anas acuta,Anas penelope,Anas querquedula",Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+"Phoenicopterus ,Anser anser,Anser indicus,Tadorna ferruginea",Phoenicopterus ,Phoenicopterus,Phoenicopterus,Catalogue of Life,0.75
+"Phoenicopterus ,Anser anser,Anser indicus,Tadorna ferruginea",Anser anser,Anser anser,Anser anser,NCBI,0.988
+"Phoenicopterus ,Anser anser,Anser indicus,Tadorna ferruginea",Anser indicus,Anser indicus,Anser indicus,NCBI,0.988
+"Phoenicopterus ,Anser anser,Anser indicus,Tadorna ferruginea",Tadorna ferruginea,Tadorna ferruginea,Tadorna ferruginea,NCBI,0.988
+"Tadorna ferruginea,Anas platyrhynchos,Anas strepera,Anas crecca,Anas clypeata,Netta rufina",Tadorna ferruginea,Tadorna ferruginea,Tadorna ferruginea,NCBI,0.988
+"Tadorna ferruginea,Anas platyrhynchos,Anas strepera,Anas crecca,Anas clypeata,Netta rufina",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Tadorna ferruginea,Anas platyrhynchos,Anas strepera,Anas crecca,Anas clypeata,Netta rufina",Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+"Tadorna ferruginea,Anas platyrhynchos,Anas strepera,Anas crecca,Anas clypeata,Netta rufina",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Tadorna ferruginea,Anas platyrhynchos,Anas strepera,Anas crecca,Anas clypeata,Netta rufina",Anas clypeata,Anas clypeata,Anas clypeata,NCBI,0.988
+"Tadorna ferruginea,Anas platyrhynchos,Anas strepera,Anas crecca,Anas clypeata,Netta rufina",Netta rufina,Netta rufina,Netta rufina,NCBI,0.988
+"Dendrocygna viduata,Sarkidiornis melanotos",Dendrocygna viduata,Dendrocygna viduata,Dendrocygna viduata,NCBI,0.988
+"Dendrocygna viduata,Sarkidiornis melanotos",Sarkidiornis melanotos,Sarkidiornis melanotos,Sarkidiornis melanotos,NCBI,0.988
+"Dendrocygna bicolor,Dendrocygna viduata,Anas querquedula,Sarkidiornis melanotos",Dendrocygna bicolor,Dendrocygna bicolor,Dendrocygna bicolor,NCBI,0.988
+"Dendrocygna bicolor,Dendrocygna viduata,Anas querquedula,Sarkidiornis melanotos",Dendrocygna viduata,Dendrocygna viduata,Dendrocygna viduata,NCBI,0.988
+"Dendrocygna bicolor,Dendrocygna viduata,Anas querquedula,Sarkidiornis melanotos",Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+"Dendrocygna bicolor,Dendrocygna viduata,Anas querquedula,Sarkidiornis melanotos",Sarkidiornis melanotos,Sarkidiornis melanotos,Sarkidiornis melanotos,NCBI,0.988
+Anser cygnoides,Anser cygnoides,Anser cygnoides,Anser cygnoides,NCBI,0.988
+"Cygnus cygnus,Anser cygnoides",Cygnus cygnus,Cygnus cygnus,Cygnus cygnus,NCBI,0.988
+"Cygnus cygnus,Anser cygnoides",Anser cygnoides,Anser cygnoides,Anser cygnoides,NCBI,0.988
+Anser indicus,Anser indicus,Anser indicus,Anser indicus,NCBI,0.988
+"Dendrocygna viduata,Anas querquedula,Plectropterus gambensis,Sarkidiornis melanotos",Dendrocygna viduata,Dendrocygna viduata,Dendrocygna viduata,NCBI,0.988
+"Dendrocygna viduata,Anas querquedula,Plectropterus gambensis,Sarkidiornis melanotos",Anas querquedula,Anas querquedula,Anas querquedula,NCBI,0.988
+"Dendrocygna viduata,Anas querquedula,Plectropterus gambensis,Sarkidiornis melanotos",Plectropterus gambensis,Plectropterus gambensis,Plectropterus gambensis,NCBI,0.988
+"Dendrocygna viduata,Anas querquedula,Plectropterus gambensis,Sarkidiornis melanotos",Sarkidiornis melanotos,Sarkidiornis melanotos,Sarkidiornis melanotos,NCBI,0.988
+"Anas platyrhynchos,Anas acuta,Anas crecca,Anas penelope,Anas clypeata,Aythya ferina",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Anas acuta,Anas crecca,Anas penelope,Anas clypeata,Aythya ferina",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anas platyrhynchos,Anas acuta,Anas crecca,Anas penelope,Anas clypeata,Aythya ferina",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Anas platyrhynchos,Anas acuta,Anas crecca,Anas penelope,Anas clypeata,Aythya ferina",Anas penelope,Anas penelope,Anas penelope,Freebase,0.988
+"Anas platyrhynchos,Anas acuta,Anas crecca,Anas penelope,Anas clypeata,Aythya ferina",Anas clypeata,Anas clypeata,Anas clypeata,NCBI,0.988
+"Anas platyrhynchos,Anas acuta,Anas crecca,Anas penelope,Anas clypeata,Aythya ferina",Aythya ferina,Aythya ferina,Aythya ferina,NCBI,0.988
+Felis silvestris,Felis silvestris,Felis silvestris,Felis silvestris,NCBI,0.988
+Dama mesopotamica,Dama mesopotamica,Dama mesopotamica,Dama mesopotamica,NCBI,0.988
+Aythya nyroca,Aythya nyroca,Aythya nyroca,Aythya nyroca,NCBI,0.988
+Buteo regalis,Buteo regalis,Buteo regalis,Buteo regalis,NCBI,0.988
+"Nasua narica,Pecari tajacu,Ateles geoffroyi,Cebus capucinus,Potos flavus",Nasua narica,Nasua narica,Nasua narica,NCBI,0.988
+"Nasua narica,Pecari tajacu,Ateles geoffroyi,Cebus capucinus,Potos flavus",Pecari tajacu,Pecari tajacu,Pecari tajacu,NCBI,0.988
+"Nasua narica,Pecari tajacu,Ateles geoffroyi,Cebus capucinus,Potos flavus",Ateles geoffroyi,Ateles geoffroyi,Ateles geoffroyi,NCBI,0.988
+"Nasua narica,Pecari tajacu,Ateles geoffroyi,Cebus capucinus,Potos flavus",Cebus capucinus,Cebus capucinus,Cebus capucinus,NCBI,0.988
+"Nasua narica,Pecari tajacu,Ateles geoffroyi,Cebus capucinus,Potos flavus",Potos flavus,Potos flavus,Potos flavus,NCBI,0.988
+Balaenoptera physalus,Balaenoptera physalus,Balaenoptera physalus,Balaenoptera physalus,NCBI,0.988
+Psiloscops flammeolus,Psiloscops flammeolus,Psiloscops flammeolus,Psiloscops flammeolus,Encyclopedia of Life,0.988
+Tadarida brasiliensis,Tadarida brasiliensis,Tadarida brasiliensis,Tadarida brasiliensis,NCBI,0.988
+"Geronticus eremita,Anas platyrhynchos",Geronticus eremita,Geronticus eremita,Geronticus eremita,NCBI,0.988
+"Geronticus eremita,Anas platyrhynchos",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Branta ,Branta bernicla",Branta ,Branta,Branta,Catalogue of Life,0.75
+"Branta ,Branta bernicla",Branta bernicla,Branta bernicla,Branta bernicla,NCBI,0.988
+Trichechus manatus,Trichechus manatus,Trichechus manatus,Trichechus manatus,NCBI,0.988
+Phaethon lepturus,Phaethon lepturus,Phaethon lepturus,Phaethon lepturus,NCBI,0.988
+Calonectris,Calonectris,Calonectris,Calonectris,Catalogue of Life,0.75
+"Loxodonta africana,Loxodonta cyclotis",Loxodonta africana,Loxodonta africana,Loxodonta africana,NCBI,0.988
+"Loxodonta africana,Loxodonta cyclotis",Loxodonta cyclotis,Loxodonta cyclotis,Loxodonta cyclotis,NCBI,0.988
+Oceanodroma furcata,Oceanodroma furcata,Oceanodroma furcata,Oceanodroma furcata,Freebase,0.988
+Vulpes vulpes,Vulpes vulpes,Vulpes vulpes,Vulpes vulpes,NCBI,0.988
+Sciurus niger,Sciurus niger,Sciurus niger,Sciurus niger,NCBI,0.988
+Spermophilus franklinii,Spermophilus franklinii,Spermophilus franklinii,Spermophilus franklinii,AnAge,0.988
+Puffinus puffinus,Puffinus puffinus,Puffinus puffinus,Puffinus puffinus,NCBI,0.988
+Canis,Canis,Canis,Canis,Catalogue of Life,0.75
+Fregata minor,Fregata minor,Fregata minor,Fregata minor,NCBI,0.988
+Sarcophilus harrisii,Sarcophilus harrisii,Sarcophilus harrisii,Sarcophilus harrisii,NCBI,0.988
+"Fregata ,Fregata magnificens",Fregata ,Fregata,Fregata,Catalogue of Life,0.75
+"Fregata ,Fregata magnificens",Fregata magnificens,Fregata magnificens,Fregata magnificens,NCBI,0.988
+Trachops cirrhosus,Trachops cirrhosus,Trachops cirrhosus,Trachops cirrhosus,NCBI,0.988
+"Morus bassanus,Rissa tridactyla",Morus bassanus,Morus bassanus,Morus bassanus,NCBI,0.988
+"Morus bassanus,Rissa tridactyla",Rissa tridactyla,Rissa tridactyla,Rissa tridactyla,NCBI,0.988
+Larus canus,Larus canus,Larus canus,Larus canus,NCBI,0.988
+Larus marinus,Larus marinus,Larus marinus,Larus marinus,NCBI,0.988
+"Branta bernicla,Branta leucopsis",Branta bernicla,Branta bernicla,Branta bernicla,NCBI,0.988
+"Branta bernicla,Branta leucopsis",Branta leucopsis,Branta leucopsis,Branta leucopsis,NCBI,0.988
+"Larus argentatus,Larus canus",Larus argentatus,Larus argentatus,Larus argentatus,NCBI,0.988
+"Larus argentatus,Larus canus",Larus canus,Larus canus,Larus canus,NCBI,0.988
+"Haematopus ostralegus,Recurvirostra avosetta",Haematopus ostralegus,Haematopus ostralegus,Haematopus ostralegus,NCBI,0.988
+"Haematopus ostralegus,Recurvirostra avosetta",Recurvirostra avosetta,Recurvirostra avosetta,Recurvirostra avosetta,NCBI,0.988
+Anas strepera,Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+Phoebastria irrorata,Phoebastria irrorata,Phoebastria irrorata,Phoebastria irrorata,NCBI,0.988
+Arctocephalus galapagoensis,Arctocephalus galapagoensis,Arctocephalus galapagoensis,Arctocephalus galapagoensis,NCBI,0.988
+Zalophus wollebaeki,Zalophus wollebaeki,Zalophus wollebaeki,Zalophus wollebaeki,NCBI,0.988
+"Chelonoidis ,Chelonoidis hoodensis,Chelonoidis porteri,Chelonoidis donfaustoi",Chelonoidis ,Chelonoidis,Chelonoidis,Catalogue of Life,0.75
+"Chelonoidis ,Chelonoidis hoodensis,Chelonoidis porteri,Chelonoidis donfaustoi",Chelonoidis hoodensis,Chelonoidis hoodensis,Chelonoidis hoodensis,NCBI,0.988
+"Chelonoidis ,Chelonoidis hoodensis,Chelonoidis porteri,Chelonoidis donfaustoi",Chelonoidis porteri,Chelonoidis porteri,Chelonoidis porteri,NCBI,0.988
+"Chelonoidis ,Chelonoidis hoodensis,Chelonoidis porteri,Chelonoidis donfaustoi",Chelonoidis donfaustoi,Chelonoidis donfaustoi,Chelonoidis donfaustoi,NCBI,0.988
+Morus serrator,Morus serrator,Morus serrator,Morus serrator,NCBI,0.988
+"Anser albifrons,Anser fabalis",Anser albifrons,Anser albifrons,Anser albifrons,NCBI,0.988
+"Anser albifrons,Anser fabalis",Anser fabalis,Anser fabalis,Anser fabalis,NCBI,0.988
+"Columba palumbus,Alauda arvensis,Sturnus vulgaris,Corvus corone,Galerida cristata",Columba palumbus,Columba palumbus,Columba palumbus,NCBI,0.988
+"Columba palumbus,Alauda arvensis,Sturnus vulgaris,Corvus corone,Galerida cristata",Alauda arvensis,Alauda arvensis,Alauda arvensis,NCBI,0.988
+"Columba palumbus,Alauda arvensis,Sturnus vulgaris,Corvus corone,Galerida cristata",Sturnus vulgaris,Sturnus vulgaris,Sturnus vulgaris,NCBI,0.988
+"Columba palumbus,Alauda arvensis,Sturnus vulgaris,Corvus corone,Galerida cristata",Corvus corone,Corvus corone,Corvus corone,NCBI,0.988
+"Columba palumbus,Alauda arvensis,Sturnus vulgaris,Corvus corone,Galerida cristata",Galerida cristata,Galerida cristata,Galerida cristata,NCBI,0.988
+"Genetta ,Genetta genetta",Genetta ,Genetta,Genetta,Catalogue of Life,0.75
+"Genetta ,Genetta genetta",Genetta genetta,Genetta genetta,Genetta genetta,NCBI,0.988
+Genetta genetta,Genetta genetta,Genetta genetta,Genetta genetta,NCBI,0.988
+Pygoscelis papua,Pygoscelis papua,Pygoscelis papua,Pygoscelis papua,NCBI,0.988
+"Pygoscelis papua,Pygoscelis antarcticus",Pygoscelis papua,Pygoscelis papua,Pygoscelis papua,NCBI,0.988
+"Pygoscelis papua,Pygoscelis antarcticus",Pygoscelis antarcticus,Pygoscelis antarcticus,Pygoscelis antarcticus,NCBI,0.988
+Chondestes grammacus,Chondestes grammacus,Chondestes grammacus,Chondestes grammacus,NCBI,0.988
+Priodontes maximus,Priodontes maximus,Priodontes maximus,Priodontes maximus,NCBI,0.988
+Ardeotis nigriceps,Ardeotis nigriceps,Ardeotis nigriceps,Ardeotis nigriceps,NCBI,0.988
+Larus hyperboreus,Larus hyperboreus,Larus hyperboreus,Larus hyperboreus,NCBI,0.988
+Larus glaucescens,Larus glaucescens,Larus glaucescens,Larus glaucescens,NCBI,0.988
+"Globicephala ,Globicephala macrorhynchus",Globicephala ,Globicephala,Globicephala,Catalogue of Life,0.75
+"Globicephala ,Globicephala macrorhynchus",Globicephala macrorhynchus,Globicephala macrorhynchus,Globicephala macrorhynchus,NCBI,0.988
+Ovis aries,Ovis aries,Ovis aries,Ovis aries,NCBI,0.988
+Rhinopithecus roxellana,Rhinopithecus roxellana,Rhinopithecus roxellana,Rhinopithecus roxellana,NCBI,0.988
+Gorilla beringei,Gorilla beringei,Gorilla beringei,Gorilla beringei,NCBI,0.988
+Brachylagus idahoensis,Brachylagus idahoensis,Brachylagus idahoensis,Brachylagus idahoensis,NCBI,0.988
+Spaniblennius,Spaniblennius,Spaniblennius,Spaniblennius,Catalogue of Life,0.75
+Rhea americana,Rhea americana,Rhea americana,Rhea americana,NCBI,0.988
+Milvus milvus,Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+"Pandion ,Pandion haliaetus",Pandion ,Pandion,Pandion,Catalogue of Life,0.75
+"Pandion ,Pandion haliaetus",Pandion haliaetus,Pandion haliaetus,Pandion haliaetus,NCBI,0.988
+"Buteo ,Buteo jamaicensis",Buteo ,Buteo,Buteo,Catalogue of Life,0.75
+"Buteo ,Buteo jamaicensis",Buteo jamaicensis,Buteo jamaicensis,Buteo jamaicensis,NCBI,0.988
+Buteo lagopus,Buteo lagopus,Buteo lagopus,Buteo lagopus,NCBI,0.988
+Anser anser,Anser anser,Anser anser,Anser anser,NCBI,0.988
+Phalacrocorax carbo,Phalacrocorax carbo,Phalacrocorax carbo,Phalacrocorax carbo,NCBI,0.988
+Phoenicopterus roseus,Phoenicopterus roseus,Phoenicopterus roseus,Phoenicopterus roseus,NCBI,0.988
+Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,Rhinolophus ferrumequinum,NCBI,0.988
+Centrocercus urophasianus,Centrocercus urophasianus,Centrocercus urophasianus,Centrocercus urophasianus,NCBI,0.988
+"Centrocercus urophasianus,Centrocercus minimus",Centrocercus urophasianus,Centrocercus urophasianus,Centrocercus urophasianus,NCBI,0.988
+"Centrocercus urophasianus,Centrocercus minimus",Centrocercus minimus,Centrocercus minimus,Centrocercus minimus,NCBI,0.988
+Phyllostomus hastatus,Phyllostomus hastatus,Phyllostomus hastatus,Phyllostomus hastatus,NCBI,0.988
+Aquila clanga,Aquila clanga,Aquila clanga,Aquila clanga,Freebase,0.988
+"Aquila clanga,Aquila nipalensis",Aquila clanga,Aquila clanga,Aquila clanga,Freebase,0.988
+"Aquila clanga,Aquila nipalensis",Aquila nipalensis,Aquila nipalensis,Aquila nipalensis,NCBI,0.988
+Calidris tenuirostris,Calidris tenuirostris,Calidris tenuirostris,Calidris tenuirostris,NCBI,0.988
+Gallinago media,Gallinago media,Gallinago media,Gallinago media,NCBI,0.988
+"Aquila ,Aquila clanga",Aquila ,Aquila,Aquila,Catalogue of Life,0.75
+"Aquila ,Aquila clanga",Aquila clanga,Aquila clanga,Aquila clanga,Freebase,0.988
+Equidae,Equidae,Equidae,Equidae,Catalogue of Life,0.75
+Thalassarche chrysostoma,Thalassarche chrysostoma,Thalassarche chrysostoma,Thalassarche chrysostoma,NCBI,0.988
+Ardea cinerea,Ardea cinerea,Ardea cinerea,Ardea cinerea,NCBI,0.988
+Halichoerus grypus,Halichoerus grypus,Halichoerus grypus,Halichoerus grypus,NCBI,0.988
+"Neophron percnopterus,Gyps fulvus",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+"Neophron percnopterus,Gyps fulvus",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Aquila rapax,Haliaeetus leucocephalus,Haliaeetus vocifer,Gyps fulvus,Gyps himalayensis",Aquila rapax,Aquila rapax,Aquila rapax,NCBI,0.988
+"Aquila rapax,Haliaeetus leucocephalus,Haliaeetus vocifer,Gyps fulvus,Gyps himalayensis",Haliaeetus leucocephalus,Haliaeetus leucocephalus,Haliaeetus leucocephalus,NCBI,0.988
+"Aquila rapax,Haliaeetus leucocephalus,Haliaeetus vocifer,Gyps fulvus,Gyps himalayensis",Haliaeetus vocifer,Haliaeetus vocifer,Haliaeetus vocifer,NCBI,0.988
+"Aquila rapax,Haliaeetus leucocephalus,Haliaeetus vocifer,Gyps fulvus,Gyps himalayensis",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Aquila rapax,Haliaeetus leucocephalus,Haliaeetus vocifer,Gyps fulvus,Gyps himalayensis",Gyps himalayensis,Gyps himalayensis,Gyps himalayensis,NCBI,0.988
+Grus canadensis,Grus canadensis,Grus canadensis,Grus canadensis,Freebase,0.988
+Gruidae,Gruidae,Gruidae,Gruidae,Catalogue of Life,0.75
+Tetrax tetrax,Tetrax tetrax,Tetrax tetrax,Tetrax tetrax,NCBI,0.988
+"Centrocercus ,Centrocercus urophasianus",Centrocercus ,Centrocercus,Centrocercus,Catalogue of Life,0.75
+"Centrocercus ,Centrocercus urophasianus",Centrocercus urophasianus,Centrocercus urophasianus,Centrocercus urophasianus,NCBI,0.988
+"Laridae ,Sterna ",Laridae ,Laridae,Laridae,Catalogue of Life,0.75
+"Laridae ,Sterna ",Sterna ,Sterna,Sterna,Catalogue of Life,0.75
+"Larus ,Larus hyperboreus,Larus glaucescens,Larus smithsonianus",Larus ,Larus,Larus,Catalogue of Life,0.75
+"Larus ,Larus hyperboreus,Larus glaucescens,Larus smithsonianus",Larus hyperboreus,Larus hyperboreus,Larus hyperboreus,NCBI,0.988
+"Larus ,Larus hyperboreus,Larus glaucescens,Larus smithsonianus",Larus glaucescens,Larus glaucescens,Larus glaucescens,NCBI,0.988
+"Larus ,Larus hyperboreus,Larus glaucescens,Larus smithsonianus",Larus smithsonianus,Larus smithsonianus,Larus smithsonianus,NCBI,0.988
+"Pongo ,Pongo pygmaeus",Pongo ,Pongo,Pongo,Catalogue of Life,0.75
+"Pongo ,Pongo pygmaeus",Pongo pygmaeus,Pongo pygmaeus,Pongo pygmaeus,NCBI,0.988
+Vanellus vanellus,Vanellus vanellus,Vanellus vanellus,Vanellus vanellus,NCBI,0.988
+"Gypaetus barbatus,Gyps fulvus",Gypaetus barbatus,Gypaetus barbatus,Gypaetus barbatus,NCBI,0.988
+"Gypaetus barbatus,Gyps fulvus",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Trigonoceps occipitalis,Gyps africanus,Necrosyrtes monachus",Trigonoceps occipitalis,Trigonoceps occipitalis,Trigonoceps occipitalis,NCBI,0.988
+"Trigonoceps occipitalis,Gyps africanus,Necrosyrtes monachus",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+"Trigonoceps occipitalis,Gyps africanus,Necrosyrtes monachus",Necrosyrtes monachus,Necrosyrtes monachus,Necrosyrtes monachus,NCBI,0.988
+"Gyps ,Gyps fulvus",Gyps ,Gyps,Gyps,Catalogue of Life,0.75
+"Gyps ,Gyps fulvus",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Aquila heliaca,Gyps ,Gyps fulvus,Aegypius monachus",Aquila heliaca,Aquila heliaca,Aquila heliaca,NCBI,0.988
+"Aquila heliaca,Gyps ,Gyps fulvus,Aegypius monachus",Gyps ,Gyps,Gyps,Catalogue of Life,0.75
+"Aquila heliaca,Gyps ,Gyps fulvus,Aegypius monachus",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Aquila heliaca,Gyps ,Gyps fulvus,Aegypius monachus",Aegypius monachus,Aegypius monachus,Aegypius monachus,NCBI,0.988
+"Gyps fulvus,Gyps himalayensis",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Gyps fulvus,Gyps himalayensis",Gyps himalayensis,Gyps himalayensis,Gyps himalayensis,NCBI,0.988
+Falco rusticolus,Falco rusticolus,Falco rusticolus,Falco rusticolus,NCBI,0.988
+Halcyon smyrnensis,Halcyon smyrnensis,Halcyon smyrnensis,Halcyon smyrnensis,NCBI,0.988
+Haliaeetus,Haliaeetus,Haliaeetus,Haliaeetus,Catalogue of Life,0.75
+"Buteo jamaicensis,Aquila chrysaetos",Buteo jamaicensis,Buteo jamaicensis,Buteo jamaicensis,NCBI,0.988
+"Buteo jamaicensis,Aquila chrysaetos",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Accipiter gentilis,Buteo jamaicensis,Aquila chrysaetos,Circaetus gallicus",Accipiter gentilis,Accipiter gentilis,Accipiter gentilis,NCBI,0.988
+"Accipiter gentilis,Buteo jamaicensis,Aquila chrysaetos,Circaetus gallicus",Buteo jamaicensis,Buteo jamaicensis,Buteo jamaicensis,NCBI,0.988
+"Accipiter gentilis,Buteo jamaicensis,Aquila chrysaetos,Circaetus gallicus",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Accipiter gentilis,Buteo jamaicensis,Aquila chrysaetos,Circaetus gallicus",Circaetus gallicus,Circaetus gallicus,Circaetus gallicus,NCBI,0.988
+Gadus ogac,Gadus ogac,Gadus ogac,Gadus ogac,NCBI,0.988
+Carduelis cannabina,Carduelis cannabina,Carduelis cannabina,Carduelis cannabina,Freebase,0.988
+Circus cyaneus,Circus cyaneus,Circus cyaneus,Circus cyaneus,NCBI,0.988
+"Circus cyaneus,Circus pygargus",Circus cyaneus,Circus cyaneus,Circus cyaneus,NCBI,0.988
+"Circus cyaneus,Circus pygargus",Circus pygargus,Circus pygargus,Circus pygargus,NCBI,0.988
+"Ardea cinerea,Ardea alba",Ardea cinerea,Ardea cinerea,Ardea cinerea,NCBI,0.988
+"Ardea cinerea,Ardea alba",Ardea alba,Ardea alba,Ardea alba,NCBI,0.988
+Larus vegae,Larus vegae,Larus vegae,Larus vegae,NCBI,0.988
+"Pernis apivorus,Falco subbuteo",Pernis apivorus,Pernis apivorus,Pernis apivorus,NCBI,0.988
+"Pernis apivorus,Falco subbuteo",Falco subbuteo,Falco subbuteo,Falco subbuteo,NCBI,0.988
+Pongo pygmaeus,Pongo pygmaeus,Pongo pygmaeus,Pongo pygmaeus,NCBI,0.988
+Pernis apivorus,Pernis apivorus,Pernis apivorus,Pernis apivorus,NCBI,0.988
+Podiceps gallardoi,Podiceps gallardoi,Podiceps gallardoi,Podiceps gallardoi,NCBI,0.988
+Necrosyrtes monachus,Necrosyrtes monachus,Necrosyrtes monachus,Necrosyrtes monachus,NCBI,0.988
+"Buceros bicornis,Rhyticeros undulatus",Buceros bicornis,Buceros bicornis,Buceros bicornis,NCBI,0.988
+"Buceros bicornis,Rhyticeros undulatus",Rhyticeros undulatus,Rhyticeros undulatus,Rhyticeros undulatus,NCBI,0.988
+Chlamydotis macqueenii,Chlamydotis macqueenii,Chlamydotis macqueenii,Chlamydotis macqueenii,NCBI,0.988
+Passer domesticus,Passer domesticus,Passer domesticus,Passer domesticus,NCBI,0.988
+Limosa haemastica,Limosa haemastica,Limosa haemastica,Limosa haemastica,NCBI,0.988
+"Grus ,Grus grus",Grus ,Grus,Grus,Catalogue of Life,0.75
+"Grus ,Grus grus",Grus grus,Grus grus,Grus grus,NCBI,0.988
+Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+Rousettus egyptiacus,Rousettus egyptiacus,Rousettus egyptiacus,Rousettus egyptiacus,Encyclopedia of Life,0.988
+Merops apiaster,Merops apiaster,Merops apiaster,Merops apiaster,NCBI,0.988
+"Gyps africanus,Torgos tracheliotus",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+"Gyps africanus,Torgos tracheliotus",Torgos tracheliotus,Torgos tracheliotus,Torgos tracheliotus,Encyclopedia of Life,0.988
+"Corvus corax,Corvus rhipidurus,Corvus ruficollis",Corvus corax,Corvus corax,Corvus corax,NCBI,0.988
+"Corvus corax,Corvus rhipidurus,Corvus ruficollis",Corvus rhipidurus,Corvus rhipidurus,Corvus rhipidurus,NCBI,0.988
+"Corvus corax,Corvus rhipidurus,Corvus ruficollis",Corvus ruficollis,Corvus ruficollis,Corvus ruficollis,NCBI,0.988
+"Pelecanus ,Pelecanus onocrotalus",Pelecanus ,Pelecanus,Pelecanus,Catalogue of Life,0.75
+"Pelecanus ,Pelecanus onocrotalus",Pelecanus onocrotalus,Pelecanus onocrotalus,Pelecanus onocrotalus,NCBI,0.988
+Spheniscus humboldti,Spheniscus humboldti,Spheniscus humboldti,Spheniscus humboldti,NCBI,0.988
+Equus,Equus,Equus,Equus,Catalogue of Life,0.75
+"Hyaena hyaena,Capreolus capreolus",Hyaena hyaena,Hyaena hyaena,Hyaena hyaena,NCBI,0.988
+"Hyaena hyaena,Capreolus capreolus",Capreolus capreolus,Capreolus capreolus,Capreolus capreolus,NCBI,0.988
+Crocuta crocuta,Crocuta crocuta,Crocuta crocuta,Crocuta crocuta,NCBI,0.988
+Hypsignathus monstrosus,Hypsignathus monstrosus,Hypsignathus monstrosus,Hypsignathus monstrosus,NCBI,0.988
+Lynx pardinus,Lynx pardinus,Lynx pardinus,Lynx pardinus,NCBI,0.988
+"Lynx ,Lynx pardinus",Lynx ,Lynx,Lynx,Catalogue of Life,0.75
+"Lynx ,Lynx pardinus",Lynx pardinus,Lynx pardinus,Lynx pardinus,NCBI,0.988
+Ibis,Ibis,Ibis,Ibis,GBIF Backbone Taxonomy,0.75
+"Kobus ellipsiprymnus,Equus quagga,Giraffa camelopardalis,Alcelaphus buselaphus,Connochaetes gnou,Connochaetes taurinus,Taurotragus oryx,Tragelaphus strepsiceros,Oryx gazella",Kobus ellipsiprymnus,Kobus ellipsiprymnus,Kobus ellipsiprymnus,NCBI,0.988
+"Kobus ellipsiprymnus,Equus quagga,Giraffa camelopardalis,Alcelaphus buselaphus,Connochaetes gnou,Connochaetes taurinus,Taurotragus oryx,Tragelaphus strepsiceros,Oryx gazella",Equus quagga,Equus quagga,Equus quagga,Freebase,0.988
+"Kobus ellipsiprymnus,Equus quagga,Giraffa camelopardalis,Alcelaphus buselaphus,Connochaetes gnou,Connochaetes taurinus,Taurotragus oryx,Tragelaphus strepsiceros,Oryx gazella",Giraffa camelopardalis,Giraffa camelopardalis,Giraffa camelopardalis,NCBI,0.988
+"Kobus ellipsiprymnus,Equus quagga,Giraffa camelopardalis,Alcelaphus buselaphus,Connochaetes gnou,Connochaetes taurinus,Taurotragus oryx,Tragelaphus strepsiceros,Oryx gazella",Alcelaphus buselaphus,Alcelaphus buselaphus,Alcelaphus buselaphus,NCBI,0.988
+"Kobus ellipsiprymnus,Equus quagga,Giraffa camelopardalis,Alcelaphus buselaphus,Connochaetes gnou,Connochaetes taurinus,Taurotragus oryx,Tragelaphus strepsiceros,Oryx gazella",Connochaetes gnou,Connochaetes gnou,Connochaetes gnou,NCBI,0.988
+"Kobus ellipsiprymnus,Equus quagga,Giraffa camelopardalis,Alcelaphus buselaphus,Connochaetes gnou,Connochaetes taurinus,Taurotragus oryx,Tragelaphus strepsiceros,Oryx gazella",Connochaetes taurinus,Connochaetes taurinus,Connochaetes taurinus,NCBI,0.988
+"Kobus ellipsiprymnus,Equus quagga,Giraffa camelopardalis,Alcelaphus buselaphus,Connochaetes gnou,Connochaetes taurinus,Taurotragus oryx,Tragelaphus strepsiceros,Oryx gazella",Taurotragus oryx,Taurotragus oryx,Taurotragus oryx,Freebase,0.988
+"Kobus ellipsiprymnus,Equus quagga,Giraffa camelopardalis,Alcelaphus buselaphus,Connochaetes gnou,Connochaetes taurinus,Taurotragus oryx,Tragelaphus strepsiceros,Oryx gazella",Tragelaphus strepsiceros,Tragelaphus strepsiceros,Tragelaphus strepsiceros,NCBI,0.988
+"Kobus ellipsiprymnus,Equus quagga,Giraffa camelopardalis,Alcelaphus buselaphus,Connochaetes gnou,Connochaetes taurinus,Taurotragus oryx,Tragelaphus strepsiceros,Oryx gazella",Oryx gazella,Oryx gazella,Oryx gazella,NCBI,0.988
+"Phoca ,Phoca largha,Erignathus barbatus,Pusa hispida",Phoca ,Phoca,Phoca,Catalogue of Life,0.75
+"Phoca ,Phoca largha,Erignathus barbatus,Pusa hispida",Phoca largha,Phoca largha,Phoca largha,NCBI,0.988
+"Phoca ,Phoca largha,Erignathus barbatus,Pusa hispida",Erignathus barbatus,Erignathus barbatus,Erignathus barbatus,NCBI,0.988
+"Phoca ,Phoca largha,Erignathus barbatus,Pusa hispida",Pusa hispida,Pusa hispida,Pusa hispida,NCBI,0.988
+"Phoca largha,Erignathus barbatus,Pusa hispida",Phoca largha,Phoca largha,Phoca largha,NCBI,0.988
+"Phoca largha,Erignathus barbatus,Pusa hispida",Erignathus barbatus,Erignathus barbatus,Erignathus barbatus,NCBI,0.988
+"Phoca largha,Erignathus barbatus,Pusa hispida",Pusa hispida,Pusa hispida,Pusa hispida,NCBI,0.988
+Ichneumia albicauda,Ichneumia albicauda,Ichneumia albicauda,Ichneumia albicauda,NCBI,0.988
+Odocoileus virginianus,Odocoileus virginianus,Odocoileus virginianus,Odocoileus virginianus,NCBI,0.988
+Hystrix indica,Hystrix indica,Hystrix indica,Hystrix indica,NCBI,0.988
+"Felis chaus,Canis aureus,Vulpes bengalensis",Felis chaus,Felis chaus,Felis chaus,NCBI,0.988
+"Felis chaus,Canis aureus,Vulpes bengalensis",Canis aureus,Canis aureus,Canis aureus,NCBI,0.988
+"Felis chaus,Canis aureus,Vulpes bengalensis",Vulpes bengalensis,Vulpes bengalensis,Vulpes bengalensis,NCBI,0.988
+Sturnira lilium,Sturnira lilium,Sturnira lilium,Sturnira lilium,NCBI,0.988
+Chlorocebus aethiops,Chlorocebus aethiops,Chlorocebus aethiops,Chlorocebus aethiops,NCBI,0.988
+Panthera onca,Panthera onca,Panthera onca,Panthera onca,NCBI,0.988
+Mola mola,Mola mola,Mola mola,Mola mola,NCBI,0.988
+Cygnus buccinator,Cygnus buccinator,Cygnus buccinator,Cygnus buccinator,NCBI,0.988
+"Francolinus erckelii,Lophura leucomelanos",Francolinus erckelii,Francolinus erckelii,Francolinus erckelii,NCBI,0.988
+"Francolinus erckelii,Lophura leucomelanos",Lophura leucomelanos,Lophura leucomelanos,Lophura leucomelanos,NCBI,0.988
+Lepus timidus,Lepus timidus,Lepus timidus,Lepus timidus,NCBI,0.988
+Aphelocoma insularis,Aphelocoma insularis,Aphelocoma insularis,Aphelocoma insularis,NCBI,0.988
+"Corvus ,Corvus frugilegus",Corvus ,Corvus,Corvus,Catalogue of Life,0.75
+"Corvus ,Corvus frugilegus",Corvus frugilegus,Corvus frugilegus,Corvus frugilegus,NCBI,0.988
+Pagophila eburnea,Pagophila eburnea,Pagophila eburnea,Pagophila eburnea,NCBI,0.988
+Chlorocebus,Chlorocebus,Chlorocebus,Chlorocebus,Catalogue of Life,0.75
+"Panthera pardus,Acinonyx jubatus,Canis mesomelas,Geochelone pardalis,Tragelaphus ,Tragelaphus strepsiceros,Hyaena brunnea",Panthera pardus,Panthera pardus,Panthera pardus,NCBI,0.988
+"Panthera pardus,Acinonyx jubatus,Canis mesomelas,Geochelone pardalis,Tragelaphus ,Tragelaphus strepsiceros,Hyaena brunnea",Acinonyx jubatus,Acinonyx jubatus,Acinonyx jubatus,NCBI,0.988
+"Panthera pardus,Acinonyx jubatus,Canis mesomelas,Geochelone pardalis,Tragelaphus ,Tragelaphus strepsiceros,Hyaena brunnea",Canis mesomelas,Canis mesomelas,Canis mesomelas,NCBI,0.988
+"Panthera pardus,Acinonyx jubatus,Canis mesomelas,Geochelone pardalis,Tragelaphus ,Tragelaphus strepsiceros,Hyaena brunnea",Geochelone pardalis,Geochelone pardalis,Geochelone pardalis,Freebase,0.988
+"Panthera pardus,Acinonyx jubatus,Canis mesomelas,Geochelone pardalis,Tragelaphus ,Tragelaphus strepsiceros,Hyaena brunnea",Tragelaphus ,Tragelaphus,Tragelaphus,Catalogue of Life,0.75
+"Panthera pardus,Acinonyx jubatus,Canis mesomelas,Geochelone pardalis,Tragelaphus ,Tragelaphus strepsiceros,Hyaena brunnea",Tragelaphus strepsiceros,Tragelaphus strepsiceros,Tragelaphus strepsiceros,NCBI,0.988
+"Panthera pardus,Acinonyx jubatus,Canis mesomelas,Geochelone pardalis,Tragelaphus ,Tragelaphus strepsiceros,Hyaena brunnea",Hyaena brunnea,Hyaena brunnea,Hyaena brunnea,Freebase,0.988
+Corvus monedula,Corvus monedula,Corvus monedula,Corvus monedula,NCBI,0.988
+Globicephala macrorhynchus,Globicephala macrorhynchus,Globicephala macrorhynchus,Globicephala macrorhynchus,NCBI,0.988
+Panthera,Panthera,Panthera,Panthera,Catalogue of Life,0.75
+"Panthera ,Panthera onca",Panthera ,Panthera,Panthera,Catalogue of Life,0.75
+"Panthera ,Panthera onca",Panthera onca,Panthera onca,Panthera onca,NCBI,0.988
+Leopardus pardalis,Leopardus pardalis,Leopardus pardalis,Leopardus pardalis,NCBI,0.988
+"Vulpes vulpes,Urocyon cinereoargenteus",Vulpes vulpes,Vulpes vulpes,Vulpes vulpes,NCBI,0.988
+"Vulpes vulpes,Urocyon cinereoargenteus",Urocyon cinereoargenteus,Urocyon cinereoargenteus,Urocyon cinereoargenteus,NCBI,0.988
+Macropus giganteus,Macropus giganteus,Macropus giganteus,Macropus giganteus,NCBI,0.988
+Polemaetus bellicosus,Polemaetus bellicosus,Polemaetus bellicosus,Polemaetus bellicosus,NCBI,0.988
+"Canis mesomelas,Caracal caracal",Canis mesomelas,Canis mesomelas,Canis mesomelas,NCBI,0.988
+"Canis mesomelas,Caracal caracal",Caracal caracal,Caracal caracal,Caracal caracal,NCBI,0.988
+Pterodroma neglecta,Pterodroma neglecta,Pterodroma neglecta,Pterodroma neglecta,NCBI,0.988
+Equus hemionus,Equus hemionus,Equus hemionus,Equus hemionus,NCBI,0.988
+Somateria spectabilis,Somateria spectabilis,Somateria spectabilis,Somateria spectabilis,NCBI,0.988
+Aptenodytes patagonicus,Aptenodytes patagonicus,Aptenodytes patagonicus,Aptenodytes patagonicus,NCBI,0.988
+Potos flavus,Potos flavus,Potos flavus,Potos flavus,NCBI,0.988
+"Rissa ,Rissa tridactyla",Rissa ,Rissa,Rissa,Catalogue of Life,0.75
+"Rissa ,Rissa tridactyla",Rissa tridactyla,Rissa tridactyla,Rissa tridactyla,NCBI,0.988
+Calidris canutus,Calidris canutus,Calidris canutus,Calidris canutus,NCBI,0.988
+"Ceratotherium simum,Diceros bicornis",Ceratotherium simum,Ceratotherium simum,Ceratotherium simum,NCBI,0.988
+"Ceratotherium simum,Diceros bicornis",Diceros bicornis,Diceros bicornis,Diceros bicornis,NCBI,0.988
+Panthera leo,Panthera leo,Panthera leo,Panthera leo,NCBI,0.988
+Equus quagga,Equus quagga,Equus quagga,Equus quagga,Freebase,0.988
+"Nycticebus ,Nycticebus javanicus",Nycticebus ,Nycticebus,Nycticebus,Catalogue of Life,0.75
+"Nycticebus ,Nycticebus javanicus",Nycticebus javanicus,Nycticebus javanicus,Nycticebus javanicus,NCBI,0.988
+"Anas platyrhynchos,Anas penelope,Aythya ferina",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Anas penelope,Aythya ferina",Anas penelope,Anas penelope,Anas penelope,Freebase,0.988
+"Anas platyrhynchos,Anas penelope,Aythya ferina",Aythya ferina,Aythya ferina,Aythya ferina,NCBI,0.988
+Falco biarmicus,Falco biarmicus,Falco biarmicus,Falco biarmicus,NCBI,0.988
+"Cetacea ,Mesoplodon bidens,Balaenoptera physalus,Megaptera novaeangliae,Physeter macrocephalus",Cetacea ,Cetacea,Cetacea,Catalogue of Life,0.75
+"Cetacea ,Mesoplodon bidens,Balaenoptera physalus,Megaptera novaeangliae,Physeter macrocephalus",Mesoplodon bidens,Mesoplodon bidens,Mesoplodon bidens,NCBI,0.988
+"Cetacea ,Mesoplodon bidens,Balaenoptera physalus,Megaptera novaeangliae,Physeter macrocephalus",Balaenoptera physalus,Balaenoptera physalus,Balaenoptera physalus,NCBI,0.988
+"Cetacea ,Mesoplodon bidens,Balaenoptera physalus,Megaptera novaeangliae,Physeter macrocephalus",Megaptera novaeangliae,Megaptera novaeangliae,Megaptera novaeangliae,NCBI,0.988
+"Cetacea ,Mesoplodon bidens,Balaenoptera physalus,Megaptera novaeangliae,Physeter macrocephalus",Physeter macrocephalus,Physeter macrocephalus,Physeter macrocephalus,Freebase,0.988
+Larus audouinii,Larus audouinii,Larus audouinii,Larus audouinii,AnAge,0.988
+Larus,Larus,Larus,Larus,Catalogue of Life,0.75
+"Larus audouinii,Larus michahellis",Larus audouinii,Larus audouinii,Larus audouinii,AnAge,0.988
+"Larus audouinii,Larus michahellis",Larus michahellis,Larus michahellis,Larus michahellis,NCBI,0.988
+"Larus marinus,Larus fuscus,Larus argentatus",Larus marinus,Larus marinus,Larus marinus,NCBI,0.988
+"Larus marinus,Larus fuscus,Larus argentatus",Larus fuscus,Larus fuscus,Larus fuscus,NCBI,0.988
+"Larus marinus,Larus fuscus,Larus argentatus",Larus argentatus,Larus argentatus,Larus argentatus,NCBI,0.988
+"Ichthyaetus audouinii,Larus michahellis",Ichthyaetus audouinii,Ichthyaetus audouinii,Ichthyaetus audouinii,NCBI,0.988
+"Ichthyaetus audouinii,Larus michahellis",Larus michahellis,Larus michahellis,Larus michahellis,NCBI,0.988
+Phoebastria immutabilis,Phoebastria immutabilis,Phoebastria immutabilis,Phoebastria immutabilis,NCBI,0.988
+Oceanodroma leucorhoa,Oceanodroma leucorhoa,Oceanodroma leucorhoa,Oceanodroma leucorhoa,Freebase,0.988
+Dermochelys coriacea,Dermochelys coriacea,Dermochelys coriacea,Dermochelys coriacea,NCBI,0.988
+Daubentonia madagascariensis,Daubentonia madagascariensis,Daubentonia madagascariensis,Daubentonia madagascariensis,NCBI,0.988
+"Hapalemur simus,Varecia variegata,Propithecus diadema",Hapalemur simus,Hapalemur simus,Hapalemur simus,AnAge,0.988
+"Hapalemur simus,Varecia variegata,Propithecus diadema",Varecia variegata,Varecia variegata,Varecia variegata,NCBI,0.988
+"Hapalemur simus,Varecia variegata,Propithecus diadema",Propithecus diadema,Propithecus diadema,Propithecus diadema,NCBI,0.988
+"Panthera pardus,Chlorocebus ,Papio ",Panthera pardus,Panthera pardus,Panthera pardus,NCBI,0.988
+"Panthera pardus,Chlorocebus ,Papio ",Chlorocebus ,Chlorocebus,Chlorocebus,Catalogue of Life,0.75
+"Panthera pardus,Chlorocebus ,Papio ",Papio ,Papio,Papio,Catalogue of Life,0.75
+Leptoptilos javanicus,Leptoptilos javanicus,Leptoptilos javanicus,Leptoptilos javanicus,NCBI,0.988
+Noctilio albiventris,Noctilio albiventris,Noctilio albiventris,Noctilio albiventris,NCBI,0.988
+Phoenicopterus minor,Phoenicopterus minor,Phoenicopterus minor,Phoenicopterus minor,Freebase,0.988
+Phoeniconaias minor,Phoeniconaias minor,Phoeniconaias minor,Phoeniconaias minor,Encyclopedia of Life,0.988
+Aythya affinis,Aythya affinis,Aythya affinis,Aythya affinis,NCBI,0.988
+"Aquila clanga,Aquila pomarina,Haliaeetus albicilla",Aquila clanga,Aquila clanga,Aquila clanga,Freebase,0.988
+"Aquila clanga,Aquila pomarina,Haliaeetus albicilla",Aquila pomarina,Aquila pomarina,Aquila pomarina,Freebase,0.988
+"Aquila clanga,Aquila pomarina,Haliaeetus albicilla",Haliaeetus albicilla,Haliaeetus albicilla,Haliaeetus albicilla,NCBI,0.988
+Anser erythropus,Anser erythropus,Anser erythropus,Anser erythropus,NCBI,0.988
+Tringa flavipes,Tringa flavipes,Tringa flavipes,Tringa flavipes,NCBI,0.988
+"Accipiter ,Accipiter brevipes",Accipiter ,Accipiter,Accipiter,Catalogue of Life,0.75
+"Accipiter ,Accipiter brevipes",Accipiter brevipes,Accipiter brevipes,Accipiter brevipes,NCBI,0.988
+"Trigonoceps occipitalis,Torgos tracheliotus",Trigonoceps occipitalis,Trigonoceps occipitalis,Trigonoceps occipitalis,NCBI,0.988
+"Trigonoceps occipitalis,Torgos tracheliotus",Torgos tracheliotus,Torgos tracheliotus,Torgos tracheliotus,Encyclopedia of Life,0.988
+"Aquila heliaca,Milvus milvus",Aquila heliaca,Aquila heliaca,Aquila heliaca,NCBI,0.988
+"Aquila heliaca,Milvus milvus",Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+"Ciconia nigra,Aquila pomarina",Ciconia nigra,Ciconia nigra,Ciconia nigra,NCBI,0.988
+"Ciconia nigra,Aquila pomarina",Aquila pomarina,Aquila pomarina,Aquila pomarina,Freebase,0.988
+"Anas platyrhynchos,Fulica atra",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Fulica atra",Fulica atra,Fulica atra,Fulica atra,NCBI,0.988
+"Milvus migrans,Milvus milvus",Milvus migrans,Milvus migrans,Milvus migrans,NCBI,0.988
+"Milvus migrans,Milvus milvus",Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+Aquila pomarina,Aquila pomarina,Aquila pomarina,Aquila pomarina,Freebase,0.988
+"Aquila chrysaetos,Circus cyaneus,Circaetus gallicus,Aquila nipalensis,Milvus lineatus",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila chrysaetos,Circus cyaneus,Circaetus gallicus,Aquila nipalensis,Milvus lineatus",Circus cyaneus,Circus cyaneus,Circus cyaneus,NCBI,0.988
+"Aquila chrysaetos,Circus cyaneus,Circaetus gallicus,Aquila nipalensis,Milvus lineatus",Circaetus gallicus,Circaetus gallicus,Circaetus gallicus,NCBI,0.988
+"Aquila chrysaetos,Circus cyaneus,Circaetus gallicus,Aquila nipalensis,Milvus lineatus",Aquila nipalensis,Aquila nipalensis,Aquila nipalensis,NCBI,0.988
+"Aquila chrysaetos,Circus cyaneus,Circaetus gallicus,Aquila nipalensis,Milvus lineatus",Milvus lineatus,Milvus lineatus,Milvus lineatus,CU*STAR,0.988
+Steatornis caripensis,Steatornis caripensis,Steatornis caripensis,Steatornis caripensis,NCBI,0.988
+Cygnus cygnus,Cygnus cygnus,Cygnus cygnus,Cygnus cygnus,NCBI,0.988
+"Tetrax ,Tetrax tetrax",Tetrax ,Tetrax,Tetrax,Catalogue of Life,0.75
+"Tetrax ,Tetrax tetrax",Tetrax tetrax,Tetrax tetrax,Tetrax tetrax,NCBI,0.988
+Eudyptula minor,Eudyptula minor,Eudyptula minor,Eudyptula minor,NCBI,0.988
+"Bos ,Bos grunniens",Bos ,Bos,Bos,Catalogue of Life,0.75
+"Bos ,Bos grunniens",Bos grunniens,Bos grunniens,Bos grunniens,NCBI,0.988
+Perameles nasuta,Perameles nasuta,Perameles nasuta,Perameles nasuta,NCBI,0.988
+"Gyps fulvus,Gyps africanus,Torgos tracheliotus",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Gyps fulvus,Gyps africanus,Torgos tracheliotus",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+"Gyps fulvus,Gyps africanus,Torgos tracheliotus",Torgos tracheliotus,Torgos tracheliotus,Torgos tracheliotus,Encyclopedia of Life,0.988
+Urodynamis taitensis,Urodynamis taitensis,Urodynamis taitensis,Urodynamis taitensis,NCBI,0.988
+Clangula hyemalis,Clangula hyemalis,Clangula hyemalis,Clangula hyemalis,NCBI,0.988
+Stercorarius longicaudus,Stercorarius longicaudus,Stercorarius longicaudus,Stercorarius longicaudus,NCBI,0.988
+Phylloscopus sibilatrix,Phylloscopus sibilatrix,Phylloscopus sibilatrix,Phylloscopus sibilatrix,NCBI,0.988
+Lophaetus occipitalis,Lophaetus occipitalis,Lophaetus occipitalis,Lophaetus occipitalis,NCBI,0.988
+Macronectes giganteus,Macronectes giganteus,Macronectes giganteus,Macronectes giganteus,NCBI,0.988
+Pteropus rufus,Pteropus rufus,Pteropus rufus,Pteropus rufus,NCBI,0.988
+Spheniscus magellanicus,Spheniscus magellanicus,Spheniscus magellanicus,Spheniscus magellanicus,NCBI,0.988
+Isurus oxyrinchus,Isurus oxyrinchus,Isurus oxyrinchus,Isurus oxyrinchus,NCBI,0.988
+Bungarus candidus,Bungarus candidus,Bungarus candidus,Bungarus candidus,NCBI,0.988
+Anas,Anas,Anas,Anas,Catalogue of Life,0.75
+Chrysocyon brachyurus,Chrysocyon brachyurus,Chrysocyon brachyurus,Chrysocyon brachyurus,NCBI,0.988
+Lophocebus albigena,Lophocebus albigena,Lophocebus albigena,Lophocebus albigena,NCBI,0.988
+"Aquila rapax,Gyps rueppellii,Polemaetus bellicosus,Gyps africanus,Torgos tracheliotus,Aquila spilogaster",Aquila rapax,Aquila rapax,Aquila rapax,NCBI,0.988
+"Aquila rapax,Gyps rueppellii,Polemaetus bellicosus,Gyps africanus,Torgos tracheliotus,Aquila spilogaster",Gyps rueppellii,Gyps rueppellii,Gyps rueppellii,NCBI,0.988
+"Aquila rapax,Gyps rueppellii,Polemaetus bellicosus,Gyps africanus,Torgos tracheliotus,Aquila spilogaster",Polemaetus bellicosus,Polemaetus bellicosus,Polemaetus bellicosus,NCBI,0.988
+"Aquila rapax,Gyps rueppellii,Polemaetus bellicosus,Gyps africanus,Torgos tracheliotus,Aquila spilogaster",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+"Aquila rapax,Gyps rueppellii,Polemaetus bellicosus,Gyps africanus,Torgos tracheliotus,Aquila spilogaster",Torgos tracheliotus,Torgos tracheliotus,Torgos tracheliotus,Encyclopedia of Life,0.988
+"Aquila rapax,Gyps rueppellii,Polemaetus bellicosus,Gyps africanus,Torgos tracheliotus,Aquila spilogaster",Aquila spilogaster,Aquila spilogaster,Aquila spilogaster,NCBI,0.988
+Limosa fedoa,Limosa fedoa,Limosa fedoa,Limosa fedoa,NCBI,0.988
+"Brachyramphus ,Brachyramphus marmoratus",Brachyramphus ,Brachyramphus,Brachyramphus,Catalogue of Life,0.75
+"Brachyramphus ,Brachyramphus marmoratus",Brachyramphus marmoratus,Brachyramphus marmoratus,Brachyramphus marmoratus,NCBI,0.988
+Brachyramphus marmoratus,Brachyramphus marmoratus,Brachyramphus marmoratus,Brachyramphus marmoratus,NCBI,0.988
+Marmaronetta angustirostris,Marmaronetta angustirostris,Marmaronetta angustirostris,Marmaronetta angustirostris,NCBI,0.988
+Buteo albigula,Buteo albigula,Buteo albigula,Buteo albigula,NCBI,0.988
+Martes pennanti,Martes pennanti,Martes pennanti,Martes pennanti,NCBI,0.988
+Suricata suricatta,Suricata suricatta,Suricata suricatta,Suricata suricatta,NCBI,0.988
+Peponocephala electra,Peponocephala electra,Peponocephala electra,Peponocephala electra,NCBI,0.988
+"Gulo gulo,Martes americana,Lynx canadensis,Canis lupus,Canis latrans,Vulpes vulpes",Gulo gulo,Gulo gulo,Gulo gulo,NCBI,0.988
+"Gulo gulo,Martes americana,Lynx canadensis,Canis lupus,Canis latrans,Vulpes vulpes",Martes americana,Martes americana,Martes americana,NCBI,0.988
+"Gulo gulo,Martes americana,Lynx canadensis,Canis lupus,Canis latrans,Vulpes vulpes",Lynx canadensis,Lynx canadensis,Lynx canadensis,NCBI,0.988
+"Gulo gulo,Martes americana,Lynx canadensis,Canis lupus,Canis latrans,Vulpes vulpes",Canis lupus,Canis lupus,Canis lupus,NCBI,0.988
+"Gulo gulo,Martes americana,Lynx canadensis,Canis lupus,Canis latrans,Vulpes vulpes",Canis latrans,Canis latrans,Canis latrans,NCBI,0.988
+"Gulo gulo,Martes americana,Lynx canadensis,Canis lupus,Canis latrans,Vulpes vulpes",Vulpes vulpes,Vulpes vulpes,Vulpes vulpes,NCBI,0.988
+Myotis vivesi,Myotis vivesi,Myotis vivesi,Myotis vivesi,NCBI,0.988
+"Buteo buteo,Circus aeruginosus",Buteo buteo,Buteo buteo,Buteo buteo,NCBI,0.988
+"Buteo buteo,Circus aeruginosus",Circus aeruginosus,Circus aeruginosus,Circus aeruginosus,NCBI,0.988
+"Ursus americanus,Lynx rufus,Canis lupus,Canis latrans",Ursus americanus,Ursus americanus,Ursus americanus,NCBI,0.988
+"Ursus americanus,Lynx rufus,Canis lupus,Canis latrans",Lynx rufus,Lynx rufus,Lynx rufus,NCBI,0.988
+"Ursus americanus,Lynx rufus,Canis lupus,Canis latrans",Canis lupus,Canis lupus,Canis lupus,NCBI,0.988
+"Ursus americanus,Lynx rufus,Canis lupus,Canis latrans",Canis latrans,Canis latrans,Canis latrans,NCBI,0.988
+"Geronticus eremita,Milvus milvus,Aegypius monachus",Geronticus eremita,Geronticus eremita,Geronticus eremita,NCBI,0.988
+"Geronticus eremita,Milvus milvus,Aegypius monachus",Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+"Geronticus eremita,Milvus milvus,Aegypius monachus",Aegypius monachus,Aegypius monachus,Aegypius monachus,NCBI,0.988
+Xema sabini,Xema sabini,Xema sabini,Xema sabini,NCBI,0.988
+Actitis hypoleucos,Actitis hypoleucos,Actitis hypoleucos,Actitis hypoleucos,NCBI,0.988
+Elaenia albiceps,Elaenia albiceps,Elaenia albiceps,Elaenia albiceps,NCBI,0.988
+"Bucephala islandica,Histrionicus histrionicus,Melanitta perspicillata",Bucephala islandica,Bucephala islandica,Bucephala islandica,NCBI,0.988
+"Bucephala islandica,Histrionicus histrionicus,Melanitta perspicillata",Histrionicus histrionicus,Histrionicus histrionicus,Histrionicus histrionicus,NCBI,0.988
+"Bucephala islandica,Histrionicus histrionicus,Melanitta perspicillata",Melanitta perspicillata,Melanitta perspicillata,Melanitta perspicillata,NCBI,0.988
+Hydrobates,Hydrobates,Hydrobates,Hydrobates,Catalogue of Life,0.75
+Equus burchellii,Equus burchellii,Equus burchellii,Equus burchellii,NCBI,0.988
+Progne subis,Progne subis,Progne subis,Progne subis,NCBI,0.988
+Tyrannus savana,Tyrannus savana,Tyrannus savana,Tyrannus savana,NCBI,0.988
+Mirounga leonina,Mirounga leonina,Mirounga leonina,Mirounga leonina,NCBI,0.988
+"Cuculus canorus,Cuculus saturatus",Cuculus canorus,Cuculus canorus,Cuculus canorus,NCBI,0.988
+"Cuculus canorus,Cuculus saturatus",Cuculus saturatus,Cuculus saturatus,Cuculus saturatus,NCBI,0.988
+"Equus caballus,Bos taurus",Equus caballus,Equus caballus,Equus caballus,NCBI,0.988
+"Equus caballus,Bos taurus",Bos taurus,Bos taurus,Bos taurus,NCBI,0.988
+Procapra gutturosa,Procapra gutturosa,Procapra gutturosa,Procapra gutturosa,NCBI,0.988
+Geochelone nigra,Geochelone nigra,Geochelone nigra,Geochelone nigra,Freebase,0.988
+"Pandion ,Pandion haliaetus,Pandion cristatus",Pandion ,Pandion,Pandion,Catalogue of Life,0.75
+"Pandion ,Pandion haliaetus,Pandion cristatus",Pandion haliaetus,Pandion haliaetus,Pandion haliaetus,NCBI,0.988
+"Pandion ,Pandion haliaetus,Pandion cristatus",Pandion cristatus,Pandion cristatus,Pandion cristatus,Encyclopedia of Life,0.988
+Chelonia mydas,Chelonia mydas,Chelonia mydas,Chelonia mydas,NCBI,0.988
+Tapirus pinchaque,Tapirus pinchaque,Tapirus pinchaque,Tapirus pinchaque,NCBI,0.988
+"Leptoptilos javanicus,Spizaetus bartelsi,Nisaetus cirrhatus",Leptoptilos javanicus,Leptoptilos javanicus,Leptoptilos javanicus,NCBI,0.988
+"Leptoptilos javanicus,Spizaetus bartelsi,Nisaetus cirrhatus",Spizaetus bartelsi,Spizaetus bartelsi,Spizaetus bartelsi,ARKive,0.988
+"Leptoptilos javanicus,Spizaetus bartelsi,Nisaetus cirrhatus",Nisaetus cirrhatus,Nisaetus cirrhatus,Nisaetus cirrhatus,Freebase,0.988
+Myotis daubentoni,Myotis daubentoni,Myotis daubentoni,Myotis daubentoni,AnAge,0.988
+Pteropus livingstonii,Pteropus livingstonii,Pteropus livingstonii,Pteropus livingstonii,NCBI,0.988
+Buteo rufinus,Buteo rufinus,Buteo rufinus,Buteo rufinus,NCBI,0.988
+"Canis ,Ovis aries",Canis ,Canis,Canis,Catalogue of Life,0.75
+"Canis ,Ovis aries",Ovis aries,Ovis aries,Ovis aries,NCBI,0.988
+"Buteo rufinus,Circaetus gallicus",Buteo rufinus,Buteo rufinus,Buteo rufinus,NCBI,0.988
+"Buteo rufinus,Circaetus gallicus",Circaetus gallicus,Circaetus gallicus,Circaetus gallicus,NCBI,0.988
+Testudinidae,Testudinidae,Testudinidae,Testudinidae,Catalogue of Life,0.75
+"Zalophus californianus,Mirounga angustirostris,Canis mesomelas,Syncerus caffer,Gyps africanus,Phoebastria irrorata,Loxodonta africana,Equus quagga,Antidorcas marsupialis,Chelonoidis hoodensis,Chelonoidis porteri",Zalophus californianus,Zalophus californianus,Zalophus californianus,NCBI,0.988
+"Zalophus californianus,Mirounga angustirostris,Canis mesomelas,Syncerus caffer,Gyps africanus,Phoebastria irrorata,Loxodonta africana,Equus quagga,Antidorcas marsupialis,Chelonoidis hoodensis,Chelonoidis porteri",Mirounga angustirostris,Mirounga angustirostris,Mirounga angustirostris,NCBI,0.988
+"Zalophus californianus,Mirounga angustirostris,Canis mesomelas,Syncerus caffer,Gyps africanus,Phoebastria irrorata,Loxodonta africana,Equus quagga,Antidorcas marsupialis,Chelonoidis hoodensis,Chelonoidis porteri",Canis mesomelas,Canis mesomelas,Canis mesomelas,NCBI,0.988
+"Zalophus californianus,Mirounga angustirostris,Canis mesomelas,Syncerus caffer,Gyps africanus,Phoebastria irrorata,Loxodonta africana,Equus quagga,Antidorcas marsupialis,Chelonoidis hoodensis,Chelonoidis porteri",Syncerus caffer,Syncerus caffer,Syncerus caffer,NCBI,0.988
+"Zalophus californianus,Mirounga angustirostris,Canis mesomelas,Syncerus caffer,Gyps africanus,Phoebastria irrorata,Loxodonta africana,Equus quagga,Antidorcas marsupialis,Chelonoidis hoodensis,Chelonoidis porteri",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+"Zalophus californianus,Mirounga angustirostris,Canis mesomelas,Syncerus caffer,Gyps africanus,Phoebastria irrorata,Loxodonta africana,Equus quagga,Antidorcas marsupialis,Chelonoidis hoodensis,Chelonoidis porteri",Phoebastria irrorata,Phoebastria irrorata,Phoebastria irrorata,NCBI,0.988
+"Zalophus californianus,Mirounga angustirostris,Canis mesomelas,Syncerus caffer,Gyps africanus,Phoebastria irrorata,Loxodonta africana,Equus quagga,Antidorcas marsupialis,Chelonoidis hoodensis,Chelonoidis porteri",Loxodonta africana,Loxodonta africana,Loxodonta africana,NCBI,0.988
+"Zalophus californianus,Mirounga angustirostris,Canis mesomelas,Syncerus caffer,Gyps africanus,Phoebastria irrorata,Loxodonta africana,Equus quagga,Antidorcas marsupialis,Chelonoidis hoodensis,Chelonoidis porteri",Equus quagga,Equus quagga,Equus quagga,Freebase,0.988
+"Zalophus californianus,Mirounga angustirostris,Canis mesomelas,Syncerus caffer,Gyps africanus,Phoebastria irrorata,Loxodonta africana,Equus quagga,Antidorcas marsupialis,Chelonoidis hoodensis,Chelonoidis porteri",Antidorcas marsupialis,Antidorcas marsupialis,Antidorcas marsupialis,NCBI,0.988
+"Zalophus californianus,Mirounga angustirostris,Canis mesomelas,Syncerus caffer,Gyps africanus,Phoebastria irrorata,Loxodonta africana,Equus quagga,Antidorcas marsupialis,Chelonoidis hoodensis,Chelonoidis porteri",Chelonoidis hoodensis,Chelonoidis hoodensis,Chelonoidis hoodensis,NCBI,0.988
+"Zalophus californianus,Mirounga angustirostris,Canis mesomelas,Syncerus caffer,Gyps africanus,Phoebastria irrorata,Loxodonta africana,Equus quagga,Antidorcas marsupialis,Chelonoidis hoodensis,Chelonoidis porteri",Chelonoidis porteri,Chelonoidis porteri,Chelonoidis porteri,NCBI,0.988
+Orycteropus afer,Orycteropus afer,Orycteropus afer,Orycteropus afer,NCBI,0.988
+"Homo sapiens,Pongo pygmaeus",Homo sapiens,Homo sapiens,Homo sapiens,NCBI,0.988
+"Homo sapiens,Pongo pygmaeus",Pongo pygmaeus,Pongo pygmaeus,Pongo pygmaeus,NCBI,0.988
+Cyanoliseus patagonus,Cyanoliseus patagonus,Cyanoliseus patagonus,Cyanoliseus patagonus,NCBI,0.988
+Pterodroma phaeopygia,Pterodroma phaeopygia,Pterodroma phaeopygia,Pterodroma phaeopygia,NCBI,0.988
+Creagrus furcatus,Creagrus furcatus,Creagrus furcatus,Creagrus furcatus,NCBI,0.988
+"Anas platyrhynchos,Anas penelope,Aythya fuligula,Netta rufina,Fulica atra",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Anas penelope,Aythya fuligula,Netta rufina,Fulica atra",Anas penelope,Anas penelope,Anas penelope,Freebase,0.988
+"Anas platyrhynchos,Anas penelope,Aythya fuligula,Netta rufina,Fulica atra",Aythya fuligula,Aythya fuligula,Aythya fuligula,NCBI,0.988
+"Anas platyrhynchos,Anas penelope,Aythya fuligula,Netta rufina,Fulica atra",Netta rufina,Netta rufina,Netta rufina,NCBI,0.988
+"Anas platyrhynchos,Anas penelope,Aythya fuligula,Netta rufina,Fulica atra",Fulica atra,Fulica atra,Fulica atra,NCBI,0.988
+Larus melanocephalus,Larus melanocephalus,Larus melanocephalus,Larus melanocephalus,AnAge,0.988
+Puffinus creatopus,Puffinus creatopus,Puffinus creatopus,Puffinus creatopus,Freebase,0.988
+Tadorna ferruginea,Tadorna ferruginea,Tadorna ferruginea,Tadorna ferruginea,NCBI,0.988
+Bycanistes bucinator,Bycanistes bucinator,Bycanistes bucinator,Bycanistes bucinator,NCBI,0.988
+Ciconia boyciana,Ciconia boyciana,Ciconia boyciana,Ciconia boyciana,NCBI,0.988
+Capra hircus,Capra hircus,Capra hircus,Capra hircus,NCBI,0.988
+Urocyon cinereoargenteus,Urocyon cinereoargenteus,Urocyon cinereoargenteus,Urocyon cinereoargenteus,NCBI,0.988
+"Ciconia ciconia,Tadorna tadorna",Ciconia ciconia,Ciconia ciconia,Ciconia ciconia,NCBI,0.988
+"Ciconia ciconia,Tadorna tadorna",Tadorna tadorna,Tadorna tadorna,Tadorna tadorna,NCBI,0.988
+Torgos tracheliotus,Torgos tracheliotus,Torgos tracheliotus,Torgos tracheliotus,Encyclopedia of Life,0.988
+Cervus nippon,Cervus nippon,Cervus nippon,Cervus nippon,NCBI,0.988
+Monodon,Monodon,Monodon,Monodon,Catalogue of Life,0.75
+"Caretta caretta,Chelonia mydas,Lepidochelys kempii",Caretta caretta,Caretta caretta,Caretta caretta,NCBI,0.988
+"Caretta caretta,Chelonia mydas,Lepidochelys kempii",Chelonia mydas,Chelonia mydas,Chelonia mydas,NCBI,0.988
+"Caretta caretta,Chelonia mydas,Lepidochelys kempii",Lepidochelys kempii,Lepidochelys kempii,Lepidochelys kempii,NCBI,0.988
+"Didelphis virginiana,Procyon lotor",Didelphis virginiana,Didelphis virginiana,Didelphis virginiana,NCBI,0.988
+"Didelphis virginiana,Procyon lotor",Procyon lotor,Procyon lotor,Procyon lotor,NCBI,0.988
+Meleagris gallopavo,Meleagris gallopavo,Meleagris gallopavo,Meleagris gallopavo,NCBI,0.988
+"Aquila chrysaetos,Neophron percnopterus",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila chrysaetos,Neophron percnopterus",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+"Neophron ,Neophron percnopterus",Neophron ,Neophron,Neophron,Catalogue of Life,0.75
+"Neophron ,Neophron percnopterus",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+Aquila hastata,Aquila hastata,Aquila hastata,Aquila hastata,Freebase,0.988
+Nisaetus nipalensis,Nisaetus nipalensis,Nisaetus nipalensis,Nisaetus nipalensis,NCBI,0.988
+Sarcogyps calvus,Sarcogyps calvus,Sarcogyps calvus,Sarcogyps calvus,NCBI,0.988
+Puffinus,Puffinus,Puffinus,Puffinus,Catalogue of Life,0.75
+Puffinus newelli,Puffinus newelli,Puffinus newelli,Puffinus newelli,NCBI,0.988
+Macaca fascicularis,Macaca fascicularis,Macaca fascicularis,Macaca fascicularis,NCBI,0.988
+Cercopithecus mitis,Cercopithecus mitis,Cercopithecus mitis,Cercopithecus mitis,NCBI,0.988
+Papio anubis,Papio anubis,Papio anubis,Papio anubis,NCBI,0.988
+"Lophocebus ,Cercopithecus mitis,Lophocebus albigena",Lophocebus ,Lophocebus,Lophocebus,Catalogue of Life,0.75
+"Lophocebus ,Cercopithecus mitis,Lophocebus albigena",Cercopithecus mitis,Cercopithecus mitis,Cercopithecus mitis,NCBI,0.988
+"Lophocebus ,Cercopithecus mitis,Lophocebus albigena",Lophocebus albigena,Lophocebus albigena,Lophocebus albigena,NCBI,0.988
+Cercopithecus ascanius,Cercopithecus ascanius,Cercopithecus ascanius,Cercopithecus ascanius,NCBI,0.988
+"Cercopithecus ascanius,Cercopithecus mitis,Lophocebus albigena",Cercopithecus ascanius,Cercopithecus ascanius,Cercopithecus ascanius,NCBI,0.988
+"Cercopithecus ascanius,Cercopithecus mitis,Lophocebus albigena",Cercopithecus mitis,Cercopithecus mitis,Cercopithecus mitis,NCBI,0.988
+"Cercopithecus ascanius,Cercopithecus mitis,Lophocebus albigena",Lophocebus albigena,Lophocebus albigena,Lophocebus albigena,NCBI,0.988
+"Cercopithecus ascanius,Lophocebus albigena",Cercopithecus ascanius,Cercopithecus ascanius,Cercopithecus ascanius,NCBI,0.988
+"Cercopithecus ascanius,Lophocebus albigena",Lophocebus albigena,Lophocebus albigena,Lophocebus albigena,NCBI,0.988
+"Nyctalus ,Nyctalus noctula",Nyctalus ,Nyctalus,Nyctalus,Catalogue of Life,0.75
+"Nyctalus ,Nyctalus noctula",Nyctalus noctula,Nyctalus noctula,Nyctalus noctula,NCBI,0.988
+Fulmarus glacialis,Fulmarus glacialis,Fulmarus glacialis,Fulmarus glacialis,NCBI,0.988
+"Gyps ,Gyps rueppellii,Gyps africanus,Necrosyrtes monachus",Gyps ,Gyps,Gyps,Catalogue of Life,0.75
+"Gyps ,Gyps rueppellii,Gyps africanus,Necrosyrtes monachus",Gyps rueppellii,Gyps rueppellii,Gyps rueppellii,NCBI,0.988
+"Gyps ,Gyps rueppellii,Gyps africanus,Necrosyrtes monachus",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+"Gyps ,Gyps rueppellii,Gyps africanus,Necrosyrtes monachus",Necrosyrtes monachus,Necrosyrtes monachus,Necrosyrtes monachus,NCBI,0.988
+Antilocapra americana,Antilocapra americana,Antilocapra americana,Antilocapra americana,NCBI,0.988
+"Dendroica coronata,Seiurus noveboracensis,Vireo olivaceus",Dendroica coronata,Dendroica coronata,Dendroica coronata,Freebase,0.988
+"Dendroica coronata,Seiurus noveboracensis,Vireo olivaceus",Seiurus noveboracensis,Seiurus noveboracensis,Seiurus noveboracensis,AnAge,0.988
+"Dendroica coronata,Seiurus noveboracensis,Vireo olivaceus",Vireo olivaceus,Vireo olivaceus,Vireo olivaceus,NCBI,0.988
+Parkesia noveboracensis,Parkesia noveboracensis,Parkesia noveboracensis,Parkesia noveboracensis,NCBI,0.988
+Branta hutchinsii,Branta hutchinsii,Branta hutchinsii,Branta hutchinsii,NCBI,0.988
+Didelphis virginiana,Didelphis virginiana,Didelphis virginiana,Didelphis virginiana,NCBI,0.988
+Prionace glauca,Prionace glauca,Prionace glauca,Prionace glauca,NCBI,0.988
+Nyctalus lasiopterus,Nyctalus lasiopterus,Nyctalus lasiopterus,Nyctalus lasiopterus,NCBI,0.988
+Myotis sodalis,Myotis sodalis,Myotis sodalis,Myotis sodalis,NCBI,0.988
+"Aquila chrysaetos,Haliaeetus leucocephalus,Pandion haliaetus,Falco peregrinus,Asio flammeus",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila chrysaetos,Haliaeetus leucocephalus,Pandion haliaetus,Falco peregrinus,Asio flammeus",Haliaeetus leucocephalus,Haliaeetus leucocephalus,Haliaeetus leucocephalus,NCBI,0.988
+"Aquila chrysaetos,Haliaeetus leucocephalus,Pandion haliaetus,Falco peregrinus,Asio flammeus",Pandion haliaetus,Pandion haliaetus,Pandion haliaetus,NCBI,0.988
+"Aquila chrysaetos,Haliaeetus leucocephalus,Pandion haliaetus,Falco peregrinus,Asio flammeus",Falco peregrinus,Falco peregrinus,Falco peregrinus,NCBI,0.988
+"Aquila chrysaetos,Haliaeetus leucocephalus,Pandion haliaetus,Falco peregrinus,Asio flammeus",Asio flammeus,Asio flammeus,Asio flammeus,NCBI,0.988
+Carcharhinus longimanus,Carcharhinus longimanus,Carcharhinus longimanus,Carcharhinus longimanus,NCBI,0.988
+"Oceanodroma furcata,Oceanodroma castro,Hydrobates ",Oceanodroma furcata,Oceanodroma furcata,Oceanodroma furcata,Freebase,0.988
+"Oceanodroma furcata,Oceanodroma castro,Hydrobates ",Oceanodroma castro,Oceanodroma castro,Oceanodroma castro,Freebase,0.988
+"Oceanodroma furcata,Oceanodroma castro,Hydrobates ",Hydrobates ,Hydrobates,Hydrobates,Catalogue of Life,0.75
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Rhincodon typus,Rhincodon typus,Rhincodon typus,NCBI,0.988
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Carcharodon carcharias,Carcharodon carcharias,Carcharodon carcharias,NCBI,0.988
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Isurus oxyrinchus,Isurus oxyrinchus,Isurus oxyrinchus,NCBI,0.988
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Galeocerdo cuvier,Galeocerdo cuvier,Galeocerdo cuvier,NCBI,0.988
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Carcharhinus obscurus,Carcharhinus obscurus,Carcharhinus obscurus,NCBI,0.988
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Carcharhinus leucas,Carcharhinus leucas,Carcharhinus leucas,NCBI,0.988
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Carcharhinus plumbeus,Carcharhinus plumbeus,Carcharhinus plumbeus,NCBI,0.988
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Carcharhinus falciformis,Carcharhinus falciformis,Carcharhinus falciformis,NCBI,0.988
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Carcharhinus limbatus,Carcharhinus limbatus,Carcharhinus limbatus,NCBI,0.988
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Prionace glauca,Prionace glauca,Prionace glauca,NCBI,0.988
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Sphyrnidae ,Sphyrnidae,Sphyrnidae,Catalogue of Life,0.75
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Sphyrna lewini,Sphyrna lewini,Sphyrna lewini,NCBI,0.988
+"Rhincodon typus,Carcharodon carcharias,Isurus oxyrinchus,Galeocerdo cuvier,Carcharhinus obscurus,Carcharhinus leucas,Carcharhinus plumbeus,Carcharhinus falciformis,Carcharhinus limbatus,Prionace glauca,Sphyrnidae ,Sphyrna lewini,Sphyrna mokarran",Sphyrna mokarran,Sphyrna mokarran,Sphyrna mokarran,NCBI,0.988
+Felis,Felis,Felis,Felis,Catalogue of Life,0.75
+Oenanthe oenanthe,Oenanthe oenanthe,Oenanthe oenanthe,Oenanthe oenanthe,NCBI,0.988
+Hyaena brunnea,Hyaena brunnea,Hyaena brunnea,Hyaena brunnea,Freebase,0.988
+Bassaricyon neblina,Bassaricyon neblina,Bassaricyon neblina,Bassaricyon neblina,NCBI,0.988
+Lepidochelys olivacea,Lepidochelys olivacea,Lepidochelys olivacea,Lepidochelys olivacea,NCBI,0.988
+"Ommatophoca rossii,Leptonychotes weddellii",Ommatophoca rossii,Ommatophoca rossii,Ommatophoca rossii,NCBI,0.988
+"Ommatophoca rossii,Leptonychotes weddellii",Leptonychotes weddellii,Leptonychotes weddellii,Leptonychotes weddellii,NCBI,0.988
+Puma concolor,Puma concolor,Puma concolor,Puma concolor,NCBI,0.988
+"Panthera onca,Puma concolor",Panthera onca,Panthera onca,Panthera onca,NCBI,0.988
+"Panthera onca,Puma concolor",Puma concolor,Puma concolor,Puma concolor,NCBI,0.988
+Exaerete frontalis,Exaerete frontalis,Exaerete frontalis,Exaerete frontalis,NCBI,0.988
+Orcinus orca,Orcinus orca,Orcinus orca,Orcinus orca,NCBI,0.988
+"Circaetus gallicus,Pandion haliaetus",Circaetus gallicus,Circaetus gallicus,Circaetus gallicus,NCBI,0.988
+"Circaetus gallicus,Pandion haliaetus",Pandion haliaetus,Pandion haliaetus,Pandion haliaetus,NCBI,0.988
+Antrostomus vociferus,Antrostomus vociferus,Antrostomus vociferus,Antrostomus vociferus,NCBI,0.988
+Haematopus ostralegus,Haematopus ostralegus,Haematopus ostralegus,Haematopus ostralegus,NCBI,0.988
+Passerina ciris,Passerina ciris,Passerina ciris,Passerina ciris,NCBI,0.988
+Gavia pacifica,Gavia pacifica,Gavia pacifica,Gavia pacifica,NCBI,0.988
+"Passerina ,Passerina ciris",Passerina ,Passerina,Passerina,Catalogue of Life,0.75
+"Passerina ,Passerina ciris",Passerina ciris,Passerina ciris,Passerina ciris,NCBI,0.988
+Haliaeetus leucoryphus,Haliaeetus leucoryphus,Haliaeetus leucoryphus,Haliaeetus leucoryphus,NCBI,0.988
+Ozotoceros bezoarticus,Ozotoceros bezoarticus,Ozotoceros bezoarticus,Ozotoceros bezoarticus,NCBI,0.988
+"Neophron percnopterus,Gyps rueppellii,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+"Neophron percnopterus,Gyps rueppellii,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Gyps rueppellii,Gyps rueppellii,Gyps rueppellii,NCBI,0.988
+"Neophron percnopterus,Gyps rueppellii,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+"Neophron percnopterus,Gyps rueppellii,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Necrosyrtes monachus,Necrosyrtes monachus,Necrosyrtes monachus,NCBI,0.988
+"Neophron percnopterus,Gyps rueppellii,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Torgos tracheliotus,Torgos tracheliotus,Torgos tracheliotus,Encyclopedia of Life,0.988
+Panthera pardus,Panthera pardus,Panthera pardus,Panthera pardus,NCBI,0.988
+Pan troglodytes,Pan troglodytes,Pan troglodytes,Pan troglodytes,NCBI,0.988
+Hydrobates pelagicus,Hydrobates pelagicus,Hydrobates pelagicus,Hydrobates pelagicus,NCBI,0.988
+Vespertilio murinus,Vespertilio murinus,Vespertilio murinus,Vespertilio murinus,NCBI,0.988
+Ursus maritimus,Ursus maritimus,Ursus maritimus,Ursus maritimus,NCBI,0.988
+Phalacrocorax pelagicus,Phalacrocorax pelagicus,Phalacrocorax pelagicus,Phalacrocorax pelagicus,NCBI,0.988
+"Pelecanus occidentalis,Aquila chrysaetos",Pelecanus occidentalis,Pelecanus occidentalis,Pelecanus occidentalis,NCBI,0.988
+"Pelecanus occidentalis,Aquila chrysaetos",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+Perdix perdix,Perdix perdix,Perdix perdix,Perdix perdix,NCBI,0.988
+Accipitridae,Accipitridae,Accipitridae,Accipitridae,Catalogue of Life,0.75
+"Aves ,Phalacrocorax auritus",Aves ,Aves,Aves,Catalogue of Life,0.75
+"Aves ,Phalacrocorax auritus",Phalacrocorax auritus,Phalacrocorax auritus,Phalacrocorax auritus,Freebase,0.988
+Phoenicopterus ruber,Phoenicopterus ruber,Phoenicopterus ruber,Phoenicopterus ruber,NCBI,0.988
+"Seiurus ,Seiurus aurocapilla",Seiurus ,Seiurus,Seiurus,Catalogue of Life,0.75
+"Seiurus ,Seiurus aurocapilla",Seiurus aurocapilla,Seiurus aurocapilla,Seiurus aurocapilla,NCBI,0.988
+Sus scrofa,Sus scrofa,Sus scrofa,Sus scrofa,NCBI,0.988
+Gymnogyps californianus,Gymnogyps californianus,Gymnogyps californianus,Gymnogyps californianus,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Anser albifrons,Anser albifrons,Anser albifrons,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Chen caerulescens,Chen caerulescens,Chen caerulescens,Freebase,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Chen rossii,Chen rossii,Chen rossii,Freebase,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Anas discors,Anas discors,Anas discors,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Anas cyanoptera,Anas cyanoptera,Anas cyanoptera,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Anas americana,Anas americana,Anas americana,Freebase,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Anas clypeata,Anas clypeata,Anas clypeata,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Aythya valisineria,Aythya valisineria,Aythya valisineria,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Aythya marila,Aythya marila,Aythya marila,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Circus cyaneus,Circus cyaneus,Circus cyaneus,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus",Phasianus colchicus,Phasianus colchicus,Phasianus colchicus,NCBI,0.988
+Patagioenas plumbea,Patagioenas plumbea,Patagioenas plumbea,Patagioenas plumbea,NCBI,0.988
+Stercorarius pomarinus,Stercorarius pomarinus,Stercorarius pomarinus,Stercorarius pomarinus,NCBI,0.988
+"Anas platyrhynchos,Cairina moschata",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Cairina moschata",Cairina moschata,Cairina moschata,Cairina moschata,NCBI,0.988
+Tympanuchus,Tympanuchus,Tympanuchus,Tympanuchus,Catalogue of Life,0.75
+Setophaga discolor,Setophaga discolor,Setophaga discolor,Setophaga discolor,NCBI,0.988
+Bubo scandiacus,Bubo scandiacus,Bubo scandiacus,Bubo scandiacus,NCBI,0.988
+"Phasianus colchicus,Vulpes vulpes",Phasianus colchicus,Phasianus colchicus,Phasianus colchicus,NCBI,0.988
+"Phasianus colchicus,Vulpes vulpes",Vulpes vulpes,Vulpes vulpes,Vulpes vulpes,NCBI,0.988
+"Halobaena caerulea,Pachyptila belcheri,Pachyptila desolata",Halobaena caerulea,Halobaena caerulea,Halobaena caerulea,NCBI,0.988
+"Halobaena caerulea,Pachyptila belcheri,Pachyptila desolata",Pachyptila belcheri,Pachyptila belcheri,Pachyptila belcheri,NCBI,0.988
+"Halobaena caerulea,Pachyptila belcheri,Pachyptila desolata",Pachyptila desolata,Pachyptila desolata,Pachyptila desolata,NCBI,0.988
+Pachyptila belcheri,Pachyptila belcheri,Pachyptila belcheri,Pachyptila belcheri,NCBI,0.988
+Bovidae,Bovidae,Bovidae,Bovidae,Catalogue of Life,0.75
+"Larus marinus,Larus fuscus",Larus marinus,Larus marinus,Larus marinus,NCBI,0.988
+"Larus marinus,Larus fuscus",Larus fuscus,Larus fuscus,Larus fuscus,NCBI,0.988
+Puffinus opisthomelas,Puffinus opisthomelas,Puffinus opisthomelas,Puffinus opisthomelas,NCBI,0.988
+Pulsatrix koeniswaldiana,Pulsatrix koeniswaldiana,Pulsatrix koeniswaldiana,Pulsatrix koeniswaldiana,NCBI,0.988
+Ardea purpurea,Ardea purpurea,Ardea purpurea,Ardea purpurea,NCBI,0.988
+Phalacrocorax pygmeus,Phalacrocorax pygmeus,Phalacrocorax pygmeus,Phalacrocorax pygmeus,Encyclopedia of Life,0.988
+Pyrrhocorax graculus,Pyrrhocorax graculus,Pyrrhocorax graculus,Pyrrhocorax graculus,NCBI,0.988
+"Turdus leucomelas,Turdus rufiventris",Turdus leucomelas,Turdus leucomelas,Turdus leucomelas,NCBI,0.988
+"Turdus leucomelas,Turdus rufiventris",Turdus rufiventris,Turdus rufiventris,Turdus rufiventris,NCBI,0.988
+"Aquila chrysaetos,Neophron percnopterus,Aquila adalberti,Aquila fasciata",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila chrysaetos,Neophron percnopterus,Aquila adalberti,Aquila fasciata",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+"Aquila chrysaetos,Neophron percnopterus,Aquila adalberti,Aquila fasciata",Aquila adalberti,Aquila adalberti,Aquila adalberti,NCBI,0.988
+"Aquila chrysaetos,Neophron percnopterus,Aquila adalberti,Aquila fasciata",Aquila fasciata,Aquila fasciata,Aquila fasciata,Freebase,0.988
+"Gyps coprotheres,Trigonoceps occipitalis,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Gyps coprotheres,Gyps coprotheres,Gyps coprotheres,NCBI,0.988
+"Gyps coprotheres,Trigonoceps occipitalis,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Trigonoceps occipitalis,Trigonoceps occipitalis,Trigonoceps occipitalis,NCBI,0.988
+"Gyps coprotheres,Trigonoceps occipitalis,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+"Gyps coprotheres,Trigonoceps occipitalis,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Necrosyrtes monachus,Necrosyrtes monachus,Necrosyrtes monachus,NCBI,0.988
+"Gyps coprotheres,Trigonoceps occipitalis,Gyps africanus,Necrosyrtes monachus,Torgos tracheliotus",Torgos tracheliotus,Torgos tracheliotus,Torgos tracheliotus,Encyclopedia of Life,0.988
+"Aegypius monachus,Aquila adalberti,Aquila fasciata",Aegypius monachus,Aegypius monachus,Aegypius monachus,NCBI,0.988
+"Aegypius monachus,Aquila adalberti,Aquila fasciata",Aquila adalberti,Aquila adalberti,Aquila adalberti,NCBI,0.988
+"Aegypius monachus,Aquila adalberti,Aquila fasciata",Aquila fasciata,Aquila fasciata,Aquila fasciata,Freebase,0.988
+"Circaetus gallicus,Aquila fasciata",Circaetus gallicus,Circaetus gallicus,Circaetus gallicus,NCBI,0.988
+"Circaetus gallicus,Aquila fasciata",Aquila fasciata,Aquila fasciata,Aquila fasciata,Freebase,0.988
+"Aquila chrysaetos,Neophron percnopterus,Aquila fasciata",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila chrysaetos,Neophron percnopterus,Aquila fasciata",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+"Aquila chrysaetos,Neophron percnopterus,Aquila fasciata",Aquila fasciata,Aquila fasciata,Aquila fasciata,Freebase,0.988
+"Milvus milvus,Falco cherrug",Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+"Milvus milvus,Falco cherrug",Falco cherrug,Falco cherrug,Falco cherrug,NCBI,0.988
+"Elanoides forficatus,Buteo brachyurus",Elanoides forficatus,Elanoides forficatus,Elanoides forficatus,NCBI,0.988
+"Elanoides forficatus,Buteo brachyurus",Buteo brachyurus,Buteo brachyurus,Buteo brachyurus,NCBI,0.988
+"Pernis apivorus,Pandion haliaetus,Falco subbuteo,Circus aeruginosus",Pernis apivorus,Pernis apivorus,Pernis apivorus,NCBI,0.988
+"Pernis apivorus,Pandion haliaetus,Falco subbuteo,Circus aeruginosus",Pandion haliaetus,Pandion haliaetus,Pandion haliaetus,NCBI,0.988
+"Pernis apivorus,Pandion haliaetus,Falco subbuteo,Circus aeruginosus",Falco subbuteo,Falco subbuteo,Falco subbuteo,NCBI,0.988
+"Pernis apivorus,Pandion haliaetus,Falco subbuteo,Circus aeruginosus",Circus aeruginosus,Circus aeruginosus,Circus aeruginosus,NCBI,0.988
+"Accipiter cooperii,Buteo jamaicensis,Circus cyaneus,Falco peregrinus,Bubo virginianus",Accipiter cooperii,Accipiter cooperii,Accipiter cooperii,NCBI,0.988
+"Accipiter cooperii,Buteo jamaicensis,Circus cyaneus,Falco peregrinus,Bubo virginianus",Buteo jamaicensis,Buteo jamaicensis,Buteo jamaicensis,NCBI,0.988
+"Accipiter cooperii,Buteo jamaicensis,Circus cyaneus,Falco peregrinus,Bubo virginianus",Circus cyaneus,Circus cyaneus,Circus cyaneus,NCBI,0.988
+"Accipiter cooperii,Buteo jamaicensis,Circus cyaneus,Falco peregrinus,Bubo virginianus",Falco peregrinus,Falco peregrinus,Falco peregrinus,NCBI,0.988
+"Accipiter cooperii,Buteo jamaicensis,Circus cyaneus,Falco peregrinus,Bubo virginianus",Bubo virginianus,Bubo virginianus,Bubo virginianus,NCBI,0.988
+Bubo virginianus,Bubo virginianus,Bubo virginianus,Bubo virginianus,NCBI,0.988
+Rattus fuscipes,Rattus fuscipes,Rattus fuscipes,Rattus fuscipes,NCBI,0.988
+"Phaethon ,Phaethon aethereus",Phaethon ,Phaethon,Phaethon,Catalogue of Life,0.75
+"Phaethon ,Phaethon aethereus",Phaethon aethereus,Phaethon aethereus,Phaethon aethereus,NCBI,0.988
+Picoides borealis,Picoides borealis,Picoides borealis,Picoides borealis,NCBI,0.988
+Pyrrhocorax pyrrhocorax,Pyrrhocorax pyrrhocorax,Pyrrhocorax pyrrhocorax,Pyrrhocorax pyrrhocorax,NCBI,0.988
+"Morus bassanus,Homo sapiens",Morus bassanus,Morus bassanus,Morus bassanus,NCBI,0.988
+"Morus bassanus,Homo sapiens",Homo sapiens,Homo sapiens,Homo sapiens,NCBI,0.988
+Egretta rufescens,Egretta rufescens,Egretta rufescens,Egretta rufescens,NCBI,0.988
+Sciaenops ocellatus,Sciaenops ocellatus,Sciaenops ocellatus,Sciaenops ocellatus,NCBI,0.988
+Phalacrocorax urile,Phalacrocorax urile,Phalacrocorax urile,Phalacrocorax urile,Freebase,0.988
+Sula sula,Sula sula,Sula sula,Sula sula,NCBI,0.988
+"Pernis apivorus,Milvus milvus",Pernis apivorus,Pernis apivorus,Pernis apivorus,NCBI,0.988
+"Pernis apivorus,Milvus milvus",Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+"Circus cyaneus,Milvus milvus",Circus cyaneus,Circus cyaneus,Circus cyaneus,NCBI,0.988
+"Circus cyaneus,Milvus milvus",Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+"Milvus ,Milvus milvus",Milvus ,Milvus,Milvus,Catalogue of Life,0.75
+"Milvus ,Milvus milvus",Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+Phalaropus lobatus,Phalaropus lobatus,Phalaropus lobatus,Phalaropus lobatus,NCBI,0.988
+Phaethon rubricauda,Phaethon rubricauda,Phaethon rubricauda,Phaethon rubricauda,NCBI,0.988
+"Agelaius ,Agelaius phoeniceus",Agelaius ,Agelaius,Agelaius,Catalogue of Life,0.75
+"Agelaius ,Agelaius phoeniceus",Agelaius phoeniceus,Agelaius phoeniceus,Agelaius phoeniceus,NCBI,0.988
+Manta,Manta,Manta,Manta,Freebase,0.75
+Polytelis,Polytelis,Polytelis,Polytelis,Catalogue of Life,0.75
+Cerorhinca monocerata,Cerorhinca monocerata,Cerorhinca monocerata,Cerorhinca monocerata,NCBI,0.988
+Rallidae,Rallidae,Rallidae,Rallidae,Catalogue of Life,0.75
+Pusa hispida,Pusa hispida,Pusa hispida,Pusa hispida,NCBI,0.988
+Grampus griseus,Grampus griseus,Grampus griseus,Grampus griseus,NCBI,0.988
+Siganus rivulatus,Siganus rivulatus,Siganus rivulatus,Siganus rivulatus,NCBI,0.988
+Eudyptes chrysocome,Eudyptes chrysocome,Eudyptes chrysocome,Eudyptes chrysocome,NCBI,0.988
+Tragopan satyra,Tragopan satyra,Tragopan satyra,Tragopan satyra,NCBI,0.988
+"Homo sapiens,Bos taurus,Ovis aries",Homo sapiens,Homo sapiens,Homo sapiens,NCBI,0.988
+"Homo sapiens,Bos taurus,Ovis aries",Bos taurus,Bos taurus,Bos taurus,NCBI,0.988
+"Homo sapiens,Bos taurus,Ovis aries",Ovis aries,Ovis aries,Ovis aries,NCBI,0.988
+"Accipiter cooperii,Buteo jamaicensis,Falco peregrinus",Accipiter cooperii,Accipiter cooperii,Accipiter cooperii,NCBI,0.988
+"Accipiter cooperii,Buteo jamaicensis,Falco peregrinus",Buteo jamaicensis,Buteo jamaicensis,Buteo jamaicensis,NCBI,0.988
+"Accipiter cooperii,Buteo jamaicensis,Falco peregrinus",Falco peregrinus,Falco peregrinus,Falco peregrinus,NCBI,0.988
+Euphagus carolinus,Euphagus carolinus,Euphagus carolinus,Euphagus carolinus,NCBI,0.988
+Saguinus geoffroyi,Saguinus geoffroyi,Saguinus geoffroyi,Saguinus geoffroyi,NCBI,0.988
+Saiga tatarica,Saiga tatarica,Saiga tatarica,Saiga tatarica,NCBI,0.988
+Calidris alba,Calidris alba,Calidris alba,Calidris alba,NCBI,0.988
+Varanus gouldii,Varanus gouldii,Varanus gouldii,Varanus gouldii,NCBI,0.988
+"Riparia riparia,Delichon urbicum",Riparia riparia,Riparia riparia,Riparia riparia,NCBI,0.988
+"Riparia riparia,Delichon urbicum",Delichon urbicum,Delichon urbicum,Delichon urbicum,NCBI,0.988
+Carcharias taurus,Carcharias taurus,Carcharias taurus,Carcharias taurus,NCBI,0.988
+"Lynx rufus,Urocyon cinereoargenteus",Lynx rufus,Lynx rufus,Lynx rufus,NCBI,0.988
+"Lynx rufus,Urocyon cinereoargenteus",Urocyon cinereoargenteus,Urocyon cinereoargenteus,Urocyon cinereoargenteus,NCBI,0.988
+"Ursus arctos,Lynx lynx,Canis lupus",Ursus arctos,Ursus arctos,Ursus arctos,NCBI,0.988
+"Ursus arctos,Lynx lynx,Canis lupus",Lynx lynx,Lynx lynx,Lynx lynx,NCBI,0.988
+"Ursus arctos,Lynx lynx,Canis lupus",Canis lupus,Canis lupus,Canis lupus,NCBI,0.988
+"Accipiter nisus,Buteo buteo,Circus cyaneus,Circus macrourus,Circus pygargus,Burhinus oedicnemus,Circus aeruginosus",Accipiter nisus,Accipiter nisus,Accipiter nisus,NCBI,0.988
+"Accipiter nisus,Buteo buteo,Circus cyaneus,Circus macrourus,Circus pygargus,Burhinus oedicnemus,Circus aeruginosus",Buteo buteo,Buteo buteo,Buteo buteo,NCBI,0.988
+"Accipiter nisus,Buteo buteo,Circus cyaneus,Circus macrourus,Circus pygargus,Burhinus oedicnemus,Circus aeruginosus",Circus cyaneus,Circus cyaneus,Circus cyaneus,NCBI,0.988
+"Accipiter nisus,Buteo buteo,Circus cyaneus,Circus macrourus,Circus pygargus,Burhinus oedicnemus,Circus aeruginosus",Circus macrourus,Circus macrourus,Circus macrourus,NCBI,0.988
+"Accipiter nisus,Buteo buteo,Circus cyaneus,Circus macrourus,Circus pygargus,Burhinus oedicnemus,Circus aeruginosus",Circus pygargus,Circus pygargus,Circus pygargus,NCBI,0.988
+"Accipiter nisus,Buteo buteo,Circus cyaneus,Circus macrourus,Circus pygargus,Burhinus oedicnemus,Circus aeruginosus",Burhinus oedicnemus,Burhinus oedicnemus,Burhinus oedicnemus,NCBI,0.988
+"Accipiter nisus,Buteo buteo,Circus cyaneus,Circus macrourus,Circus pygargus,Burhinus oedicnemus,Circus aeruginosus",Circus aeruginosus,Circus aeruginosus,Circus aeruginosus,NCBI,0.988
+Passerculus sandwichensis,Passerculus sandwichensis,Passerculus sandwichensis,Passerculus sandwichensis,NCBI,0.988
+Locustella luscinioides,Locustella luscinioides,Locustella luscinioides,Locustella luscinioides,NCBI,0.988
+Ara macao,Ara macao,Ara macao,Ara macao,NCBI,0.988
+"Gyps fulvus,Gyps rueppellii",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Gyps fulvus,Gyps rueppellii",Gyps rueppellii,Gyps rueppellii,Gyps rueppellii,NCBI,0.988
+"Somateria mollissima,Alca torda",Somateria mollissima,Somateria mollissima,Somateria mollissima,NCBI,0.988
+"Somateria mollissima,Alca torda",Alca torda,Alca torda,Alca torda,NCBI,0.988
+"Gavia stellata,Clangula hyemalis,Melanitta fusca",Gavia stellata,Gavia stellata,Gavia stellata,NCBI,0.988
+"Gavia stellata,Clangula hyemalis,Melanitta fusca",Clangula hyemalis,Clangula hyemalis,Clangula hyemalis,NCBI,0.988
+"Gavia stellata,Clangula hyemalis,Melanitta fusca",Melanitta fusca,Melanitta fusca,Melanitta fusca,NCBI,0.988
+"Aythya fuligula,Clangula hyemalis,Somateria mollissima,Melanitta nigra",Aythya fuligula,Aythya fuligula,Aythya fuligula,NCBI,0.988
+"Aythya fuligula,Clangula hyemalis,Somateria mollissima,Melanitta nigra",Clangula hyemalis,Clangula hyemalis,Clangula hyemalis,NCBI,0.988
+"Aythya fuligula,Clangula hyemalis,Somateria mollissima,Melanitta nigra",Somateria mollissima,Somateria mollissima,Somateria mollissima,NCBI,0.988
+"Aythya fuligula,Clangula hyemalis,Somateria mollissima,Melanitta nigra",Melanitta nigra,Melanitta nigra,Melanitta nigra,NCBI,0.988
+"Orcinus orca,Arctocephalus gazella,Arctocephalus tropicalis,Mirounga leonina",Orcinus orca,Orcinus orca,Orcinus orca,NCBI,0.988
+"Orcinus orca,Arctocephalus gazella,Arctocephalus tropicalis,Mirounga leonina",Arctocephalus gazella,Arctocephalus gazella,Arctocephalus gazella,NCBI,0.988
+"Orcinus orca,Arctocephalus gazella,Arctocephalus tropicalis,Mirounga leonina",Arctocephalus tropicalis,Arctocephalus tropicalis,Arctocephalus tropicalis,NCBI,0.988
+"Orcinus orca,Arctocephalus gazella,Arctocephalus tropicalis,Mirounga leonina",Mirounga leonina,Mirounga leonina,Mirounga leonina,NCBI,0.988
+Physeter,Physeter,Physeter,Physeter,Catalogue of Life,0.75
+"Chelonia mydas,Eretmochelys imbricata",Chelonia mydas,Chelonia mydas,Chelonia mydas,NCBI,0.988
+"Chelonia mydas,Eretmochelys imbricata",Eretmochelys imbricata,Eretmochelys imbricata,Eretmochelys imbricata,NCBI,0.988
+"Caretta caretta,Chelonia mydas,Eretmochelys imbricata",Caretta caretta,Caretta caretta,Caretta caretta,NCBI,0.988
+"Caretta caretta,Chelonia mydas,Eretmochelys imbricata",Chelonia mydas,Chelonia mydas,Chelonia mydas,NCBI,0.988
+"Caretta caretta,Chelonia mydas,Eretmochelys imbricata",Eretmochelys imbricata,Eretmochelys imbricata,Eretmochelys imbricata,NCBI,0.988
+Falconidae,Falconidae,Falconidae,Falconidae,Catalogue of Life,0.75
+"Numenius phaeopus,Limosa lapponica",Numenius phaeopus,Numenius phaeopus,Numenius phaeopus,NCBI,0.988
+"Numenius phaeopus,Limosa lapponica",Limosa lapponica,Limosa lapponica,Limosa lapponica,NCBI,0.988
+"Circus cyaneus,Asio flammeus",Circus cyaneus,Circus cyaneus,Circus cyaneus,NCBI,0.988
+"Circus cyaneus,Asio flammeus",Asio flammeus,Asio flammeus,Asio flammeus,NCBI,0.988
+Boiga nigriceps,Boiga nigriceps,Boiga nigriceps,Boiga nigriceps,NCBI,0.988
+Anas clypeata,Anas clypeata,Anas clypeata,Anas clypeata,NCBI,0.988
+Luscinia calliope,Luscinia calliope,Luscinia calliope,Luscinia calliope,Freebase,0.988
+"Homo sapiens,Propithecus verreauxi",Homo sapiens,Homo sapiens,Homo sapiens,NCBI,0.988
+"Homo sapiens,Propithecus verreauxi",Propithecus verreauxi,Propithecus verreauxi,Propithecus verreauxi,NCBI,0.988
+"Turdus merula,Ceratotherium simum,Capreolus capreolus",Turdus merula,Turdus merula,Turdus merula,NCBI,0.988
+"Turdus merula,Ceratotherium simum,Capreolus capreolus",Ceratotherium simum,Ceratotherium simum,Ceratotherium simum,NCBI,0.988
+"Turdus merula,Ceratotherium simum,Capreolus capreolus",Capreolus capreolus,Capreolus capreolus,Capreolus capreolus,NCBI,0.988
+"Canis latrans,Puma concolor",Canis latrans,Canis latrans,Canis latrans,NCBI,0.988
+"Canis latrans,Puma concolor",Puma concolor,Puma concolor,Puma concolor,NCBI,0.988
+"Buteo ,Buteo jamaicensis,Buteo regalis,Circus ",Buteo ,Buteo,Buteo,Catalogue of Life,0.75
+"Buteo ,Buteo jamaicensis,Buteo regalis,Circus ",Buteo jamaicensis,Buteo jamaicensis,Buteo jamaicensis,NCBI,0.988
+"Buteo ,Buteo jamaicensis,Buteo regalis,Circus ",Buteo regalis,Buteo regalis,Buteo regalis,NCBI,0.988
+"Buteo ,Buteo jamaicensis,Buteo regalis,Circus ",Circus ,Circus,Circus,Catalogue of Life,0.75
+Tiliqua,Tiliqua,Tiliqua,Tiliqua,Catalogue of Life,0.75
+"Paradoxurus hermaphroditus,Viverra tangalunga",Paradoxurus hermaphroditus,Paradoxurus hermaphroditus,Paradoxurus hermaphroditus,NCBI,0.988
+"Paradoxurus hermaphroditus,Viverra tangalunga",Viverra tangalunga,Viverra tangalunga,Viverra tangalunga,NCBI,0.988
+Sphyrna zygaena,Sphyrna zygaena,Sphyrna zygaena,Sphyrna zygaena,NCBI,0.988
+Eudyptes robustus,Eudyptes robustus,Eudyptes robustus,Eudyptes robustus,NCBI,0.988
+Plectrophenax nivalis,Plectrophenax nivalis,Plectrophenax nivalis,Plectrophenax nivalis,NCBI,0.988
+Vanellus gregarius,Vanellus gregarius,Vanellus gregarius,Vanellus gregarius,Freebase,0.988
+Gopherus morafkai,Gopherus morafkai,Gopherus morafkai,Gopherus morafkai,NCBI,0.988
+Sterna fuscata,Sterna fuscata,Sterna fuscata,Sterna fuscata,Freebase,0.988
+Nasua nasua,Nasua nasua,Nasua nasua,Nasua nasua,NCBI,0.988
+Stercorarius maccormicki,Stercorarius maccormicki,Stercorarius maccormicki,Stercorarius maccormicki,NCBI,0.988
+Buteo swainsoni,Buteo swainsoni,Buteo swainsoni,Buteo swainsoni,NCBI,0.988
+Agkistrodon contortrix,Agkistrodon contortrix,Agkistrodon contortrix,Agkistrodon contortrix,NCBI,0.988
+Chironectes minimus,Chironectes minimus,Chironectes minimus,Chironectes minimus,NCBI,0.988
+Physeter macrocephalus,Physeter macrocephalus,Physeter macrocephalus,Physeter macrocephalus,Freebase,0.988
+Tringa guttifer,Tringa guttifer,Tringa guttifer,Tringa guttifer,NCBI,0.988
+Polysticta stelleri,Polysticta stelleri,Polysticta stelleri,Polysticta stelleri,NCBI,0.988
+Aquila nipalensis,Aquila nipalensis,Aquila nipalensis,Aquila nipalensis,NCBI,0.988
+"Oceanodroma castro,Phaethon aethereus,Sula dactylatra,Anous stolidus",Oceanodroma castro,Oceanodroma castro,Oceanodroma castro,Freebase,0.988
+"Oceanodroma castro,Phaethon aethereus,Sula dactylatra,Anous stolidus",Phaethon aethereus,Phaethon aethereus,Phaethon aethereus,NCBI,0.988
+"Oceanodroma castro,Phaethon aethereus,Sula dactylatra,Anous stolidus",Sula dactylatra,Sula dactylatra,Sula dactylatra,NCBI,0.988
+"Oceanodroma castro,Phaethon aethereus,Sula dactylatra,Anous stolidus",Anous stolidus,Anous stolidus,Anous stolidus,NCBI,0.988
+Phalcoboenus australis,Phalcoboenus australis,Phalcoboenus australis,Phalcoboenus australis,NCBI,0.988
+Kinosternon baurii,Kinosternon baurii,Kinosternon baurii,Kinosternon baurii,NCBI,0.988
+Puffinus tenuirostris,Puffinus tenuirostris,Puffinus tenuirostris,Puffinus tenuirostris,Freebase,0.988
+"Procyon lotor,Canis latrans,Vulpes vulpes,Urocyon cinereoargenteus",Procyon lotor,Procyon lotor,Procyon lotor,NCBI,0.988
+"Procyon lotor,Canis latrans,Vulpes vulpes,Urocyon cinereoargenteus",Canis latrans,Canis latrans,Canis latrans,NCBI,0.988
+"Procyon lotor,Canis latrans,Vulpes vulpes,Urocyon cinereoargenteus",Vulpes vulpes,Vulpes vulpes,Vulpes vulpes,NCBI,0.988
+"Procyon lotor,Canis latrans,Vulpes vulpes,Urocyon cinereoargenteus",Urocyon cinereoargenteus,Urocyon cinereoargenteus,Urocyon cinereoargenteus,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta",Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+"Anas platyrhynchos,Anas strepera,Anas acuta",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+Recurvirostra avosetta,Recurvirostra avosetta,Recurvirostra avosetta,Recurvirostra avosetta,NCBI,0.988
+Cacatua galerita,Cacatua galerita,Cacatua galerita,Cacatua galerita,NCBI,0.988
+"Sus scrofa,Rusa marianna",Sus scrofa,Sus scrofa,Sus scrofa,NCBI,0.988
+"Sus scrofa,Rusa marianna",Rusa marianna,Rusa marianna,Rusa marianna,NCBI,0.988
+"Buteo ,Buteo swainsoni",Buteo ,Buteo,Buteo,Catalogue of Life,0.75
+"Buteo ,Buteo swainsoni",Buteo swainsoni,Buteo swainsoni,Buteo swainsoni,NCBI,0.988
+Wallabia bicolor,Wallabia bicolor,Wallabia bicolor,Wallabia bicolor,NCBI,0.988
+"Caretta caretta,Chelonia mydas,Eretmochelys imbricata,Lepidochelys olivacea,Dermochelys coriacea",Caretta caretta,Caretta caretta,Caretta caretta,NCBI,0.988
+"Caretta caretta,Chelonia mydas,Eretmochelys imbricata,Lepidochelys olivacea,Dermochelys coriacea",Chelonia mydas,Chelonia mydas,Chelonia mydas,NCBI,0.988
+"Caretta caretta,Chelonia mydas,Eretmochelys imbricata,Lepidochelys olivacea,Dermochelys coriacea",Eretmochelys imbricata,Eretmochelys imbricata,Eretmochelys imbricata,NCBI,0.988
+"Caretta caretta,Chelonia mydas,Eretmochelys imbricata,Lepidochelys olivacea,Dermochelys coriacea",Lepidochelys olivacea,Lepidochelys olivacea,Lepidochelys olivacea,NCBI,0.988
+"Caretta caretta,Chelonia mydas,Eretmochelys imbricata,Lepidochelys olivacea,Dermochelys coriacea",Dermochelys coriacea,Dermochelys coriacea,Dermochelys coriacea,NCBI,0.988
+Tadarida teniotis,Tadarida teniotis,Tadarida teniotis,Tadarida teniotis,NCBI,0.988
+Budorcas taxicolor,Budorcas taxicolor,Budorcas taxicolor,Budorcas taxicolor,NCBI,0.988
+Tamandua mexicana,Tamandua mexicana,Tamandua mexicana,Tamandua mexicana,NCBI,0.988
+Cercocebus galeritus,Cercocebus galeritus,Cercocebus galeritus,Cercocebus galeritus,NCBI,0.988
+"Gyps ,Gyps africanus",Gyps ,Gyps,Gyps,Catalogue of Life,0.75
+"Gyps ,Gyps africanus",Gyps africanus,Gyps africanus,Gyps africanus,NCBI,0.988
+Eudyptes pachyrhynchus,Eudyptes pachyrhynchus,Eudyptes pachyrhynchus,Eudyptes pachyrhynchus,NCBI,0.988
+Anthus campestris,Anthus campestris,Anthus campestris,Anthus campestris,NCBI,0.988
+"Uria aalge,Uria lomvia",Uria aalge,Uria aalge,Uria aalge,NCBI,0.988
+"Uria aalge,Uria lomvia",Uria lomvia,Uria lomvia,Uria lomvia,NCBI,0.988
+"Aquila heliaca,Haliaeetus albicilla,Milvus migrans,Milvus milvus,Gyps fulvus,Falco cherrug,Otis tarda,Larus cachinnans,Circus aeruginosus",Aquila heliaca,Aquila heliaca,Aquila heliaca,NCBI,0.988
+"Aquila heliaca,Haliaeetus albicilla,Milvus migrans,Milvus milvus,Gyps fulvus,Falco cherrug,Otis tarda,Larus cachinnans,Circus aeruginosus",Haliaeetus albicilla,Haliaeetus albicilla,Haliaeetus albicilla,NCBI,0.988
+"Aquila heliaca,Haliaeetus albicilla,Milvus migrans,Milvus milvus,Gyps fulvus,Falco cherrug,Otis tarda,Larus cachinnans,Circus aeruginosus",Milvus migrans,Milvus migrans,Milvus migrans,NCBI,0.988
+"Aquila heliaca,Haliaeetus albicilla,Milvus migrans,Milvus milvus,Gyps fulvus,Falco cherrug,Otis tarda,Larus cachinnans,Circus aeruginosus",Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+"Aquila heliaca,Haliaeetus albicilla,Milvus migrans,Milvus milvus,Gyps fulvus,Falco cherrug,Otis tarda,Larus cachinnans,Circus aeruginosus",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Aquila heliaca,Haliaeetus albicilla,Milvus migrans,Milvus milvus,Gyps fulvus,Falco cherrug,Otis tarda,Larus cachinnans,Circus aeruginosus",Falco cherrug,Falco cherrug,Falco cherrug,NCBI,0.988
+"Aquila heliaca,Haliaeetus albicilla,Milvus migrans,Milvus milvus,Gyps fulvus,Falco cherrug,Otis tarda,Larus cachinnans,Circus aeruginosus",Otis tarda,Otis tarda,Otis tarda,NCBI,0.988
+"Aquila heliaca,Haliaeetus albicilla,Milvus migrans,Milvus milvus,Gyps fulvus,Falco cherrug,Otis tarda,Larus cachinnans,Circus aeruginosus",Larus cachinnans,Larus cachinnans,Larus cachinnans,NCBI,0.988
+"Aquila heliaca,Haliaeetus albicilla,Milvus migrans,Milvus milvus,Gyps fulvus,Falco cherrug,Otis tarda,Larus cachinnans,Circus aeruginosus",Circus aeruginosus,Circus aeruginosus,Circus aeruginosus,NCBI,0.988
+"Caretta caretta,Eretmochelys imbricata,Lepidochelys olivacea,Dermochelys coriacea",Caretta caretta,Caretta caretta,Caretta caretta,NCBI,0.988
+"Caretta caretta,Eretmochelys imbricata,Lepidochelys olivacea,Dermochelys coriacea",Eretmochelys imbricata,Eretmochelys imbricata,Eretmochelys imbricata,NCBI,0.988
+"Caretta caretta,Eretmochelys imbricata,Lepidochelys olivacea,Dermochelys coriacea",Lepidochelys olivacea,Lepidochelys olivacea,Lepidochelys olivacea,NCBI,0.988
+"Caretta caretta,Eretmochelys imbricata,Lepidochelys olivacea,Dermochelys coriacea",Dermochelys coriacea,Dermochelys coriacea,Dermochelys coriacea,NCBI,0.988
+Larus thayeri,Larus thayeri,Larus thayeri,Larus thayeri,NCBI,0.988
+"Galeocerdo cuvier,Carcharhinus leucas,Sphyrna lewini,Chelonia mydas",Galeocerdo cuvier,Galeocerdo cuvier,Galeocerdo cuvier,NCBI,0.988
+"Galeocerdo cuvier,Carcharhinus leucas,Sphyrna lewini,Chelonia mydas",Carcharhinus leucas,Carcharhinus leucas,Carcharhinus leucas,NCBI,0.988
+"Galeocerdo cuvier,Carcharhinus leucas,Sphyrna lewini,Chelonia mydas",Sphyrna lewini,Sphyrna lewini,Sphyrna lewini,NCBI,0.988
+"Galeocerdo cuvier,Carcharhinus leucas,Sphyrna lewini,Chelonia mydas",Chelonia mydas,Chelonia mydas,Chelonia mydas,NCBI,0.988
+Theristicus,Theristicus,Theristicus,Theristicus,Catalogue of Life,0.75
+Uria lomvia,Uria lomvia,Uria lomvia,Uria lomvia,NCBI,0.988
+Rhynchopsitta pachyrhyncha,Rhynchopsitta pachyrhyncha,Rhynchopsitta pachyrhyncha,Rhynchopsitta pachyrhyncha,NCBI,0.988
+Galeocerdo cuvier,Galeocerdo cuvier,Galeocerdo cuvier,Galeocerdo cuvier,NCBI,0.988
+Chelonoidis nigra,Chelonoidis nigra,Chelonoidis nigra,Chelonoidis nigra,Encyclopedia of Life,0.988
+"Pteroglossus torquatus,Ramphastos sulfuratus,Ramphastos swainsonii",Pteroglossus torquatus,Pteroglossus torquatus,Pteroglossus torquatus,NCBI,0.988
+"Pteroglossus torquatus,Ramphastos sulfuratus,Ramphastos swainsonii",Ramphastos sulfuratus,Ramphastos sulfuratus,Ramphastos sulfuratus,NCBI,0.988
+"Pteroglossus torquatus,Ramphastos sulfuratus,Ramphastos swainsonii",Ramphastos swainsonii,Ramphastos swainsonii,Ramphastos swainsonii,NCBI,0.988
+"Turdus migratorius,Turdus amaurochalinus",Turdus migratorius,Turdus migratorius,Turdus migratorius,NCBI,0.988
+"Turdus migratorius,Turdus amaurochalinus",Turdus amaurochalinus,Turdus amaurochalinus,Turdus amaurochalinus,NCBI,0.988
+Athene cunicularia,Athene cunicularia,Athene cunicularia,Athene cunicularia,NCBI,0.988
+Onychoprion anaethetus,Onychoprion anaethetus,Onychoprion anaethetus,Onychoprion anaethetus,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Accipiter gentilis,Accipiter gentilis,Accipiter gentilis,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Buteo buteo,Buteo buteo,Buteo buteo,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Milvus migrans,Milvus migrans,Milvus migrans,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Milvus milvus,Milvus milvus,Milvus milvus,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Aegypius monachus,Aegypius monachus,Aegypius monachus,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Circaetus gallicus,Circaetus gallicus,Circaetus gallicus,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Hieraaetus pennatus,Hieraaetus pennatus,Hieraaetus pennatus,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Falco peregrinus,Falco peregrinus,Falco peregrinus,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Aquila adalberti,Aquila adalberti,Aquila adalberti,NCBI,0.988
+"Accipiter gentilis,Buteo buteo,Aquila chrysaetos,Milvus migrans,Milvus milvus,Neophron percnopterus,Gyps fulvus,Aegypius monachus,Circaetus gallicus,Hieraaetus pennatus,Falco peregrinus,Aquila adalberti,Circus aeruginosus",Circus aeruginosus,Circus aeruginosus,Circus aeruginosus,NCBI,0.988
+Thunnus albacares,Thunnus albacares,Thunnus albacares,Thunnus albacares,NCBI,0.988
+Tragopan,Tragopan,Tragopan,Tragopan,Catalogue of Life,0.75
+"Tragopan satyra,Ithaginis cruentus",Tragopan satyra,Tragopan satyra,Tragopan satyra,NCBI,0.988
+"Tragopan satyra,Ithaginis cruentus",Ithaginis cruentus,Ithaginis cruentus,Ithaginis cruentus,NCBI,0.988
+Tachycineta bicolor,Tachycineta bicolor,Tachycineta bicolor,Tachycineta bicolor,NCBI,0.988
+"Cygnus columbianus,Anser albifrons,Anser fabalis,Anser anser,Anser cygnoides,Anser erythropus,Grus grus",Cygnus columbianus,Cygnus columbianus,Cygnus columbianus,NCBI,0.988
+"Cygnus columbianus,Anser albifrons,Anser fabalis,Anser anser,Anser cygnoides,Anser erythropus,Grus grus",Anser albifrons,Anser albifrons,Anser albifrons,NCBI,0.988
+"Cygnus columbianus,Anser albifrons,Anser fabalis,Anser anser,Anser cygnoides,Anser erythropus,Grus grus",Anser fabalis,Anser fabalis,Anser fabalis,NCBI,0.988
+"Cygnus columbianus,Anser albifrons,Anser fabalis,Anser anser,Anser cygnoides,Anser erythropus,Grus grus",Anser anser,Anser anser,Anser anser,NCBI,0.988
+"Cygnus columbianus,Anser albifrons,Anser fabalis,Anser anser,Anser cygnoides,Anser erythropus,Grus grus",Anser cygnoides,Anser cygnoides,Anser cygnoides,NCBI,0.988
+"Cygnus columbianus,Anser albifrons,Anser fabalis,Anser anser,Anser cygnoides,Anser erythropus,Grus grus",Anser erythropus,Anser erythropus,Anser erythropus,NCBI,0.988
+"Cygnus columbianus,Anser albifrons,Anser fabalis,Anser anser,Anser cygnoides,Anser erythropus,Grus grus",Grus grus,Grus grus,Grus grus,NCBI,0.988
+Fratercula cirrhata,Fratercula cirrhata,Fratercula cirrhata,Fratercula cirrhata,NCBI,0.988
+"Turdus migratorius,Turdus falcklandii",Turdus migratorius,Turdus migratorius,Turdus migratorius,NCBI,0.988
+"Turdus migratorius,Turdus falcklandii",Turdus falcklandii,Turdus falcklandii,Turdus falcklandii,NCBI,0.988
+"Turdus amaurochalinus,Turdus rufiventris",Turdus amaurochalinus,Turdus amaurochalinus,Turdus amaurochalinus,NCBI,0.988
+"Turdus amaurochalinus,Turdus rufiventris",Turdus rufiventris,Turdus rufiventris,Turdus rufiventris,NCBI,0.988
+Turdus amaurochalinus,Turdus amaurochalinus,Turdus amaurochalinus,Turdus amaurochalinus,NCBI,0.988
+"Cathartes ,Cathartes aura,Coragyps atratus",Cathartes ,Cathartes,Cathartes,Catalogue of Life,0.75
+"Cathartes ,Cathartes aura,Coragyps atratus",Cathartes aura,Cathartes aura,Cathartes aura,NCBI,0.988
+"Cathartes ,Cathartes aura,Coragyps atratus",Coragyps atratus,Coragyps atratus,Coragyps atratus,NCBI,0.988
+Cathartes aura,Cathartes aura,Cathartes aura,Cathartes aura,NCBI,0.988
+"Cathartes ,Cathartes aura",Cathartes ,Cathartes,Cathartes,Catalogue of Life,0.75
+"Cathartes ,Cathartes aura",Cathartes aura,Cathartes aura,Cathartes aura,NCBI,0.988
+Tyrannus tyrannus,Tyrannus tyrannus,Tyrannus tyrannus,Tyrannus tyrannus,NCBI,0.988
+"Lynx ,Lynx rufus",Lynx ,Lynx,Lynx,Catalogue of Life,0.75
+"Lynx ,Lynx rufus",Lynx rufus,Lynx rufus,Lynx rufus,NCBI,0.988
+"Morus bassanus,Ciconia ciconia,Falco peregrinus,Larus audouinii",Morus bassanus,Morus bassanus,Morus bassanus,NCBI,0.988
+"Morus bassanus,Ciconia ciconia,Falco peregrinus,Larus audouinii",Ciconia ciconia,Ciconia ciconia,Ciconia ciconia,NCBI,0.988
+"Morus bassanus,Ciconia ciconia,Falco peregrinus,Larus audouinii",Falco peregrinus,Falco peregrinus,Falco peregrinus,NCBI,0.988
+"Morus bassanus,Ciconia ciconia,Falco peregrinus,Larus audouinii",Larus audouinii,Larus audouinii,Larus audouinii,AnAge,0.988
+"Cervus elaphus,Capra ibex,Rupicapra rupicapra",Cervus elaphus,Cervus elaphus,Cervus elaphus,NCBI,0.988
+"Cervus elaphus,Capra ibex,Rupicapra rupicapra",Capra ibex,Capra ibex,Capra ibex,NCBI,0.988
+"Cervus elaphus,Capra ibex,Rupicapra rupicapra",Rupicapra rupicapra,Rupicapra rupicapra,Rupicapra rupicapra,NCBI,0.988
+Bartramia longicauda,Bartramia longicauda,Bartramia longicauda,Bartramia longicauda,NCBI,0.988
+Prionailurus viverrinus,Prionailurus viverrinus,Prionailurus viverrinus,Prionailurus viverrinus,NCBI,0.988
+"Felis silvestris,Martes martes",Felis silvestris,Felis silvestris,Felis silvestris,NCBI,0.988
+"Felis silvestris,Martes martes",Martes martes,Martes martes,Martes martes,NCBI,0.988
+Odobenus rosmarus,Odobenus rosmarus,Odobenus rosmarus,Odobenus rosmarus,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Anser albifrons,Anser albifrons,Anser albifrons,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Chen caerulescens,Chen caerulescens,Chen caerulescens,Freebase,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Chen rossii,Chen rossii,Chen rossii,Freebase,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Anas platyrhynchos,Anas platyrhynchos,Anas platyrhynchos,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Anas strepera,Anas strepera,Anas strepera,Freebase,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Anas acuta,Anas acuta,Anas acuta,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Anas crecca,Anas crecca,Anas crecca,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Anas discors,Anas discors,Anas discors,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Anas cyanoptera,Anas cyanoptera,Anas cyanoptera,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Anas penelope,Anas penelope,Anas penelope,Freebase,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Anas americana,Anas americana,Anas americana,Freebase,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Anas clypeata,Anas clypeata,Anas clypeata,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Aythya valisineria,Aythya valisineria,Aythya valisineria,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Aythya marila,Aythya marila,Aythya marila,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Circus cyaneus,Circus cyaneus,Circus cyaneus,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Phasianus colchicus,Phasianus colchicus,Phasianus colchicus,NCBI,0.988
+"Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas penelope,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus,Rallus longirostris",Rallus longirostris,Rallus longirostris,Rallus longirostris,NCBI,0.988
+"Neophron percnopterus,Gypaetus barbatus,Gyps fulvus,Aegypius monachus",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+"Neophron percnopterus,Gypaetus barbatus,Gyps fulvus,Aegypius monachus",Gypaetus barbatus,Gypaetus barbatus,Gypaetus barbatus,NCBI,0.988
+"Neophron percnopterus,Gypaetus barbatus,Gyps fulvus,Aegypius monachus",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Neophron percnopterus,Gypaetus barbatus,Gyps fulvus,Aegypius monachus",Aegypius monachus,Aegypius monachus,Aegypius monachus,NCBI,0.988
+Icterus icterus,Icterus icterus,Icterus icterus,Icterus icterus,NCBI,0.988
+Sturnella magna,Sturnella magna,Sturnella magna,Sturnella magna,NCBI,0.988
+Ammodramus savannarum,Ammodramus savannarum,Ammodramus savannarum,Ammodramus savannarum,NCBI,0.988
+Tockus deckeni,Tockus deckeni,Tockus deckeni,Tockus deckeni,NCBI,0.988
+"Homo sapiens,Felis ,Felis catus",Homo sapiens,Homo sapiens,Homo sapiens,NCBI,0.988
+"Homo sapiens,Felis ,Felis catus",Felis ,Felis,Felis,Catalogue of Life,0.75
+"Homo sapiens,Felis ,Felis catus",Felis catus,Felis catus,Felis catus,NCBI,0.988
+"Homo sapiens,Felis catus",Homo sapiens,Homo sapiens,Homo sapiens,NCBI,0.988
+"Homo sapiens,Felis catus",Felis catus,Felis catus,Felis catus,NCBI,0.988
+"Gyps fulvus,Aegypius monachus",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+"Gyps fulvus,Aegypius monachus",Aegypius monachus,Aegypius monachus,Aegypius monachus,NCBI,0.988
+"Neophron percnopterus,Gypaetus barbatus,Gyps fulvus",Neophron percnopterus,Neophron percnopterus,Neophron percnopterus,NCBI,0.988
+"Neophron percnopterus,Gypaetus barbatus,Gyps fulvus",Gypaetus barbatus,Gypaetus barbatus,Gypaetus barbatus,NCBI,0.988
+"Neophron percnopterus,Gypaetus barbatus,Gyps fulvus",Gyps fulvus,Gyps fulvus,Gyps fulvus,NCBI,0.988
+Hieraaetus wahlbergi,Hieraaetus wahlbergi,Hieraaetus wahlbergi,Hieraaetus wahlbergi,NCBI,0.988
+Histrionicus histrionicus,Histrionicus histrionicus,Histrionicus histrionicus,Histrionicus histrionicus,NCBI,0.988
+Melanitta fusca,Melanitta fusca,Melanitta fusca,Melanitta fusca,NCBI,0.988
+"Platalea regia,Threskiornis molucca,Threskiornis spinicollis",Platalea regia,Platalea regia,Platalea regia,NCBI,0.988
+"Platalea regia,Threskiornis molucca,Threskiornis spinicollis",Threskiornis molucca,Threskiornis molucca,Threskiornis molucca,Freebase,0.988
+"Platalea regia,Threskiornis molucca,Threskiornis spinicollis",Threskiornis spinicollis,Threskiornis spinicollis,Threskiornis spinicollis,Freebase,0.988
+Saxicola rubetra,Saxicola rubetra,Saxicola rubetra,Saxicola rubetra,NCBI,0.988
+Larus occidentalis,Larus occidentalis,Larus occidentalis,Larus occidentalis,NCBI,0.988
+Connochaetes taurinus,Connochaetes taurinus,Connochaetes taurinus,Connochaetes taurinus,NCBI,0.988
+Patagioenas leucocephala,Patagioenas leucocephala,Patagioenas leucocephala,Patagioenas leucocephala,NCBI,0.988
+Cebus capucinus,Cebus capucinus,Cebus capucinus,Cebus capucinus,NCBI,0.988
+Saguinus leucopus,Saguinus leucopus,Saguinus leucopus,Saguinus leucopus,NCBI,0.988
+Tayassu pecari,Tayassu pecari,Tayassu pecari,Tayassu pecari,NCBI,0.988
+"Tayassu ,Tayassu pecari,Meleagris ocellata",Tayassu ,Tayassu,Tayassu,Catalogue of Life,0.75
+"Tayassu ,Tayassu pecari,Meleagris ocellata",Tayassu pecari,Tayassu pecari,Tayassu pecari,NCBI,0.988
+"Tayassu ,Tayassu pecari,Meleagris ocellata",Meleagris ocellata,Meleagris ocellata,Meleagris ocellata,NCBI,0.988
+"Gruidae ,Grus vipio",Gruidae ,Gruidae,Gruidae,Catalogue of Life,0.75
+"Gruidae ,Grus vipio",Grus vipio,Grus vipio,Grus vipio,Freebase,0.988
+Grus vipio,Grus vipio,Grus vipio,Grus vipio,Freebase,0.988
+Pterodroma cervicalis,Pterodroma cervicalis,Pterodroma cervicalis,Pterodroma cervicalis,NCBI,0.988
+Zoothera aurea,Zoothera aurea,Zoothera aurea,Zoothera aurea,NCBI,0.988
+"Ciconia ,Ciconia ciconia",Ciconia ,Ciconia,Ciconia,Catalogue of Life,0.75
+"Ciconia ,Ciconia ciconia",Ciconia ciconia,Ciconia ciconia,Ciconia ciconia,NCBI,0.988
+"Felis ,Felis silvestris",Felis ,Felis,Felis,Catalogue of Life,0.75
+"Felis ,Felis silvestris",Felis silvestris,Felis silvestris,Felis silvestris,NCBI,0.988
+Chordata,Chordata,Chordata,Chordata,Catalogue of Life,0.75
+"Aquila ,Aquila chrysaetos,Circus cyaneus",Aquila ,Aquila,Aquila,Catalogue of Life,0.75
+"Aquila ,Aquila chrysaetos,Circus cyaneus",Aquila chrysaetos,Aquila chrysaetos,Aquila chrysaetos,NCBI,0.988
+"Aquila ,Aquila chrysaetos,Circus cyaneus",Circus cyaneus,Circus cyaneus,Circus cyaneus,NCBI,0.988
+"Mycteria ,Mycteria americana",Mycteria ,Mycteria,Mycteria,Catalogue of Life,0.75
+"Mycteria ,Mycteria americana",Mycteria americana,Mycteria americana,Mycteria americana,NCBI,0.988
+Mycteria americana,Mycteria americana,Mycteria americana,Mycteria americana,NCBI,0.988
+Antilocapra,Antilocapra,Antilocapra,Antilocapra,Catalogue of Life,0.75
+"Puffinus ,Puffinus yelkouan",Puffinus ,Puffinus,Puffinus,Catalogue of Life,0.75
+"Puffinus ,Puffinus yelkouan",Puffinus yelkouan,Puffinus yelkouan,Puffinus yelkouan,NCBI,0.988
+Gavia adamsii,Gavia adamsii,Gavia adamsii,Gavia adamsii,NCBI,0.988
+"Megadyptes ,Megadyptes antipodes",Megadyptes ,Megadyptes,Megadyptes,Catalogue of Life,0.75
+"Megadyptes ,Megadyptes antipodes",Megadyptes antipodes,Megadyptes antipodes,Megadyptes antipodes,NCBI,0.988
+Megadyptes antipodes,Megadyptes antipodes,Megadyptes antipodes,Megadyptes antipodes,NCBI,0.988
+Setophaga petechia,Setophaga petechia,Setophaga petechia,Setophaga petechia,NCBI,0.988
+Sula bassanus,Sula bassanus,Sula bassanus,Sula bassanus,Index to Organism Names,0.988
+Porphyrio porphyrio,Porphyrio porphyrio,Porphyrio porphyrio,Porphyrio porphyrio,NCBI,0.988
+"Equus grevyi,Equus burchellii",Equus grevyi,Equus grevyi,Equus grevyi,NCBI,0.988
+"Equus grevyi,Equus burchellii",Equus burchellii,Equus burchellii,Equus burchellii,NCBI,0.988
+Zonotrichia capensis,Zonotrichia capensis,Zonotrichia capensis,Zonotrichia capensis,NCBI,0.988
