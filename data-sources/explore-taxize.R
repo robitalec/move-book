@@ -11,7 +11,7 @@ library(taxize)
 # Data --------------------------------------------------------------------
 details <- fread('data-sources/details.csv')
 
-
+details[, record_id := .I]
 
 # Taxize ------------------------------------------------------------------
 details[is.null(taxon_ids), .N]
