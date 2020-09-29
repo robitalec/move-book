@@ -35,4 +35,6 @@ taxes <- subdet[, rbindlist(lapply(strsplit(taxon_ids, ','), sort_resolved),
 								by = taxon_ids]
 
 
-
+# Get eg. family and class
+ranks <- c('family', 'class')
+taxes[, (ranks) := tax_name(matched_name, ranks, messages = FALSE)[, ranks]]
