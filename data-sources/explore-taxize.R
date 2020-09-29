@@ -38,3 +38,14 @@ taxes <- subdet[, rbindlist(lapply(strsplit(taxon_ids, ','), sort_resolved),
 # Get eg. family and class
 ranks <- c('family', 'class')
 taxes[, (ranks) := tax_name(matched_name, ranks, messages = FALSE)[, ranks]]
+
+
+# Summary -----------------------------------------------------------------
+m <- merge(details, taxes,
+					 by = 'taxon_ids',
+					 all = TRUE)
+
+# Output ------------------------------------------------------------------
+fwrite(taxes, 'data-sources/taxes.csv')
+
+fwrite(m, 'data-sources/taxed-details.csv')
