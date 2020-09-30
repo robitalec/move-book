@@ -84,12 +84,12 @@ and FALSE in red. **Note: counts are log scaled**.
 ## Number of studies by family
 
 ```{r studies, fig.height=9}
-ggplot(countDT[class == 'Mammalia']) + 
-	geom_bar(aes(factor(family, sort(unique(family), TRUE)),
+ggplot(countDT[class == 'Mammalia', .N, .(i_have_download_access, family)]) + 
+	geom_col(aes(factor(family, sort(unique(family), TRUE)),
+							 N,
 							 fill = i_have_download_access)) +
 	coord_flip() +
-	scale_y_log10() +
-	labs(y = 'Number of studies', x = 'Family') +
+	labs(y = 'Number of studies', x = 'Family')  +
 	guides(fill = FALSE)
 ```
 
