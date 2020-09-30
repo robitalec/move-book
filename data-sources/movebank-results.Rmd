@@ -52,12 +52,12 @@ Grabbing the family and class, then combining the taxonomies with the study deta
 
 TODO: N access, family, class, access by taxonomy etc
 
-```{r class, fig.width = 9}
+```{r, fig.width = 9}
 DT[, .N, class][order(class)]
 ```
 
 
-```{r}
+```{r class}
 ggplot(DT) + 
 	geom_bar(aes(class, fill = i_have_download_access)) +
 	guides(fill = FALSE)

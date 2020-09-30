@@ -61,7 +61,7 @@ TODO: N access, family, class, access by taxonomy etc
         geom_bar(aes(class, fill = i_have_download_access)) +
         guides(fill = FALSE)
 
-![](movebank-results_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](movebank-results_files/figure-gfm/class-1.png)<!-- -->
 
 Careful double counting, because the `DT` dataset now has duplicated
 study rows for each parsed taxon.
