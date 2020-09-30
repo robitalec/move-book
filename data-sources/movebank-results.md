@@ -57,9 +57,12 @@ TODO: N access, family, class, access by taxonomy etc
 
 </div>
 
+    DT[class == "" | class == NA, class := "Unknown"]
+
     ggplot(DT) + 
         geom_bar(aes(class, fill = i_have_download_access)) +
-        guides(fill = FALSE)
+        guides(fill = FALSE) +
+        scale_y_log10()
 
 ![](movebank-results_files/figure-gfm/class-1.png)<!-- -->
 
@@ -134,9 +137,9 @@ Number of relocations by family
 | Mammalia       | Papio                 |  29691006 | Cercopithecidae | FALSE                     |
 | Mammalia       | Papio anubis          |  21920781 | Cercopithecidae | FALSE                     |
 | Mammalia       | Nasua narica          |   7447496 | Procyonidae     | TRUE                      |
-|                | Hieraaetus fasciatus  |  13971973 |                 | FALSE                     |
-|                | Larus audouinii       |    221826 |                 | FALSE                     |
-|                | Phoenicopterus minor  |    194862 |                 | FALSE                     |
+| Unknown        | Hieraaetus fasciatus  |  13971973 |                 | FALSE                     |
+| Unknown        | Larus audouinii       |    221826 |                 | FALSE                     |
+| Unknown        | Phoenicopterus minor  |    194862 |                 | FALSE                     |
 | Reptilia       | Chelonoidis           |   2237506 | Testudinidae    | TRUE                      |
 | Reptilia       | Tiliqua               |   1783379 | Scincidae       | FALSE                     |
 | Reptilia       | Testudinidae          |   1672704 | Testudinidae    | FALSE                     |

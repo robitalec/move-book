@@ -49,18 +49,22 @@ details[id == 422952928]$taxon_ids
 
 Grabbing the family and class, then combining the taxonomies with the study details dataset, we have `r DT[, .N]` species by study rows. 
 
+```{r}
+# First, recode missing class and family
+DT[class == "" | is.na(class), class := "Unknown"]
+DT[family == "" | is.na(family), family := "Unknown"]
 
-TODO: N access, family, class, access by taxonomy etc
 
-```{r, fig.width = 9}
+# Count by class
 DT[, .N, class][order(class)]
 ```
 
 
-```{r class}
+```{r class, fig.width = 9}
 ggplot(DT) + 
 	geom_bar(aes(class, fill = i_have_download_access)) +
-	guides(fill = FALSE)
+	guides(fill = FALSE) +
+	scale_y_log10()
 ```
 
 
