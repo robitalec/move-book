@@ -49,3 +49,18 @@ Grabbing the family and class, then combining the taxonomies with the study deta
 
 TODO: N access, family, class, access by taxonomy etc
 
+```{r}
+DT[, .N, class]
+
+ggplot(DT) + 
+	geom_bar(aes(family))
+
+ggplot(DT) + 
+	geom_bar(aes(class)) + 
+	facet_wrap(~family)
+
+ggplot(DT) + 
+	geom_bar(aes(class, color = factor(i_have_download_access))) + 
+	facet_wrap(~family)
+```
+
