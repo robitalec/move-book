@@ -11,7 +11,9 @@ date: "`r Sys.Date()`"
 knitr::opts_knit$set(root.dir = rprojroot::find_rstudio_root_file())
 
 knitr::opts_chunk$set(echo = TRUE,
-											eval = TRUE)
+											eval = TRUE,
+											out.width = '100%',
+											fig.width = 11)
 ```
 
 
@@ -68,7 +70,7 @@ countDT[, .N, class][order(class)]
 
 
 
-```{r class, fig.width = 9}
+```{r class}
 ggplot(countDT) + 
 	geom_bar(aes(class, fill = i_have_download_access)) +
 	guides(fill = FALSE) +
@@ -98,21 +100,21 @@ g <- ggplot() +
 
 ## Number of studies by family
 
-```{r studies, fig.height=9}
+```{r studies}
 g %+% countDT[class == 'Mammalia', .(y = .N), .(i_have_download_access, family)] +
 	labs(y = 'Number of studies', x = 'Family')
 ```
 
 
 ## Number of individuals by family
-```{r numbids, fig.height=9}
+```{r numbids}
 g %+% countDT[class == 'Mammalia', .(y = sum(number_of_individuals, na.rm = TRUE)),
 							.(i_have_download_access, family)] +
 	labs(y = 'Number of individuals', x = 'Family')
 ```
 
 ## Number of relocations by family
-```{r numblobs, fig.height=9}
+```{r numblobs}
 g %+% countDT[class == 'Mammalia', .(y = sum(number_of_deployed_locations, na.rm = TRUE)),
 							.(i_have_download_access, family)] +
 	labs(y = 'Number of relocations', x = 'Family') +
