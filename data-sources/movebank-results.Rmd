@@ -122,11 +122,15 @@ g %+% countDT[class == 'Mammalia', .(y = sum(number_of_deployed_locations, na.rm
 ```
 
 
+## Top number of relocations by species and study
+
 ```{r}
 countDT[, .(N = sum(number_of_deployed_locations), family = family[[1]], class = class[[1]],
 						i_have_download_access = i_have_download_access[[1]]), 
 				by = matched_name][order(-N, class)][, .SD[1:3], by = class]
 ```
+
+## Etc
 
 Some elements of the database are strange. How do these datasets have last deployed
 timestamps in the 10-25 year future?
