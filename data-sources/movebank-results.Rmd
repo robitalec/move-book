@@ -17,12 +17,14 @@ knitr::opts_chunk$set(echo = TRUE,
 
 
 
-```{r}
+```{r pkgs}
 # Packages ----------------------------------------------------------------
 library(data.table)
 library(taxize)
 library(ggplot2)
+```
 
+```{r data}
 # Data --------------------------------------------------------------------
 details <- fread('data-sources/details.csv')
 taxes <- fread('data-sources/taxes.csv')
@@ -32,7 +34,7 @@ DT <- fread('data-sources/taxed-details.csv')
 
 `taxon_ids` column
 
-```{r}
+```{r checkids}
 details[, .N, .(is.na(taxon_ids), taxon_ids == '')]
 ```
 
@@ -40,7 +42,7 @@ details[, .N, .(is.na(taxon_ids), taxon_ids == '')]
 Out of `r details[taxon_ids == '', .N]` rows with seemingly valid `taxon_ids`, there are up to 17 species listed in any row. Eg. 
 
 
-```{r}
+```{r eglong}
 details[id == 422952928]$taxon_ids
 ```
 
