@@ -80,43 +80,43 @@ ggplot(countDT) +
 # *Mammalia*
 
 Just exploring mammals, the following figures show download access TRUE in blue, 
-and FALSE in red. **Note: counts are log scaled**. 
+and FALSE in red. Note: the plots are separated into chunks based on an even 
+number of observations in each chunk. 
+
+
+```{r base}
+# Set up the base plot
+g <- ggplot() + 
+	geom_col(aes(factor(family, sort(unique(family), TRUE)), y,
+							 fill = i_have_download_access)) +
+  facet_wrap(~ cut_number(y, 2), scales = 'free') +
+	coord_flip() + 
+	guides(fill = FALSE)
+```
+
+
 
 ## Number of studies by family
 
 ```{r studies, fig.height=9}
-ggplot(countDT[class == 'Mammalia', .N, .(i_have_download_access, family)]) + 
-	geom_col(aes(factor(family, sort(unique(family), TRUE)),
-							 N,
-							 fill = i_have_download_access)) +
-	coord_flip() +
-	labs(y = 'Number of studies', x = 'Family')  +
-	guides(fill = FALSE)
+g %+% countDT[class == 'Mammalia', .(y = .N), .(i_have_download_access, family)] +
+	labs(y = 'Number of studies', x = 'Family')
 ```
 
 
 ## Number of individuals by family
 ```{r numbids, fig.height=9}
-ggplot(countDT[class == 'Mammalia', sum(number_of_individuals, na.rm = TRUE), .(i_have_download_access, family)]) + 
-	geom_col(aes(factor(family, sort(unique(family), TRUE)),
-							 V1,
-							 fill = i_have_download_access)) +
-  scale_y_log10() +
-	coord_flip() +
-	labs(y = 'Number of individuals', x = 'Family')  +
-	guides(fill = FALSE)
+g %+% countDT[class == 'Mammalia', .(y = sum(number_of_individuals, na.rm = TRUE)),
+							.(i_have_download_access, family)] +
+	labs(y = 'Number of individuals', x = 'Family')
 ```
 
 ## Number of relocations by family
 ```{r numblobs, fig.height=9}
-ggplot(countDT[class == 'Mammalia', sum(number_of_deployed_locations, na.rm = TRUE), .(i_have_download_access, family)]) + 
-	geom_col(aes(factor(family, sort(unique(family), TRUE)),
-							 V1,
-							 fill = i_have_download_access)) +
-	scale_y_log10() +
-	coord_flip() +
+g %+% countDT[class == 'Mammalia', .(y = sum(number_of_deployed_locations, na.rm = TRUE)),
+							.(i_have_download_access, family)] +
 	labs(y = 'Number of relocations', x = 'Family') +
-	guides(fill = FALSE)
+	facet_wrap(~cut_number(y, 4), scales = 'free')
 ```
 
 
