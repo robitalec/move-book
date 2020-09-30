@@ -51,28 +51,29 @@ Grabbing the family and class, then combining the taxonomies with the study deta
 
 ```{r}
 # First, recode missing class and family
-DT[class == "" | is.na(class), class := "Unknown"]
-DT[family == "" | is.na(family), family := "Unknown"]
-
-
-# Count by class
-DT[, .N, class][order(class)]
+DT[class == "" | is.na(class), class := "*Unknown*"]
+DT[family == "" | is.na(family), family := "*Unknown*"]
 ```
 
-
-```{r class, fig.width = 9}
-ggplot(DT) + 
-	geom_bar(aes(class, fill = i_have_download_access)) +
-	guides(fill = FALSE) +
-	scale_y_log10()
-```
-
-
-Careful double counting, because the `DT` dataset now has duplicated study rows for each parsed taxon. 
+Careful double counting, because the `DT` dataset now has duplicated study rows for each parsed taxon.
 
 ```{r unique}
 # Grab the unique rows based on study id
 countDT <- unique(DT, by = 'id')
+
+
+# Count by class
+countDT[, .N, class][order(class)]
+```
+
+
+
+```{r class, fig.width = 9}
+ggplot(countDT) + 
+	geom_bar(aes(class, fill = i_have_download_access)) +
+	guides(fill = FALSE) +
+	# scale_y_log10() +
+	labs(x = 'Class', y = 'Number of studies')
 ```
 
 
