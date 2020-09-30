@@ -39,21 +39,21 @@ study details dataset, we have 4784 species by study rows.
 
 TODO: N access, family, class, access by taxonomy etc
 
-    DT[, .N, class]
+    DT[, .N, class][order(class)]
 
 <div class="kable-table">
 
 | class          |    N |
 |:---------------|-----:|
 |                | 1704 |
-| Aves           | 2180 |
-| Mammalia       |  744 |
-| Insecta        |    2 |
-| Chondrostei    |    1 |
-| Reptilia       |  106 |
 | Amphibia       |    2 |
-| Teleostei      |   10 |
+| Aves           | 2180 |
 | Chondrichthyes |   35 |
+| Chondrostei    |    1 |
+| Insecta        |    2 |
+| Mammalia       |  744 |
+| Reptilia       |  106 |
+| Teleostei      |   10 |
 
 </div>
 
@@ -61,7 +61,7 @@ TODO: N access, family, class, access by taxonomy etc
         geom_bar(aes(class, fill = i_have_download_access)) +
         guides(fill = FALSE)
 
-![](movebank-results_files/figure-gfm/class-1.png)<!-- -->
+![](movebank-results_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 Careful double counting, because the `DT` dataset now has duplicated
 study rows for each parsed taxon.
