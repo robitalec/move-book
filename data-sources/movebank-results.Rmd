@@ -86,20 +86,30 @@ ggplot(countDT[class == 'Mammalia']) +
 ```
 
 
+## Number of individuals by family
 ```{r numbids, fig.height=9}
-ggplot(DT[class == 'Mammalia', sum(number_of_individuals), .(i_have_download_access, family)]) + 
+ggplot(countDT[class == 'Mammalia', sum(number_of_individuals), .(i_have_download_access, family)]) + 
 	geom_col(aes(factor(family, sort(unique(family), TRUE)),
 							 V1,
-							 fill = factor(i_have_download_access))) +
+							 fill = i_have_download_access)) +
 	coord_flip() +
-	labs(y = 'Number of individuals', x = 'Family')
+	labs(y = 'Number of individuals', x = 'Family')  +
+	guides(fill = FALSE)
 ```
 
+## Number of relocations by family
 ```{r numblobs, fig.height=9}
-ggplot(DT[class == 'Mammalia', sum(number_of_deployed_locations), .(i_have_download_access, family)]) + 
+ggplot(countDT[class == 'Mammalia', sum(number_of_deployed_locations), .(i_have_download_access, family)]) + 
 	geom_col(aes(factor(family, sort(unique(family), TRUE)),
 							 V1,
-							 fill = factor(i_have_download_access))) +
+							 fill = i_have_download_access)) +
 	coord_flip() +
-	labs(y = 'Number of relocations', x = 'Family')
+	labs(y = 'Number of relocations', x = 'Family') +
+	guides(fill = FALSE)
+```
+
+
+
+```{r}
+DT[family == 'Procyonidae']
 ```
