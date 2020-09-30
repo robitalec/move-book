@@ -51,19 +51,25 @@ Grabbing the family and class, then combining the taxonomies with the study deta
 
 TODO: N access, family, class, access by taxonomy etc
 
-```{r class}
+```{r class, fig.width = 9}
 DT[, .N, class]
 
 ggplot(DT) + 
-	geom_bar(aes(class, fill = factor(i_have_download_access)))
+	geom_bar(aes(class, fill = i_have_download_access)) +
+	guides(fill = FALSE)
 ```
 
+
+Careful double counting, because the `DT` dataset now has duplicated study rows for each parsed taxon. 
+
 ```{r studies, fig.height=9}
+
 ggplot(DT[class == 'Mammalia']) + 
 	geom_bar(aes(factor(family, sort(unique(family), TRUE)),
-							 fill = factor(i_have_download_access))) +
+							 fill = i_have_download_access)) +
 	coord_flip() +
-	labs(y = 'Number of studies', x = 'Family')
+	labs(y = 'Number of studies', x = 'Family') +
+	guides(fill = FALSE)
 ```
 
 
