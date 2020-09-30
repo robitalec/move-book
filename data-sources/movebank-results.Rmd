@@ -72,7 +72,7 @@ countDT <- unique(DT, by = 'id')
 # *Mammalia*
 
 Just exploring mammals, the following figures show download access TRUE in blue, 
-and FALSE in red. 
+and FALSE in red. **Note: counts are log scaled**. 
 
 ## Number of studies by family
 
