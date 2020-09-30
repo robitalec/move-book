@@ -81,6 +81,7 @@ ggplot(countDT[class == 'Mammalia']) +
 	geom_bar(aes(factor(family, sort(unique(family), TRUE)),
 							 fill = i_have_download_access)) +
 	coord_flip() +
+	scale_y_log10() +
 	labs(y = 'Number of studies', x = 'Family') +
 	guides(fill = FALSE)
 ```
@@ -92,6 +93,7 @@ ggplot(countDT[class == 'Mammalia', sum(number_of_individuals, na.rm = TRUE), .(
 	geom_col(aes(factor(family, sort(unique(family), TRUE)),
 							 V1,
 							 fill = i_have_download_access)) +
+  scale_y_log10() +
 	coord_flip() +
 	labs(y = 'Number of individuals', x = 'Family')  +
 	guides(fill = FALSE)
