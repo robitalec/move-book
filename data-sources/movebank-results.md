@@ -37,34 +37,9 @@ species listed in any row. Eg.
 Grabbing the family and class, then combining the taxonomies with the
 study details dataset, we have 4784 species by study rows.
 
-TODO: N access, family, class, access by taxonomy etc
-
-    DT[, .N, class][order(class)]
-
-<div class="kable-table">
-
-| class          |    N |
-|:---------------|-----:|
-|                | 1704 |
-| Amphibia       |    2 |
-| Aves           | 2180 |
-| Chondrichthyes |   35 |
-| Chondrostei    |    1 |
-| Insecta        |    2 |
-| Mammalia       |  744 |
-| Reptilia       |  106 |
-| Teleostei      |   10 |
-
-</div>
-
-    DT[class == "" | class == NA, class := "Unknown"]
-
-    ggplot(DT) + 
-        geom_bar(aes(class, fill = i_have_download_access)) +
-        guides(fill = FALSE) +
-        scale_y_log10()
-
-![](movebank-results_files/figure-gfm/class-1.png)<!-- -->
+    # First, recode missing class and family
+    DT[class == "" | is.na(class), class := "*Unknown*"]
+    DT[family == "" | is.na(family), family := "*Unknown*"]
 
 Careful double counting, because the `DT` dataset now has duplicated
 study rows for each parsed taxon.
@@ -72,56 +47,78 @@ study rows for each parsed taxon.
     # Grab the unique rows based on study id
     countDT <- unique(DT, by = 'id')
 
+
+    # Count by class
+    countDT[, .N, class][order(class)]
+
+<div class="kable-table">
+
+| class          |    N |
+|:---------------|-----:|
+| *Unknown*      | 1602 |
+| Amphibia       |    2 |
+| Aves           | 1698 |
+| Chondrichthyes |   20 |
+| Chondrostei    |    1 |
+| Insecta        |    2 |
+| Mammalia       |  582 |
+| Reptilia       |   71 |
+| Teleostei      |   10 |
+
+</div>
+
+    ggplot(countDT) + 
+        geom_bar(aes(class, fill = i_have_download_access)) +
+        guides(fill = FALSE) +
+        # scale_y_log10() +
+        labs(x = 'Class', y = 'Number of studies')
+
+<img src="movebank-results_files/figure-gfm/class-1.png" width="100%" />
+
 *Mammalia*
 ==========
 
 Just exploring mammals, the following figures show download access TRUE
-in blue, and FALSE in red. **Note: counts are log scaled**.
+in blue, and FALSE in red. Note: the plots are separated into chunks
+based on an even number of observations in each chunk.
+
+    # Set up the base plot
+    g <- ggplot() + 
+        geom_col(aes(factor(family, sort(unique(family), TRUE)), y,
+                                 fill = i_have_download_access)) +
+      facet_wrap(~ cut_number(y, 2), scales = 'free') +
+        coord_flip() + 
+        guides(fill = FALSE)
 
 Number of studies by family
 ---------------------------
 
-    ggplot(countDT[class == 'Mammalia']) + 
-        geom_bar(aes(factor(family, sort(unique(family), TRUE)),
-                                 fill = i_have_download_access)) +
-        coord_flip() +
-        scale_y_log10() +
-        labs(y = 'Number of studies', x = 'Family') +
-        guides(fill = FALSE)
+    g %+% countDT[class == 'Mammalia', .(y = .N), .(i_have_download_access, family)] +
+        labs(y = 'Number of studies', x = 'Family')
 
-![](movebank-results_files/figure-gfm/studies-1.png)<!-- -->
+<img src="movebank-results_files/figure-gfm/studies-1.png" width="100%" />
 
 Number of individuals by family
 -------------------------------
 
-    ggplot(countDT[class == 'Mammalia', sum(number_of_individuals, na.rm = TRUE), .(i_have_download_access, family)]) + 
-        geom_col(aes(factor(family, sort(unique(family), TRUE)),
-                                 V1,
-                                 fill = i_have_download_access)) +
-      scale_y_log10() +
-        coord_flip() +
-        labs(y = 'Number of individuals', x = 'Family')  +
-        guides(fill = FALSE)
+    g %+% countDT[class == 'Mammalia', .(y = sum(number_of_individuals, na.rm = TRUE)),
+                                .(i_have_download_access, family)] +
+        labs(y = 'Number of individuals', x = 'Family')
 
-![](movebank-results_files/figure-gfm/numbids-1.png)<!-- -->
+<img src="movebank-results_files/figure-gfm/numbids-1.png" width="100%" />
 
 Number of relocations by family
 -------------------------------
 
-    ggplot(countDT[class == 'Mammalia', sum(number_of_deployed_locations, na.rm = TRUE), .(i_have_download_access, family)]) + 
-        geom_col(aes(factor(family, sort(unique(family), TRUE)),
-                                 V1,
-                                 fill = i_have_download_access)) +
-        scale_y_log10() +
-        coord_flip() +
+    g %+% countDT[class == 'Mammalia', .(y = sum(number_of_deployed_locations, na.rm = TRUE)),
+                                .(i_have_download_access, family)] +
         labs(y = 'Number of relocations', x = 'Family') +
-        guides(fill = FALSE)
+        facet_wrap(~cut_number(y, 4), scales = 'free')
 
-    ## Warning: Transformation introduced infinite values in continuous y-axis
+<img src="movebank-results_files/figure-gfm/numblobs-1.png" width="100%" />
 
-    ## Warning: Removed 4 rows containing missing values (geom_col).
-
-![](movebank-results_files/figure-gfm/numblobs-1.png)<!-- -->
+Top number of relocations by species and study
+----------------------------------------------
 
     countDT[, .(N = sum(number_of_deployed_locations), family = family[[1]], class = class[[1]],
                             i_have_download_access = i_have_download_access[[1]]), 
@@ -137,9 +134,9 @@ Number of relocations by family
 | Mammalia       | Papio                 |  29691006 | Cercopithecidae | FALSE                     |
 | Mammalia       | Papio anubis          |  21920781 | Cercopithecidae | FALSE                     |
 | Mammalia       | Nasua narica          |   7447496 | Procyonidae     | TRUE                      |
-| Unknown        | Hieraaetus fasciatus  |  13971973 |                 | FALSE                     |
-| Unknown        | Larus audouinii       |    221826 |                 | FALSE                     |
-| Unknown        | Phoenicopterus minor  |    194862 |                 | FALSE                     |
+| *Unknown*      | Hieraaetus fasciatus  |  13971973 | *Unknown*       | FALSE                     |
+| *Unknown*      | Larus audouinii       |    221826 | *Unknown*       | FALSE                     |
+| *Unknown*      | Phoenicopterus minor  |    194862 | *Unknown*       | FALSE                     |
 | Reptilia       | Chelonoidis           |   2237506 | Testudinidae    | TRUE                      |
 | Reptilia       | Tiliqua               |   1783379 | Scincidae       | FALSE                     |
 | Reptilia       | Testudinidae          |   1672704 | Testudinidae    | FALSE                     |
@@ -153,13 +150,16 @@ Number of relocations by family
 | Chondrostei    | NA                    |        NA | NA              | NA                        |
 | Chondrostei    | NA                    |        NA | NA              | NA                        |
 | Amphibia       | Bufo bufo             |       277 | Bufonidae       | TRUE                      |
-| Amphibia       | Amphibia              |        NA |                 | FALSE                     |
+| Amphibia       | Amphibia              |        NA | *Unknown*       | FALSE                     |
 | Amphibia       | NA                    |        NA | NA              | NA                        |
 | Insecta        | Acherontiini          |       274 | Sphingidae      | FALSE                     |
 | Insecta        | Exaerete frontalis    |       111 | Apidae          | TRUE                      |
 | Insecta        | NA                    |        NA | NA              | NA                        |
 
 </div>
+
+Etc
+---
 
 Some elements of the database are strange. How do these datasets have
 last deployed timestamps in the 10-25 year future?
