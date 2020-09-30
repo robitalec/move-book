@@ -63,9 +63,21 @@ ggplot(DT) +
 
 Careful double counting, because the `DT` dataset now has duplicated study rows for each parsed taxon. 
 
-```{r studies, fig.height=9}
+```{r unique}
+# Grab the unique rows based on study id
+countDT <- unique(DT, by = 'id')
+```
 
-ggplot(DT[class == 'Mammalia']) + 
+
+# *Mammalia*
+
+Just exploring mammals, the following figures show download access TRUE in blue, 
+and FALSE in red. 
+
+## Number of studies by family
+
+```{r studies, fig.height=9}
+ggplot(countDT[class == 'Mammalia']) + 
 	geom_bar(aes(factor(family, sort(unique(family), TRUE)),
 							 fill = i_have_download_access)) +
 	coord_flip() +
