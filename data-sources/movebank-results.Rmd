@@ -88,7 +88,7 @@ ggplot(countDT[class == 'Mammalia']) +
 
 ## Number of individuals by family
 ```{r numbids, fig.height=9}
-ggplot(countDT[class == 'Mammalia', sum(number_of_individuals), .(i_have_download_access, family)]) + 
+ggplot(countDT[class == 'Mammalia', sum(number_of_individuals, na.rm = TRUE), .(i_have_download_access, family)]) + 
 	geom_col(aes(factor(family, sort(unique(family), TRUE)),
 							 V1,
 							 fill = i_have_download_access)) +
@@ -99,7 +99,7 @@ ggplot(countDT[class == 'Mammalia', sum(number_of_individuals), .(i_have_downloa
 
 ## Number of relocations by family
 ```{r numblobs, fig.height=9}
-ggplot(countDT[class == 'Mammalia', sum(number_of_deployed_locations), .(i_have_download_access, family)]) + 
+ggplot(countDT[class == 'Mammalia', sum(number_of_deployed_locations, na.rm = TRUE), .(i_have_download_access, family)]) + 
 	geom_col(aes(factor(family, sort(unique(family), TRUE)),
 							 V1,
 							 fill = i_have_download_access)) +
