@@ -55,15 +55,7 @@ TODO: N access, family, class, access by taxonomy etc
 DT[, .N, class]
 
 ggplot(DT) + 
-	geom_bar(aes(class))
-```
-
-```{r mammals, fig.height=9}
-ggplot(DT[class == 'Mammalia']) + 
-	geom_bar(aes(factor(family, sort(unique(family), TRUE)),
-							 fill = i_have_download_access)) +
-	coord_flip() +
-	labs(x = 'Number of studies', y = 'Family')
+	geom_bar(aes(class, fill = factor(i_have_download_access)))
 ```
 
 ```{r studies, fig.height=9}
