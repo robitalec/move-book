@@ -10,6 +10,7 @@ library(keyring)
 
 # Data --------------------------------------------------------------------
 details <- fread('data-sources/details.csv')
+DT <- fread('data-sources/taxed-details.csv')
 
 
 # Credentials -------------------------------------------------------------
@@ -20,4 +21,9 @@ username = 'robitalec'
 # Explore -----------------------------------------------------------------
 setAuth(key_list(service)[1, 2], key_get(service, username))
 
-rmoveapi:::
+
+details
+getEvent(
+	save_as = ,
+	accept_license = TRUE
+)
