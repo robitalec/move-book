@@ -22,8 +22,11 @@ username = 'robitalec'
 setAuth(key_list(service)[1, 2], key_get(service, username))
 
 
-details
-getEvent(
+ustudies <- unique(DT, by = 'id')
+mammals <- ustudies[class == 'Mammalia']
+
+mammals[1:2, getEvent(
+	studyid = id
 	save_as = ,
 	accept_license = TRUE
-)
+), by = id]
