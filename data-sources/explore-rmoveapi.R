@@ -26,7 +26,7 @@ ustudies <- unique(DT, by = 'id')
 mammals <- ustudies[class == 'Mammalia']
 
 mammals[1:2, getEvent(
-	studyid = id
-	save_as = ,
+	studyid = .BY[[1]],
+	save_as = paste0('/media/Backup Plus/Movebank/Mammalia/', .BY[[1]]),
 	accept_license = TRUE
 ), by = id]
