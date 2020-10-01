@@ -25,8 +25,15 @@ setAuth(key_list(service)[1, 2], key_get(service, username))
 ustudies <- unique(DT, by = 'id')
 mammals <- ustudies[class == 'Mammalia']
 
-mammals[1:2, getEvent(
-	studyid = .BY[[1]],
-	save_as = paste0('/media/Backup Plus/Movebank/Mammalia/', .BY[[1]]),
-	accept_license = TRUE
+mammals[, tryCatch(
+	getEvent(
+		studyid = .BY[[1]],
+		attributes = 'all',
+		save_as = paste0('/media/Backup Plus/Movebank/Mammalia/', .BY[[1]], '.csv'),
+		accept_license = TRUE
+	),
+	error = function(e)
+		NULL
 ), by = id]
+
+# Error in getMvData(req, ...) : Internal Server Error (HTTP 500).
