@@ -4,6 +4,7 @@
 
 # Packages ----------------------------------------------------------------
 # remotes::install_github('benscarlson/rmoveapi')
+library(data.table)
 library(rmoveapi)
 library(keyring)
 
