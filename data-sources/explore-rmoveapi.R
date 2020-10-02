@@ -161,3 +161,20 @@ mammals[, tryCatch(
 # 50: In for (i in seq_len(n)) { ... :
 # closing unused connection 7 (/media/Backup Plus/Movebank/Mammalia/662993476.csv)
 # There were 11 warnings (use warnings() to see them)
+
+
+
+
+
+gps <- ustudies[grepl('GPS', sensor_type_ids)]
+
+trygps <- gps[, tryCatch(
+	getEvent(
+		studyid = .BY[[1]],
+		attributes = 'all',
+		save_as = paste0('/media/Backup Plus/Movebank/GPS/', .BY[[1]], '.csv'),
+		accept_license = TRUE
+	),
+	error = function(e)
+		NULL
+), by = id]
