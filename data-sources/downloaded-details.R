@@ -45,6 +45,7 @@ sub[, qplot(family) + facet_wrap(~class)]
 #       drop Argos, number of years, number of locs etc
 #       write to summary csv, keep appending
 #       bash script Rscript run on all in folder
+#       and preserve license terms etc
 
 # zzz <- rbindlist(lapply(paths, fread),
 # 								 use.names = TRUE, fill = TRUE)
