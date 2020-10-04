@@ -39,5 +39,12 @@ sub[, qplot(family) + facet_wrap(~class)]
 
 
 # Combine -----------------------------------------------------------------
-zzz <- rbindlist(lapply(paths, fread),
-								 use.names = TRUE, fill = TRUE)
+# No point rbindlist + freading them all
+# TODO: write single input script to
+#       taxon, number of individuals, is it actually GPS?
+#       drop Argos, number of years, number of locs etc
+#       write to summary csv, keep appending
+#       bash script Rscript run on all in folder
+
+# zzz <- rbindlist(lapply(paths, fread),
+# 								 use.names = TRUE, fill = TRUE)
