@@ -40,6 +40,8 @@ ranks <- c('family', 'class')
 taxes[, (ranks) := tax_name(matched_name, ranks, messages = FALSE)[, ranks]]
 
 #careful, tax_name requires manual intervention...
+# TODO: check messages = FALSE, ask = FALSE
+
 
 # Summary -----------------------------------------------------------------
 m <- merge(details, taxes,
