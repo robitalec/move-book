@@ -8,7 +8,13 @@ library(data.table)
 
 
 # Data --------------------------------------------------------------------
-size <- vapply(dir('/media/Backup Plus/Movebank/GPS', full.names = TRUE), file.size, 1)
-nm <- tstrsplit(dir('/media/Backup Plus/Movebank/GPS'), '.csv')[[1]]
+details <- fread('data-sources/details.csv')
 
-data <- data.table(sizes, nms)
+size <- vapply(dir('/media/Backup Plus/Movebank/GPS', full.names = TRUE), file.size, 1)
+nm <- tstrsplit(dir('/media/Backup Plus/Movebank/GPS'), '.csv', type.convert = TRUE)[[1]]
+
+DT <- data.table(size, id = nm)
+
+
+# Merge -------------------------------------------------------------------
+DT[details, on = 'id']
