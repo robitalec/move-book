@@ -3,10 +3,26 @@
 
 
 # Packages ----------------------------------------------------------------
+library(data.table)
+library(anytime)
 
 
 # Input -------------------------------------------------------------------
+# TODO: flex input
 
+read_input <- function(path) {
+
+	id <- as.integer(gsub('.csv', '', tstrsplit(path, 'GPS/')[[2]]))
+	lines <- readLines(path, 1)
+
+	if(grepl('No data are available for download', lines)) {
+		list(id = id, dataAvailable = FALSE)
+	}
+}
+
+p<- '/media/Backup Plus/Movebank/GPS/80475.csv'
+
+read_input(p)
 
 
 # Prep --------------------------------------------------------------------
