@@ -73,12 +73,19 @@ rd[, uniqueN(individual_local_identifier)]
 
 # Check range of datetime
 rd[, range(datetime)]
-rd[, range(datetime), by = individual_id]
-rd[, range(datetime), by = individual_local_identifier]
+rd[, range(datetime), by = idcol]
+rd[, range(datetime), by = idcol]
 
 # Length of study / diff time
 rd[, -1 * Reduce('-', range(datetime))]
-rd[, -1 * Reduce('-', range(datetime)), individual_local_identifier]
+rd[, -1 * Reduce('-', range(datetime)), by = idcol]
+
+
+# Number of years by ID
+rd[, uniqueN(year(datetime)), by = idcol]
+
+# Number of repeated months by ID
+rd[, uniqueN(year(datetime)), by = .(get(idcol), month(datetime))]
 
 # Check how many rows are NA for each column
 lapply(rd, function(x) sum(is.na(x)))
