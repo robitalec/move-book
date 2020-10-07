@@ -31,18 +31,26 @@ check_input <- function(path, depth = 6) {
 		if (nrow(DT) == 0) {
 			list(id = id, path = path, why = 'nrow is 0')
 		} else {
-			list(id = id, path = path, why = NULL)
+			list(id = id, path = path, why = NA)
 		}
 	}
 }
 
 # Check all available input
+# TODO: Switch to flex input from bash/drake
 fp <- '/media/Backup Plus/Movebank/Mammalia'
 check <- rbindlist(lapply(dir(fp, full.names = TRUE), check_input))
 
 
-
 # Prep --------------------------------------------------------------------
+read_input <- function(path) {
+	DT <- fread(path)
+
+	DT[, ]
+}
+
+read_input(check[is.na(why)])
+
 # TODO: set col classes
 
 # TODO: number of individuals
