@@ -2,6 +2,12 @@
 # Alec Robitaille
 
 
+# ***************
+# TODO: check all metadata for fields in movebank database
+# ***************
+
+
+
 # Packages ----------------------------------------------------------------
 library(data.table)
 library(anytime)
