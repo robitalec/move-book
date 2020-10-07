@@ -50,9 +50,9 @@ check <- rbindlist(lapply(dir(fp, full.names = TRUE), check_input))
 
 # Prep --------------------------------------------------------------------
 read_input <- function(path) {
-	DT <- fread(path)
+	rd <- fread(path)
 
-	DT[, datetime := anytime(timestamp)]
+	rd[, datetime := anytime(timestamp)]
 	# TODO: only GPS data
 
 
