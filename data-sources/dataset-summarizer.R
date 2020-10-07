@@ -36,19 +36,10 @@ check_input <- function(path, depth = 6) {
 	}
 }
 
-# Working up from smallest file sizes
-# Nrow == 0
-# p <- '/media/Backup Plus/Movebank/GPS/80475.csv'
-p <- '/media/Backup Plus/Movebank/GPS/1233598831.csv'
-red <- check_input(p)
+# Check all available input
+fp <- '/media/Backup Plus/Movebank/Mammalia'
+check <- rbindlist(lapply(dir(fp, full.names = TRUE), check_input))
 
-lapply(dir('/media/Backup Plus/Movebank/Mammalia', full.names = TRUE)[1:5], check_input)
-# TODO: how to break sourcing a script
-if(!is.null(red$why)) {
-	stop('red why')
-}
-
-print()
 
 
 # Prep --------------------------------------------------------------------
