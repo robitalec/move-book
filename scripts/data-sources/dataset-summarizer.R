@@ -46,7 +46,7 @@ check <- rbindlist(lapply(dir(fp, full.names = TRUE), check_input))
 read_input <- function(path) {
 	DT <- fread(path)
 
-	DT[, ]
+	DT[, datetime := anytime(timestamp)]
 	# TODO: only GPS data
 
 
