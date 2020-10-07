@@ -18,11 +18,11 @@ read_input <- function(path) {
 	internalerror <- 'The server encountered an internal error'
 
 	if(grepl(nodata, lines)) {
-		list(id = id, why = nodata, nrow = NA)
+		list(id = id, why = nodata)
 	} else if (grepl(http403, lines)) {
-		list(id = id, why = http403, nrow = NA)
+		list(id = id, why = http403)
 	} else if (any(grepl(internalerror, lines))) {
-		list(id = id, why = internalerror, nrow = NA)
+		list(id = id, why = internalerror)
 	} else {
 		# TODO: check if you can fake read to preview
 		DT <- fread(path)
