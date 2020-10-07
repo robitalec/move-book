@@ -8,7 +8,7 @@ library(anytime)
 
 
 # Input -------------------------------------------------------------------
-read_input <- function(path) {
+check_input <- function(path) {
 
 	id <- as.integer(gsub('.csv', '', tstrsplit(path, 'GPS/')[[2]]))
 	lines <- readLines(path, 1)
@@ -24,20 +24,31 @@ read_input <- function(path) {
 	} else if (any(grepl(internalerror, lines))) {
 		list(id = id, why = internalerror)
 	} else {
-		# TODO: check if you can fake read to preview
-		DT <- fread(path)
+
+		# Read just 5 rows, to check if there is data
+		DT <- fread(path, nrows = 5)
 
 		if (nrow(DT) == 0) {
 			list(id = id, why = 'nrow is 0')
+		} else {
+			list(id = id, why = NULL)
 		}
 	}
 }
 
 # Working up from smallest file sizes
 # Nrow == 0
-p <- '/media/Backup Plus/Movebank/GPS/80475.csv'
+# p <- '/media/Backup Plus/Movebank/GPS/80475.csv'
 p <- '/media/Backup Plus/Movebank/GPS/1233598831.csv'
-read_input(p)
+red <- check_input(p)
+
+lapply(dir('/media/Backup Plus/Movebank/Mammalia', full.names = TRUE)[1:5], check_input)
+# TODO: how to break sourcing a script
+if(!is.null(red$why)) {
+	stop('red why')
+}
+
+print()
 
 
 # Prep --------------------------------------------------------------------
