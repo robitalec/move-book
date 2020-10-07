@@ -63,6 +63,8 @@ rd <- read_input(check[is.na(why), path][sample(1:50, 1)])
 
 # Check number of individuals
 # TODO: difference between individual, deployment, tag id and individual_local_identifier
+idcol <- 'individual_local_identifier'
+
 rd[, uniqueN(individual_id)]
 rd[, uniqueN(deployment_id)]
 rd[, uniqueN(tag_id)]
