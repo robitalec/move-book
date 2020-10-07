@@ -52,7 +52,10 @@ check <- rbindlist(lapply(dir(fp, full.names = TRUE), check_input))
 read_input <- function(path) {
 	rd <- fread(path)
 
+	# TODO: timezone
 	rd[, datetime := anytime(timestamp)]
+
+
 	# TODO: only GPS data
 
 
