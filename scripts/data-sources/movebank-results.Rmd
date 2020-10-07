@@ -16,9 +16,6 @@ knitr::opts_chunk$set(echo = TRUE,
 											fig.width = 11)
 ```
 
-
-
-
 ```{r pkgs}
 # Packages ----------------------------------------------------------------
 library(data.table)
@@ -29,11 +26,10 @@ library(patchwork)
 
 ```{r data}
 # Data --------------------------------------------------------------------
-details <- fread('data-sources/details.csv')
-taxes <- fread('data-sources/taxes.csv')
-DT <- fread('data-sources/taxed-details.csv')
+details <- fread('derived/data-sources/details.csv')
+taxes <- fread('derived/data-sources/taxes.csv')
+DT <- fread('derived/data-sources/taxed-details.csv')
 ```
-
 
 `taxon_ids` column
 
@@ -41,15 +37,15 @@ DT <- fread('data-sources/taxed-details.csv')
 details[, .N, .(is.na(taxon_ids), taxon_ids == '')]
 ```
 
-
-Out of `r details[taxon_ids == '', .N]` rows with seemingly valid `taxon_ids`, there are up to 17 species listed in any row. Eg. 
-
+Out of `r details[taxon_ids == '', .N]` rows with seemingly valid
+`taxon_ids`, there are up to 17 species listed in any row. Eg.
 
 ```{r eglong}
 details[id == 422952928]$taxon_ids
 ```
 
-Grabbing the family and class, then combining the taxonomies with the study details dataset, we have `r DT[, .N]` species by study rows. 
+Grabbing the family and class, then combining the taxonomies with the
+study details dataset, we have `r DT[, .N]` species by study rows.
 
 ```{r}
 # First, recode missing class and family
@@ -57,7 +53,8 @@ DT[class == "" | is.na(class), class := "*Unknown*"]
 DT[family == "" | is.na(family), family := "*Unknown*"]
 ```
 
-Careful double counting, because the `DT` dataset now has duplicated study rows for each parsed taxon.
+Careful double counting, because the `DT` dataset now has duplicated
+study rows for each parsed taxon.
 
 ```{r unique}
 # Grab the unique rows based on study id
@@ -68,8 +65,6 @@ countDT <- unique(DT, by = 'id')
 countDT[, .N, class][order(class)]
 ```
 
-
-
 ```{r class}
 ggplot(countDT) + 
 	geom_bar(aes(class, fill = i_have_download_access)) +
@@ -78,13 +73,11 @@ ggplot(countDT) +
 	labs(x = 'Class', y = 'Number of studies')
 ```
 
-
 # *Mammalia*
 
-Just exploring mammals, the following figures show download access TRUE in blue, 
-and FALSE in red. Note: the plots are separated into chunks based on an even 
-number of observations in each chunk. 
-
+Just exploring mammals, the following figures show download access TRUE
+in blue, and FALSE in red. Note: the plots are separated into chunks
+based on an even number of observations in each chunk.
 
 ```{r base}
 # Set up the base plot
@@ -96,8 +89,6 @@ g <- ggplot() +
 	guides(fill = FALSE)
 ```
 
-
-
 ## Number of studies by family
 
 ```{r studies}
@@ -105,8 +96,8 @@ g %+% countDT[class == 'Mammalia', .(y = .N), .(i_have_download_access, family)]
 	labs(y = 'Number of studies', x = 'Family')
 ```
 
-
 ## Number of individuals by family
+
 ```{r numbids}
 g %+% countDT[class == 'Mammalia', .(y = sum(number_of_individuals, na.rm = TRUE)),
 							.(i_have_download_access, family)] +
@@ -114,13 +105,13 @@ g %+% countDT[class == 'Mammalia', .(y = sum(number_of_individuals, na.rm = TRUE
 ```
 
 ## Number of relocations by family
+
 ```{r numblobs}
 g %+% countDT[class == 'Mammalia', .(y = sum(number_of_deployed_locations, na.rm = TRUE)),
 							.(i_have_download_access, family)] +
 	labs(y = 'Number of relocations', x = 'Family') +
 	facet_wrap(~cut_number(y, 4), scales = 'free')
 ```
-
 
 ## Top number of relocations by species and study
 
@@ -132,8 +123,8 @@ countDT[, .(N = sum(number_of_deployed_locations), family = family[[1]], class =
 
 ## Etc
 
-Some elements of the database are strange. How do these datasets have last deployed
-timestamps in the 10-25 year future?
+Some elements of the database are strange. How do these datasets have
+last deployed timestamps in the 10-25 year future?
 
 ```{r}
 DT[matched_name == 'Polemaetus bellicosus'][, .(

@@ -9,7 +9,7 @@ library(taxize)
 
 
 # Data --------------------------------------------------------------------
-details <- fread('data-sources/details.csv')
+details <- fread('derived/data-sources/details.csv')
 
 details[, record_id := .I]
 
@@ -49,9 +49,9 @@ m <- merge(details, taxes,
 					 all = TRUE)
 
 # Output ------------------------------------------------------------------
-fwrite(taxes, 'data-sources/taxes.csv')
+fwrite(taxes, 'derived/data-sources/taxes.csv')
 
-fwrite(m, 'data-sources/taxed-details.csv')
+fwrite(m, 'derived/data-sources/taxed-details.csv')
 
 
 

@@ -10,8 +10,8 @@ library(keyring)
 
 
 # Data --------------------------------------------------------------------
-details <- fread('data-sources/details.csv')
-DT <- fread('data-sources/taxed-details.csv')
+details <- fread('derived/data-sources/details.csv')
+DT <- fread('derived/data-sources/taxed-details.csv')
 
 
 # Credentials -------------------------------------------------------------

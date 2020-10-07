@@ -83,10 +83,10 @@ get_details <- function(study) {
 details <- rbindlist(lapply(studies, get_details),
 										 fill = TRUE, use.names = TRUE)
 
-saveRDS(details, 'data-sources/details.Rds')
-fwrite(details, 'data-sources/details.csv')
+saveRDS(details, 'derived/data-sources/details.Rds')
+fwrite(details, 'derived/data-sources/details.csv')
 
-details <- fread('data-sources/details.csv')
+details <- fread('derived/data-sources/details.csv')
 # Warning message:
 # 	In require_bit64_if_needed(ans) :
 # 	Some columns are type 'integer64' but package bit64 is not installed. Those columns will print as strange looking floating point data. There is no need to reload the data. Simply install.packages('bit64') to obtain the integer64 print method and print the data again.
