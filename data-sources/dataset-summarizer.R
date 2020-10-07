@@ -8,9 +8,9 @@ library(anytime)
 
 
 # Input -------------------------------------------------------------------
-check_input <- function(path) {
+check_input <- function(path, depth = 6) {
 
-	id <- as.integer(gsub('.csv', '', tstrsplit(path, 'GPS/')[[2]]))
+	id <- as.integer(gsub('.csv', '', tstrsplit(path, '/')[[depth]]))
 	lines <- readLines(path, 1)
 
 	nodata <- 'No data are available for download'
