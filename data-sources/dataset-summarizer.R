@@ -43,17 +43,25 @@ check <- rbindlist(lapply(dir(fp, full.names = TRUE), check_input))
 
 
 # Prep --------------------------------------------------------------------
+# TODO: set col classes
 
+# TODO: number of individuals
+# TODO: number of relocations
+# TODO: number of years by individual
 
 
 # Time (Donuts) -----------------------------------------------------------
+# TODO: what are the timezones?
+# TODO: time range
+# TODO: temporal overlap of individuals
 
 
 
 # Space is only time you can see ------------------------------------------
-
-
-
+# TODO: is it always lat lon?
+# TODO: if so, merge group_pts_latlon ?
+# TODO: bbox, area coverage
+# TODO: missed fixes, NAs
 
 # Append output -----------------------------------------------------------
 
