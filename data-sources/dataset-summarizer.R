@@ -13,9 +13,18 @@ read_input <- function(path) {
 	id <- as.integer(gsub('.csv', '', tstrsplit(path, 'GPS/')[[2]]))
 	lines <- readLines(path, 1)
 
-	if(grepl('No data are available for download', lines)) {
-		list(id = id, dataAvailable = FALSE, nrow = NA)
+	nodata <- 'No data are available for download'
+	http403 <- 'HTTP Status 403 - Incorrect md5 hash'
+	internalerror <- 'The server encountered an internal error'
+
+	if(grepl(nodata, lines)) {
+		list(id = id, why = nodata, nrow = NA)
+	} else if (grepl(http403, lines)) {
+		list(id = id, why = http403, nrow = NA)
+	} else if (any(grepl(internalerror, lines))) {
+		list(id = id, why = internalerror, nrow = NA)
 	}
+
 
 	DT <- fread(path)
 
