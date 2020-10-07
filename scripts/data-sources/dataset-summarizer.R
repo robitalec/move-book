@@ -122,8 +122,18 @@ get_bbox <- function(x, y) {
 # Space is only time you can see ------------------------------------------
 # TODO: is it always lat lon?
 # TODO: if so, merge group_pts_latlon ?
-# TODO: bbox, area coverage
-# TODO: missed fixes, NAs
+
+# Get bbox
+get_bbox <- function(x, y) {
+	list(
+		minx = min(x, na.rm = TRUE),
+		maxx = max(x, na.rm = TRUE),
+		miny = min(y, na.rm = TRUE),
+		maxy = max(y, na.rm = TRUE)
+	)
+}
+
+rd[, get_bbox(location_long, location_lat)]
 
 # Append output -----------------------------------------------------------
 
