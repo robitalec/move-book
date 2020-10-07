@@ -54,12 +54,26 @@ read_input <- function(path) {
 
 }
 
+rd <- read_input(check[is.na(why), path][sample(1:50, 1)])
+
+# Check number of individuals
+# TODO: difference between individual, deployment, tag id and individual_local_identifier
+rd[, uniqueN(individual_id)]
+rd[, uniqueN(deployment_id)]
+rd[, uniqueN(tag_id)]
+rd[, uniqueN(tag_local_identifier)]
+rd[, uniqueN(individual_local_identifier)]
+
+# Check range of datetime
+rd[, range(datetime)]
+rd[, range(datetime), by = individual_id]
+
 # Check how many rows are NA for each column
 lapply(rd, function(x) sum(is.na(x)))
 
 
-read_input(check[is.na(why), path][sample(1:50, 1)])
 
+# TODO: reduce down to only relevant and common columns
 # TODO: set col classes
 
 # TODO: number of individuals
