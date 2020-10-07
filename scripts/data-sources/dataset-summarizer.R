@@ -54,7 +54,11 @@ read_input <- function(path) {
 
 }
 
-read_input(check[is.na(why), path][1])
+# Check how many rows are NA for each column
+lapply(rd, function(x) sum(is.na(x)))
+
+
+read_input(check[is.na(why), path][sample(1:50, 1)])
 
 # TODO: set col classes
 
