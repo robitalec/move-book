@@ -23,20 +23,18 @@ read_input <- function(path) {
 		list(id = id, why = http403, nrow = NA)
 	} else if (any(grepl(internalerror, lines))) {
 		list(id = id, why = internalerror, nrow = NA)
+	} else {
+		# TODO: check if you can fake read to preview
+		DT <- fread(path)
+
+		if (nrow(DT) == 0) {
+			list(id = id, why = 'nrow is 0')
+		}
 	}
-
-
-	DT <- fread(path)
-
-	if (nrow(DT) == 0) {
-		list(id = id, dataAvailable = FALSE, nrow = 0)
-	}
-
-
-
 }
 
 # Working up from smallest file sizes
+# Nrow == 0
 p <- '/media/Backup Plus/Movebank/GPS/80475.csv'
 p <- '/media/Backup Plus/Movebank/GPS/1233598831.csv'
 read_input(p)
