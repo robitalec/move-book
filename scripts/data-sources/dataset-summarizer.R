@@ -56,7 +56,6 @@ read_input <- function(path) {
 	# TODO: only GPS data
 
 
-	# TODO: check all metadata for fields in movebank database
 
 }
 
@@ -73,6 +72,11 @@ rd[, uniqueN(individual_local_identifier)]
 # Check range of datetime
 rd[, range(datetime)]
 rd[, range(datetime), by = individual_id]
+rd[, range(datetime), by = individual_local_identifier]
+
+# Length of study / diff time
+rd[, -1 * Reduce('-', range(datetime))]
+rd[, -1 * Reduce('-', range(datetime)), individual_local_identifier]
 
 # Check how many rows are NA for each column
 lapply(rd, function(x) sum(is.na(x)))
