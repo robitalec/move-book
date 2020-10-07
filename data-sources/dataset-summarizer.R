@@ -8,20 +8,28 @@ library(anytime)
 
 
 # Input -------------------------------------------------------------------
-# TODO: flex input
-
 read_input <- function(path) {
 
 	id <- as.integer(gsub('.csv', '', tstrsplit(path, 'GPS/')[[2]]))
 	lines <- readLines(path, 1)
 
 	if(grepl('No data are available for download', lines)) {
-		list(id = id, dataAvailable = FALSE)
+		list(id = id, dataAvailable = FALSE, nrow = NA)
 	}
+
+	DT <- fread(path)
+
+	if (nrow(DT) == 0) {
+		list(id = id, dataAvailable = FALSE, nrow = 0)
+	}
+
+
+
 }
 
-p<- '/media/Backup Plus/Movebank/GPS/80475.csv'
-
+# Working up from smallest file sizes
+p <- '/media/Backup Plus/Movebank/GPS/80475.csv'
+p <- '/media/Backup Plus/Movebank/GPS/1233598831.csv'
 read_input(p)
 
 
