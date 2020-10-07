@@ -59,6 +59,9 @@ read_input <- function(path) {
 	# TODO: only GPS data
 
 
+	# TODO: reduce down to only relevant and common columns
+	# TODO: set col classes
+
 
 }
 
@@ -73,6 +76,18 @@ rd[, uniqueN(deployment_id)]
 rd[, uniqueN(tag_id)]
 rd[, uniqueN(tag_local_identifier)]
 rd[, uniqueN(individual_local_identifier)]
+
+# Number of relocations by ID
+rd[, .N, by = idcol]
+
+
+# Check how many rows are NA for each column
+lapply(rd, function(x) sum(is.na(x)))
+
+
+# Time (Donuts) -----------------------------------------------------------
+# TODO: temporal overlap of individuals
+
 
 # Check range of datetime
 rd[, range(datetime)]
@@ -90,27 +105,6 @@ rd[, uniqueN(year(datetime)), by = idcol]
 # Number of repeated months by ID
 rd[, uniqueN(year(datetime)), by = .(get(idcol), month(datetime))]
 
-# Number of relocations by ID
-rd[, .N, by = idcol]
-
-
-# Check how many rows are NA for each column
-lapply(rd, function(x) sum(is.na(x)))
-
-
-
-# TODO: reduce down to only relevant and common columns
-# TODO: set col classes
-
-# TODO: number of individuals
-# TODO: number of relocations
-# TODO: number of years by individual
-
-
-# Time (Donuts) -----------------------------------------------------------
-# TODO: what are the timezones?
-# TODO: time range
-# TODO: temporal overlap of individuals
 
 
 
@@ -130,16 +124,5 @@ get_bbox <- function(x, y) {
 
 rd[, get_bbox(location_long, location_lat)]
 
-# Append output -----------------------------------------------------------
 
-
-
-
-
-# No point rbindlist + freading them all
-# TODO: write single input script to
-#       taxon, number of individuals, is it actually GPS?
-#       drop Argos, number of years, number of locs etc
-#       write to summary csv, keep appending
-#       bash script Rscript run on all in folder
-#       and preserve license terms etc
+# Output ------------------------------------------------------------------
