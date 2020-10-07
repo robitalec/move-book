@@ -90,18 +90,13 @@ rd[, uniqueN(year(datetime)), by = idcol]
 # Number of repeated months by ID
 rd[, uniqueN(year(datetime)), by = .(get(idcol), month(datetime))]
 
+# Number of relocations by ID
+rd[, .N, by = idcol]
+
 
 # Check how many rows are NA for each column
 lapply(rd, function(x) sum(is.na(x)))
 
-get_bbox <- function(x, y) {
-	list(
-		minx = min(location_long, na.rm = TRUE),
-		maxx = max(location_long, na.rm = TRUE),
-		miny = min(location_lat, na.rm = TRUE),
-		maxy = max(location_lat, na.rm = TRUE),
-	)
-}
 
 
 # TODO: reduce down to only relevant and common columns
