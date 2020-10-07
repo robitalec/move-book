@@ -47,9 +47,14 @@ read_input <- function(path) {
 	DT <- fread(path)
 
 	DT[, ]
+	# TODO: only GPS data
+
+
+	# TODO: check all metadata for fields in movebank database
+
 }
 
-read_input(check[is.na(why)])
+read_input(check[is.na(why), path][1])
 
 # TODO: set col classes
 
