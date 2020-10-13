@@ -122,22 +122,19 @@ rd[, nrowNA := list(lapply(rd, function(x) sum(is.na(x))))]
 
 
 # Time (Donuts) -----------------------------------------------------------
-# TODO: temporal overlap of individuals
-
 temp_overlap <- function(DT) {
-	DT[, mindatetime := anytime(min(datetime)), by = individual_id]
-	DT[, maxdatetime := anytime(max(datetime)), by = individual_id]
+	DT[, mindatetime := min(datetime), by = individual_id]
+	DT[, maxdatetime := max(datetime), by = individual_id]
 
-	ggplot(rd, aes(y = as.character(individual_id), yend = as.character(individual_id))) +
-		geom_segment(aes(
-			x = mindatetime,
-			xend = maxdatetime,
-			color = factor(individual_id),
-			group = individual_id
-		), size = 4) +
-		scale_color_viridis_d() +
+	ggplot(DT, aes(y = as.character(individual_id),
+								 yend = as.character(individual_id))) +
+		geom_segment(aes(x = mindatetime,
+										 xend = maxdatetime,
+										 group = individual_id),
+								 size = 4) +
 		guides(color = FALSE) +
-	scale_x_datetime(date_labels = '%b %Y')
+		scale_x_datetime(date_labels = '%b %Y') +
+		labs(x = 'Date', y = 'ID')
 }
 temp_overlap(rd)
 
