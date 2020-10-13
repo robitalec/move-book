@@ -167,17 +167,18 @@ check_time(rd)
 
 # Get bbox
 get_bbox <- function(x, y) {
-	st_as_sfc(st_bbox(c(
+	st_as_sf(st_as_sfc(st_bbox(c(
 		xmin = min(x, na.rm = TRUE),
 		xmax = max(x, na.rm = TRUE),
 		ymin = min(y, na.rm = TRUE),
 		ymax = max(y, na.rm = TRUE)
-	)))
+	))), crs = 4326)
 }
 
 boxes <- rd[, .(box = list(get_bbox(location_long, location_lat))), by = individual_id]
 
-mapview(boxes$box)
+m <- mapview(boxes$box)
+mapshot(m, file = 'figures/bbox.png')
 overlap_bbox <- function(DT) {
 	sf
 }
