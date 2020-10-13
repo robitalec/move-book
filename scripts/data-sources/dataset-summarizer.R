@@ -35,9 +35,9 @@ check_input <- function(path, depth = 6) {
 		DT <- fread(path, nrows = 5)
 
 		if (nrow(DT) == 0) {
-			list(id = id, path = path, why = 'nrow is 0', cols = list(colnames(DT)))
+			list(id = id, path = path, why = 'nrow is 0', cols = NA)
 		} else {
-			list(id = id, path = path, why = NA, cols = NA)
+			list(id = id, path = path, why = NA, cols = list(colnames(DT)))
 		}
 	}
 }
