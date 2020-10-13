@@ -162,21 +162,39 @@ check_time(rd)
 
 
 
-# Space is only time you can see ------------------------------------------
-# TODO: is it always lat lon?
-# TODO: if so, merge group_pts_latlon ?
+# Space is only noise if you can see --------------------------------------
+# TODO: merge group_pts_latlon
 
 # Get bbox
 get_bbox <- function(x, y) {
-	list(
-		minx = min(x, na.rm = TRUE),
-		maxx = max(x, na.rm = TRUE),
-		miny = min(y, na.rm = TRUE),
-		maxy = max(y, na.rm = TRUE)
-	)
+	st_as_sfc(st_bbox(c(
+		xmin = min(x, na.rm = TRUE),
+		xmax = max(x, na.rm = TRUE),
+		ymin = min(y, na.rm = TRUE),
+		ymax = max(y, na.rm = TRUE)
+	)))
 }
 
-rd[, get_bbox(location_long, location_lat)]
+boxes <- rd[, .(box = list(get_bbox(location_long, location_lat))), by = individual_id]
+
+mapview(boxes$box)
+overlap_bbox <- function(DT) {
+	sf
+}
+
+x <- boxes[, st_bbox(c(xmin = minx, ymin = miny, xmax = maxx, ymax = maxy)),
+					 individual_id]
+
+x$V1
+
+mapview(x$V1)
+ggplot(boxes) +
+	geom_rect(aes(xmin = minx,
+								xmax = maxx,
+								ymin = miny,
+								ymax = maxy))
+
+
 
 
 # Output ------------------------------------------------------------------
