@@ -181,4 +181,7 @@ mapshot(m, file = 'figures/bbox.png')
 
 
 # Output ------------------------------------------------------------------
+# TODO: how to loop into a pdf
+# TODO: plan single page of info per dataset
+# TODO: how sort by quality/best?
 '/media/Backup Plus/Movebank/GPS/Summary/'
