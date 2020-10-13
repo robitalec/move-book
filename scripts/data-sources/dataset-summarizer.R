@@ -161,25 +161,6 @@ check_time <- function(DT) {
 check_time(rd)
 
 
-# length of study
-# number of yeras
-# number of repeated months
-# fix rate
-
-
-# Length of study / diff time
-
-rd[, -1 * Reduce('-', range(datetime)), by = individual_id]
-
-
-# Number of years by ID
-rd[, uniqueN(year(datetime)), by = idcol]
-
-# Number of repeated months by ID
-rd[, uniqueN(year(datetime)), by = .(get(idcol), month(datetime))]
-
-
-
 
 # Space is only time you can see ------------------------------------------
 # TODO: is it always lat lon?
