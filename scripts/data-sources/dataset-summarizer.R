@@ -64,8 +64,9 @@ check[grepl('lon', cols)]$cols[[1]]
 
 
 # Prep --------------------------------------------------------------------
-read_input <- function(path) {
-	rd <- fread(path, select = commoncols)
+read_input <- function(path, select = NULL) {
+	# TODO: drop this reduce when reading for analysis and not just summary
+	rd <- fread(path, select = select)
 
 	# Format: yyyy-MM-dd HH:mm:ss.SSS
 	# Units: UTC or GPS time
