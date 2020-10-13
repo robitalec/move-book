@@ -44,7 +44,7 @@ check_input <- function(path, depth = 6) {
 
 # Check all available input
 # TODO: Switch to flex input from bash/drake
-fp <- '/media/Backup Plus/Movebank/Mammalia'
+fp <- '/media/Backup Plus/Movebank/GPS'
 check <- rbindlist(lapply(dir(fp, full.names = TRUE), check_input))
 
 
@@ -65,7 +65,10 @@ read_input <- function(path) {
 
 }
 
-rd <- read_input(check[is.na(why), path][sample(1:50, 1)])
+rd <- read_input(sample(check[is.na(why), path], 1))
+
+# Movebank data structure:
+#  http://vocab.nerc.ac.uk/collection/MVB/current/
 
 # Check number of individuals
 # TODO: difference between individual, deployment, tag id and individual_local_identifier
