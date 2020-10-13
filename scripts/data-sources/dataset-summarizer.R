@@ -149,9 +149,27 @@ temp_overlap <- function(DT, type = 'point') {
 }
 temp_overlap(rd, type = 'point')
 
+
+check_time <- function(DT) {
+	DT[, lenStudy := -1 * Reduce('-', range(datetime))]
+	DT[, nYears := uniqueN(year(datetime))]
+	DT[, nMonth := uniqueN(year(datetime)), by = month(datetime)]
+
+	setorder(DT, datetime)
+	DT[, fixRate := difftime(datetime, shift(datetime), units = 'hours'), by = individual_id]
+}
+check_time(rd)
+
+
+# length of study
+# number of yeras
+# number of repeated months
+# fix rate
+
+
 # Length of study / diff time
-rd[, -1 * Reduce('-', range(datetime))]
-rd[, -1 * Reduce('-', range(datetime)), by = idcol]
+
+rd[, -1 * Reduce('-', range(datetime)), by = individual_id]
 
 
 # Number of years by ID
