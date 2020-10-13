@@ -53,7 +53,7 @@ read_input <- function(path) {
 	rd <- fread(path)
 
 	# TODO: timezone
-	rd[, datetime := anytime(timestamp)]
+	rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
 
 
 	# TODO: only GPS data
@@ -69,6 +69,7 @@ rd <- read_input(sample(check[is.na(why), path], 1))
 
 # Movebank data structure:
 #  http://vocab.nerc.ac.uk/collection/MVB/current/
+#  timestamp: UTC time
 
 # Check number of individuals
 # TODO: difference between individual, deployment, tag id and individual_local_identifier
