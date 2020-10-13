@@ -138,11 +138,6 @@ temp_overlap <- function(DT) {
 }
 temp_overlap(rd)
 
-# Check range of datetime
-rd[, range(datetime)]
-rd[, range(datetime), by = idcol]
-rd[, range(datetime), by = idcol]
-
 # Length of study / diff time
 rd[, -1 * Reduce('-', range(datetime))]
 rd[, -1 * Reduce('-', range(datetime)), by = idcol]
