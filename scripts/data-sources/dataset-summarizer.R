@@ -98,10 +98,21 @@ count_ids <- function(DT) {
 	DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
 	DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
 
+	DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
+	DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
+
 	# Number of relocations by ID
 	# TODO: rbindlist this output
 	DT[, nLocByIndividual := list(rd[, .N, .(study_id, individual_id)])]
+
+	DT
 }
+
+count_ids(rd)
+
+# Are there more tags/individuals listed in the non-local columns?
+rd[, unique(moreTag)]
+rd[, unique(moreIndividual)]
 
 
 
