@@ -122,21 +122,32 @@ rd[, nrowNA := list(lapply(rd, function(x) sum(is.na(x))))]
 
 
 # Time (Donuts) -----------------------------------------------------------
-temp_overlap <- function(DT) {
+temp_overlap <- function(DT, type = 'point') {
 	DT[, mindatetime := min(datetime), by = individual_id]
 	DT[, maxdatetime := max(datetime), by = individual_id]
 
-	ggplot(DT, aes(y = as.character(individual_id),
-								 yend = as.character(individual_id))) +
-		geom_segment(aes(x = mindatetime,
-										 xend = maxdatetime,
+	if (type == 'point') {
+		ggplot(DT, aes(y = as.character(individual_id),
+									 yend = as.character(individual_id))) +
+			geom_point(aes(x = datetime,
 										 group = individual_id),
-								 size = 4) +
-		guides(color = FALSE) +
-		scale_x_datetime(date_labels = '%b %Y') +
-		labs(x = 'Date', y = 'ID')
+								 size = 1) +
+			guides(color = FALSE) +
+			scale_x_datetime(date_labels = '%b %Y') +
+			labs(x = 'Date', y = 'ID')
+	} else if (type == 'bar') {
+		ggplot(DT, aes(y = as.character(individual_id),
+									 yend = as.character(individual_id))) +
+			geom_segment(aes(x = mindatetime,
+											 xend = maxdatetime,
+											 group = individual_id),
+									 size = 4) +
+			guides(color = FALSE) +
+			scale_x_datetime(date_labels = '%b %Y') +
+			labs(x = 'Date', y = 'ID')
+	}
 }
-temp_overlap(rd)
+temp_overlap(rd, type = 'point')
 
 # Length of study / diff time
 rd[, -1 * Reduce('-', range(datetime))]
