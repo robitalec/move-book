@@ -69,13 +69,12 @@ read_input <- function(path) {
 
 	# Format: yyyy-MM-dd HH:mm:ss.SSS
 	# Units: UTC or GPS time
-	# rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
+	rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
 
 
 	# TODO: only GPS data
 
 
-	# TODO: reduce down to only relevant and common columns
 	# TODO: set col classes
 
 
