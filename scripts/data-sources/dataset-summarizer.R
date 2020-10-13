@@ -2,17 +2,11 @@
 # Alec Robitaille
 
 
-# ***************
-# TODO: check all metadata for fields in movebank database
-# ***************
-
-
-
 # Packages ----------------------------------------------------------------
 library(data.table)
 library(anytime)
 library(ggplot2)
-
+library(mapview)
 
 # Data structure ----------------------------------------------------------
 ## Movebank data structure: http://vocab.nerc.ac.uk/collection/MVB/current/
@@ -177,25 +171,13 @@ get_bbox <- function(x, y) {
 
 boxes <- rd[, .(box = list(get_bbox(location_long, location_lat))), by = individual_id]
 
-m <- mapview(boxes$box)
+m <- mapview(boxes$box, legend = FALSE)
 mapshot(m, file = 'figures/bbox.png')
-overlap_bbox <- function(DT) {
-	sf
-}
 
-x <- boxes[, st_bbox(c(xmin = minx, ymin = miny, xmax = maxx, ymax = maxy)),
-					 individual_id]
-
-x$V1
-
-mapview(x$V1)
-ggplot(boxes) +
-	geom_rect(aes(xmin = minx,
-								xmax = maxx,
-								ymin = miny,
-								ymax = maxy))
-
-
+# TODO / dont bother
+# overlap_bbox <- function(DT) {
+# 	st_overlaps(bo)
+# }
 
 
 # Output ------------------------------------------------------------------
