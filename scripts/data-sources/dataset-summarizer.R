@@ -27,7 +27,7 @@ library(anytime)
 
 
 
-# Input -------------------------------------------------------------------
+# Check input -------------------------------------------------------------
 check_input <- function(path, depth = 6) {
 
 	id <- as.integer(gsub('.csv', '', tstrsplit(path, '/')[[depth]]))
@@ -74,7 +74,8 @@ check[, .N, grepl('long', cols)]
 check[, .N, grepl('lat', cols)]
 
 
-# Prep --------------------------------------------------------------------
+
+# Read input --------------------------------------------------------------
 read_input <- function(path, select = NULL) {
 	# TODO: drop this reduce when reading for analysis and not just summary
 	rd <- fread(path, select = select)
@@ -86,20 +87,25 @@ read_input <- function(path, select = NULL) {
 rd <- read_input(sample(check[is.na(why), path], 1))
 
 
-# Check number of individuals
-# TODO: difference between individual, deployment, tag id and individual_local_identifier
-idcol <- 'individual_local_identifier'
 
-rd[, uniqueN(individual_id)]
-rd[, uniqueN(deployment_id)]
-rd[, uniqueN(tag_id)]
-rd[, uniqueN(tag_local_identifier)]
-rd[, uniqueN(individual_local_identifier)]
+# Individuals -------------------------------------------------------------
+# Count number of individuals
+count_ids <- function(DT) {
+	DT[, nIndividual := uniqueN(individual_id)]
+	DT[, nDeployment := uniqueN(deployment_id)]
+	DT[, nTag := uniqueN(tag_id)]
 
-# Number of relocations by ID
-rd[, .N, by = idcol]
+	DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
+	DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
+
+	# Number of relocations by ID
+	# TODO: rbindlist this output
+	DT[, nLocByIndividual := list(rd[, .N, .(study_id, individual_id)])]
+}
 
 
+
+# Check NAs ---------------------------------------------------------------
 # Check how many rows are NA for each column
 lapply(rd, function(x) sum(is.na(x)))
 
