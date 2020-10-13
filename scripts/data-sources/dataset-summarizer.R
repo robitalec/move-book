@@ -48,12 +48,20 @@ fp <- '/media/Backup Plus/Movebank/GPS'
 check <- rbindlist(lapply(dir(fp, full.names = TRUE), check_input))
 
 
+# Check all column names
+# all unique colnames
+Reduce(union, check[!is.na(cols)]$cols)
+
+# only colnames common across all
+commoncols <- Reduce(intersect, check[!is.na(cols)]$cols)
+
+
 # Prep --------------------------------------------------------------------
 read_input <- function(path) {
-	rd <- fread(path)
+	rd <- fread(path, select = commoncols)
 
 	# TODO: timezone
-	rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
+	# rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
 
 
 	# TODO: only GPS data
