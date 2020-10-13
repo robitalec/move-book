@@ -24,20 +24,20 @@ check_input <- function(path, depth = 6) {
 	internalerror <- 'The server encountered an internal error'
 
 	if(grepl(nodata, lines)) {
-		list(id = id, path = path, why = nodata)
+		list(id = id, path = path, why = nodata, colnames = NA)
 	} else if (grepl(http403, lines)) {
-		list(id = id, path = path, why = http403)
+		list(id = id, path = path, why = http403, colnames = NA)
 	} else if (any(grepl(internalerror, lines))) {
-		list(id = id, path = path, why = internalerror)
+		list(id = id, path = path, why = internalerror, colnames = NA)
 	} else {
 
 		# Read just 5 rows, to check if there is data
 		DT <- fread(path, nrows = 5)
 
 		if (nrow(DT) == 0) {
-			list(id = id, path = path, why = 'nrow is 0')
+			list(id = id, path = path, why = 'nrow is 0', colnames = colnames(DT))
 		} else {
-			list(id = id, path = path, why = NA)
+			list(id = id, path = path, why = NA, colnames = NA)
 		}
 	}
 }
