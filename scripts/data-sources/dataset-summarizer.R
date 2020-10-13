@@ -75,9 +75,17 @@ read_input <- function(path) {
 
 rd <- read_input(sample(check[is.na(why), path], 1))
 
-# Movebank data structure:
-#  http://vocab.nerc.ac.uk/collection/MVB/current/
-#  timestamp: UTC time
+## Movebank data structure: http://vocab.nerc.ac.uk/collection/MVB/current/
+# timestamp: Format: yyyy-MM-dd HH:mm:ss.SSS Units: UTC or GPS time
+# location lat/long: decimal degrees, WGS84
+# heading: degrees clockwise from north
+# ground speed: m/s
+# GPS fix type: 1 no fix, 2 2D, 3 3D fix (altitude)
+# UTM easting, northing: WGS84 reference system
+# UTM zone: potentially selected automatically based off the locations
+# IDs: "an internal movebank id is *sometimes* shown"
+
+
 
 # Check number of individuals
 # TODO: difference between individual, deployment, tag id and individual_local_identifier
