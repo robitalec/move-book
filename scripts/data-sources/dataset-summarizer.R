@@ -13,6 +13,20 @@ library(data.table)
 library(anytime)
 
 
+
+# Data structure ----------------------------------------------------------
+## Movebank data structure: http://vocab.nerc.ac.uk/collection/MVB/current/
+# timestamp: Format: yyyy-MM-dd HH:mm:ss.SSS Units: UTC or GPS time
+# location lat/long: decimal degrees, WGS84
+# heading: degrees clockwise from north
+# ground speed: m/s
+# GPS fix type: 1 no fix, 2 2D, 3 3D fix (altitude)
+# UTM easting, northing: WGS84 reference system
+# UTM zone: potentially selected automatically based off the locations
+# IDs: "an internal movebank id is *sometimes* shown"
+
+
+
 # Input -------------------------------------------------------------------
 check_input <- function(path, depth = 6) {
 
@@ -56,11 +70,8 @@ Reduce(union, check[!is.na(cols)]$cols)
 commoncols <- Reduce(intersect, check[!is.na(cols)]$cols)
 
 # check how many datasets have necessary columns
-check[, .N, grepl('location', cols)]
 check[, .N, grepl('long', cols)]
 check[, .N, grepl('lat', cols)]
-
-check[grepl('lon', cols)]$cols[[1]]
 
 
 # Prep --------------------------------------------------------------------
@@ -71,28 +82,8 @@ read_input <- function(path, select = NULL) {
 	# Format: yyyy-MM-dd HH:mm:ss.SSS
 	# Units: UTC or GPS time
 	rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
-
-
-	# TODO: only GPS data
-
-
-	# TODO: set col classes
-
-
 }
-
 rd <- read_input(sample(check[is.na(why), path], 1))
-
-## Movebank data structure: http://vocab.nerc.ac.uk/collection/MVB/current/
-# timestamp: Format: yyyy-MM-dd HH:mm:ss.SSS Units: UTC or GPS time
-# location lat/long: decimal degrees, WGS84
-# heading: degrees clockwise from north
-# ground speed: m/s
-# GPS fix type: 1 no fix, 2 2D, 3 3D fix (altitude)
-# UTM easting, northing: WGS84 reference system
-# UTM zone: potentially selected automatically based off the locations
-# IDs: "an internal movebank id is *sometimes* shown"
-
 
 
 # Check number of individuals
