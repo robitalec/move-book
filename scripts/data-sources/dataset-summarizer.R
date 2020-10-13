@@ -55,12 +55,20 @@ Reduce(union, check[!is.na(cols)]$cols)
 # only colnames common across all
 commoncols <- Reduce(intersect, check[!is.na(cols)]$cols)
 
+# check how many datasets have necessary columns
+check[, .N, grepl('location', cols)]
+check[, .N, grepl('long', cols)]
+check[, .N, grepl('lat', cols)]
+
+check[grepl('lon', cols)]$cols[[1]]
+
 
 # Prep --------------------------------------------------------------------
 read_input <- function(path) {
 	rd <- fread(path, select = commoncols)
 
-	# TODO: timezone
+	# Format: yyyy-MM-dd HH:mm:ss.SSS
+	# Units: UTC or GPS time
 	# rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
 
 
