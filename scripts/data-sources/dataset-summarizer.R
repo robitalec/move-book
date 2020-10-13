@@ -199,3 +199,4 @@ rd[, get_bbox(location_long, location_lat)]
 
 
 # Output ------------------------------------------------------------------
+'/media/Backup Plus/Movebank/GPS/Summary/'
