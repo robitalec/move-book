@@ -14,8 +14,7 @@ source('scripts/summarizer/summarizer-functions.R')
 # Plan
 fp <- '/media/Backup Plus/Movebank/GPS'
 
-
 plan <- drake_plan(
 	paths = dir(fp, '.csv', full.names = TRUE),
-	checked = target(rbindlist(check_input(paths)), dynamic = map(paths))
+	checked = target(as.data.table(check_input(paths)), dynamic = map(paths))
 )
