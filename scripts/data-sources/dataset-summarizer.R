@@ -154,7 +154,7 @@ check_time <- function(DT) {
 }
 check_time(rd)
 
-
+# TODO: range/summary fix rate
 
 # Space is only noise if you can see --------------------------------------
 # TODO: merge group_pts_latlon
