@@ -15,6 +15,7 @@ source('scripts/summarizer/summarizer-functions.R')
 fp <- '/media/Backup Plus/Movebank/GPS'
 
 
-drake_plan(
-  checked = rbindlist(lapply(dir(fp, '.csv', full.names = TRUE), check_input))
+plan <- drake_plan(
+  checked = check_input(fp),
+
 )
