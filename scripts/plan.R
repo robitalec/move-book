@@ -16,6 +16,6 @@ fp <- '/media/Backup Plus/Movebank/GPS'
 
 
 plan <- drake_plan(
-  checked = check_input(fp),
-
+	paths = dir(fp, '.csv', full.names = TRUE),
+	checked = target(rbindlist(check_input(paths)), dynamic = map(paths))
 )
