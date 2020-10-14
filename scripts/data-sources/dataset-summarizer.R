@@ -53,7 +53,7 @@ check_input <- function(path, depth = 6) {
 # Check all available input
 # TODO: Switch to flex input from bash/drake
 fp <- '/media/Backup Plus/Movebank/GPS'
-check <- rbindlist(lapply(dir(fp, full.names = TRUE), check_input))
+check <- rbindlist(lapply(dir(fp, '.csv', full.names = TRUE), check_input))
 
 
 # Check all column names
