@@ -2,39 +2,37 @@
 # Alec Robitaille
 
 
-# Packages ----------------------------------------------------------------
-library(data.table)
-library(anytime)
-library(ggplot2)
-library(mapview)
-
 # Check input -------------------------------------------------------------
 check_input <- function(path, depth = 6) {
 
-	id <- as.integer(gsub('.csv', '', tstrsplit(path, '/')[[depth]]))
-	lines <- readLines(path, 1)
+	# rbindlist(lapply(dir(path, '.csv', full.names = TRUE), function(p) {
 
-	nodata <- 'No data are available for download'
-	http403 <- 'HTTP Status 403 - Incorrect md5 hash'
-	internalerror <- 'The server encountered an internal error'
+		id <- as.integer(gsub('.csv', '', tstrsplit(path, '/')[[depth]]))
+		lines <- readLines(path, 1)
 
-	if(grepl(nodata, lines)) {
-		list(id = id, path = path, why = nodata, cols = NA)
-	} else if (grepl(http403, lines)) {
-		list(id = id, path = path, why = http403, cols = NA)
-	} else if (any(grepl(internalerror, lines))) {
-		list(id = id, path = path, why = internalerror, cols = NA)
-	} else {
+		nodata <- 'No data are available for download'
+		http403 <- 'HTTP Status 403 - Incorrect md5 hash'
+		internalerror <- 'The server encountered an internal error'
 
-		# Read just 5 rows, to check if there is data
-		DT <- fread(path, nrows = 5)
-
-		if (nrow(DT) == 0) {
-			list(id = id, path = path, why = 'nrow is 0', cols = NA)
+		if(grepl(nodata, lines)) {
+			list(id = id, path = path, why = nodata, cols = NA)
+		} else if (grepl(http403, lines)) {
+			list(id = id, path = path, why = http403, cols = NA)
+		} else if (any(grepl(internalerror, lines))) {
+			list(id = id, path = path, why = internalerror, cols = NA)
 		} else {
-			list(id = id, path = path, why = NA, cols = list(colnames(DT)))
+
+			# Read just 5 rows, to check if there is data
+			DT <- fread(path, nrows = 5)
+
+			if (nrow(DT) == 0) {
+				list(id = id, path = path, why = 'nrow is 0', cols = NA)
+			} else {
+				list(id = id, path = path, why = NA, cols = list(colnames(DT)))
+			}
 		}
-	}
+	# })
+	# )
 }
 
 # Read input --------------------------------------------------------------
