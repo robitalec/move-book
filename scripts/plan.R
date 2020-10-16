@@ -15,12 +15,14 @@ source('scripts/summarizer/summarizer-functions.R')
 
 # Filepath
 fp <- '/media/Backup Plus/Movebank/GPS'
-sub <- 20:30
-
 
 # Plan
 plan <- drake_plan(
-	paths = dir(fp, '.csv', full.names = TRUE)[sub],
+
+	# TODO: for now
+	max_expand = 30,
+
+	paths = dir(fp, '.csv', full.names = TRUE),
 
 	checked = target(check_input(paths),
 									 dynamic = map(paths)),
