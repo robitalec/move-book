@@ -116,6 +116,13 @@ temp_overlap <- function(DT, type = 'point') {
 	}
 }
 
+check_nas <- function(DT) {
+	if (!is.null(DT)) {
+		# Check how many rows are NA for each column
+		lapply(DT, function(x) sum(is.na(x)) / length(x))
+	}
+}
+
 
 count_time <- function(DT) {
 	if(!is.null(DT)) {
