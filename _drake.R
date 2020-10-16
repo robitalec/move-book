@@ -1,4 +1,6 @@
 source("scripts/plan.R")
 
+
+cache <- new_cache('/media/Backup Plus/drake-cache/')
 drake_config(plan,
-						 cache = new_cache('/media/Backup Plus/drake-cache/'))
+						 cache = cache)
