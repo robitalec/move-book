@@ -7,6 +7,8 @@ library(data.table)
 library(anytime)
 library(ggplot2)
 library(mapview)
+library(sf)
+
 
 # Source functions
 source('scripts/summarizer/summarizer-functions.R')
