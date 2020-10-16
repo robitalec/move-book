@@ -111,8 +111,11 @@ rd[, unique(moreIndividual)]
 
 
 # Check NAs ---------------------------------------------------------------
-# Check how many rows are NA for each column
-rd[, nrowNA := list(lapply(rd, function(x) sum(is.na(x)) / length(x)))]
+check_nas <- function(DT) {
+	# Check how many rows are NA for each column
+	DT[, nrowNA := list(lapply(DT, function(x) sum(is.na(x)) / length(x)))]
+}
+
 
 
 # Time (Donuts) -----------------------------------------------------------
