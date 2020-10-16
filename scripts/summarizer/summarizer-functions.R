@@ -7,46 +7,47 @@ check_input <- function(path, depth = 6) {
 
 	# rbindlist(lapply(dir(path, '.csv', full.names = TRUE), function(p) {
 
-		id <- as.integer(gsub('.csv', '', tstrsplit(path, '/')[[depth]]))
-		lines <- readLines(path, 1)
+	id <- as.integer(gsub('.csv', '', tstrsplit(path, '/')[[depth]]))
+	lines <- readLines(path, 1)
 
-		nodata <- 'No data are available for download'
-		http403 <- 'HTTP Status 403 - Incorrect md5 hash'
-		internalerror <- 'The server encountered an internal error'
+	nodata <- 'No data are available for download'
+	http403 <- 'HTTP Status 403 - Incorrect md5 hash'
+	internalerror <- 'The server encountered an internal error'
 
-		if(grepl(nodata, lines)) {
-			list(id = id, path = path, why = nodata, cols = NA)
-		} else if (grepl(http403, lines)) {
-			list(id = id, path = path, why = http403, cols = NA)
-		} else if (any(grepl(internalerror, lines))) {
-			list(id = id, path = path, why = internalerror, cols = NA)
+	if(grepl(nodata, lines)) {
+		list(id = id, path = path, why = nodata, cols = NA)
+	} else if (grepl(http403, lines)) {
+		list(id = id, path = path, why = http403, cols = NA)
+	} else if (any(grepl(internalerror, lines))) {
+		list(id = id, path = path, why = internalerror, cols = NA)
+	} else {
+
+		# Read just 5 rows, to check if there is data
+		DT <- fread(path, nrows = 5)
+
+		if (nrow(DT) == 0) {
+			list(id = id, path = path, why = 'nrow is 0', cols = NA)
 		} else {
-
-			# Read just 5 rows, to check if there is data
-			DT <- fread(path, nrows = 5)
-
-			if (nrow(DT) == 0) {
-				list(id = id, path = path, why = 'nrow is 0', cols = NA)
-			} else {
-				list(id = id, path = path, why = NA, cols = list(colnames(DT)))
-			}
+			list(id = id, path = path, why = NA, cols = list(colnames(DT)))
 		}
+	}
 	# })
 	# )
 }
 
 # Read input --------------------------------------------------------------
 filter_check <- function(checked) {
-	# TODO: rm this [1:5]
-	checked[is.na(why)]$path[1:5]
+	checked[is.na(why)]$path
 }
 
 
-read_input <- function(checked, select = NULL) {
+read_input <- function(DT, select = NULL) {
 	# TODO: drop this reduce when reading for analysis and not just summary
 
-	if (is.na(checked$why)) {
-		rd <- fread(path, select = select)
+	if (is.na(DT$why)) {
+		rd <- fread(DT$path, select = select)
+
+		rd[, tag_local_identifier := as.character(tag_local_identifier)]
 
 		# Format: yyyy-MM-dd HH:mm:ss.SSS
 		# Units: UTC or GPS time
