@@ -162,10 +162,35 @@ map_bbox <- function(DT) {
 		m <- mapview(boxes$box, legend = FALSE)
 		mapshot(m,
 						file = paste(
-							'/media/Backup Plus/Movebank/Summary/GPS/bbox-',
+							'/media/Backup Plus/Movebank/Summary/GPS/figures/bbox-',
 							DT$study_id[[1]],
 							'.png'
 						))
 	}
+
+}
+
+
+render_md <- function(DT, counted_ids, counted_time, temp, nas, bboxes) {
+
+	if(!is.null(DT)) {
+		params <- list(
+			DT = DT,
+			counted_ids = counted_ids,
+			counted_time = counted_time,
+			temp = temp,
+			na = na,
+			bboxes = bboxes
+		)
+
+		study <- DT$study_id[[1]]
+
+		rmarkdown::render(
+			'scripts/summarizer/summarizer.Rmd',
+			output_file = paste('/media/Backup Plus/Movebank/Summary/GPS/rmd/', study, '.pdf'),
+			params = params
+		)
+	}
+
 
 }
