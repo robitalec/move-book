@@ -59,23 +59,25 @@ read_input <- function(DT, select = NULL) {
 # Count number of individuals
 count_ids <- function(DT) {
 
-	setDT(DT)
+	if (!is.null(DT)) {
+		DT[, nIndividual := uniqueN(individual_id)]
+		DT[, nDeployment := uniqueN(deployment_id)]
+		DT[, nTag := uniqueN(tag_id)]
 
-	DT[, nIndividual := uniqueN(individual_id)]
-	DT[, nDeployment := uniqueN(deployment_id)]
-	DT[, nTag := uniqueN(tag_id)]
+		DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
+		DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
 
-	DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
-	DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
+		DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
+		DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
 
-	DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
-	DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
+		# Number of relocations by ID
+		# TODO: rbindlist this output
+		DT[, nLocByIndividual := list(DT[, .N, .(study_id, individual_id)])]
 
-	# Number of relocations by ID
-	# TODO: rbindlist this output
-	DT[, nLocByIndividual := list(rd[, .N, .(study_id, individual_id)])]
-
-	DT
+		DT
+	} else {
+		NULL
+	}
 }
 
 # Time (Donuts) -----------------------------------------------------------
