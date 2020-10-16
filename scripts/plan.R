@@ -11,14 +11,15 @@ library(mapview)
 # Source functions
 source('scripts/summarizer/summarizer-functions.R')
 
-# Plan
+# Filepath
 fp <- '/media/Backup Plus/Movebank/GPS'
-
 sub <- 20:30
-# names(paths) <- dir(fp, '.csv')[sub]
 
+
+# Plan
 plan <- drake_plan(
 	paths = dir(fp, '.csv', full.names = TRUE)[sub],
+
 	checked = target(check_input(paths),
 									 dynamic = map(paths)),
 
