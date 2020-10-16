@@ -1,0 +1,16 @@
+```{r}
+knitr::kable(params$counted_ids)
+knitr::kable(params$counted_time)
+```
+
+```{r}
+print(params$temp)
+```
+
+```{r}
+knitr::kable(params$na)
+```
+
+```{r}
+print(params$bboxes)
+```
