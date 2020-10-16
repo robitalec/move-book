@@ -153,3 +153,10 @@ get_bbox <- function(x, y) {
 		ymax = max(y, na.rm = TRUE)
 	))), crs = 4326)
 }
+
+map_bbox <- function(DT) {
+	boxes <- DT[, .(box = list(get_bbox(location_long, location_lat))), by = individual_id]
+
+	m <- mapview(boxes$box, legend = FALSE)
+	mapshot(m)
+}

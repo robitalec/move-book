@@ -38,6 +38,6 @@ plan <- drake_plan(
 	nas = target(check_nas(read),
 							 dynamic = map(read)),
 
-	bboxes = target(get_bbox(read),
+	bboxes = target(map_bbox(read),
 									dynamic = map(read))
 )
