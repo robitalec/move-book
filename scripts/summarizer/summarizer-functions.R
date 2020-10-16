@@ -58,6 +58,9 @@ read_input <- function(DT, select = NULL) {
 # Individuals -------------------------------------------------------------
 # Count number of individuals
 count_ids <- function(DT) {
+
+	setDT(DT)
+
 	DT[, nIndividual := uniqueN(individual_id)]
 	DT[, nDeployment := uniqueN(deployment_id)]
 	DT[, nTag := uniqueN(tag_id)]
