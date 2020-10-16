@@ -159,19 +159,18 @@ map_bbox <- function(DT) {
 		boxes <- DT[, .(box = list(get_bbox(location_long, location_lat))),
 								by = individual_id]
 
+		study <- DT$study_id[[1]]
 		m <- mapview(boxes$box, legend = FALSE)
 		mapshot(m,
 						file = paste0(
 							'/media/Backup Plus/Movebank/Summary/GPS/figures/bbox-',
-							DT$study_id[[1]],
-							'.png'
-						))
+							study, '.png'))
 	}
 
 }
 
 
-render_md <- function(DT, counted_ids, counted_time, temp, nas, bboxes) {
+render_md <- function(template, DT, counted_ids, counted_time, temp, nas, bboxes) {
 
 	if(!is.null(DT)) {
 		params <- list(
@@ -186,7 +185,7 @@ render_md <- function(DT, counted_ids, counted_time, temp, nas, bboxes) {
 		study <- DT$study_id[[1]]
 
 		rmarkdown::render(
-			input = 'scripts/summarizer/summarizer.Rmd',
+			input = template,
 			output_file = paste0('/media/Backup Plus/Movebank/Summary/GPS/rmd/', study, '.pdf'),
 			params = params
 		)
