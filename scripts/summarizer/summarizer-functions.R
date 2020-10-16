@@ -161,7 +161,7 @@ map_bbox <- function(DT) {
 
 		m <- mapview(boxes$box, legend = FALSE)
 		mapshot(m,
-						file = paste(
+						file = paste0(
 							'/media/Backup Plus/Movebank/Summary/GPS/figures/bbox-',
 							DT$study_id[[1]],
 							'.png'
@@ -186,8 +186,8 @@ render_md <- function(DT, counted_ids, counted_time, temp, nas, bboxes) {
 		study <- DT$study_id[[1]]
 
 		rmarkdown::render(
-			'scripts/summarizer/summarizer.Rmd',
-			output_file = paste('/media/Backup Plus/Movebank/Summary/GPS/rmd/', study, '.pdf'),
+			input = 'scripts/summarizer/summarizer.Rmd',
+			output_file = paste0('/media/Backup Plus/Movebank/Summary/GPS/rmd/', study, '.pdf'),
 			params = params
 		)
 	}
