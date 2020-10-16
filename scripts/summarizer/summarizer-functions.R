@@ -36,6 +36,12 @@ check_input <- function(path, depth = 6) {
 }
 
 # Read input --------------------------------------------------------------
+filter_check <- function(checked) {
+	# TODO: rm this [1:5]
+	checked[is.na(why)]$path[1:5]
+}
+
+
 read_input <- function(path, select = NULL) {
 	# TODO: drop this reduce when reading for analysis and not just summary
 	rd <- fread(path, select = select)
