@@ -155,8 +155,17 @@ get_bbox <- function(x, y) {
 }
 
 map_bbox <- function(DT) {
-	boxes <- DT[, .(box = list(get_bbox(location_long, location_lat))), by = individual_id]
+	if (!is.null(DT)) {
+		boxes <- DT[, .(box = list(get_bbox(location_long, location_lat))),
+								by = individual_id]
 
-	m <- mapview(boxes$box, legend = FALSE)
-	mapshot(m)
+		m <- mapview(boxes$box, legend = FALSE)
+		mapshot(m,
+						file = paste(
+							'/media/Backup Plus/Movebank/Summary/GPS/bbox-',
+							DT$study_id[[1]],
+							'.png'
+						))
+	}
+
 }
