@@ -74,7 +74,13 @@ count_ids <- function(DT) {
 		# TODO: rbindlist this output
 		DT[, nLocByIndividual := list(DT[, .N, .(study_id, individual_id)])]
 
-		DT
+		cols <- c("individual_id", "deployment_id", "tag_id", "study_id",
+							"sensor_type_id", "nIndividual", "nDeployment", "nTag",
+							"sameIndividual", "sameTag", "moreIndividual", "moreTag",
+							"nLocByIndividual")
+
+		# TODO: fix this -13 garb
+		unique(DT[, .SD, .SDcols = cols], by = cols[-13])
 	} else {
 		NULL
 	}
