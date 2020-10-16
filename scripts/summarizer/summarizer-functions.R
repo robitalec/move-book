@@ -88,28 +88,32 @@ count_ids <- function(DT) {
 
 # Time (Donuts) -----------------------------------------------------------
 temp_overlap <- function(DT, type = 'point') {
-	DT[, mindatetime := min(datetime), by = individual_id]
-	DT[, maxdatetime := max(datetime), by = individual_id]
+	# TODO: drop this with a filter
 
-	if (type == 'point') {
-		ggplot(DT, aes(y = as.character(individual_id),
-									 yend = as.character(individual_id))) +
-			geom_point(aes(x = datetime,
-										 group = individual_id),
-								 size = 1) +
-			guides(color = FALSE) +
-			scale_x_datetime(date_labels = '%b %Y') +
-			labs(x = 'Date', y = 'ID')
-	} else if (type == 'bar') {
-		ggplot(DT, aes(y = as.character(individual_id),
-									 yend = as.character(individual_id))) +
-			geom_segment(aes(x = mindatetime,
-											 xend = maxdatetime,
+	if (!is.null(DT)) {
+		DT[, mindatetime := min(datetime), by = individual_id]
+		DT[, maxdatetime := max(datetime), by = individual_id]
+
+		if (type == 'point') {
+			ggplot(DT, aes(y = as.character(individual_id),
+										 yend = as.character(individual_id))) +
+				geom_point(aes(x = datetime,
 											 group = individual_id),
-									 size = 4) +
-			guides(color = FALSE) +
-			scale_x_datetime(date_labels = '%b %Y') +
-			labs(x = 'Date', y = 'ID')
+									 size = 1) +
+				guides(color = FALSE) +
+				scale_x_datetime(date_labels = '%b %Y') +
+				labs(x = 'Date', y = 'ID')
+		} else if (type == 'bar') {
+			ggplot(DT, aes(y = as.character(individual_id),
+										 yend = as.character(individual_id))) +
+				geom_segment(aes(x = mindatetime,
+												 xend = maxdatetime,
+												 group = individual_id),
+										 size = 4) +
+				guides(color = FALSE) +
+				scale_x_datetime(date_labels = '%b %Y') +
+				labs(x = 'Date', y = 'ID')
+		}
 	}
 }
 
