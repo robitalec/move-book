@@ -23,8 +23,11 @@ plan <- drake_plan(
 									 dynamic = map(paths)),
 	read = target(read_input(checked),
 								dynamic = map(checked)),
-	counted = target(count_ids(read),
+	counted_ids = target(count_ids(read),
 									 dynamic = map(read)),
 	temp = target(temp_overlap(read),
-								dynamic = map(read))
+								dynamic = map(read)),
+	counted_time = target(count_time(read),
+												dynamic = map(read))
+
 )
