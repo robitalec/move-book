@@ -179,7 +179,7 @@ render_md <- function(DT, counted_ids, counted_time, temp, nas, bboxes) {
 			counted_ids = counted_ids,
 			counted_time = counted_time,
 			temp = temp,
-			na = na,
+			na = nas,
 			bboxes = bboxes
 		)
 
