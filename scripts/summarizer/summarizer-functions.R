@@ -74,13 +74,12 @@ count_ids <- function(DT) {
 		# TODO: rbindlist this output
 		DT[, nLocByIndividual := list(DT[, .N, .(study_id, individual_id)])]
 
-		cols <- c("individual_id", "deployment_id", "tag_id", "study_id",
-							"sensor_type_id", "nIndividual", "nDeployment", "nTag",
-							"sameIndividual", "sameTag", "moreIndividual", "moreTag",
-							"nLocByIndividual")
+		cols <- c('study_id', 'sensor_type_id',
+							'nIndividual', 'nDeployment', 'nTag',
+							'sameIndividual', 'sameTag', 'moreIndividual',
+							'moreTag', 'nLocByIndividual')
 
-		# TODO: fix this -13 garb
-		unique(DT[, .SD, .SDcols = cols], by = cols[-13])
+		unique(DT[, .SD, .SDcols = cols], by = 'study_id')
 	} else {
 		NULL
 	}
@@ -122,16 +121,17 @@ count_time <- function(DT) {
 	if(!is.null(DT)) {
 		DT[, lenStudy := -1 * Reduce('-', range(datetime))]
 		DT[, nYears := uniqueN(year(datetime))]
-		DT[, nMonth := uniqueN(year(datetime)), by = month(datetime)]
+		# DT[, nMonth := uniqueN(year(datetime)), by = month(datetime)]
 
 		setorder(DT, datetime)
 		DT[, fixRate := difftime(datetime, shift(datetime), units = 'hours'), by = individual_id]
+		DT[, fixRateSummary := list(summary(as.numeric(fixRate)))]
 
-		cols <- c("individual_id", "deployment_id", "tag_id", "study_id",
-							"sensor_type_id", "lenStudy", "nYears", "fixRate", "nMonth")
+		cols <- c('study_id', 'sensor_type_id',
+							'lenStudy', 'nYears', 'fixRateSummary')
 
 		# TODO: fix this -9 garb
-		unique(DT[, .SD, .SDcols = cols], by = cols[-9])
+		unique(DT[, .SD, .SDcols = cols], by = 'study_id')
 	}
 
 }
