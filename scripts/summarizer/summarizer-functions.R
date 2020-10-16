@@ -118,13 +118,22 @@ temp_overlap <- function(DT, type = 'point') {
 }
 
 
-check_time <- function(DT) {
-	DT[, lenStudy := -1 * Reduce('-', range(datetime))]
-	DT[, nYears := uniqueN(year(datetime))]
-	DT[, nMonth := uniqueN(year(datetime)), by = month(datetime)]
+count_time <- function(DT) {
+	if(!is.null(DT)) {
+		DT[, lenStudy := -1 * Reduce('-', range(datetime))]
+		DT[, nYears := uniqueN(year(datetime))]
+		DT[, nMonth := uniqueN(year(datetime)), by = month(datetime)]
 
-	setorder(DT, datetime)
-	DT[, fixRate := difftime(datetime, shift(datetime), units = 'hours'), by = individual_id]
+		setorder(DT, datetime)
+		DT[, fixRate := difftime(datetime, shift(datetime), units = 'hours'), by = individual_id]
+
+		cols <- c("individual_id", "deployment_id", "tag_id", "study_id",
+							"sensor_type_id", "lenStudy", "nYears", "fixRate", "nMonth")
+
+		# TODO: fix this -9 garb
+		unique(DT[, .SD, .SDcols = cols], by = cols[-9])
+	}
+
 }
 
 
