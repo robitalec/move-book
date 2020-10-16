@@ -17,6 +17,6 @@ paths = dir(fp, '.csv', full.names = TRUE)[1:10]
 
 plan <- drake_plan(
 	checked = target(as.data.table(check_input(paths)), transform = map(file = !!paths)),
-	filtered = filter_check(checked)#,
-	# read = target(read_input(filtered), dynamic = map(filtered))
+	# filtered = filter_check(checked)#,
+	read = target(read_input(checked), transform = map(checked))
 )

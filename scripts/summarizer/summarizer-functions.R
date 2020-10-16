@@ -42,13 +42,16 @@ filter_check <- function(checked) {
 }
 
 
-read_input <- function(path, select = NULL) {
+read_input <- function(checked, select = NULL) {
 	# TODO: drop this reduce when reading for analysis and not just summary
-	rd <- fread(path, select = select)
 
-	# Format: yyyy-MM-dd HH:mm:ss.SSS
-	# Units: UTC or GPS time
-	rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
+	if (is.na(checked$why)) {
+		rd <- fread(path, select = select)
+
+		# Format: yyyy-MM-dd HH:mm:ss.SSS
+		# Units: UTC or GPS time
+		rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
+	}
 }
 
 # Individuals -------------------------------------------------------------
