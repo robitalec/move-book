@@ -13,11 +13,12 @@ source('scripts/summarizer/summarizer-functions.R')
 
 # Plan
 fp <- '/media/Backup Plus/Movebank/GPS'
-paths = dir(fp, '.csv', full.names = TRUE)[1:10]
+paths <- dir(fp, '.csv', full.names = TRUE)[1:10]
+names(paths) <- dir(fp, '.csv')[1:10]
 
 plan <- drake_plan(
 	checked = target(check_input(file_in(file)), transform = map(file = !!paths)),
 	# filtered = filter_check(checked)#,
-	read = target(read_input(checked), transform = map(checked)),
-	counted_ids = target(count_ids(read), transform = map(read))
+	read = target(read_input(checked), transform = map(checked))#,
+	# counted_ids = target(count_ids(read), transform = map(read))
 )
