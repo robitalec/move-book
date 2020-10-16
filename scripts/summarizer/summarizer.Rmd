@@ -1,6 +1,14 @@
+---
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
 ```{r}
 knitr::kable(params$counted_ids)
-knitr::kable(params$counted_time)
+knitr::kable(params$counted_time[, .SD, .SDcols = -nLocByIndividual])
 ```
 
 ```{r}
