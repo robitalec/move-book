@@ -41,5 +41,10 @@ plan <- drake_plan(
 							 dynamic = map(read)),
 
 	bboxes = target(map_bbox(read),
-									dynamic = map(read))
+									dynamic = map(read)),
+
+	mds = target(render_md(read, counted_ids, counted_time,
+												 temp, nas, bboxes),
+							 dynamic = map(read, counted_ids, counted_time,
+							 							temp, nas, bboxes))
 )
