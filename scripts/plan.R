@@ -16,6 +16,23 @@ source('scripts/summarizer/summarizer-functions.R')
 # Filepath
 fp <- '/media/Backup Plus/Movebank/GPS'
 
+
+
+test_grab <- function(read, counted_ids) {
+
+	study <- read$study_id[[1]]
+
+	path <- paste0('/media/Backup Plus/Movebank/Summary/GPS/rmd/',
+								 study, '.Rmd')
+	file.copy('scripts/summarizer/summarizer.Rmd',
+						path)
+
+	# either gsub
+	# or provide as param
+
+	readLines
+}
+
 # Plan
 plan <- drake_plan(
 
