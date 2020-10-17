@@ -17,6 +17,9 @@ source('scripts/summarizer/summarizer-functions.R')
 fp <- '/media/Backup Plus/Movebank/GPS'
 
 
+render_rmds <- function(index, files) {
+	bookdown::render_book(index)
+}
 
 # Plan
 plan <- drake_plan(
@@ -54,7 +57,10 @@ plan <- drake_plan(
 												 paste0(fp, 'rmd/index.Rmd'),
 												 overwrite = TRUE),
 
-	rendered = bookdown::render_book(knitr_in(paste0(fp, 'rmd/index.Rmd')))
+	rendered = render_rmds(knitr_in(paste0(fp, 'rmd/index.Rmd')),
+												 knitr_in(rmds))
+
+	# TODO: fix dependency on rmd
 
 	# mds = target(render_md(knitr_in('scripts/summarizer/summarizer.Rmd'),
 	# 											 read, counted_ids, counted_time,
