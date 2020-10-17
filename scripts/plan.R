@@ -19,10 +19,10 @@ fp <- '/media/Backup Plus/Movebank/GPS'
 # Plan
 plan <- drake_plan(
 
-	# TODO: for now
-	max_expand = 30,
+	# TODO: for later
+	# max_expand = 1,
 
-	paths = dir(fp, '.csv', full.names = TRUE),
+	paths = dir(fp, '.csv', full.names = TRUE)[20:30],
 
 	checked = target(check_input(paths),
 									 dynamic = map(paths)),
