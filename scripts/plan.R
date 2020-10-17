@@ -46,7 +46,7 @@ plan <- drake_plan(
 									dynamic = map(read)),
 # Error: callr subprocess failed: knitr_in() in dynamic targets is illegal. Target: mds
 
-	mds = target(render_md(knitr_in('scripts/summarizer/summarizer.Rmd'),
+	mds = target(render_md('scripts/summarizer/summarizer.Rmd',
 												 read, counted_ids, counted_time,
 												 temp, nas, bboxes),
 							 dynamic = map(read, counted_ids, counted_time,
