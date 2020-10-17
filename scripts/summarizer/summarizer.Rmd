@@ -1,24 +1,27 @@
----
-output: pdf_document
----
+# Title
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
+library(patchwork)
+
+cache <- new_cache('/media/Backup Plus/drake-cache/')
 ```
 
 ```{r}
-knitr::kable(params$counted_ids)
-knitr::kable(params$counted_time[, .SD])
+knitr::kable(readd(counted_ids_KEY, cache = cache))
+
+knitr::kable(readd(counted_time_KEY, cache = cache)[, .SD, .SDcols = -'fixRateSummary'])
 ```
 
 ```{r}
-print(params$temp)
+print(readd(temp_KEY, cache = cache))
 ```
 
 ```{r}
-knitr::kable(params$na)
+knitr::kable(readd(na_KEY, cache = cache))
 ```
 
 ```{r}
-print(params$bboxes)
+print(readd(bboxes_KEY, cache = cache))
 ```
