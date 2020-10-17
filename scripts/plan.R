@@ -18,7 +18,7 @@ fp <- '/media/Backup Plus/Movebank/GPS'
 
 
 
-test_grab <- function(read, counted_ids) {
+test_grab <- function(id_chr, read) {
 
 	study <- read$study_id[[1]]
 
