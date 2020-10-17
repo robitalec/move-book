@@ -193,3 +193,31 @@ render_md <- function(template, DT, counted_ids, counted_time, temp, nas, bboxes
 
 
 }
+
+
+
+# Build Rmd doc -----------------------------------------------------------
+test_grab <- function(id, read) {
+
+	if(!is.null(read)) {
+		study <- read$study_id[[1]]
+		id <- gsub('test_', '', id)
+
+		path <- paste0('/media/Backup Plus/Movebank/Summary/GPS/rmd/',
+									 study, '.Rmd')
+		file.copy('scripts/summarizer/summarizer.Rmd',
+							path)
+
+		lines <- readLines(path)
+		writeLines(
+			gsub('Title', study,
+					 gsub('KEY', id, lines)),
+			path)
+
+		# # either gsub
+		# # or provide as param
+		#
+		# readLines
+	}
+}
+

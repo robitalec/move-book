@@ -18,21 +18,6 @@ fp <- '/media/Backup Plus/Movebank/GPS'
 
 
 
-test_grab <- function(id_chr, read) {
-
-	study <- read$study_id[[1]]
-
-	path <- paste0('/media/Backup Plus/Movebank/Summary/GPS/rmd/',
-								 study, '.Rmd')
-	file.copy('scripts/summarizer/summarizer.Rmd',
-						path)
-
-	# either gsub
-	# or provide as param
-
-	readLines
-}
-
 # Plan
 plan <- drake_plan(
 
@@ -63,9 +48,12 @@ plan <- drake_plan(
 									dynamic = map(read)),
 # Error: callr subprocess failed: knitr_in() in dynamic targets is illegal. Target: mds
 
-	mds = target(render_md('scripts/summarizer/summarizer.Rmd',
-												 read, counted_ids, counted_time,
-												 temp, nas, bboxes),
-							 dynamic = map(read, counted_ids, counted_time,
-							 							temp, nas, bboxes))
+	test = target({print(id_chr());test_grab(id_chr(), read)},
+								dynamic = map(read))
+
+	# mds = target(render_md(knitr_in('scripts/summarizer/summarizer.Rmd'),
+	# 											 read, counted_ids, counted_time,
+	# 											 temp, nas, bboxes),
+	# 						 dynamic = map(read, counted_ids, counted_time,
+	# 						 							temp, nas, bboxes))
 )
