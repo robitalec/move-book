@@ -46,10 +46,15 @@ plan <- drake_plan(
 
 	bboxes = target(map_bbox(read),
 									dynamic = map(read)),
-# Error: callr subprocess failed: knitr_in() in dynamic targets is illegal. Target: mds
 
-	test = target({print(id_chr());test_grab(id_chr(), read)},
-								dynamic = map(read))
+	rmds = target(build_rmds(id_chr(), read),
+								dynamic = map(read)),
+
+	move_index = file.copy('scripts/summarizer/index.Rmd',
+												 paste0(fp, 'rmd/index.Rmd'),
+												 overwrite = TRUE),
+
+	rendered = bookdown::render_book(knitr_in(paste0(fp, 'rmd/index.Rmd')))
 
 	# mds = target(render_md(knitr_in('scripts/summarizer/summarizer.Rmd'),
 	# 											 read, counted_ids, counted_time,

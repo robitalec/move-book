@@ -197,7 +197,7 @@ render_md <- function(template, DT, counted_ids, counted_time, temp, nas, bboxes
 
 
 # Build Rmd doc -----------------------------------------------------------
-test_grab <- function(id, read) {
+build_rmds <- function(id, read) {
 
 	if(!is.null(read)) {
 		study <- read$study_id[[1]]
