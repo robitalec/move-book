@@ -72,12 +72,12 @@ count_ids <- function(DT) {
 
 		# Number of relocations by ID
 		# TODO: rbindlist this output
-		DT[, nLocByIndividual := list(DT[, .N, .(study_id, individual_id)])]
+		# DT[, nLocByIndividual := list(DT[, .N, .(study_id, individual_id)])]
 
 		cols <- c('study_id', 'sensor_type_id',
 							'nIndividual', 'nDeployment', 'nTag',
 							'sameIndividual', 'sameTag', 'moreIndividual',
-							'moreTag', 'nLocByIndividual')
+							'moreTag')
 
 		unique(DT[, .SD, .SDcols = cols], by = 'study_id')
 	} else {

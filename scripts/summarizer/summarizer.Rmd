@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```{r}
 knitr::kable(params$counted_ids)
-knitr::kable(params$counted_time[, .SD, .SDcols = -nLocByIndividual])
+knitr::kable(params$counted_time[, .SD])
 ```
 
 ```{r}
