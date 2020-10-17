@@ -206,18 +206,15 @@ test_grab <- function(id, read) {
 		path <- paste0('/media/Backup Plus/Movebank/Summary/GPS/rmd/',
 									 study, '.Rmd')
 		file.copy('scripts/summarizer/summarizer.Rmd',
-							path)
+							path, overwrite = TRUE)
 
 		lines <- readLines(path)
+
 		writeLines(
 			gsub('Title', study,
 					 gsub('KEY', id, lines)),
 			path)
 
-		# # either gsub
-		# # or provide as param
-		#
-		# readLines
 	}
 }
 
