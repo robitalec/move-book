@@ -9,7 +9,7 @@ library(ggplot2)
 library(mapview)
 library(sf)
 library(patchwork)
-
+library(leaflet)
 
 # Source functions
 source('scripts/summarizer/summarizer-functions.R')
