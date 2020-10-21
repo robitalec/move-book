@@ -127,16 +127,13 @@ get_bbox <- function(x, y) {
 	))), crs = 4326)
 }
 
-map_bbox <- function(DT) {
+map_bbox <- function(DT, path) {
 	boxes <- DT[, .(box = list(get_bbox(location_long, location_lat))),
 							by = individual_id]
 
 	study <- DT$study_id[[1]]
 	m <- mapview(boxes$box, legend = FALSE)
-	mapshot(m,
-					file = paste0(
-						'/media/Backup Plus/Movebank/Summary/GPS/figures/bbox-',
-						study, '.png'))
+	mapshot(m, file = paste0(path, 'figures/bbox-', study, '.png'))
 }
 
 
