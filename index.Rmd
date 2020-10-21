@@ -17,4 +17,10 @@ cache <- drake::new_cache('/media/ICEAGE/drake-cache/')
 
 library(data.table)
 library(patchwork)
+
+kable <- function(data) {
+  knitr::kable(data, booktabs = TRUE) %>% 
+    kableExtra::kable_styling(full_width = FALSE,
+    													position = 'left')
+}
 ```
