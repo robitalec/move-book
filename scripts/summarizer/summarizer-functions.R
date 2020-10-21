@@ -112,7 +112,6 @@ count_time <- function(DT) {
 	cols <- c('study_id', 'sensor_type_id',
 						'lenStudy', 'nYears', 'fixRateSummary')
 
-	# TODO: fix this -9 garb
 	unique(DT[, .SD, .SDcols = cols], by = 'study_id')
 }
 
@@ -137,6 +136,22 @@ map_bbox <- function(DT, path) {
 }
 
 
+build_rmds <- function(template, id, DT, path) {
+	study <- DT$study_id[[1]]
+	id <- gsub('rmds_', '', id)
+
+	outpath <- paste0(path, 'rmd/', study, '.Rmd')
+	file.copy(template, outpath, overwrite = TRUE)
+
+	lines <- readLines(outpath)
+	lns <- gsub('KEY', id, lines)
+	lns <- gsub('Title', study, lns)
+
+	writeLines(lns, outpath)
+	outpath
+}
+
+
 render_md <- function(template, DT, counted_ids, counted_time, temp, nas, bboxes) {
 
 	if(!is.null(DT)) {
@@ -157,31 +172,8 @@ render_md <- function(template, DT, counted_ids, counted_time, temp, nas, bboxes
 			params = params
 		)
 	}
-
-
 }
 
 
 
-# Build Rmd doc -----------------------------------------------------------
-build_rmds <- function(id, read) {
-
-	if(!is.null(read)) {
-		study <- read$study_id[[1]]
-		id <- gsub('test_', '', id)
-
-		path <- paste0('/media/Backup Plus/Movebank/Summary/GPS/rmd/',
-									 study, '.Rmd')
-		file.copy('scripts/summarizer/summarizer.Rmd',
-							path, overwrite = TRUE)
-
-		lines <- readLines(path)
-
-		writeLines(
-			gsub('Title', study,
-					 gsub('KEY', id, lines)),
-			path)
-
-	}
-}
 
