@@ -1,0 +1,3 @@
+rmd_subdir: "media/Backup Plus/Movebank/Summary/GPS/rmd"
+output_dir: "media/Backup Plus/Movebank/Summary/GPS/_book"
+delete_merged_file: true
