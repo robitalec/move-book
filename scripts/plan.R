@@ -16,6 +16,8 @@ source('scripts/summarizer/summarizer-functions.R')
 # Filepath
 fp <- '/media/Backup Plus/Movebank/GPS'
 
+paths = dir(fp, '.csv', full.names = TRUE)[20:30]
+
 
 render_rmds <- function(index, files) {
 	bookdown::render_book(index)
@@ -23,14 +25,10 @@ render_rmds <- function(index, files) {
 
 # Plan
 plan <- drake_plan(
-
-	# TODO: for later
-	# max_expand = 1,
-
-	paths = dir(fp, '.csv', full.names = TRUE)[20:30],
-
 	checked = target(check_input(paths),
 									 dynamic = map(paths)),
+
+	# filtered = target(check_input(paths))
 
 	read = target(read_input(checked),
 								dynamic = map(checked)),
