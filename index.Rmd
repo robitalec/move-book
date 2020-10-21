@@ -1,0 +1,20 @@
+---
+title: "Movebank dataset summarizer"
+author: "Alec L. Robitaille"
+date: "`r Sys.Date()`"
+output:
+  bookdown::gitbook: default
+documentclass: b
+---
+
+# Summarizer
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+cache <- drake::new_cache('/media/ICEAGE/drake-cache/')
+
+library(data.table)
+library(patchwork)
+```

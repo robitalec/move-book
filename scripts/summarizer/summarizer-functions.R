@@ -107,10 +107,10 @@ count_time <- function(DT) {
 
 	setorder(DT, datetime)
 	DT[, fixRate := difftime(datetime, shift(datetime), units = 'hours'), by = individual_id]
-	DT[, fixRateSummary := list(summary(as.numeric(fixRate)))]
+	# DT[, fixRateSummary := list(summary(as.numeric(fixRate)))]
 
 	cols <- c('study_id', 'sensor_type_id',
-						'lenStudy', 'nYears', 'fixRateSummary')
+						'lenStudy', 'nYears')#, 'fixRateSummary')
 
 	unique(DT[, .SD, .SDcols = cols], by = 'study_id')
 }
@@ -132,7 +132,9 @@ map_bbox <- function(DT, path) {
 
 	study <- DT$study_id[[1]]
 	m <- mapview(boxes$box, legend = FALSE)
-	mapshot(m, file = paste0(path, 'figures/bbox-', study, '.png'))
+	outpath <- paste0(path, 'figures/bbox-', study, '.png')
+	mapshot(m, file = outpath)
+	outpath
 }
 
 
@@ -152,29 +154,7 @@ build_rmds <- function(template, id, DT, path) {
 }
 
 render_with_deps <- function(index, config, deps) {
-	bookdown::render_book(input = index, config_file = config)
-}
-
-render_md <- function(template, DT, counted_ids, counted_time, temp, nas, bboxes) {
-
-	if(!is.null(DT)) {
-		params <- list(
-			DT = DT,
-			counted_ids = counted_ids,
-			counted_time = counted_time,
-			temp = temp,
-			na = nas,
-			bboxes = bboxes
-		)
-
-		study <- DT$study_id[[1]]
-
-		rmarkdown::render(
-			input = template,
-			output_file = paste0('/media/ICEAGE/Movebank/Summary/GPS/rmd/', study, '.pdf'),
-			params = params
-		)
-	}
+	bookdown::render_book(input = index, config_file = config, quiet = TRUE)
 }
 
 

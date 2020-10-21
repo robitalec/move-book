@@ -1,27 +1,22 @@
 # Title
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r}
+knitr::kable(drake::readd(counted_ids_KEY, cache = cache))
 
-library(patchwork)
-
-cache <- new_cache('/media/ICEAGE/drake-cache/')
+knitr::kable(drake::readd(counted_time_KEY, cache = cache))
 ```
 
 ```{r}
-knitr::kable(readd(counted_ids_KEY, cache = cache))
-
-knitr::kable(readd(counted_time_KEY, cache = cache)[, .SD, .SDcols = -'fixRateSummary'])
+print(drake::readd(temp_KEY, cache = cache))
 ```
 
 ```{r}
-print(readd(temp_KEY, cache = cache))
+nas <- drake::readd(nas_KEY, cache = cache)
+knitr::kable(data.table::data.table(col = names(nas), `% NA` = nas)[
+	col %in% c('individual_id', 'location_lat', 'location_long')
+])
 ```
 
 ```{r}
-knitr::kable(readd(na_KEY, cache = cache))
-```
-
-```{r}
-print(readd(bboxes_KEY, cache = cache))
+knitr::include_graphics(drake::readd(bboxes_KEY, cache = cache))
 ```

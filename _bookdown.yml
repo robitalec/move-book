@@ -1,3 +1,3 @@
-rmd_files: "media/ICEAGE/Movebank/Summary/GPS/rmd"
-output_dir: "media/ICEAGE/Movebank/Summary/GPS/_book"
-delete_merged_file: true
+rmd_subdir: "/media/ICEAGE/Movebank/Summary/GPS/rmd"
+output_dir: "_book"
+delete_merged_file: false

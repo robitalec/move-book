@@ -1,7 +1,0 @@
----
-title: "Movebank dataset summarizer"
-author: "Alec L. Robitaille"
-date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
-documentclass: book
----
