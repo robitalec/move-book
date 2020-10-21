@@ -2,7 +2,7 @@
 library(drake)
 
 
-# Packages ----------------------------------------------------------------
+# Packages
 library(data.table)
 library(anytime)
 library(ggplot2)
@@ -13,25 +13,20 @@ library(sf)
 # Source functions
 source('scripts/summarizer/summarizer-functions.R')
 
-# Filepath
+# Paths
 fp <- '/media/Backup Plus/Movebank/GPS'
+paths <- dir(fp, '.csv', full.names = TRUE)[20:30]
 
-paths = dir(fp, '.csv', full.names = TRUE)[20:30]
-
-
-render_rmds <- function(index, files) {
-	bookdown::render_book(index)
-}
 
 # Plan
 plan <- drake_plan(
-	checked = target(check_input(paths),
+	checked = target(as.data.table(check_input(paths)),
 									 dynamic = map(paths)),
 
-	# filtered = target(check_input(paths))
+	filtered = target(checked[is.na(why)]),
 
-	read = target(read_input(checked),
-								dynamic = map(checked)),
+	read = target(read_input(filtered),
+								dynamic = map(filtered)),
 
 	counted_ids = target(count_ids(read),
 									 dynamic = map(read)),

@@ -32,112 +32,88 @@ check_input <- function(path, depth = 6) {
 }
 
 # Read input --------------------------------------------------------------
-filter_check <- function(checked) {
-	if
-	checked[is.na(why)]$path
-}
-
-
 read_input <- function(DT, select = NULL) {
-	# TODO: drop this reduce when reading for analysis and not just summary
+	rd <- fread(DT$path, select = select)
 
-	if (is.na(DT$why)) {
-		rd <- fread(DT$path, select = select)
+	rd[, tag_local_identifier := as.character(tag_local_identifier)]
 
-		rd[, tag_local_identifier := as.character(tag_local_identifier)]
-
-		# Format: yyyy-MM-dd HH:mm:ss.SSS
-		# Units: UTC or GPS time
-		rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
-	}
+	# Format: yyyy-MM-dd HH:mm:ss.SSS
+	# Units: UTC or GPS time
+	rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
 }
 
 # Individuals -------------------------------------------------------------
 # Count number of individuals
 count_ids <- function(DT) {
+	DT[, nIndividual := uniqueN(individual_id)]
+	DT[, nDeployment := uniqueN(deployment_id)]
+	DT[, nTag := uniqueN(tag_id)]
 
-	if (!is.null(DT)) {
-		DT[, nIndividual := uniqueN(individual_id)]
-		DT[, nDeployment := uniqueN(deployment_id)]
-		DT[, nTag := uniqueN(tag_id)]
+	DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
+	DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
 
-		DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
-		DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
+	DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
+	DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
 
-		DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
-		DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
+	# Number of relocations by ID
+	# TODO: rbindlist this output
+	# DT[, nLocByIndividual := list(DT[, .N, .(study_id, individual_id)])]
 
-		# Number of relocations by ID
-		# TODO: rbindlist this output
-		# DT[, nLocByIndividual := list(DT[, .N, .(study_id, individual_id)])]
+	cols <- c('study_id', 'sensor_type_id',
+						'nIndividual', 'nDeployment', 'nTag',
+						'sameIndividual', 'sameTag', 'moreIndividual',
+						'moreTag')
 
-		cols <- c('study_id', 'sensor_type_id',
-							'nIndividual', 'nDeployment', 'nTag',
-							'sameIndividual', 'sameTag', 'moreIndividual',
-							'moreTag')
-
-		unique(DT[, .SD, .SDcols = cols], by = 'study_id')
-	} else {
-		NULL
-	}
+	unique(DT[, .SD, .SDcols = cols], by = 'study_id')
 }
 
 # Time (Donuts) -----------------------------------------------------------
 temp_overlap <- function(DT, type = 'point') {
-	# TODO: drop this with a filter
+	DT[, mindatetime := min(datetime), by = individual_id]
+	DT[, maxdatetime := max(datetime), by = individual_id]
 
-	if (!is.null(DT)) {
-		DT[, mindatetime := min(datetime), by = individual_id]
-		DT[, maxdatetime := max(datetime), by = individual_id]
-
-		if (type == 'point') {
-			ggplot(DT, aes(y = as.character(individual_id),
-										 yend = as.character(individual_id))) +
-				geom_point(aes(x = datetime,
+	if (type == 'point') {
+		ggplot(DT, aes(y = as.character(individual_id),
+									 yend = as.character(individual_id))) +
+			geom_point(aes(x = datetime,
+										 group = individual_id),
+								 size = 1) +
+			guides(color = FALSE) +
+			scale_x_datetime(date_labels = '%b %Y') +
+			labs(x = 'Date', y = 'ID')
+	} else if (type == 'bar') {
+		ggplot(DT, aes(y = as.character(individual_id),
+									 yend = as.character(individual_id))) +
+			geom_segment(aes(x = mindatetime,
+											 xend = maxdatetime,
 											 group = individual_id),
-									 size = 1) +
-				guides(color = FALSE) +
-				scale_x_datetime(date_labels = '%b %Y') +
-				labs(x = 'Date', y = 'ID')
-		} else if (type == 'bar') {
-			ggplot(DT, aes(y = as.character(individual_id),
-										 yend = as.character(individual_id))) +
-				geom_segment(aes(x = mindatetime,
-												 xend = maxdatetime,
-												 group = individual_id),
-										 size = 4) +
-				guides(color = FALSE) +
-				scale_x_datetime(date_labels = '%b %Y') +
-				labs(x = 'Date', y = 'ID')
-		}
+									 size = 4) +
+			guides(color = FALSE) +
+			scale_x_datetime(date_labels = '%b %Y') +
+			labs(x = 'Date', y = 'ID')
 	}
 }
 
 check_nas <- function(DT) {
-	if (!is.null(DT)) {
-		# Check how many rows are NA for each column
-		lapply(DT, function(x) sum(is.na(x)) / length(x))
-	}
+	# Check how many rows are NA for each column
+	lapply(DT, function(x) sum(is.na(x)) / length(x))
 }
 
 
 count_time <- function(DT) {
-	if(!is.null(DT)) {
-		DT[, lenStudy := -1 * Reduce('-', range(datetime))]
-		DT[, nYears := uniqueN(year(datetime))]
-		# DT[, nMonth := uniqueN(year(datetime)), by = month(datetime)]
+	DT[, lenStudy := -1 * Reduce('-', range(datetime))]
+	DT[, nYears := uniqueN(year(datetime))]
+	# DT[, nMonth := uniqueN(year(datetime)), by = month(datetime)]
 
-		setorder(DT, datetime)
-		DT[, fixRate := difftime(datetime, shift(datetime), units = 'hours'), by = individual_id]
-		DT[, fixRateSummary := list(summary(as.numeric(fixRate)))]
+	setorder(DT, datetime)
+	DT[, fixRate := difftime(datetime, shift(datetime), units = 'hours'), by = individual_id]
+	DT[, fixRateSummary := list(summary(as.numeric(fixRate)))]
 
-		cols <- c('study_id', 'sensor_type_id',
-							'lenStudy', 'nYears', 'fixRateSummary')
+	cols <- c('study_id', 'sensor_type_id',
+						'lenStudy', 'nYears', 'fixRateSummary')
 
-		# TODO: fix this -9 garb
-		unique(DT[, .SD, .SDcols = cols], by = 'study_id')
-	}
-
+	# TODO: fix this -9 garb
+	unique(DT[, .SD, .SDcols = cols], by = 'study_id')
 }
 
 
@@ -152,18 +128,15 @@ get_bbox <- function(x, y) {
 }
 
 map_bbox <- function(DT) {
-	if (!is.null(DT)) {
-		boxes <- DT[, .(box = list(get_bbox(location_long, location_lat))),
-								by = individual_id]
+	boxes <- DT[, .(box = list(get_bbox(location_long, location_lat))),
+							by = individual_id]
 
-		study <- DT$study_id[[1]]
-		m <- mapview(boxes$box, legend = FALSE)
-		mapshot(m,
-						file = paste0(
-							'/media/Backup Plus/Movebank/Summary/GPS/figures/bbox-',
-							study, '.png'))
-	}
-
+	study <- DT$study_id[[1]]
+	m <- mapview(boxes$box, legend = FALSE)
+	mapshot(m,
+					file = paste0(
+						'/media/Backup Plus/Movebank/Summary/GPS/figures/bbox-',
+						study, '.png'))
 }
 
 
