@@ -5,7 +5,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 library(patchwork)
 
-cache <- new_cache('/media/Backup Plus/drake-cache/')
+cache <- new_cache('/media/ICEAGE/drake-cache/')
 ```
 
 ```{r}

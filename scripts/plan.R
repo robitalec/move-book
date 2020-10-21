@@ -14,8 +14,8 @@ library(sf)
 source('scripts/summarizer/summarizer-functions.R')
 
 # Paths
-fp <- '/media/Backup Plus/Movebank/GPS/'
-outpath <- '/media/Backup Plus/Movebank/Summary/GPS/'
+fp <- '/media/ICEAGE/Movebank/GPS/'
+outpath <- '/media/ICEAGE/Movebank/Summary/GPS/'
 
 paths <- dir(fp, '.csv', full.names = TRUE)[20:30]
 
@@ -46,24 +46,10 @@ plan <- drake_plan(
 
 	rmds = target(build_rmds(file_in('scripts/summarizer/summarizer.Rmd'),
 													 id_chr(), read, outpath),
-								dynamic = map(read), format = 'file')#,
+								dynamic = map(read), format = 'file'),
 
-	# move_index = file.copy('scripts/summarizer/index.Rmd',
-	# 											 paste0(fp, 'rmd/index.Rmd'),
-	# 											 overwrite = TRUE),
-
-
-	# TODO then render index with subdir pointed
-
-
-	# rendered = render_rmds(knitr_in(paste0(fp, 'rmd/index.Rmd')),
-	# 											 knitr_in(rmds))
-
-	# TODO: fix dependency on rmd
-
-	# mds = target(render_md(knitr_in('scripts/summarizer/summarizer.Rmd'),
-	# 											 read, counted_ids, counted_time,
-	# 											 temp, nas, bboxes),
-	# 						 dynamic = map(read, counted_ids, counted_time,
-	# 						 							temp, nas, bboxes))
+	rendered = render_with_deps(index = knitr_in('scripts/summarizer/index.Rmd'),
+															config = file_in('_bookdown.yml'),
+															deps = list(read, counted_ids, counted_time,
+																					temp, nas, bboxes, rmds))
 )

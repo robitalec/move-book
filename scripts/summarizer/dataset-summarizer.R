@@ -52,7 +52,7 @@ check_input <- function(path, depth = 6) {
 
 # Check all available input
 # TODO: Switch to flex input from bash/drake
-fp <- '/media/Backup Plus/Movebank/GPS'
+fp <- '/media/ICEAGE/Movebank/GPS'
 check <- rbindlist(lapply(dir(fp, '.csv', full.names = TRUE), check_input))
 
 
@@ -181,10 +181,3 @@ mapshot(m, file = 'figures/bbox.png')
 # overlap_bbox <- function(DT) {
 # 	st_overlaps(bo)
 # }
-
-
-# Output ------------------------------------------------------------------
-# TODO: how to loop into a pdf
-# TODO: plan single page of info per dataset
-# TODO: how sort by quality/best?
-'/media/Backup Plus/Movebank/GPS/Summary/'

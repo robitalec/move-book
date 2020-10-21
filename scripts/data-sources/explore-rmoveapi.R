@@ -30,7 +30,7 @@ mammals[, tryCatch(
 	getEvent(
 		studyid = .BY[[1]],
 		attributes = 'all',
-		save_as = paste0('/media/Backup Plus/Movebank/Mammalia/', .BY[[1]], '.csv'),
+		save_as = paste0('/media/ICEAGE/Movebank/Mammalia/', .BY[[1]], '.csv'),
 		accept_license = TRUE
 	),
 	error = function(e)
@@ -55,111 +55,111 @@ mammals[, tryCatch(
 # R: warnings()
 # Warning messages:
 # 1: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/3072183.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/3072183.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 2: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/36994467.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/36994467.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 3: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/11212867.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/11212867.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 4: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/1061046330.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/1061046330.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
-# 5: closing unused connection 15 (/media/Backup Plus/Movebank/Mammalia/1061046330.csv)
-# 6: closing unused connection 14 (/media/Backup Plus/Movebank/Mammalia/178994931.csv)
-# 7: closing unused connection 13 (/media/Backup Plus/Movebank/Mammalia/143848765.csv)
-# 8: closing unused connection 12 (/media/Backup Plus/Movebank/Mammalia/302664172.csv)
-# 9: closing unused connection 11 (/media/Backup Plus/Movebank/Mammalia/11212867.csv)
-# 10: closing unused connection 10 (/media/Backup Plus/Movebank/Mammalia/1260886163.csv)
-# 11: closing unused connection 9 (/media/Backup Plus/Movebank/Mammalia/36994467.csv)
-# 12: closing unused connection 8 (/media/Backup Plus/Movebank/Mammalia/3072183.csv)
-# 13: closing unused connection 7 (/media/Backup Plus/Movebank/Mammalia/11212867)
-# 14: closing unused connection 6 (/media/Backup Plus/Movebank/Mammalia/1260886163)
-# 15: closing unused connection 5 (/media/Backup Plus/Movebank/Mammalia/36994467)
-# 16: closing unused connection 4 (/media/Backup Plus/Movebank/Mammalia/3072183)
-# 17: closing unused connection 3 (/media/Backup Plus/Movebank/Mammalia/3072183)
+# 5: closing unused connection 15 (/media/ICEAGE/Movebank/Mammalia/1061046330.csv)
+# 6: closing unused connection 14 (/media/ICEAGE/Movebank/Mammalia/178994931.csv)
+# 7: closing unused connection 13 (/media/ICEAGE/Movebank/Mammalia/143848765.csv)
+# 8: closing unused connection 12 (/media/ICEAGE/Movebank/Mammalia/302664172.csv)
+# 9: closing unused connection 11 (/media/ICEAGE/Movebank/Mammalia/11212867.csv)
+# 10: closing unused connection 10 (/media/ICEAGE/Movebank/Mammalia/1260886163.csv)
+# 11: closing unused connection 9 (/media/ICEAGE/Movebank/Mammalia/36994467.csv)
+# 12: closing unused connection 8 (/media/ICEAGE/Movebank/Mammalia/3072183.csv)
+# 13: closing unused connection 7 (/media/ICEAGE/Movebank/Mammalia/11212867)
+# 14: closing unused connection 6 (/media/ICEAGE/Movebank/Mammalia/1260886163)
+# 15: closing unused connection 5 (/media/ICEAGE/Movebank/Mammalia/36994467)
+# 16: closing unused connection 4 (/media/ICEAGE/Movebank/Mammalia/3072183)
+# 17: closing unused connection 3 (/media/ICEAGE/Movebank/Mammalia/3072183)
 # 18: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/5506230.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/5506230.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 19: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/8019372.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/8019372.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 20: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/662993476.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/662993476.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 21: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/612917076.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/612917076.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 22: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/1060755618.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/1060755618.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 23: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/17241829.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/17241829.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 24: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/368922919.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/368922919.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 25: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/368049215.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/368049215.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 26: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/920007556.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/920007556.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 27: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/467034665.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/467034665.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 28: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/467031755.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/467031755.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 29: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/59069076.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/59069076.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 30: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/72289508.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/72289508.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 31: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/106101649.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/106101649.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 32: In readLines(file(save_as, open = "r"), n = 1) :
-# incomplete final line found on '/media/Backup Plus/Movebank/Mammalia/452187673.csv'
+# incomplete final line found on '/media/ICEAGE/Movebank/Mammalia/452187673.csv'
 # Calls: [ ... doTryCatch -> getEvent -> getGeneric -> getMvData -> readLines
 # 33: In for (i in seq_len(n)) { ... :
-# closing unused connection 24 (/media/Backup Plus/Movebank/Mammalia/1027467132.csv)
+# closing unused connection 24 (/media/ICEAGE/Movebank/Mammalia/1027467132.csv)
 # 34: In for (i in seq_len(n)) { ... :
-# closing unused connection 23 (/media/Backup Plus/Movebank/Mammalia/33988628.csv)
+# closing unused connection 23 (/media/ICEAGE/Movebank/Mammalia/33988628.csv)
 # 35: In for (i in seq_len(n)) { ... :
-# closing unused connection 22 (/media/Backup Plus/Movebank/Mammalia/33987894.csv)
+# closing unused connection 22 (/media/ICEAGE/Movebank/Mammalia/33987894.csv)
 # 36: In for (i in seq_len(n)) { ... :
-# closing unused connection 21 (/media/Backup Plus/Movebank/Mammalia/452187673.csv)
+# closing unused connection 21 (/media/ICEAGE/Movebank/Mammalia/452187673.csv)
 # 37: In for (i in seq_len(n)) { ... :
-# closing unused connection 20 (/media/Backup Plus/Movebank/Mammalia/650188969.csv)
+# closing unused connection 20 (/media/ICEAGE/Movebank/Mammalia/650188969.csv)
 # 38: In for (i in seq_len(n)) { ... :
-# closing unused connection 19 (/media/Backup Plus/Movebank/Mammalia/106101649.csv)
+# closing unused connection 19 (/media/ICEAGE/Movebank/Mammalia/106101649.csv)
 # 39: In for (i in seq_len(n)) { ... :
-# closing unused connection 18 (/media/Backup Plus/Movebank/Mammalia/72289508.csv)
+# closing unused connection 18 (/media/ICEAGE/Movebank/Mammalia/72289508.csv)
 # 40: In for (i in seq_len(n)) { ... :
-# closing unused connection 17 (/media/Backup Plus/Movebank/Mammalia/59069076.csv)
+# closing unused connection 17 (/media/ICEAGE/Movebank/Mammalia/59069076.csv)
 # 41: In for (i in seq_len(n)) { ... :
-# closing unused connection 16 (/media/Backup Plus/Movebank/Mammalia/229457444.csv)
+# closing unused connection 16 (/media/ICEAGE/Movebank/Mammalia/229457444.csv)
 # 42: In for (i in seq_len(n)) { ... :
-# closing unused connection 15 (/media/Backup Plus/Movebank/Mammalia/467031755.csv)
+# closing unused connection 15 (/media/ICEAGE/Movebank/Mammalia/467031755.csv)
 # 43: In for (i in seq_len(n)) { ... :
-# closing unused connection 14 (/media/Backup Plus/Movebank/Mammalia/467034665.csv)
+# closing unused connection 14 (/media/ICEAGE/Movebank/Mammalia/467034665.csv)
 # 44: In for (i in seq_len(n)) { ... :
-# closing unused connection 13 (/media/Backup Plus/Movebank/Mammalia/920007556.csv)
+# closing unused connection 13 (/media/ICEAGE/Movebank/Mammalia/920007556.csv)
 # 45: In for (i in seq_len(n)) { ... :
-# closing unused connection 12 (/media/Backup Plus/Movebank/Mammalia/368049215.csv)
+# closing unused connection 12 (/media/ICEAGE/Movebank/Mammalia/368049215.csv)
 # 46: In for (i in seq_len(n)) { ... :
-# closing unused connection 11 (/media/Backup Plus/Movebank/Mammalia/368922919.csv)
+# closing unused connection 11 (/media/ICEAGE/Movebank/Mammalia/368922919.csv)
 # 47: In for (i in seq_len(n)) { ... :
-# closing unused connection 10 (/media/Backup Plus/Movebank/Mammalia/17241829.csv)
+# closing unused connection 10 (/media/ICEAGE/Movebank/Mammalia/17241829.csv)
 # 48: In for (i in seq_len(n)) { ... :
-# closing unused connection 9 (/media/Backup Plus/Movebank/Mammalia/1060755618.csv)
+# closing unused connection 9 (/media/ICEAGE/Movebank/Mammalia/1060755618.csv)
 # 49: In for (i in seq_len(n)) { ... :
-# closing unused connection 8 (/media/Backup Plus/Movebank/Mammalia/612917076.csv)
+# closing unused connection 8 (/media/ICEAGE/Movebank/Mammalia/612917076.csv)
 # 50: In for (i in seq_len(n)) { ... :
-# closing unused connection 7 (/media/Backup Plus/Movebank/Mammalia/662993476.csv)
+# closing unused connection 7 (/media/ICEAGE/Movebank/Mammalia/662993476.csv)
 # There were 11 warnings (use warnings() to see them)
 
 
@@ -172,7 +172,7 @@ trygps <- gps[, tryCatch(
 	getEvent(
 		studyid = .BY[[1]],
 		attributes = 'all',
-		save_as = paste0('/media/Backup Plus/Movebank/GPS/', .BY[[1]], '.csv'),
+		save_as = paste0('/media/ICEAGE/Movebank/GPS/', .BY[[1]], '.csv'),
 		accept_license = TRUE
 	),
 	error = function(e)

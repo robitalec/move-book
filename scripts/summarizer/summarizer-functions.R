@@ -151,6 +151,9 @@ build_rmds <- function(template, id, DT, path) {
 	outpath
 }
 
+render_with_deps <- function(index, config, deps) {
+	bookdown::render_book(input = index, config_file = config)
+}
 
 render_md <- function(template, DT, counted_ids, counted_time, temp, nas, bboxes) {
 
@@ -168,7 +171,7 @@ render_md <- function(template, DT, counted_ids, counted_time, temp, nas, bboxes
 
 		rmarkdown::render(
 			input = template,
-			output_file = paste0('/media/Backup Plus/Movebank/Summary/GPS/rmd/', study, '.pdf'),
+			output_file = paste0('/media/ICEAGE/Movebank/Summary/GPS/rmd/', study, '.pdf'),
 			params = params
 		)
 	}
