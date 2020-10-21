@@ -19,7 +19,7 @@ library(data.table)
 library(patchwork)
 
 kable <- function(data) {
-  knitr::kable(data, booktabs = TRUE) %>% 
+  knitr::kable(data, booktabs = TRUE, format = 'html') %>% 
     kableExtra::kable_styling(full_width = FALSE,
     													position = 'left')
 }
