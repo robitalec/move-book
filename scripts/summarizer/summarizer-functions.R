@@ -5,8 +5,6 @@
 # Check input -------------------------------------------------------------
 check_input <- function(path, depth = 6) {
 
-	# rbindlist(lapply(dir(path, '.csv', full.names = TRUE), function(p) {
-
 	id <- as.integer(gsub('.csv', '', tstrsplit(path, '/')[[depth]]))
 	lines <- readLines(path, 1)
 
@@ -31,12 +29,11 @@ check_input <- function(path, depth = 6) {
 			list(id = id, path = path, why = NA, cols = list(colnames(DT)))
 		}
 	}
-	# })
-	# )
 }
 
 # Read input --------------------------------------------------------------
 filter_check <- function(checked) {
+	if
 	checked[is.na(why)]$path
 }
 
