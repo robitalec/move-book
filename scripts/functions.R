@@ -2,6 +2,20 @@
 # Alec Robitaille
 
 
+
+# Get details -------------------------------------------------------------
+try_get <- function(study, login = login) {
+	tryCatch(expr = getMovebankStudy(study, login = login),
+					 error = function(cond) return(list(error = as.character(cond))),
+					 warning = function(cond) return(list(warning = as.character(cond))))
+}
+
+get_details <- function(login) {
+	rbindlist(lapply(studies, try_get, login = login),
+						fill = TRUE, use.names = TRUE)
+}
+
+
 # Check input -------------------------------------------------------------
 check_input <- function(path, depth = 6) {
 

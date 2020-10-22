@@ -31,11 +31,14 @@ paths <- dir(fp, '.csv', full.names = TRUE)[20:30]
 
 # Bookdown option
 options(bookdown.render.file_scope = FALSE)
-# options(bookdown.preview.cutoff = 100)
 
 
 # Plan
 plan <- drake_plan(
+	details = get_details(login),
+
+
+
 	checked = target(as.data.table(check_input(paths)),
 									 dynamic = map(paths)),
 
