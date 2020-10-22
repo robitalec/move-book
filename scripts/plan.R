@@ -10,6 +10,15 @@ library(mapview)
 library(sf)
 library(patchwork)
 library(leaflet)
+library(keyring)
+library(move)
+
+
+# Credentials
+service = 'movebank'
+username = 'robitalec'
+login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
+
 
 # Source functions
 source('scripts/summarizer/summarizer-functions.R')
