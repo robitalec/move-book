@@ -11,6 +11,8 @@ try_get <- function(study, login = login) {
 }
 
 get_details <- function(login) {
+	studies <- getMovebankStudies(login)
+
 	rbindlist(lapply(studies, try_get, login = login),
 						fill = TRUE, use.names = TRUE)
 }
