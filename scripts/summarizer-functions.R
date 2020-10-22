@@ -40,7 +40,18 @@ read_input <- function(DT, select = NULL) {
 	# Format: yyyy-MM-dd HH:mm:ss.SSS
 	# Units: UTC or GPS time
 	rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
+
+	rd
 }
+
+
+
+# Resolve taxon -----------------------------------------------------------
+resolve_taxon <- function(DT) {
+
+}
+
+
 
 # Individuals -------------------------------------------------------------
 # Count number of individuals
