@@ -1,8 +1,5 @@
-# === Movebank summarizer - functions -----------------------------
+# === Movement dataset summarizer - functions -----------------------------
 # Alec Robitaille
-
-
-
 
 
 # Check input -------------------------------------------------------------
