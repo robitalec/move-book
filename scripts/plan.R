@@ -21,7 +21,7 @@ login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
 
 
 # Source functions
-source('scripts/summarizer/summarizer-functions.R')
+source('scripts/functions.R')
 
 # Paths
 fp <- '/media/ICEAGE/Movebank/GPS/'
@@ -47,30 +47,30 @@ plan <- drake_plan(
 	read = target(read_input(filtered),
 								dynamic = map(filtered)),
 
-	taxed = target(resolve_taxon(read),
-								 dynamic = map(read)),
+	# taxed = target(resolve_taxon(read),
+	# 							 dynamic = map(read)),
 
-	counted_ids = target(count_ids(taxed),
-											 dynamic = map(taxed)),
+	counted_ids = target(count_ids(read),
+											 dynamic = map(read)),
 
-	temp = target(temp_overlap(taxed),
-								dynamic = map(taxed)),
+	temp = target(temp_overlap(read),
+								dynamic = map(read)),
 
-	counted_time = target(count_time(taxed),
-												dynamic = map(taxed)),
+	counted_time = target(count_time(read),
+												dynamic = map(read)),
 
-	nas = target(check_nas(taxed),
-							 dynamic = map(taxed)),
+	nas = target(check_nas(read),
+							 dynamic = map(read)),
 
-	bboxes = target(map_bbox(taxed, outpath),
-									dynamic = map(taxed), format = 'file'),
+	bboxes = target(map_bbox(read, outpath),
+									dynamic = map(read), format = 'file'),
 
 	rmds = target(build_rmds(file_in('scripts/summarizer/summarizer.Rmd'),
-													 id_chr(), taxed, outpath),
-								dynamic = map(taxed), format = 'file'),
+													 id_chr(), read, outpath),
+								dynamic = map(read), format = 'file'),
 
 	rendered = render_with_deps(index = knitr_in('index.Rmd'),
 															config = file_in('_bookdown.yml'),
-															deps = list(taxed, counted_ids, counted_time,
+															deps = list(read, counted_ids, counted_time,
 																					temp, nas, bboxes, rmds))
 )
