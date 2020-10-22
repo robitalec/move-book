@@ -37,7 +37,7 @@ options(bookdown.render.file_scope = FALSE)
 plan <- drake_plan(
 	details = get_details(login),
 
-
+	taxed = resolve_taxon(details),
 
 	checked = target(as.data.table(check_input(paths)),
 									 dynamic = map(paths)),

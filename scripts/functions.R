@@ -16,6 +16,27 @@ get_details <- function(login) {
 }
 
 
+# Resolve taxon -----------------------------------------------------------
+# Resolve the taxon_ids column with taxize
+# Sort each resolved taxon_id (splitting lists) by score, preserving the top
+sort_resolved <- function(tax) {
+	data.table(gnr_resolve(tax))[, .SD[order(score)][1], user_supplied_name]
+}
+
+resolve_taxon <- function(details, ranks = c('family', 'class')) {
+	# Drop where taxon_ids is ""
+	subdet <- details[taxon_ids != '']
+
+	# Apply over each (potential) list within taxon_ids row, sorting resolved
+	taxes <- subdet[, rbindlist(lapply(strsplit(taxon_ids, ','), sort_resolved),
+															fill = TRUE, use.names = TRUE),
+									by = taxon_ids]
+
+	taxes[, (ranks) := tax_name(matched_name, ranks,
+															messages = FALSE, ask = FALSE)[, ranks]]
+
+}
+
 # Check input -------------------------------------------------------------
 check_input <- function(path, depth = 6) {
 
