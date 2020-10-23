@@ -41,8 +41,6 @@ taxize_options(TRUE)
 plan <- drake_plan(
 	details = get_details(login),
 
-
-
 	checked = target(as.data.table(check_input(paths)),
 									 dynamic = map(paths)),
 
@@ -54,9 +52,6 @@ plan <- drake_plan(
 
 	read = target(read_input(merged, ranks = ranks),
 								dynamic = map(merged)),
-
-	# taxed = target(resolve_taxon(read),
-	# 							 dynamic = map(read)),
 
 	counted_ids = target(count_ids(read),
 											 dynamic = map(read)),
