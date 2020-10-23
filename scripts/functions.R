@@ -36,7 +36,6 @@ resolve_taxon <- function(details, ranks = c('family', 'class')) {
 
 	taxes[, (ranks) := tax_name(matched_name, ranks,
 															messages = FALSE, ask = FALSE)[, ranks]]
-
 }
 
 # Check input -------------------------------------------------------------
@@ -80,14 +79,6 @@ read_input <- function(DT, select = NULL) {
 
 	rd
 }
-
-
-
-# Resolve taxon -----------------------------------------------------------
-resolve_taxon <- function(DT) {
-
-}
-
 
 
 # Individuals -------------------------------------------------------------
