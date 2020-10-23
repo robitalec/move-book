@@ -25,6 +25,13 @@ sort_resolved <- function(tax) {
 	data.table(gnr_resolve(tax))[, .SD[order(score)][1], user_supplied_name]
 }
 
+classify_taxon <- function(id, ranks) {
+	z <- t(data.table(classification(id, db = 'ncbi')[[1]])[rank %in% ranks])
+	zz <- data.table(z)[1]
+	colnames(zz) <- z[2,]
+	zz
+}
+
 resolve_taxon <- function(details, ranks = c('family', 'class')) {
 	# Drop where taxon_ids is ""
 	subdet <- details[taxon_ids != '']
@@ -34,8 +41,8 @@ resolve_taxon <- function(details, ranks = c('family', 'class')) {
 															fill = TRUE, use.names = TRUE),
 									by = taxon_ids]
 
-	taxes[, (ranks) := tax_name(matched_name, ranks,
-															messages = FALSE, ask = FALSE)[, ranks]]
+	taxes[, (ranks) := classify_taxon(matched_name, ranks)[, .SD, .SDcols = ranks],
+				matched_name]
 }
 
 # Check input -------------------------------------------------------------

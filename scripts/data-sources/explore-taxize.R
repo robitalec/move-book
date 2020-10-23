@@ -37,7 +37,20 @@ taxes <- subdet[, rbindlist(lapply(strsplit(taxon_ids, ','), sort_resolved),
 
 # Get eg. family and class
 ranks <- c('family', 'class')
-taxes[, (ranks) := tax_name(matched_name, ranks, messages = FALSE)[, ranks]]
+
+classify_taxon <- function(id, ranks) {
+	z <- t(data.table(classification(id, db = 'ncbi')[[1]])[rank %in% ranks])
+	zz <- data.table(z)[1]
+	colnames(zz) <- z[2,]
+	zz
+}
+
+taxes[, (ranks) := classify_taxon(matched_name, ranks)[, .SD, .SDcols = ranks],
+			matched_name]
+
+
+
+# TODO: add sign in to r environ
 
 #careful, tax_name requires manual intervention...
 # TODO: check messages = FALSE, ask = FALSE
