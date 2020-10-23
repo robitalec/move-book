@@ -12,7 +12,7 @@ library(patchwork)
 library(leaflet)
 library(keyring)
 library(move)
-
+library(taxize)
 
 # Credentials
 service = 'movebank'
