@@ -39,10 +39,11 @@ resolve_taxon <- function(details, subid, ranks = c('family', 'class')) {
 	# Apply over each (potential) list within taxon_ids row, sorting resolved
 	taxes <- subdet[, rbindlist(lapply(strsplit(taxon_ids, ','), sort_resolved),
 															fill = TRUE, use.names = TRUE),
-									by = taxon_ids]
+									by = .(id, taxon_ids)]
 
 	taxes[, (ranks) := classify_taxon(matched_name, ranks)[, .SD, .SDcols = ranks],
 				matched_name]
+
 }
 
 # Check input -------------------------------------------------------------
