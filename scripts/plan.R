@@ -29,8 +29,9 @@ outpath <- '/media/ICEAGE/Movebank/Summary/GPS/'
 
 paths <- dir(fp, '.csv', full.names = TRUE)[20:30]
 
-# Bookdown option
+# Options
 options(bookdown.render.file_scope = FALSE)
+taxize_options(TRUE)
 
 
 # Plan
