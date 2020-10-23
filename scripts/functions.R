@@ -26,7 +26,8 @@ sort_resolved <- function(tax) {
 }
 
 classify_taxon <- function(id, ranks) {
-	z <- t(data.table(classification(id, db = 'ncbi')[[1]])[rank %in% ranks])
+	z <- t(data.table(classification(id, db = 'ncbi', ask = FALSE,
+																	 messages = FALSE)[[1]])[rank %in% ranks])
 	zz <- data.table(z)[1]
 	colnames(zz) <- z[2,]
 	zz
