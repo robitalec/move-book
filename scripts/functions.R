@@ -32,9 +32,9 @@ classify_taxon <- function(id, ranks) {
 	zz
 }
 
-resolve_taxon <- function(details, ranks = c('family', 'class')) {
+resolve_taxon <- function(details, subid, ranks = c('family', 'class')) {
 	# Drop where taxon_ids is ""
-	subdet <- details[taxon_ids != '']
+	subdet <- details[taxon_ids != '' & id %in% subid]
 
 	# Apply over each (potential) list within taxon_ids row, sorting resolved
 	taxes <- subdet[, rbindlist(lapply(strsplit(taxon_ids, ','), sort_resolved),

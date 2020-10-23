@@ -24,7 +24,7 @@ login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
 source('scripts/functions.R')
 
 # Paths
-fp <- '/media/ICEAGE/Movebank/GPS/'
+fp <- '/media/ICEAGE/Movebank/GPS'
 outpath <- '/media/ICEAGE/Movebank/Summary/GPS/'
 
 paths <- dir(fp, '.csv', full.names = TRUE)[20:30]
@@ -37,12 +37,14 @@ options(bookdown.render.file_scope = FALSE)
 plan <- drake_plan(
 	details = get_details(login),
 
-	taxed = resolve_taxon(details),
+
 
 	checked = target(as.data.table(check_input(paths)),
 									 dynamic = map(paths)),
 
 	filtered = target(checked[is.na(why)]),
+
+	taxed = resolve_taxon(details, filtered$id),
 
 	read = target(read_input(filtered),
 								dynamic = map(filtered)),
