@@ -77,8 +77,8 @@ check_input <- function(path, depth = 6) {
 }
 
 # Read input --------------------------------------------------------------
-read_input <- function(DT, select = NULL) {
-	rd <- fread(DT$path, select = select)
+read_input <- function(DT, ranks) {
+	rd <- fread(DT$path)
 
 	rd[, tag_local_identifier := as.character(tag_local_identifier)]
 
@@ -86,7 +86,8 @@ read_input <- function(DT, select = NULL) {
 	# Units: UTC or GPS time
 	rd[, datetime := anytime(timestamp, tz = 'UTC', asUTC = TRUE)]
 
-	rd
+	taxnames <- c('matched_name', ranks)
+	rd[, (taxnames) := DT[, .SD, .SDcols = taxnames]]
 }
 
 
