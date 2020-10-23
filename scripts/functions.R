@@ -155,7 +155,9 @@ count_time <- function(DT) {
 	# DT[, nMonth := uniqueN(year(datetime)), by = month(datetime)]
 
 	setorder(DT, datetime)
-	DT[, fixRate := difftime(datetime, shift(datetime), units = 'hours'), by = individual_id]
+	DT[, fixRate := difftime(datetime, data.table::shift(datetime),
+													 units = 'hours'),
+		 by = individual_id]
 	# DT[, fixRateSummary := list(summary(as.numeric(fixRate)))]
 
 	cols <- c('study_id', 'sensor_type_id',
