@@ -34,7 +34,7 @@ classify_taxon <- function(id, ranks) {
 }
 
 resolve_taxon <- function(details, subid, ranks = c('family', 'class')) {
-	# Drop where taxon_ids is ""
+	# Drop where taxon_ids is ''
 	subdet <- details[taxon_ids != '' & id %in% subid]
 
 	# Apply over each (potential) list within taxon_ids row, sorting resolved
@@ -108,7 +108,9 @@ count_ids <- function(DT) {
 	# TODO: rbindlist this output
 	# DT[, nLocByIndividual := list(DT[, .N, .(study_id, individual_id)])]
 
-	cols <- c('study_id', 'sensor_type_id',
+	cols <- c('study_id',
+						'matched_name', 'family', 'class',
+						'sensor_type_id',
 						'nIndividual', 'nDeployment', 'nTag',
 						'sameIndividual', 'sameTag', 'moreIndividual',
 						'moreTag')

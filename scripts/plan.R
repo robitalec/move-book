@@ -74,6 +74,6 @@ plan <- drake_plan(
 
 	rendered = render_with_deps(index = knitr_in('index.Rmd'),
 															config = file_in('_bookdown.yml'),
-															deps = list(read, counted_ids, counted_time,
+															deps = list(counted_ids, counted_time,
 																					temp, nas, bboxes, rmds))
 )

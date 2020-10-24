@@ -8,10 +8,9 @@ knitr::include_graphics(drake::readd(bboxes_KEY, cache = cache))
 ```{r}
 options(digits = 0)
 kable(cbind(
-	drake::readd(read_KEY, cache = cache)[1,
-		.(species = matched_name, family, class)],
 	drake::readd(counted_ids_KEY, cache = cache)[,
-							 .(sensor_type_id, nIndividual, nDeployment, nTag)],
+							 .(sensor_type_id, 
+							 	nIndividual, nDeployment, nTag)],
 	drake::readd(counted_time_KEY, cache = cache)[,
 							 .(lenStudy, nYears)]
 ))
