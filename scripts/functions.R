@@ -98,6 +98,8 @@ count_ids <- function(DT) {
 	DT[, nDeployment := uniqueN(deployment_id)]
 	DT[, nTag := uniqueN(tag_id)]
 
+	DT[, nRows := .N]
+
 	DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
 	DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
 
@@ -113,7 +115,7 @@ count_ids <- function(DT) {
 						'sensor_type_id',
 						'nIndividual', 'nDeployment', 'nTag',
 						'sameIndividual', 'sameTag', 'moreIndividual',
-						'moreTag')
+						'moreTag', 'nRows')
 
 	unique(DT[, .SD, .SDcols = cols], by = 'study_id')
 }
