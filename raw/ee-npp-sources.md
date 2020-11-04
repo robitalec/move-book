@@ -29,4 +29,21 @@ The MOD17A3HGF V6 product provides information about annual Net Primary Producti
 * Global but some masked
 
 
-## MOD17A2H
+## ee.ImageCollection("MODIS/006/MOD17A2H") and ee.ImageCollection("MODIS/006/MYD17A2H")
+
+2000-03-05T00:00:00 - 2020-10-23T00:00:00
+
+The MOD17A2H V6 Gross Primary Productivity (GPP) product is a cumulative 8-day composite with a 500m resolution. The product is based on the radiation-use efficiency concept and can be potentially used as inputs to data models to calculate terrestrial energy, carbon, water cycle processes, and biogeochemistry of vegetation.
+
+2002-07-04T00:00:00 - 2020-10-23T00:00:00
+
+The MYD17A2H V6 Gross Primary Productivity (GPP) product is a cumulative 8-day composite with a 500m resolution. The product is based on the radiation-use efficiency concept and can be potentially used as inputs to data models to calculate terrestrial energy, carbon, water cycle processes, and biogeochemistry of vegetation.
+
+* 8-day
+* Global but some gaps
+* **TODO**: check QC at gaps/in winter
+
+
+
+
+TODO: look at "npp"
