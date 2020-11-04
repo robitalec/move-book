@@ -1,6 +1,6 @@
 # NPP Products in EE
 
-## ee.ImageCollection("UMT/NTSG/v2/LANDSAT/NPP")
+## ee.ImageCollection("UMT/NTSG/v2/LANDSAT/NPP") and ee.ImageCollection("UMT/NTSG/v2/LANDSAT/GPP")
 
 1986-01-01T00:00:00 - 2019-01-01T00:00:00
 
@@ -10,7 +10,7 @@ The Landsat Net Primary Production (NPP) CONUS dataset estimates NPP using Lands
 * US only
 
 
-## ee.ImageCollection("UMT/NTSG/v2/MODIS/NPP")
+## ee.ImageCollection("UMT/NTSG/v2/MODIS/NPP") and ee.ImageCollection("UMT/NTSG/v2/MODIS/GPP")
 
 2001-01-01T00:00:00 - 2019-01-01T00:00:00
 
