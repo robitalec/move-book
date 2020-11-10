@@ -72,9 +72,10 @@ resolve_taxon <- function(details, subid, ranks = c('family', 'class')) {
 }
 
 # Check input -------------------------------------------------------------
-check_input <- function(path, depth = 6) {
+check_input <- function(path, ...) {
 
-	id <- as.integer(gsub('.csv', '', tstrsplit(path, '/')[[depth]]))
+	id <- as.integer(gsub('.csv', '',
+												tstrsplit(path, '/')[[length(strsplit(path, '/')[[1]])]]))
 	lines <- readLines(path, 1)
 
 	nodata <- 'No data are available for download'
