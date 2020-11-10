@@ -13,11 +13,14 @@ library(leaflet)
 library(keyring)
 library(move)
 library(taxize)
+library(rmoveapi)
 
 # Credentials
 service = 'movebank'
 username = 'robitalec'
 login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
+setAuth(key_list(service)[1, 2], key_get(service, username))
+
 
 
 # Source functions
