@@ -39,12 +39,13 @@ options(bookdown.render.file_scope = FALSE)
 taxize_options(TRUE)
 
 
-
 # Plan
 plan <- drake_plan(
 	details = get_details(login),
 
-	checked = target(as.data.table(check_input(paths)),
+	downloaded = download_studies(details, outpath = outpath),
+
+	checked = target(as.data.table(check_input(paths, downloaded)),
 									 dynamic = map(paths)),
 
 	filtered = target(checked[is.na(why)]),
