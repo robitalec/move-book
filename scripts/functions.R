@@ -18,6 +18,21 @@ get_details <- function(login) {
 }
 
 
+# Download studies --------------------------------------------------------
+download_studies <- function(details, outpath) {
+	details[, tryCatch(
+		getEvent(
+			studyid = .BY[[1]],
+			attributes = 'all',
+			save_as = paste0(outpath, .BY[[1]], '.csv'),
+			accept_license = TRUE
+		),
+		error = function(e)
+			NULL
+	), by = id]
+}
+
+
 # Resolve taxon -----------------------------------------------------------
 # Resolve the taxon_ids column with taxize
 # Sort each resolved taxon_id (splitting lists) by score, preserving the top
