@@ -19,7 +19,7 @@ get_details <- function(login) {
 
 
 # Download studies --------------------------------------------------------
-by_download <- function(details, outpath) {
+download_studies <- function(details, outpath) {
 	details[, tryCatch(
 		getEvent(
 			studyid = .BY[[1]],
@@ -30,15 +30,6 @@ by_download <- function(details, outpath) {
 		error = function(e)
 			NULL
 	), by = id]
-}
-
-download_studies <- function(details, outpath, check) {
-	nsaved <- length(dir(outpath, 'csv'))
-	if (check & details[, .N] == nsaved) {
-		by_download(details, outpath)
-	} else {
-		by_download(details, outpath)
-	}
 }
 
 
