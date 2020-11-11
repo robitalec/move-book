@@ -41,7 +41,7 @@ taxize_options(TRUE)
 plan <- drake_plan(
 	details = get_details(login),
 
-	downloaded = download_studies(details[1:10], outpath = outpath),
+	downloaded = download_studies(details, outpath = fp),
 
 	paths = get_paths(fp, downloaded),
 
