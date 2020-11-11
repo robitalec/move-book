@@ -48,7 +48,7 @@ sort_resolved <- function(tax) {
 classify_taxon <- function(id, ranks) {
 	z <- data.table(classification(id, db = 'ncbi', ask = FALSE,
 																 messages = FALSE)[[1]])
-	if (all(is.na(z))) {
+	if (all(is.na(z)) || z[rank %in% ranks, .N == 0]) {
 		data.table(t(setNames(rep(NA_character_, length(ranks)), ranks)))
 	} else {
 		zz <- t(z[rank %in% ranks])
