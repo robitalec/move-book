@@ -50,6 +50,10 @@ classify_taxon <- function(id, ranks) {
 																	 messages = FALSE)[[1]])[rank %in% ranks])
 	zz <- data.table(z)[1]
 	colnames(zz) <- z[2,]
+
+	if (any(!ranks %in% colnames(zz))) {
+		zz[, (setdiff(ranks, colnames(zz))) := NA_character_]
+	}
 	zz
 }
 
