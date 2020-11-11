@@ -43,7 +43,9 @@ taxize_options(TRUE)
 plan <- drake_plan(
 	details = get_details(login),
 
-	downloaded = download_studies(details, outpath = outpath),
+	downloaded = download_studies(details[1:10], outpath = outpath),
+
+	paths = get_paths(fp, downloaded),
 
 	checked = target(as.data.table(check_input(paths, downloaded)),
 									 dynamic = map(paths)),

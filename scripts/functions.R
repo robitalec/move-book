@@ -33,6 +33,11 @@ download_studies <- function(details, outpath) {
 }
 
 
+# Get paths ---------------------------------------------------------------
+get_paths <- function(path, ...) dir(path, '.csv', full.names = TRUE)
+
+
+
 # Resolve taxon -----------------------------------------------------------
 # Resolve the taxon_ids column with taxize
 # Sort each resolved taxon_id (splitting lists) by score, preserving the top
