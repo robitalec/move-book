@@ -46,15 +46,20 @@ sort_resolved <- function(tax) {
 }
 
 classify_taxon <- function(id, ranks) {
-	z <- t(data.table(classification(id, db = 'ncbi', ask = FALSE,
-																	 messages = FALSE)[[1]])[rank %in% ranks])
-	zz <- data.table(z)[1]
-	colnames(zz) <- z[2,]
+	z <- data.table(classification(id, db = 'ncbi', ask = FALSE,
+																 messages = FALSE)[[1]])
+	if (all(is.na(z))) {
+		data.table(t(setNames(rep(NA_character_, length(ranks)), ranks)))
+	} else {
+		zz <- t(z[rank %in% ranks])
+		zzz <- data.table(zz)[1]
+		colnames(zzz) <- zz[2,]
 
-	if (any(!ranks %in% colnames(zz))) {
-		zz[, (setdiff(ranks, colnames(zz))) := NA_character_]
+		if (any(!ranks %in% colnames(zzz))) {
+			zzz[, (setdiff(ranks, colnames(zzz))) := NA_character_]
+		}
+		zzz
 	}
-	zz
 }
 
 resolve_taxon <- function(details, subid, ranks = c('family', 'class')) {
