@@ -19,8 +19,8 @@ library(rmoveapi)
 service = 'movebank'
 username = 'robitalec'
 login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
-setAuth(key_list(service)[1, 2], key_get(service, username))
-
+options(rmoveapi.userid = key_list(service)[1, 2])
+options(rmoveapi.pass = key_get(service, username))
 
 
 # Source functions
