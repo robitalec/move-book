@@ -27,10 +27,8 @@ setAuth(key_list(service)[1, 2], key_get(service, username))
 source('scripts/functions.R')
 
 # Paths
-fp <- '/media/ICEAGE/Movebank/GPS'
-outpath <- '/media/ICEAGE/Movebank/Summary/GPS/'
-
-paths <- dir(fp, '.csv', full.names = TRUE)[20:30]
+fp <- '/media/ICEAGE/Movebank/All'
+outpath <- '/media/ICEAGE/Movebank/Summary/All/'
 
 ranks <- c('family', 'class')
 
