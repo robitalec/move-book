@@ -86,6 +86,7 @@ check_input <- function(path, ...) {
 	nodata <- 'No data are available for download'
 	http403 <- 'HTTP Status 403 - Incorrect md5 hash'
 	internalerror <- 'The server encountered an internal error'
+	http500 <- 'HTTP Status 500'
 
 	if(grepl(nodata, lines)) {
 		list(id = id, path = path, why = nodata, cols = NA)
@@ -93,6 +94,8 @@ check_input <- function(path, ...) {
 		list(id = id, path = path, why = http403, cols = NA)
 	} else if (any(grepl(internalerror, lines))) {
 		list(id = id, path = path, why = internalerror, cols = NA)
+	} else if (any(grepl(http500, lines))) {
+		list(id = id, path = path, why = http500, cols = NA)
 	} else {
 
 		# Read just 5 rows, to check if there is data
