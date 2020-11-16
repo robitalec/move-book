@@ -31,8 +31,8 @@ if (.Platform$OS.type == "windows") {
 		# TODO: add windows path
 
 } else if (.Platform$OS.type == "unix") {
-	fp <- '/media/ICEAGE/Movebank/All'
-	outpath <- '/media/ICEAGE/Movebank/Summary/All/'
+	downpath <- '/media/ICEAGE/Movebank/All'
+	outpath <- '/media/ICEAGE/Movebank/Summary/All'
 }
 
 
@@ -47,9 +47,9 @@ taxize_options(TRUE)
 plan <- drake_plan(
 	details = get_details(login),
 
-	downloaded = download_studies(details, outpath = fp),
+	downloaded = download_studies(details, outpath = downpath),
 
-	paths = get_paths(fp, downloaded),
+	paths = get_paths(downpath, downloaded),
 
 	checked = target(as.data.table(check_input(paths, downloaded)),
 									 dynamic = map(paths)),
