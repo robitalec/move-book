@@ -27,8 +27,14 @@ options(rmoveapi.pass = key_get(service, username))
 source('scripts/functions.R')
 
 # Paths
-fp <- '/media/ICEAGE/Movebank/All'
-outpath <- '/media/ICEAGE/Movebank/Summary/All/'
+if (.Platform$OS.type == "windows") {
+		# TODO: add windows path
+
+} else if (.Platform$OS.type == "unix") {
+	fp <- '/media/ICEAGE/Movebank/All'
+	outpath <- '/media/ICEAGE/Movebank/Summary/All/'
+}
+
 
 ranks <- c('family', 'class')
 
