@@ -24,8 +24,7 @@ download_studies <- function(details, outpath) {
 		getEvent(
 			studyid = .BY[[1]],
 			attributes = 'all',
-			# make this smarter
-			save_as = paste0(outpath, '/', .BY[[1]], '.csv'),
+			save_as = file.path(outpath, paste0(.BY[[1]], '.csv')),
 			accept_license = TRUE
 		),
 		error = function(e) NULL
