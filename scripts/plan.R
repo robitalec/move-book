@@ -31,8 +31,8 @@ if (.Platform$OS.type == "windows") {
 		# TODO: add windows path
 
 } else if (.Platform$OS.type == "unix") {
-	downpath <- '/media/ICEAGE/Movebank/All'
-	outpath <- '/media/ICEAGE/Movebank/Summary/All'
+	downpath <- file.path('media', 'ICEAGE', 'Movebank', 'All')
+	outpath <- file.path('media', 'ICEAGE', 'Movebank', 'Summary', 'All')
 }
 
 
