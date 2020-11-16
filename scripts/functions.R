@@ -78,7 +78,7 @@ resolve_taxon <- function(details, subid, ranks = c('family', 'class')) {
 # Check input -------------------------------------------------------------
 check_input <- function(path, ...) {
 
-	id <- as.integer(gsub('.csv', , basename(path)))
+	id <- as.integer(gsub('.csv', '', basename(path)))
 
 	lines <- readLines(path, 1)
 
