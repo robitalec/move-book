@@ -222,7 +222,7 @@ map_bbox <- function(DT, path) {
 		addMiniMap(position = 'bottomleft',
 							 zoomLevelFixed = 2)
 
-	outpath <- paste0(path, 'figures/bbox-', study, '.png')
+	outpath <- file.path(path, 'figures', paste0('bbox-', study, '.png'))
 	mapshot(m, file = outpath)
 	outpath
 }
@@ -232,7 +232,7 @@ build_rmds <- function(template, id, DT, path) {
 	study <- DT$study_id[[1]]
 	id <- gsub('rmds_', '', id)
 
-	outpath <- paste0(path, 'rmd/', study, '.Rmd')
+	outpath <- file.path(path, 'rmd', paste0(study, '.Rmd'))
 	file.copy(template, outpath, overwrite = TRUE)
 
 	lines <- readLines(outpath)

@@ -78,7 +78,7 @@ plan <- drake_plan(
 	bboxes = target(map_bbox(read, outpath),
 									dynamic = map(read), format = 'file'),
 
-	rmds = target(build_rmds(file_in('scripts/summarizer/summarizer.Rmd'),
+	rmds = target(build_rmds(file_in(file.path('scripts', 'summarizer', 'summarizer.Rmd')),
 													 id_chr(), read, outpath),
 								dynamic = map(read), format = 'file'),
 
