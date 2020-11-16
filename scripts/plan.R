@@ -28,8 +28,8 @@ source('scripts/functions.R')
 
 # Paths
 if (.Platform$OS.type == "windows") {
-		# TODO: add windows path
-
+	downpath <- file.path('E:', 'ALR_C2', 'All')
+	outpath <- file.path('E:', 'ALR_C2', 'Summary')
 } else if (.Platform$OS.type == "unix") {
 	downpath <- file.path('media', 'ICEAGE', 'Movebank', 'All')
 	outpath <- file.path('media', 'ICEAGE', 'Movebank', 'Summary', 'All')
