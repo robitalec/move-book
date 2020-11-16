@@ -153,9 +153,10 @@ count_ids <- function(DT) {
 }
 
 # Time (Donuts) -----------------------------------------------------------
-temp_overlap <- function(DT, type = 'point') {
+temp_overlap <- function(DT, type = 'daily') {
 	DT[, mindatetime := min(datetime), by = individual_id]
 	DT[, maxdatetime := max(datetime), by = individual_id]
+	DT[, Date := as.IDate(datetime)]
 
 	if (type == 'point') {
 		ggplot(DT, aes(y = as.character(individual_id),
@@ -173,6 +174,13 @@ temp_overlap <- function(DT, type = 'point') {
 											 xend = maxdatetime,
 											 group = individual_id),
 									 size = 4) +
+			guides(color = FALSE) +
+			scale_x_datetime(date_labels = '%b %Y') +
+			labs(x = 'Date', y = 'ID')
+	} else if (type == 'daily') {
+		ggplot(unique(DT, by = c('individual_id', 'Date'))) +
+			geom_point(aes(x = Date, group = individual_id),
+								 size = 1) +
 			guides(color = FALSE) +
 			scale_x_datetime(date_labels = '%b %Y') +
 			labs(x = 'Date', y = 'ID')
