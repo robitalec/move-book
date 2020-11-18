@@ -237,6 +237,7 @@ map_bbox <- function(DT, path) {
 
 
 build_rmds <- function(template, id, DT, path) {
+	if(!dir.exists(file.path(path, 'rmd'))) dir.create(file.path(path, 'rmd'))
 	study <- DT$study_id[[1]]
 	id <- gsub('rmds_', '', id)
 
