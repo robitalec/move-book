@@ -5,6 +5,9 @@ library(targets)
 source('scripts/functions.R')
 
 
+# Packages
+library(data.table)
+
 # Set target-specific options such as packages.
 # tar_option_set()
 
