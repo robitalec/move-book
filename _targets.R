@@ -1,19 +1,25 @@
 library(targets)
-# This is an example target script.
-# Read the tar_script() help file for details.
 
-# Define custom functions and other global objects.
-# This is where you write source(\"R/functions.R\")
-# if you keep your functions in external scripts.
-summ <- function(dataset) {
-  summarize(dataset, mean_x = mean(x))
-}
+
+# Source functions
+source('scripts/functions.R')
+
 
 # Set target-specific options such as packages.
-tar_option_set(packages = "dplyr")
+# tar_option_set()
+
+
+# Paths
+if (.Platform$OS.type == "windows") {
+	downpath <- file.path('E:', 'ALR_C2', 'All')
+	outpath <- file.path('E:', 'ALR_C2', 'Summary')
+} else if (.Platform$OS.type == "unix") {
+	downpath <- file.path('/media', 'ICEAGE', 'Movebank', 'All')
+	outpath <- file.path('/media', 'ICEAGE', 'Movebank', 'Summary', 'All')
+}
+
 
 # End this file with a list of target objects.
 list(
-  tar_target(data, data.frame(x = sample.int(100), y = sample.int(100))),
-  tar_target(summary, summ(data)) # Call your custom functions as needed.
+	tar_target(csvs, dir(downpath), format = 'file')
 )
