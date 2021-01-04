@@ -24,5 +24,7 @@ if (.Platform$OS.type == "windows") {
 
 # End this file with a list of target objects.
 list(
-	tar_target(csvs, dir(downpath), format = 'file')
+	tar_target(paths, get_paths(downpath)),
+	tar_target(checked, as.data.table(check_input(paths, downloaded)),
+						 pattern = map(paths))
 )
