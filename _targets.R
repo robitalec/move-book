@@ -7,8 +7,9 @@ source('scripts/functions.R')
 
 # Packages
 library(data.table)
-library(movebank)
+library(rmoveapi)
 library(keyring)
+library(move)
 
 # Paths
 if (.Platform$OS.type == "windows") {
