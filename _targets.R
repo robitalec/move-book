@@ -27,6 +27,6 @@ tar_option_set(error = "workspace")
 # Targets
 list(
 	tar_target(paths, get_paths(downpath)),
-	tar_target(checked, as.data.table(check_input(paths, downloaded)),
+	tar_target(checked, as.data.table(check_input(paths)),
 						 pattern = map(paths))
 )
