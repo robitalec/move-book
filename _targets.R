@@ -38,8 +38,17 @@ tar_option_set(error = "workspace")
 list(
 	tar_files(paths,
 						sample(dir(downpath, '.csv', full.names = TRUE), 100)),
+
 	tar_target(checked,
 						 as.data.table(check_input(paths)),
 						 pattern = map(paths)),
-	tar_target(filtered, checked[is.na(why)])
+
+	tar_target(filtered,
+						 checked[is.na(why)]),
+
+	tar_target(details,
+						 get_details(filtered$id),
+						 pattern = map(filtered))#,
+
+	# tar_target(taxed, resolve_taxon(details, filtered$id, ranks))
 )
