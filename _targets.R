@@ -12,7 +12,10 @@ library(keyring)
 library(move)
 library(taxize)
 library(anytime)
-
+library(ggplot2)
+library(sf)
+library(mapview)
+library(leaflet)
 
 # for missing pipe in rmoveapi (?)
 library(magrittr)
