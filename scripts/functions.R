@@ -10,11 +10,11 @@ try_get <- function(study, login = login) {
 					 warning = function(cond) return(list(warning = as.character(cond))))
 }
 
-get_details <- function(login) {
-	studies <- getMovebankStudies(login)
+get_details <- function(id) {
+	studies <- getStudy(id)
 
-	rbindlist(lapply(studies, try_get, login = login),
-						fill = TRUE, use.names = TRUE)
+	# rbindlist(lapply(studies, try_get, login = login),
+	# 					fill = TRUE, use.names = TRUE)
 }
 
 
