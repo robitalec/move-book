@@ -11,6 +11,9 @@ library(rmoveapi)
 library(keyring)
 library(move)
 
+# for missing pipe in rmoveapi (?)
+library(magrittr)
+
 # Paths
 if (.Platform$OS.type == "windows") {
 	downpath <- file.path('E:', 'ALR_C2', 'All')
