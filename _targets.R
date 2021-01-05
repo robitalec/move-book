@@ -62,5 +62,9 @@ list(
 
 	tar_target(read,
 						 read_input(merged, ranks = ranks),
-						 pattern = map(merged))
+						 pattern = map(merged)),
+
+	tar_target(counted_ids,
+						 count_ids(read),
+						 pattern = map(read))
 )
