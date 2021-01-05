@@ -1,5 +1,5 @@
 library(targets)
-
+library(tarchetypes)
 
 # Source functions
 source('scripts/functions.R')
@@ -32,7 +32,6 @@ tar_option_set(error = "workspace")
 
 # Targets: workflow
 list(
-	tar_target(paths, get_paths(downpath)),
-	tar_target(checked, as.data.table(check_input(paths)),
-						 pattern = map(paths))
+	tar_files(paths, sample(dir(downpath, '.csv', full.names = TRUE), 20)),
+	tar_target(checked, check_input(paths), pattern = map(paths))
 )
