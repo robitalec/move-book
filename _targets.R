@@ -10,6 +10,9 @@ library(data.table)
 library(rmoveapi)
 library(keyring)
 library(move)
+library(taxize)
+
+
 
 # for missing pipe in rmoveapi (?)
 library(magrittr)
