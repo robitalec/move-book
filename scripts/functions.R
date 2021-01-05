@@ -83,14 +83,17 @@ check_input <- function(path, ...) {
 	lines <- readLines(path, 1)
 
 	nodata <- 'No data are available for download'
-	http403 <- 'HTTP Status 403 - Incorrect md5 hash'
+	hash <- 'HTTP Status 403 - Incorrect md5 hash'
+	forbid <- 'HTTP Status 403 – Forbidden'
 	internalerror <- 'The server encountered an internal error'
 	http500 <- 'HTTP Status 500'
 
 	if(grepl(nodata, lines)) {
 		list(id = id, path = path, why = nodata, cols = NA)
-	} else if (grepl(http403, lines)) {
-		list(id = id, path = path, why = http403, cols = NA)
+	} else if (grepl(hash, lines)) {
+		list(id = id, path = path, why = hash, cols = NA)
+	} else if (grepl(forbid, lines)) {
+		list(id = id, path = path, why = forbid, cols = NA)
 	} else if (any(grepl(internalerror, lines))) {
 		list(id = id, path = path, why = internalerror, cols = NA)
 	} else if (any(grepl(http500, lines))) {
