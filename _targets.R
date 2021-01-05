@@ -56,5 +56,7 @@ list(
 						 setDT(get_details(filtered$id)),
 						 pattern = map(filtered)),
 
-	tar_target(taxed, resolve_taxon(details, filtered$id, ranks))
+	tar_target(taxed, resolve_taxon(details, filtered$id, ranks)),
+
+	tar_target(merged, merge(filtered, taxed, by = 'id'))
 )
