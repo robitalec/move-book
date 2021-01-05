@@ -185,17 +185,18 @@ temp_overlap <- function(DT, type = 'daily') {
 			labs(x = 'Date', y = 'ID')
 	} else if (type == 'daily') {
 		ggplot(unique(DT, by = c('individual_id', 'Date'))) +
-			geom_point(aes(x = Date, group = individual_id),
+			geom_point(aes(x = datetime,
+										 y = individual_id),
 								 size = 1) +
 			guides(color = FALSE) +
-			scale_x_datetime(date_labels = '%b %Y') +
+			scale_x_datetime(date_labels = '%F') +
 			labs(x = 'Date', y = 'ID')
 	}
 }
 
 check_nas <- function(DT) {
 	# Check how many rows are NA for each column
-	lapply(DT, function(x) sum(is.na(x)) / length(x))
+	as.data.table(lapply(DT, function(x) sum(is.na(x)) / length(x)))
 }
 
 
