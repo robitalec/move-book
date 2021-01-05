@@ -48,7 +48,7 @@ list(
 
 	tar_target(details,
 						 get_details(filtered$id),
-						 pattern = map(filtered))#,
+						 pattern = map(filtered)),
 
-	# tar_target(taxed, resolve_taxon(details, filtered$id, ranks))
+	tar_target(taxed, resolve_taxon(details, filtered$id, ranks))
 )
