@@ -11,7 +11,7 @@ library(rmoveapi)
 library(keyring)
 library(move)
 library(taxize)
-
+library(anytime)
 
 
 # for missing pipe in rmoveapi (?)
@@ -58,5 +58,9 @@ list(
 
 	tar_target(taxed, resolve_taxon(details, filtered$id, ranks)),
 
-	tar_target(merged, merge(filtered, taxed, by = 'id'))
+	tar_target(merged, merge(filtered, taxed, by = 'id')),
+
+	tar_target(read,
+						 read_input(merged, ranks = ranks),
+						 pattern = map(merged))
 )
