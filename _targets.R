@@ -7,10 +7,8 @@ source('scripts/functions.R')
 
 # Packages
 library(data.table)
-
-# Set target-specific options such as packages.
-# tar_option_set()
-
+library(movebank)
+library(keyring)
 
 # Paths
 if (.Platform$OS.type == "windows") {
@@ -21,10 +19,18 @@ if (.Platform$OS.type == "windows") {
 	outpath <- file.path('/media', 'ICEAGE', 'Movebank', 'Summary', 'All')
 }
 
+# Credentials
+service = 'movebank'
+username = 'robitalec'
+login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
+options(rmoveapi.userid = key_list(service)[1, 2])
+options(rmoveapi.pass = key_get(service, username))
 
+
+# Targets: options
 tar_option_set(error = "workspace")
 
-# Targets
+# Targets: workflow
 list(
 	tar_target(paths, get_paths(downpath)),
 	tar_target(checked, as.data.table(check_input(paths)),
