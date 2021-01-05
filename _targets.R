@@ -66,5 +66,22 @@ list(
 
 	tar_target(counted_ids,
 						 count_ids(read),
-						 pattern = map(read))
+						 pattern = map(read)),
+
+	tar_target(temp,
+						 temp_overlap(read),
+						 pattern = map(read)),
+
+	tar_target(counted_time,
+						 count_time(read),
+						 pattern = map(read)),
+
+	tar_target(nas,
+						 check_nas(read),
+						 pattern = map(read))#,
+
+	# tar_target(bboxes,
+	# 					 map_bbox(read, outpath),
+	# 					 pattern = map(read),
+	# 					 format = 'file')
 )
