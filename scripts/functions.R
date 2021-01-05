@@ -89,15 +89,15 @@ check_input <- function(path, ...) {
 	http500 <- 'HTTP Status 500'
 
 	if(grepl(nodata, lines)) {
-		list(id = id, path = path, why = nodata, cols = NA)
+		data.table(id = id, path = path, why = nodata, cols = NA)
 	} else if (grepl(hash, lines)) {
-		list(id = id, path = path, why = hash, cols = NA)
+		data.table(id = id, path = path, why = hash, cols = NA)
 	} else if (grepl(forbid, lines)) {
-		list(id = id, path = path, why = forbid, cols = NA)
+		data.table(id = id, path = path, why = forbid, cols = NA)
 	} else if (any(grepl(internalerror, lines))) {
-		list(id = id, path = path, why = internalerror, cols = NA)
+		data.table(id = id, path = path, why = internalerror, cols = NA)
 	} else if (any(grepl(http500, lines))) {
-		list(id = id, path = path, why = http500, cols = NA)
+		data.table(id = id, path = path, why = http500, cols = NA)
 	} else {
 
 		# Read just 5 rows, to check if there is data
@@ -107,9 +107,9 @@ check_input <- function(path, ...) {
 		DT <- fread(cmd = paste('head -n 5', path))
 
 		if (nrow(DT) == 0) {
-			list(id = id, path = path, why = 'nrow is 0', cols = NA)
+			data.table(id = id, path = path, why = 'nrow is 0', cols = NA)
 		} else {
-			list(id = id, path = path, why = NA, cols = list(colnames(DT)))
+			data.table(id = id, path = path, why = NA, cols = list(colnames(DT)))
 		}
 	}
 }

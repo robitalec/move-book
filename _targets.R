@@ -32,7 +32,7 @@ options(rmoveapi.pass = key_get(service, username))
 
 
 # Targets: options
-tar_option_set(error = "workspace")
+tar_option_set(error = "workspace", format = 'qs')
 
 # Targets: workflow
 list(
