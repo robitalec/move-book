@@ -33,6 +33,9 @@ login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
 options(rmoveapi.userid = key_list(service)[1, 2])
 options(rmoveapi.pass = key_get(service, username))
 
+# Ranks for taxize
+ranks <- c('family', 'class')
+
 
 # Targets: options
 tar_option_set(error = "workspace", format = 'qs')
