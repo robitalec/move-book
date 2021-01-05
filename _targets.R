@@ -33,6 +33,10 @@ tar_option_set(error = "workspace")
 
 # Targets: workflow
 list(
-	tar_files(paths, sample(dir(downpath, '.csv', full.names = TRUE), 20)),
-	tar_target(checked, check_input(paths), pattern = map(paths))
+	tar_files(paths,
+						sample(dir(downpath, '.csv', full.names = TRUE), 100)),
+	tar_target(checked,
+						 as.data.table(check_input(paths)),
+						 pattern = map(paths)),
+	tar_target(filtered, checked[is.na(why)])
 )
