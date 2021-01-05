@@ -98,7 +98,10 @@ check_input <- function(path, ...) {
 	} else {
 
 		# Read just 5 rows, to check if there is data
-		DT <- fread(path, nrows = 5)
+		# DT <- fread(path, nrows = 5)
+
+		# For now, while issue is open. Careful about temp dir
+		DT <- fread(cmd = paste('head -n 5', path))
 
 		if (nrow(DT) == 0) {
 			list(id = id, path = path, why = 'nrow is 0', cols = NA)
