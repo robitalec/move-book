@@ -2,7 +2,7 @@
 title: "Untitled"
 output: html_document
 params:
-	combined: 12
+  combined: 12
 ---
 
 ```{r, out.width="100%"}
