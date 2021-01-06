@@ -98,7 +98,10 @@ list(
 				counttime = counted_time,
 				countnas = nas,
 				bbox = bboxes
-			)
+			),
+			output_file = as.character(counted_ids$study_id),
+			output_dir = '_book',
+			clean = TRUE
 		),
 		pattern = map(counted_ids, temp, counted_time, nas, bboxes),
 		format = 'file'
