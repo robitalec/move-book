@@ -5,26 +5,33 @@ params:
 	combined: 12
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, out.width="100%"}
+knitr::include_graphics(drake::readd(bboxes_KEY, cache = cache))
 ```
 
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+```{r}
+options(digits = 0)
+countIds <- drake::readd(counted_ids_KEY, cache = cache)
+countTime <- drake::readd(counted_time_KEY, cache = cache)
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+kable(countIds[, .(species = matched_name, family, class)])
 
-```{r cars}
-summary(cars)
+kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual, 
+												 nDeploy = nDeployment, nTag, nRows)],
+						countTime[, .(lenStudy, nYear = nYears)]
+))
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+nas <- drake::readd(nas_KEY, cache = cache)
+kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
+	col %in% c('individual_id', 'location_lat', 'location_long')
+])
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+```{r, out.width="100%"}
+print(drake::readd(temp_KEY, cache = cache))
+```
