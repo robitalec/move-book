@@ -41,7 +41,8 @@ ranks <- c('family', 'class')
 
 
 # Targets: options
-tar_option_set(error = "workspace", format = 'qs')
+tar_option_set(#error = "workspace",
+							 format = 'qs')
 
 # Targets: workflow
 list(
