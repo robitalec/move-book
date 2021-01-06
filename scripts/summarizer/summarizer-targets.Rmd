@@ -6,14 +6,14 @@ params:
 ---
 
 ```{r, out.width="100%"}
-knitr::include_graphics(drake::readd(bboxes_KEY, cache = cache))
+knitr::include_graphics(targets::tar_read(bboxes_KEY))
 ```
 
 
 ```{r}
 options(digits = 0)
-countIds <- drake::readd(counted_ids_KEY, cache = cache)
-countTime <- drake::readd(counted_time_KEY, cache = cache)
+countIds <- targets::tar_read(counted_ids_KEY)
+countTime <- targets::tar_read(counted_time_KEY)
 
 kable(countIds[, .(species = matched_name, family, class)])
 
@@ -24,7 +24,7 @@ kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual,
 ```
 
 ```{r}
-nas <- drake::readd(nas_KEY, cache = cache)
+nas <- targets::tar_read(nas_KEY)
 kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
 	col %in% c('individual_id', 'location_lat', 'location_long')
 ])
@@ -33,5 +33,5 @@ kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
 
 
 ```{r, out.width="100%"}
-print(drake::readd(temp_KEY, cache = cache))
+print(targets::tar_read(temp_KEY))
 ```
