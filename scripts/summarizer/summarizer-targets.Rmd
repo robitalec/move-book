@@ -8,38 +8,3 @@ params:
 ```{r, out.width="100%"}
 knitr::include_graphics(params$combined$bbox)
 ```
-
-<!--
-```{r}
-options(digits = 0)
-countIds <- targets::tar_read(counted_ids_KEY)
-countTime <- targets::tar_read(counted_time_KEY)
-
-kable(countIds[, .(species = matched_name, family, class)])
-
-kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual, 
-												 nDeploy = nDeployment, nTag, nRows)],
-						countTime[, .(lenStudy, nYear = nYears)]
-))
-```
-
-list(
-			countids = counted_ids,
-			tempoverlap = temp,
-			counttime = counted_time,
-			countnas = nas,
-			bbox = bboxes
-		)
-```{r}
-nas <- targets::tar_read(nas_KEY)
-kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
-	col %in% c('individual_id', 'location_lat', 'location_long')
-])
-```
-
-
-
-```{r, out.width="100%"}
-print(targets::tar_read(temp_KEY))
-```
--->
