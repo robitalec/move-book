@@ -89,25 +89,18 @@ list(
 						 pattern = map(read)),
 
 	tar_target(
-		combine,
-		list(
-			countids = counted_ids,
-			tempoverlap = temp,
-			counttime = counted_time,
-			countnas = nas,
-			bbox = bboxes
+		report,
+		rmarkdown::render(
+			'scripts/summarizer/summarizer-targets.Rmd',
+			params = list(
+				countids = counted_ids,
+				tempoverlap = temp,
+				counttime = counted_time,
+				countnas = nas,
+				bbox = bboxes
+			)
 		),
-		pattern = map(counted_ids, temp, counted_time, nas, bboxes)
-	),
-
-	tar_render_rep(report,
-								 'scripts/summarizer/summarizer-targets.Rmd',
-								 params = list(
-								 	countids = counted_ids,
-								 	tempoverlap = temp,
-								 	counttime = counted_time,
-								 	countnas = nas,
-								 	bbox = bboxes
-								 ))
-
+		pattern = map(counted_ids, temp, counted_time, nas, bboxes),
+		format = 'file'
+	)
 )
