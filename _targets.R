@@ -81,10 +81,21 @@ list(
 
 	tar_target(nas,
 						 check_nas(read),
-						 pattern = map(read))#,
+						 pattern = map(read)),
 
-	# tar_target(bboxes,
-	# 					 map_bbox(read, outpath),
-	# 					 pattern = map(read),
-	# 					 format = 'file')
+	tar_target(bboxes,
+						 map_bbox(read, outpath),
+						 pattern = map(read)),
+
+	tar_target(
+		combine,
+		list(
+			countids = counted_ids,
+			tempoverlap = temp,
+			counttime = counted_time,
+			countnas = nas,
+			bbox = bboxes
+		),
+		pattern = map(counted_ids, temp, counted_time, nas, bboxes)
+	)
 )
