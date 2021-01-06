@@ -88,10 +88,12 @@ list(
 						 map_bbox(read, outpath),
 						 pattern = map(read)),
 
+	tar_file(rmd, 'scripts/summarizer/summarizer-targets.Rmd'),
+
 	tar_target(
 		report,
 		rmarkdown::render(
-			'scripts/summarizer/summarizer-targets.Rmd',
+			rmd,
 			params = list(
 				countids = counted_ids,
 				tempoverlap = temp,
