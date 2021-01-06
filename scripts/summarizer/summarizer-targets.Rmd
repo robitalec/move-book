@@ -13,3 +13,30 @@ title: "`r params$countids$study_id`"
 ```{r, out.width="100%"}
 knitr::include_graphics(params$bbox)
 ```
+
+
+```{r}
+options(digits = 0)
+countIds <- params$countids
+countTime <- params$counttime
+
+knitr::kable(countIds[, .(species = matched_name, family, class)])
+
+knitr::kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual, 
+												 nDeploy = nDeployment, nTag, nRows)],
+						countTime[, .(lenStudy, nYear = nYears)]
+))
+```
+
+```{r}
+nas <- params$countnas
+knitr::kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
+	col %in% c('individual_id', 'location_lat', 'location_long')
+])
+```
+
+
+
+```{r, out.width="100%"}
+print(params$tempoverlap)
+```
