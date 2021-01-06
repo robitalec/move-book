@@ -6,10 +6,10 @@ params:
 ---
 
 ```{r, out.width="100%"}
-knitr::include_graphics(targets::tar_read(bboxes_KEY))
+knitr::include_graphics(params$combined$bbox)
 ```
 
-
+<!--
 ```{r}
 options(digits = 0)
 countIds <- targets::tar_read(counted_ids_KEY)
@@ -23,6 +23,13 @@ kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual,
 ))
 ```
 
+list(
+			countids = counted_ids,
+			tempoverlap = temp,
+			counttime = counted_time,
+			countnas = nas,
+			bbox = bboxes
+		)
 ```{r}
 nas <- targets::tar_read(nas_KEY)
 kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
@@ -35,3 +42,4 @@ kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
 ```{r, out.width="100%"}
 print(targets::tar_read(temp_KEY))
 ```
+-->
