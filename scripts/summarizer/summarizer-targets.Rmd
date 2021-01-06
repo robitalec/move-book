@@ -1,10 +1,15 @@
 ---
-title: "Untitled"
 output: html_document
 params:
-  combined: 12
+  countids: 12
+  tempoverlap: 12
+  counttime: 12
+  countnas: 12
+  bbox: 12
+title: "`r params$countids$study_id`"
 ---
 
+
 ```{r, out.width="100%"}
-knitr::include_graphics(params$combined$bbox)
+knitr::include_graphics(params$bbox)
 ```
