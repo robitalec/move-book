@@ -9,6 +9,10 @@ params:
 title: "`r params$countids$study_id`"
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
 
 ```{r, out.width="100%"}
 knitr::include_graphics(params$bbox)
