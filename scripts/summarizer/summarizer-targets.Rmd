@@ -13,6 +13,13 @@ params:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+
+kable <- function(data) {
+  knitr::kable(data, booktabs = TRUE, format = 'html') %>% 
+    kableExtra::kable_styling(full_width = FALSE,
+    													position = 'left')
+}
+
 ```
 
 # `r params$countids$study_id`
