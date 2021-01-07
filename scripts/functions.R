@@ -243,10 +243,10 @@ map_bbox <- function(DT, path) {
 
 
 # RMarkdown ---------------------------------------------------------------
-change_ext <- function(dir, inext, outext) {
-	files <- dir(dir, pattern = inext, full.names = TRUE)
-	newfiles <- gsub(inext, outext, files)
-	file.rename(files, newfiles)
+change_ext <- function(file, inext, outext) {
+	newfile <- gsub(inext, outext, file)
+	file.rename(file, newfile)
+	newfile
 }
 
 
