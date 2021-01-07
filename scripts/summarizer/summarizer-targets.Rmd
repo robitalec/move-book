@@ -1,18 +1,21 @@
 ---
-output: github_document
+output: 
+  rmarkdown::github_document:
+  	html_preview: false
 params:
   countids: 12
   tempoverlap: 12
   counttime: 12
   countnas: 12
   bbox: 12
-title: "`r params$countids$study_id`"
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# `r params$countids$study_id`
 
 ```{r, out.width="100%"}
 knitr::include_graphics(params$bbox)
