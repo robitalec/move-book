@@ -161,13 +161,13 @@ temp_overlap <- function(DT, type = 'daily') {
 	DT[, mindatetime := min(datetime), by = individual_id]
 	DT[, maxdatetime := max(datetime), by = individual_id]
 	DT[, Date := as.IDate(datetime)]
-
+	
+	DT[, individual_id := as.character(individual_id)]
 	if (type == 'point') {
-		ggplot(DT, aes(y = as.character(individual_id),
-									 yend = as.character(individual_id))) +
-			geom_point(aes(x = datetime,
-										 group = individual_id),
-								 size = 1) +
+		ggplot(DT, aes(y = individual_id)) + 
+			geom_point(aes(x = datetime, 
+						   group = individual_id),
+						   size = 1) +
 			guides(color = FALSE) +
 			scale_x_datetime(date_labels = '%b %Y') +
 			labs(x = 'Date', y = 'ID')
@@ -184,8 +184,8 @@ temp_overlap <- function(DT, type = 'daily') {
 	} else if (type == 'daily') {
 		ggplot(unique(DT, by = c('individual_id', 'Date'))) +
 			geom_point(aes(x = datetime,
-										 y = individual_id),
-								 size = 1) +
+			               y = individual_id),
+			               size = 1) +
 			guides(color = FALSE) +
 			scale_x_datetime(date_labels = '%F') +
 			labs(x = 'Date', y = 'ID')
