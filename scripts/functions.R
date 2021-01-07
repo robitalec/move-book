@@ -269,7 +269,7 @@ build_rmds <- function(template, id, DT, path) {
 }
 
 render_with_deps <- function(index, config, deps) {
-	bookdown::render_book(input = index, config_file = config, quiet = TRUE)
+	bookdown::render_book(input = index, config_file = config)
 }
 
 
