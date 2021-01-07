@@ -128,7 +128,8 @@ list(
 			index,
 			config,
 			deps = report
-		)
+		),
+		format = 'file'
 	)
 
 )
