@@ -91,24 +91,31 @@ list(
 						 map_bbox(read, outpath),
 						 pattern = map(read)),
 
+
 	tar_file(rmd, 'scripts/summarizer/summarizer-targets.Rmd'),
+
 
 	tar_target(
 		report,
-		rmarkdown::render(
-			rmd,
-			params = list(
-				countids = counted_ids,
-				tempoverlap = temp,
-				counttime = counted_time,
-				countnas = nas,
-				bbox = bboxes
+		change_ext(
+			rmarkdown::render(
+				rmd,
+				params = list(
+					countids = counted_ids,
+					tempoverlap = temp,
+					counttime = counted_time,
+					countnas = nas,
+					bbox = bboxes
+				),
+				output_file = as.character(counted_ids$study_id),
+				output_dir = 'md',
+				clean = TRUE
 			),
-			output_file = as.character(counted_ids$study_id),
-			output_dir = '_book',
-			clean = TRUE
+			inext = 'md',
+			outext = 'Rmd'
 		),
 		pattern = map(counted_ids, temp, counted_time, nas, bboxes),
 		format = 'file'
 	)
+
 )
