@@ -108,7 +108,7 @@ list(
 					bbox = bboxes
 				),
 				output_file = as.character(counted_ids$study_id),
-				output_dir = 'md',
+				output_dir = 'chapters',
 				clean = TRUE
 			),
 			inext = 'md',
