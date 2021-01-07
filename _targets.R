@@ -116,6 +116,19 @@ list(
 		),
 		pattern = map(counted_ids, temp, counted_time, nas, bboxes),
 		format = 'file'
+	),
+	
+	tar_file(index, 'index.Rmd'),
+
+	tar_file(config, '_bookdown.yml'),
+	
+	tar_target(
+		book,
+		render_with_deps(
+			index,
+			config,
+			deps = report
+		)
 	)
 
 )
