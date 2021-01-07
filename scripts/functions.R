@@ -2,7 +2,6 @@
 # Alec Robitaille
 
 
-
 # Get details -------------------------------------------------------------
 try_get <- function(study, login = login) {
 	tryCatch(expr = getMovebankStudy(study, login = login),
@@ -12,7 +11,6 @@ try_get <- function(study, login = login) {
 
 get_details <- function(id) {
 	studies <- getStudy(id)
-
 	# rbindlist(lapply(studies, try_get, login = login),
 	# 					fill = TRUE, use.names = TRUE)
 }
@@ -241,6 +239,17 @@ map_bbox <- function(DT, path) {
 	mapshot(m, file = outpath)
 	outpath
 }
+
+
+
+# RMarkdown ---------------------------------------------------------------
+change_ext <- function(dir, inext, outext) {
+	files <- dir(dir, pattern = inext, full.names = TRUE)
+	newfiles <- gsub(inext, outext, files)
+	file.rename(files, newfiles)
+}
+
+
 
 
 build_rmds <- function(template, id, DT, path) {
