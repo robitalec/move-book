@@ -30,7 +30,7 @@ knitr::include_graphics(params$bbox)
 
 
 ```{r}
-options(digits = 0)
+options(digits = 0, scientific = TRUE)
 countIds <- params$countids
 countTime <- params$counttime
 
