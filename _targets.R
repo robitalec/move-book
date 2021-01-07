@@ -22,11 +22,14 @@ library(magrittr)
 
 # Paths
 if (.Platform$OS.type == "windows") {
-	downpath <- file.path('E:', 'ALR_C2', 'All')
-	outpath <- file.path('E:', 'ALR_C2', 'Summary')
+	path <- file.path('E:', 'ALR_C2')
+	downpath <- file.path(path, 'All')
+	outpath <- file.path(path, 'Summary')
 } else if (.Platform$OS.type == "unix") {
-	downpath <- file.path('/media', 'ICEAGE', 'Movebank', 'All')
-	outpath <- file.path('/media', 'ICEAGE', 'Movebank', 'Summary', 'All')
+	path <- file.path('/media', 'ICEAGE', 'Movebank')
+	downpath <- file.path(path, 'All')
+	outpath <- file.path(path, 'Summary', 'All')
+	rmdpath <- file.path(path, 'Summary', 'All', 'rmd')
 }
 
 # Credentials
