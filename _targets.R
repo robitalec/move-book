@@ -50,7 +50,7 @@ tar_option_set(#error = "workspace",
 # Targets: workflow
 list(
 	tar_files(paths,
-						sample(dir(downpath, '.csv', full.names = TRUE), 100)),
+						dir(downpath, '.csv', full.names = TRUE)),
 
 	tar_target(checked,
 						 check_input(paths),
