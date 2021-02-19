@@ -9,3 +9,4 @@ _main.Rmd
 manuscript/manuscript.html
 _targets/
 chapters/
+renv/
