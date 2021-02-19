@@ -39,6 +39,12 @@ login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
 options(rmoveapi.userid = key_list(service)[1, 2])
 options(rmoveapi.pass = key_get(service, username))
 
+# Columns to read
+cols <- c('tag_local_identifier', 'timestamp', 'deployment_id',
+					'tag_id', 'individual_local_identifier', 'study_id',
+					'sensor_type_id', 'location_long', 'location_lat')
+
+
 # Ranks for taxize
 ranks <- c('family', 'class')
 
@@ -68,7 +74,7 @@ list(
 	tar_target(merged, merge(filtered, taxed, by = 'id')),
 
 	tar_target(read,
-						 read_input(merged, ranks = ranks),
+						 read_input(merged, ranks = ranks, cols = cols),
 						 pattern = map(merged)),
 
 	tar_target(counted_ids,
@@ -117,11 +123,11 @@ list(
 		pattern = map(counted_ids, temp, counted_time, nas, bboxes),
 		format = 'file'
 	),
-	
+
 	tar_file(index, 'index.Rmd'),
 
 	tar_file(config, '_bookdown.yml'),
-	
+
 	tar_target(
 		book,
 		render_with_deps(

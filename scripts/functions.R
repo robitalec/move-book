@@ -113,8 +113,8 @@ check_input <- function(path, ...) {
 }
 
 # Read input --------------------------------------------------------------
-read_input <- function(DT, ranks) {
-	rd <- fread(DT$path)
+read_input <- function(DT, ranks, cols) {
+	rd <- fread(DT$path, select = cols)
 
 	rd[, tag_local_identifier := as.character(tag_local_identifier)]
 
@@ -146,14 +146,7 @@ count_ids <- function(DT) {
 	# TODO: rbindlist this output?
 	# DT[, nLocByIndividual := list(DT[, .N, .(study_id, individual_id)])]
 
-	cols <- c('study_id',
-						'matched_name', 'family', 'class',
-						'sensor_type_id',
-						'nIndividual', 'nDeployment', 'nTag',
-						'sameIndividual', 'sameTag', 'moreIndividual',
-						'moreTag', 'nRows')
-
-	unique(DT[, .SD, .SDcols = cols], by = 'study_id')
+	unique(DT, by = 'study_id')
 }
 
 # Time (Donuts) -----------------------------------------------------------
@@ -161,11 +154,11 @@ temp_overlap <- function(DT, type = 'daily') {
 	DT[, mindatetime := min(datetime), by = individual_id]
 	DT[, maxdatetime := max(datetime), by = individual_id]
 	DT[, Date := as.IDate(datetime)]
-	
+
 	DT[, individual_id := as.character(individual_id)]
 	if (type == 'point') {
-		ggplot(DT, aes(y = individual_id)) + 
-			geom_point(aes(x = datetime, 
+		ggplot(DT, aes(y = individual_id)) +
+			geom_point(aes(x = datetime,
 						   group = individual_id),
 						   size = 1) +
 			guides(color = FALSE) +
@@ -212,7 +205,7 @@ count_time <- function(DT) {
 	cols <- c('study_id', 'sensor_type_id',
 						'lenStudy', 'nYears')#, 'fixRateSummary')
 
-	unique(DT[, .SD, .SDcols = cols], by = 'study_id')
+	unique(DT, by = 'study_id')
 }
 
 
