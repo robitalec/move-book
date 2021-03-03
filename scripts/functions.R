@@ -141,10 +141,6 @@ count_ids <- function(DT) {
 	DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
 	DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
 
-	# Number of relocations by ID
-	# TODO: rbindlist this output?
-	# DT[, nLocByIndividual := list(DT[, .N, .(study_id, individual_id)])]
-
 	unique(DT, by = 'study_id')
 }
 
