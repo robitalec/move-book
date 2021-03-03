@@ -41,7 +41,7 @@ options(rmoveapi.pass = key_get(service, username))
 
 # Columns to read
 cols <- c('tag_local_identifier', 'timestamp', 'deployment_id',
-					'tag_id', 'individual_local_identifier', 'study_id',
+					'tag_id', 'individual_id', 'study_id',
 					'sensor_type_id', 'location_long', 'location_lat')
 
 
