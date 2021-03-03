@@ -12,12 +12,11 @@ try_get <- function(study, login = login) {
 get_details <- function(id) {
 	studies <- getStudy(id)
 	setDT(studies)
-	studies[, timestamp_first_deployed_location :=
-						fifelse(is.na(timestamp_first_deployed_location), NA_real_,
-										anytime(timestamp_first_deployed_location))]
-	studies[, timestamp_last_deployed_location :=
-						fifelse(is.na(timestamp_last_deployed_location), NA_real_,
-										anytime(timestamp_last_deployed_location))]	# rbindlist(lapply(studies, try_get, login = login),
+	studies[!is.na(timestamp_first_deployed_location) :=
+						anytime(timestamp_first_deployed_location)]
+	studies[!is.na(timestamp_last_deployed_location) :=
+								anytime(timestamp_last_deployed_location)]
+	# rbindlist(lapply(studies, try_get, login = login),
 	# 					fill = TRUE, use.names = TRUE)
 
 }
