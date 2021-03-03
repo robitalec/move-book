@@ -9,7 +9,6 @@ source('scripts/functions.R')
 library(data.table)
 library(rmoveapi)
 library(keyring)
-library(move)
 library(taxize)
 library(anytime)
 library(ggplot2)
@@ -35,7 +34,6 @@ if (.Platform$OS.type == "windows") {
 # Credentials
 service = 'movebank'
 username = 'robitalec'
-login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
 options(rmoveapi.userid = key_list(service)[1, 2])
 options(rmoveapi.pass = key_get(service, username))
 
