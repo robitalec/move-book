@@ -13,6 +13,7 @@ get_details <- function(id) {
 	studies <- getStudy(id)
 	# rbindlist(lapply(studies, try_get, login = login),
 	# 					fill = TRUE, use.names = TRUE)
+
 }
 
 
