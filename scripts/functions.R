@@ -3,12 +3,6 @@
 
 
 # Get details -------------------------------------------------------------
-try_get <- function(study, login = login) {
-	tryCatch(expr = getMovebankStudy(study, login = login),
-					 error = function(cond) return(list(error = as.character(cond))),
-					 warning = function(cond) return(list(warning = as.character(cond))))
-}
-
 get_details <- function(id) {
 	studies <- getStudy(id)
 	setDT(studies)
@@ -18,9 +12,6 @@ get_details <- function(id) {
 	studies[!is.na(timestamp_last_deployed_location),
 					timestamp_last_deployed_location :=
 								anytime(timestamp_last_deployed_location)]
-	# rbindlist(lapply(studies, try_get, login = login),
-	# 					fill = TRUE, use.names = TRUE)
-
 }
 
 
