@@ -143,12 +143,12 @@ count_ids <- function(DT) {
 	DT[, nTag := uniqueN(tag_id)]
 
 	DT[, nRows := .N]
-
-	DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
-	DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
-
-	DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
-	DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
+#
+# 	DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
+# 	DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
+#
+# 	DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
+# 	DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
 
 	# Number of relocations by ID
 	# TODO: rbindlist this output?
