@@ -45,7 +45,7 @@ knitr::kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual,
 nas <- params$countnas
 knitr::kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
 	col %in% c('individual_id', 'location_lat', 'location_long')
-])
+]) %>%  column_spec(1, width = '10em')
 ```
 
 ```{r}
