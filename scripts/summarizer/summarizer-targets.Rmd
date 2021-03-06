@@ -23,16 +23,16 @@ options(knitr.kable.format = 'html',
 
 
 ```{r}
-options(digits = 0, scientific = TRUE)
 countIds <- params$countids
 countTime <- params$counttime
 
-knitr::kable(countIds[, .(species = matched_name, family, class)])
+knitr::kable(countIds[, .(species = matched_name, family, class)],
+						 booktabs = TRUE)
 
 knitr::kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual, 
 												 nDeploy = nDeployment, nTag, nRows)],
-						countTime[, .(lenStudy, nYear = nYears)]
-))
+									 countTime[, .(lenStudy, nYear = nYears)]),
+						 booktabs = TRUE)
 ```
 
 
@@ -40,7 +40,7 @@ knitr::kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual,
 nas <- params$countnas
 knitr::kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
 	col %in% c('individual_id', 'location_lat', 'location_long')
-]) %>%  column_spec(1, width = '10em')
+], booktabs = TRUE)
 ```
 
 ```{r}
@@ -50,18 +50,14 @@ cols <- c('principal_investigator_name',
 					'license_type',
 					'license_terms')
 details <- params$details
-knitr::kable(details[, .SD, .SDcols = cols])
+knitr::kable(details[, .SD, .SDcols = cols],
+						 booktabs = TRUE) %>%  kableExtra::column_spec(1, width = '10em')
 ```
 
 
 ```{r, out.width="100%"}
 knitr::include_graphics(params$bbox)
 ```
-
-
-
-
-
 
 ```{r, out.width="100%"}
 print(params$tempoverlap)
