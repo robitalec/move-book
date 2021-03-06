@@ -79,6 +79,7 @@ resolve_taxon <- function(details, subid, ranks = c('family', 'class')) {
 	taxes[, (ranks) := classify_taxon(matched_name, ranks)[, .SD, .SDcols = ranks],
 				matched_name]
 
+	merge(subdet, taxes, on = 'id')
 }
 
 # Check input -------------------------------------------------------------
