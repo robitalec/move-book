@@ -135,6 +135,11 @@
       "Repository": "CRAN",
       "Hash": "0c54cf3a08cc0e550fbd64ad33166143"
     },
+    "bit64": {
+      "Package": "bit64",
+      "Version": "4.0.5",
+      "Source": "Repository"
+    },
     "bold": {
       "Package": "bold",
       "Version": "1.1.0",
@@ -720,6 +725,11 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "97def703420c8ab10d8f0e6c72101e02"
+    },
+    "qs": {
+      "Package": "qs",
+      "Version": "0.23.6",
+      "Source": "Repository"
     },
     "quadprog": {
       "Package": "quadprog",
