@@ -8,6 +8,7 @@ params:
   counttime: 12
   countnas: 12
   bbox: 12
+  details: 12
 ---
 
 
