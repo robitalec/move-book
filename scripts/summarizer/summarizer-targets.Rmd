@@ -22,11 +22,8 @@ kable <- function(data) {
 
 ```
 
-# `r params$countids$study_id`
 
-```{r, out.width="100%"}
-knitr::include_graphics(params$bbox)
-```
+# `r params$countids$study_id`
 
 
 ```{r}
@@ -42,12 +39,31 @@ knitr::kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual,
 ))
 ```
 
+
 ```{r}
 nas <- params$countnas
 knitr::kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
 	col %in% c('individual_id', 'location_lat', 'location_long')
 ])
 ```
+
+```{r}
+cols <- c('principal_investigator_name',
+					'principal_investigator_email',
+					'study_permission',
+					'license_type',
+					'license_terms')
+details <- params$details
+knitr::kable(details[, .SD, .SDcols = cols])
+```
+
+
+```{r, out.width="100%"}
+knitr::include_graphics(params$bbox)
+```
+
+
+
 
 
 
