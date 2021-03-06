@@ -113,7 +113,8 @@ list(
 					tempoverlap = temp,
 					counttime = counted_time,
 					countnas = nas,
-					bbox = bboxes
+					bbox = bboxes,
+					details = merged
 				),
 				output_file = as.character(counted_ids$study_id),
 				output_dir = 'chapters',
@@ -122,7 +123,7 @@ list(
 			inext = 'md',
 			outext = 'Rmd'
 		),
-		pattern = map(counted_ids, temp, counted_time, nas, bboxes),
+		pattern = map(counted_ids, temp, counted_time, nas, bboxes, merged),
 		format = 'file'
 	),
 
