@@ -13,6 +13,7 @@ params:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(kableExtra)
 
 kable <- function(data) {
   knitr::kable(data, booktabs = TRUE, format = 'html') %>% 
