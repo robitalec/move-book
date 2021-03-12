@@ -44,14 +44,17 @@ knitr::kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(
 ```
 
 ```{r details}
-cols <- c('principal_investigator_name',
-					'principal_investigator_email',
-					'study_permission',
-					'license_type',
-					'license_terms')
+cols1 <- c('name',
+					 'principal_investigator_name',
+					 'principal_investigator_email')
+cols2 <- c('license_terms',
+					 'license_type',
+					 'grants_used')
+cols3 <- c('citation')
 details <- params$details
-knitr::kable(details[, .SD, .SDcols = cols],
-						 booktabs = TRUE)
+pander::pander(details[, .SD, .SDcols = cols1])
+pander::pander(details[, .SD, .SDcols = cols2])
+pander::pander(details[, .SD, .SDcols = cols3])
 ```
 
 
