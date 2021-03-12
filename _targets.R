@@ -100,7 +100,7 @@ list(
 						 pattern = map(read)),
 
 
-	tar_file(rmd, 'scripts/summarizer/summarizer-targets.Rmd'),
+	tar_file(rmd, 'scripts/summarizer/summarizer.Rmd'),
 
 
 	tar_target(
