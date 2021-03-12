@@ -51,7 +51,7 @@ cols <- c('principal_investigator_name',
 					'license_terms')
 details <- params$details
 knitr::kable(details[, .SD, .SDcols = cols],
-						 booktabs = TRUE) %>%  kableExtra::column_spec(1, width = '10em')
+						 booktabs = TRUE)
 ```
 
 
