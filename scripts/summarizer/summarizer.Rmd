@@ -14,7 +14,7 @@ params:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-options(knitr.kable.format = 'html',
+options(knitr.kable.format = 'markdown',
 				digits = 0, scientific = TRUE)
 ```
 
