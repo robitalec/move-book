@@ -22,7 +22,7 @@ options(knitr.kable.format = 'html',
 # `r params$countids$study_id`
 
 
-```{r}
+```{r counttabs}
 countIds <- params$countids
 countTime <- params$counttime
 
@@ -36,14 +36,14 @@ knitr::kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual,
 ```
 
 
-```{r}
+```{r countnas}
 nas <- params$countnas
 knitr::kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
 	col %in% c('individual_id', 'location_lat', 'location_long')
 ], booktabs = TRUE)
 ```
 
-```{r}
+```{r details}
 cols <- c('principal_investigator_name',
 					'principal_investigator_email',
 					'study_permission',
@@ -55,10 +55,10 @@ knitr::kable(details[, .SD, .SDcols = cols],
 ```
 
 
-```{r, out.width="100%"}
+```{r bbox, out.width="100%"}
 knitr::include_graphics(params$bbox)
 ```
 
-```{r, out.width="100%"}
+```{r tempoverlap, out.width="100%"}
 print(params$tempoverlap)
 ```
