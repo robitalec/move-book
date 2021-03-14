@@ -38,7 +38,7 @@ cols2 <- c('license_terms',
 					 'license_type',
 					 'grants_used')
 dets <- details[, .(name, principal_investigator_name,
-										principale_investigator_email,
+										principal_investigator_email,
 										license_terms, license_type,
 										grants_used = textclean::replace_non_ascii(grants_used))]
 pander::pander(t(cbind(sp, time, dets)))
