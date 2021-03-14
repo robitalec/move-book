@@ -60,6 +60,6 @@ knitr::kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(
 	col %in% c('individual_id', 'location_lat', 'location_long')
 ], booktabs = TRUE)
 
-pander::pander(countIds[, .(sensor_type_id, nDeploy = nDeployment,
+pander::pander(countids[, .(sensor_type_id, nDeploy = nDeployment,
 														nTag)])
 ```
