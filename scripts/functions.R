@@ -233,13 +233,14 @@ map_bbox <- function(DT, path) {
 							by = individual_id]
 
 	study <- DT$study_id[[1]]
-	m <- mapview(boxes$box, legend = FALSE)@map %>%
+	# m <-
+	mapview(boxes$box, legend = FALSE)@map %>%
 		addMiniMap(position = 'bottomleft',
 							 zoomLevelFixed = 2)
 
-	outpath <- file.path(path, 'figures', paste0('bbox-', study, '.png'))
-	mapshot(m, file = outpath)
-	outpath
+	# outpath <- file.path(path, 'figures', paste0('bbox-', study, '.png'))
+	# mapshot(m, file = outpath)
+	# outpath
 }
 
 
