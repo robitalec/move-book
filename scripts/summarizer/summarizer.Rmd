@@ -22,38 +22,26 @@ options(knitr.kable.format = 'markdown',
 # `r params$countids$study_id`
 
 
-```{r counttabs}
-countIds <- params$countids
-countTime <- params$counttime
+```{r ttab}
+countids <- params$countids
+counttime <- params$counttime
+details <- params$details
 
-knitr::kable(countIds[, .(species = matched_name, family, class)],
-						 booktabs = TRUE)
+sp <- countids[, .(class, family, species = matched_name,
+									 `N IDs` = nIndividual, nRows)]
+time <- counttime[, .(lenStudy)]
 
-knitr::kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual, 
-												 nDeploy = nDeployment, nTag, nRows)],
-									 countTime[, .(lenStudy, nYear = nYears)]),
-						 booktabs = TRUE)
-```
-
-
-```{r countnas}
-nas <- params$countnas
-knitr::kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
-	col %in% c('individual_id', 'location_lat', 'location_long')
-], booktabs = TRUE)
-```
-
-```{r details}
 cols1 <- c('name',
 					 'principal_investigator_name',
 					 'principal_investigator_email')
 cols2 <- c('license_terms',
 					 'license_type',
 					 'grants_used')
-details <- params$details
-pander::pander(details[, .SD, .SDcols = cols1])
-pander::pander(details[, .(license_terms, license_type, textclean::replace_non_ascii(grants_used))])
-details$citation
+dets <- details[, .(name, principal_investigator_name,
+										principale_investigator_email,
+										license_terms, license_type,
+										grants_used = textclean::replace_non_ascii(grants_used))]
+pander::pander(t(cbind(sp, time, dets)))
 ```
 
 
@@ -63,4 +51,15 @@ knitr::include_graphics(params$bbox)
 
 ```{r tempoverlap, out.width="100%"}
 print(params$tempoverlap)
+```
+
+
+```{r countnas}
+nas <- params$countnas
+knitr::kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
+	col %in% c('individual_id', 'location_lat', 'location_long')
+], booktabs = TRUE)
+
+pander::pander(countIds[, .(sensor_type_id, nDeploy = nDeployment,
+														nTag)])
 ```
