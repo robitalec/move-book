@@ -50,11 +50,10 @@ cols1 <- c('name',
 cols2 <- c('license_terms',
 					 'license_type',
 					 'grants_used')
-cols3 <- c('citation')
 details <- params$details
 pander::pander(details[, .SD, .SDcols = cols1])
-pander::pander(details[, .SD, .SDcols = cols2])
-pander::pander(details[, .SD, .SDcols = cols3])
+pander::pander(details[, .(license_terms, license_type, textclean::replace_non_ascii(grants_used))])
+details$citation
 ```
 
 
