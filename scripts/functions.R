@@ -228,19 +228,9 @@ get_bbox <- function(x, y) {
 	))), crs = 4326)
 }
 
-map_bbox <- function(DT, path) {
+bbox_by_id <- function(DT, path) {
 	boxes <- DT[, .(box = list(get_bbox(location_long, location_lat))),
 							by = individual_id]
-
-	study <- DT$study_id[[1]]
-	# m <-
-	mapview(boxes$box, legend = FALSE)@map %>%
-		addMiniMap(position = 'bottomleft',
-							 zoomLevelFixed = 2)
-
-	# outpath <- file.path(path, 'figures', paste0('bbox-', study, '.png'))
-	# mapshot(m, file = outpath)
-	# outpath
 }
 
 

@@ -96,7 +96,7 @@ list(
 						 pattern = map(read)),
 
 	tar_target(bboxes,
-						 map_bbox(read, outpath),
+						 bbox_by_id(read, outpath),
 						 pattern = map(read)),
 
 
