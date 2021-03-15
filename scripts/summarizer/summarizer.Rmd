@@ -46,7 +46,9 @@ pander::pander(t(cbind(sp, time, dets)))
 
 
 ```{r bbox, out.width="100%"}
-knitr::include_graphics(params$bbox)
+mapview(params$bbox$box, legend = FALSE)@map %>%
+	addMiniMap(position = 'bottomleft',
+						 zoomLevelFixed = 2)
 ```
 
 ```{r tempoverlap, out.width="100%"}
