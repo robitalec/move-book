@@ -45,10 +45,12 @@ pander::pander(t(cbind(sp, time, dets)))
 ```
 
 
-```{r bbox, out.width="100%"}
-mapview(params$bbox$box, legend = FALSE)@map %>%
+```{r bbox}
+leaflet(do.call(rbind, params$bbox$box)) %>%
+	addPolygons() %>%
 	addMiniMap(position = 'bottomleft',
-						 zoomLevelFixed = 2)
+						 zoomLevelFixed = 2) %>% 
+	addProviderTiles('OpenStreetMap.Mapnik')
 ```
 
 ```{r tempoverlap, out.width="100%"}
