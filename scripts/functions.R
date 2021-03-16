@@ -99,8 +99,6 @@ check_input <- function(path, ...) {
 	} else {
 
 		# Read just 5 rows, to check if there is data
-		# DT <- fread(path, nrows = 5)
-
 		# For now, while issue is open. Careful about temp dir
 		DT <- fread(cmd = paste('head -n 5', path))
 
@@ -135,12 +133,6 @@ count_ids <- function(DT) {
 	DT[, nTag := uniqueN(tag_id)]
 
 	DT[, nRows := .N]
-#
-# 	DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
-# 	DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
-#
-# 	DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
-# 	DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
 
 	unique(DT, by = 'study_id')
 }
@@ -190,16 +182,14 @@ check_nas <- function(DT) {
 count_time <- function(DT) {
 	DT[, lenStudy := -1 * Reduce('-', range(datetime))]
 	DT[, nYears := uniqueN(year(datetime))]
-	# DT[, nMonth := uniqueN(year(datetime)), by = month(datetime)]
 
 	setorder(DT, datetime)
 	DT[, fixRate := difftime(datetime, data.table::shift(datetime),
 													 units = 'hours'),
 		 by = individual_id]
-	# DT[, fixRateSummary := list(summary(as.numeric(fixRate)))]
 
 	cols <- c('study_id', 'sensor_type_id',
-						'lenStudy', 'nYears')#, 'fixRateSummary')
+						'lenStudy', 'nYears')
 
 	unique(DT, by = 'study_id')
 }
@@ -242,7 +232,3 @@ build_rmds <- function(template, id, DT, path) {
 render_with_deps <- function(index, config, deps) {
 	bookdown::render_book(input = index, config_file = config)
 }
-
-
-
-
