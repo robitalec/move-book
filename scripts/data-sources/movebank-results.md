@@ -1,22 +1,28 @@
 Movebank Results
 ================
 Alec Robitaille
-2020-09-30
+2021-03-16
 
-    # Packages ----------------------------------------------------------------
-    library(data.table)
-    library(taxize)
-    library(ggplot2)
-    library(patchwork)
+``` r
+# Packages ----------------------------------------------------------------
+library(data.table)
+library(taxize)
+library(ggplot2)
+library(patchwork)
+```
 
-    # Data --------------------------------------------------------------------
-    details <- fread('data-sources/details.csv')
-    taxes <- fread('data-sources/taxes.csv')
-    DT <- fread('data-sources/taxed-details.csv')
+``` r
+# Data --------------------------------------------------------------------
+details <- fread('derived/data-sources/details.csv')
+taxes <- fread('derived/data-sources/taxes.csv')
+DT <- fread('derived/data-sources/taxed-details.csv')
+```
 
 `taxon_ids` column
 
-    details[, .N, .(is.na(taxon_ids), taxon_ids == '')]
+``` r
+details[, .N, .(is.na(taxon_ids), taxon_ids == '')]
+```
 
 <div class="kable-table">
 
@@ -30,26 +36,32 @@ Alec Robitaille
 Out of 1644 rows with seemingly valid `taxon_ids`, there are up to 17
 species listed in any row. Eg.
 
-    details[id == 422952928]$taxon_ids
+``` r
+details[id == 422952928]$taxon_ids
+```
 
     ## [1] "Anser albifrons,Chen caerulescens,Chen rossii,Anas platyrhynchos,Anas strepera,Anas acuta,Anas crecca,Anas discors,Anas cyanoptera,Anas americana,Anas clypeata,Aythya valisineria,Aythya marila,Circus cyaneus,Phasianus colchicus"
 
 Grabbing the family and class, then combining the taxonomies with the
 study details dataset, we have 4784 species by study rows.
 
-    # First, recode missing class and family
-    DT[class == "" | is.na(class), class := "*Unknown*"]
-    DT[family == "" | is.na(family), family := "*Unknown*"]
+``` r
+# First, recode missing class and family
+DT[class == "" | is.na(class), class := "*Unknown*"]
+DT[family == "" | is.na(family), family := "*Unknown*"]
+```
 
 Careful double counting, because the `DT` dataset now has duplicated
 study rows for each parsed taxon.
 
-    # Grab the unique rows based on study id
-    countDT <- unique(DT, by = 'id')
+``` r
+# Grab the unique rows based on study id
+countDT <- unique(DT, by = 'id')
 
 
-    # Count by class
-    countDT[, .N, class][order(class)]
+# Count by class
+countDT[, .N, class][order(class)]
+```
 
 <div class="kable-table">
 
@@ -67,62 +79,69 @@ study rows for each parsed taxon.
 
 </div>
 
-    ggplot(countDT) + 
-        geom_bar(aes(class, fill = i_have_download_access)) +
-        guides(fill = FALSE) +
-        # scale_y_log10() +
-        labs(x = 'Class', y = 'Number of studies')
+``` r
+ggplot(countDT) + 
+    geom_bar(aes(class, fill = i_have_download_access)) +
+    guides(fill = FALSE) +
+    # scale_y_log10() +
+    labs(x = 'Class', y = 'Number of studies')
+```
 
 <img src="movebank-results_files/figure-gfm/class-1.png" width="100%" />
 
-*Mammalia*
-==========
+# *Mammalia*
 
 Just exploring mammals, the following figures show download access TRUE
 in blue, and FALSE in red. Note: the plots are separated into chunks
 based on an even number of observations in each chunk.
 
-    # Set up the base plot
-    g <- ggplot() + 
-        geom_col(aes(factor(family, sort(unique(family), TRUE)), y,
-                                 fill = i_have_download_access)) +
-      facet_wrap(~ cut_number(y, 2), scales = 'free') +
-        coord_flip() + 
-        guides(fill = FALSE)
+``` r
+# Set up the base plot
+g <- ggplot() + 
+    geom_col(aes(factor(family, sort(unique(family), TRUE)), y,
+                             fill = i_have_download_access)) +
+  facet_wrap(~ cut_number(y, 2), scales = 'free') +
+    coord_flip() + 
+    guides(fill = FALSE)
+```
 
-Number of studies by family
----------------------------
+## Number of studies by family
 
-    g %+% countDT[class == 'Mammalia', .(y = .N), .(i_have_download_access, family)] +
-        labs(y = 'Number of studies', x = 'Family')
+``` r
+g %+% countDT[class == 'Mammalia', .(y = .N), .(i_have_download_access, family)] +
+    labs(y = 'Number of studies', x = 'Family')
+```
 
 <img src="movebank-results_files/figure-gfm/studies-1.png" width="100%" />
 
-Number of individuals by family
--------------------------------
+## Number of individuals by family
 
-    g %+% countDT[class == 'Mammalia', .(y = sum(number_of_individuals, na.rm = TRUE)),
-                                .(i_have_download_access, family)] +
-        labs(y = 'Number of individuals', x = 'Family')
+``` r
+g %+% countDT[class == 'Mammalia', .(y = sum(number_of_individuals, na.rm = TRUE)),
+                            .(i_have_download_access, family)] +
+    labs(y = 'Number of individuals', x = 'Family')
+```
 
 <img src="movebank-results_files/figure-gfm/numbids-1.png" width="100%" />
 
-Number of relocations by family
--------------------------------
+## Number of relocations by family
 
-    g %+% countDT[class == 'Mammalia', .(y = sum(number_of_deployed_locations, na.rm = TRUE)),
-                                .(i_have_download_access, family)] +
-        labs(y = 'Number of relocations', x = 'Family') +
-        facet_wrap(~cut_number(y, 4), scales = 'free')
+``` r
+g %+% countDT[class == 'Mammalia', .(y = sum(number_of_deployed_locations, na.rm = TRUE)),
+                            .(i_have_download_access, family)] +
+    labs(y = 'Number of relocations', x = 'Family') +
+    facet_wrap(~cut_number(y, 4), scales = 'free')
+```
 
 <img src="movebank-results_files/figure-gfm/numblobs-1.png" width="100%" />
 
-Top number of relocations by species and study
-----------------------------------------------
+## Top number of relocations by species and study
 
-    countDT[, .(N = sum(number_of_deployed_locations), family = family[[1]], class = class[[1]],
-                            i_have_download_access = i_have_download_access[[1]]), 
-                    by = matched_name][order(-N, class)][, .SD[1:3], by = class]
+``` r
+countDT[, .(N = sum(number_of_deployed_locations), family = family[[1]], class = class[[1]],
+                        i_have_download_access = i_have_download_access[[1]]), 
+                by = matched_name][order(-N, class)][, .SD[1:3], by = class]
+```
 
 <div class="kable-table">
 
@@ -158,31 +177,32 @@ Top number of relocations by species and study
 
 </div>
 
-Etc
----
+## Etc
 
 Some elements of the database are strange. How do these datasets have
 last deployed timestamps in the 10-25 year future?
 
-    DT[matched_name == 'Polemaetus bellicosus'][, .(
-        matched_name,
-        family,
-        class,
-        sensor_type_ids,
-        timestamp_first_deployed_location,
-        timestamp_last_deployed_location,
-        number_of_deployed_locations
-    )]
+``` r
+DT[matched_name == 'Polemaetus bellicosus'][, .(
+    matched_name,
+    family,
+    class,
+    sensor_type_ids,
+    timestamp_first_deployed_location,
+    timestamp_last_deployed_location,
+    number_of_deployed_locations
+)]
+```
 
 <div class="kable-table">
 
 | matched\_name         | family       | class | sensor\_type\_ids                                    | timestamp\_first\_deployed\_location | timestamp\_last\_deployed\_location | number\_of\_deployed\_locations |
 |:----------------------|:-------------|:------|:-----------------------------------------------------|:-------------------------------------|:------------------------------------|--------------------------------:|
-| Polemaetus bellicosus | Accipitridae | Aves  | GPS,Acceleration,Accessory Measurements,Magnetometer | 2016-07-14 04:00:43.000              | 2047-08-20 08:33:16.000             |                        21629202 |
-| Polemaetus bellicosus | Accipitridae | Aves  | GPS                                                  | 2020-03-04 22:00:34.000              | 2020-09-25 20:05:30.000             |                           26175 |
-| Polemaetus bellicosus | Accipitridae | Aves  | GPS,Acceleration,Accessory Measurements,Magnetometer | 2019-10-09 00:19:06.000              | 2032-02-14 23:52:59.000             |                          185628 |
-| Polemaetus bellicosus | Accipitridae | Aves  | GPS,Argos Doppler Shift,Accessory Measurements       | 2013-07-30 17:00:00.000              | 2020-08-11 17:51:37.000             |                           95681 |
-| Polemaetus bellicosus | Accipitridae | Aves  | GPS                                                  | 2013-07-30 17:00:00.000              | 2016-09-21 06:00:00.000             |                           44285 |
-| Polemaetus bellicosus | Accipitridae | Aves  | GPS,Acceleration                                     | 2016-09-08 07:56:44.000              | 2032-01-07 03:10:07.000             |                       559690447 |
+| Polemaetus bellicosus | Accipitridae | Aves  | GPS,Acceleration,Accessory Measurements,Magnetometer | 2016-07-14 04:00:43                  | 2047-08-20 08:33:16                 |                        21629202 |
+| Polemaetus bellicosus | Accipitridae | Aves  | GPS                                                  | 2020-03-04 22:00:34                  | 2020-09-25 20:05:30                 |                           26175 |
+| Polemaetus bellicosus | Accipitridae | Aves  | GPS,Acceleration,Accessory Measurements,Magnetometer | 2019-10-09 00:19:06                  | 2032-02-14 23:52:59                 |                          185628 |
+| Polemaetus bellicosus | Accipitridae | Aves  | GPS,Argos Doppler Shift,Accessory Measurements       | 2013-07-30 17:00:00                  | 2020-08-11 17:51:37                 |                           95681 |
+| Polemaetus bellicosus | Accipitridae | Aves  | GPS                                                  | 2013-07-30 17:00:00                  | 2016-09-21 06:00:00                 |                           44285 |
+| Polemaetus bellicosus | Accipitridae | Aves  | GPS,Acceleration                                     | 2016-09-08 07:56:44                  | 2032-01-07 03:10:07                 |                       559690447 |
 
 </div>
