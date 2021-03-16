@@ -39,7 +39,7 @@ options(rmoveapi.pass = key_get(service, username))
 
 # Columns to read
 cols <- c('tag_local_identifier', 'timestamp', 'deployment_id',
-					'tag_id', 'individual_local_identifier', 'study_id',
+					'tag_id', 'individual_id', 'study_id',
 					'sensor_type_id', 'location_long', 'location_lat')
 
 
@@ -49,7 +49,9 @@ ranks <- c('family', 'class')
 
 # Targets: options
 tar_option_set(#error = "workspace",
-							 format = 'qs')
+							 format = 'qs',
+							 memory = 'transient',
+							 garbage_collection = TRUE)
 
 # Targets: workflow
 list(
@@ -92,11 +94,11 @@ list(
 						 pattern = map(read)),
 
 	tar_target(bboxes,
-						 map_bbox(read, outpath),
+						 bbox_by_id(read, outpath),
 						 pattern = map(read)),
 
 
-	tar_file(rmd, 'scripts/summarizer/summarizer-targets.Rmd'),
+	tar_file(rmd, 'scripts/summarizer/summarizer.Rmd'),
 
 
 	tar_target(
@@ -109,7 +111,8 @@ list(
 					tempoverlap = temp,
 					counttime = counted_time,
 					countnas = nas,
-					bbox = bboxes
+					bbox = bboxes,
+					details = merged
 				),
 				output_file = as.character(counted_ids$study_id),
 				output_dir = 'chapters',
@@ -118,7 +121,7 @@ list(
 			inext = 'md',
 			outext = 'Rmd'
 		),
-		pattern = map(counted_ids, temp, counted_time, nas, bboxes),
+		pattern = map(counted_ids, temp, counted_time, nas, bboxes, merged),
 		format = 'file'
 	),
 

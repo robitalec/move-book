@@ -70,6 +70,7 @@ resolve_taxon <- function(details, subid, ranks = c('family', 'class')) {
 	taxes[, (ranks) := classify_taxon(matched_name, ranks)[, .SD, .SDcols = ranks],
 				matched_name]
 
+	merge(subdet, taxes, on = 'id')
 }
 
 # Check input -------------------------------------------------------------
@@ -134,12 +135,12 @@ count_ids <- function(DT) {
 	DT[, nTag := uniqueN(tag_id)]
 
 	DT[, nRows := .N]
-
-	DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
-	DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
-
-	DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
-	DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
+#
+# 	DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
+# 	DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
+#
+# 	DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
+# 	DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
 
 	unique(DT, by = 'study_id')
 }
@@ -214,18 +215,9 @@ get_bbox <- function(x, y) {
 	))), crs = 4326)
 }
 
-map_bbox <- function(DT, path) {
+bbox_by_id <- function(DT, path) {
 	boxes <- DT[, .(box = list(get_bbox(location_long, location_lat))),
 							by = individual_id]
-
-	study <- DT$study_id[[1]]
-	m <- mapview(boxes$box, legend = FALSE)@map %>%
-		addMiniMap(position = 'bottomleft',
-							 zoomLevelFixed = 2)
-
-	outpath <- file.path(path, 'figures', paste0('bbox-', study, '.png'))
-	mapshot(m, file = outpath)
-	outpath
 }
 
 

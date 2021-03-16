@@ -1,32 +1,69 @@
-# Title
+---
+output: 
+  rmarkdown::github_document:
+    html_preview: false
+params:
+  countids: 12
+  tempoverlap: 12
+  counttime: 12
+  countnas: 12
+  bbox: 12
+  details: 12
+---
 
-```{r, out.width="100%"}
-knitr::include_graphics(drake::readd(bboxes_KEY, cache = cache))
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.kable.format = 'markdown',
+				digits = 1, scientific = TRUE)
 ```
 
 
-```{r}
-options(digits = 0)
-countIds <- drake::readd(counted_ids_KEY, cache = cache)
-countTime <- drake::readd(counted_time_KEY, cache = cache)
+# `r params$countids$study_id`
 
-kable(countIds[, .(species = matched_name, family, class)])
 
-kable(cbind(countIds[, .(sensor_type_id, nID = nIndividual, 
-												 nDeploy = nDeployment, nTag, nRows)],
-						countTime[, .(lenStudy, nYear = nYears)]
-))
+```{r ttab}
+countids <- params$countids
+counttime <- params$counttime
+details <- params$details
+
+sp <- countids[, .(class, family, species = matched_name,
+									 `N IDs` = nIndividual, nRows)]
+time <- counttime[, .(lenStudy)]
+
+cols1 <- c('name',
+					 'principal_investigator_name',
+					 'principal_investigator_email')
+cols2 <- c('license_terms',
+					 'license_type',
+					 'grants_used')
+dets <- details[, .(name, principal_investigator_name,
+										principal_investigator_email,
+										license_terms, license_type,
+										grants_used = textclean::replace_non_ascii(grants_used))]
+pander::pander(t(cbind(sp, time, dets)))
 ```
 
-```{r}
-nas <- drake::readd(nas_KEY, cache = cache)
-kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
+
+```{r bbox}
+leaflet(do.call(rbind, params$bbox$box)) %>%
+	addPolygons() %>%
+	addMiniMap(position = 'bottomleft',
+						 zoomLevelFixed = 2) %>% 
+	addProviderTiles('OpenStreetMap.Mapnik')
+```
+
+```{r tempoverlap, out.width="100%"}
+print(params$tempoverlap)
+```
+
+
+```{r countnas}
+nas <- params$countnas
+knitr::kable(data.table::data.table(col = names(nas), `% NA` = 100 * as.numeric(nas))[
 	col %in% c('individual_id', 'location_lat', 'location_long')
-])
-```
+], booktabs = TRUE)
 
-
-
-```{r, out.width="100%"}
-print(drake::readd(temp_KEY, cache = cache))
+pander::pander(countids[, .(sensor_type_id, nDeploy = nDeployment,
+														nTag)])
 ```
