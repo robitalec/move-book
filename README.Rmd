@@ -40,7 +40,7 @@ If you are hoping to do something similar, I have two main lessons learned:
 
 Some things to watch out for:
 
-* duplicated study names
+* duplicated study names (see [here](https://gitlab.com/bartk/move/-/issues/52))
 * errors in dates (eg. typos, impossible study period date/end ranges)
 * taxons provided are often a list of different taxonomies or taxonomic ranks
 * pay attention to the [Movebank API doc](https://github.com/movebank/movebank-api-doc)
