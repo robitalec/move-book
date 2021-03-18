@@ -14,8 +14,8 @@ restore()
 # Load packages
 library(data.table)
 library(move)
+library(rmoveapi)
 library(keyring)
-
 
 
 # Authentication setup ----------------------------------------------------
@@ -26,10 +26,11 @@ username = 'robitalec'
 key_set(service, username)
 
 
-
 # Data --------------------------------------------------------------------
 # Authenticate
 login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
+options(rmoveapi.userid = key_list(service)[1, 2])
+options(rmoveapi.pass = key_get(service, username))
 
 # Get all study names
 studies <- getMovebankStudies(login)
@@ -50,17 +51,29 @@ details <- rbindlist(lapply(studies, get_all_studies),
 saveRDS(details, 'derived/details.Rds')
 
 
+# Download data to disk
+# Set download path
+dlpath <- '.'
 
-ustudies <- unique(DT, by = 'id')
-mammals <- ustudies[class == 'Mammalia']
+#  using the rmoveapi::getEvent function instead of move package
+#  because it can download directly to disk
 
-mammals[, tryCatch(
+# Note: if you'd like to reduce the amount of data downloaded,
+#       this would be a good place to do it!
+
+# For example, if you'd only like to download GPS data replace details with gps
+# gps <- details[grepl('GPS', sensor_type_ids)]
+
+details[, tryCatch(
 	getEvent(
 		studyid = .BY[[1]],
 		attributes = 'all',
-		save_as = paste0('/media/ICEAGE/Movebank/Mammalia/', .BY[[1]], '.csv'),
+		save_as = paste0(dlpath, .BY[[1]], '.csv'),
 		accept_license = TRUE
 	),
 	error = function(e)
 		NULL
 ), by = id]
+
+# Next, take update the paths in the _targets.R file and
+#  run with targets::tar_make()
