@@ -67,7 +67,7 @@ saveRDS(details, 'derived/details.Rds')
 result <-
 	details[, {
 		path <- paste0(file.path(dlpath, .BY[[1]]), '.csv')
-		err <- tryCatch(
+		success <- tryCatch(
 			getEvent(
 				studyid = .BY[[1]],
 				attributes = 'all',
@@ -78,7 +78,7 @@ result <-
 				as.character(e)
 		)
 
-		list(path, err)
+		list(path, success)
 	}, by = id]
 
 # Next, take update the paths in the _targets.R file and
