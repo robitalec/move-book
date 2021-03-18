@@ -7,4 +7,5 @@ _bookdown_files/
 _main.Rmd
 _targets/
 chapters/
+!docs/chapters/
 renv/
