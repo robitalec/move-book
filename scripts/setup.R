@@ -53,7 +53,7 @@ saveRDS(details, 'derived/details.Rds')
 
 # Download data to disk
 # Set download path
-dlpath <- '.'
+# downpath <- 'raw-data'
 
 #  using the rmoveapi::getEvent function instead of move package
 #  because it can download directly to disk
@@ -64,16 +64,21 @@ dlpath <- '.'
 # For example, if you'd only like to download GPS data replace details with gps
 # gps <- details[grepl('GPS', sensor_type_ids)]
 
-details[, tryCatch(
-	getEvent(
-		studyid = .BY[[1]],
-		attributes = 'all',
-		save_as = paste0(dlpath, .BY[[1]], '.csv'),
-		accept_license = TRUE
-	),
-	error = function(e)
-		NULL
-), by = id]
+result <-
+	details[, tryCatch(
+		list(
+			success = getEvent(
+				studyid = .BY[[1]],
+				attributes = 'all',
+				save_as = paste0(file.path(downpath, .BY[[1]]), '.csv'),
+				accept_license = TRUE
+			),
+			error = ""
+		),
+		error = function(e) {
+			list(success = FALSE, error = as.character(e))
+		}
+	), by = id]
 
 # Next, take update the paths in the _targets.R file and
 #  run with targets::tar_make()

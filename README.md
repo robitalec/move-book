@@ -1,5 +1,5 @@
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4615733.svg)](https://doi.org/10.5281/zenodo.4615733)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4615732.svg)](https://doi.org/10.5281/zenodo.4615732)
 
 
 
@@ -12,15 +12,15 @@ I'd rather do that with an idea of what others are looking for. In the meantime,
 this can be used and adapted for your own needs. 
 
 We use a number of packages for downloading ([`rmoveapi`](https://github.com/benscarlson/rmoveapi), [`move`](https://gitlab.com/bartk/move/)), processing ([`data.table`](https://github.com/Rdatatable/data.table/), [`anytime`](https://github.com/eddelbuettel/anytime)) and visualizing ([`ggplot2`](https://github.com/tidyverse/ggplot2), [`leaflet`](https://github.com/rstudio/leaflet/)) the data.
-All steps are wrapped up in a [`targets`](https://github.com/ropensci/targets) workflow, and package versions tracked with [`renv`](https://github.com/rstudio/renv/). The result is a [`bookdown`](https://github.com/rstudio/bookdown/) doc with each study on it's own page. There's a minimum working example of combining `targets` and `bookdown` available here: [`robitalec/targets-parameterized-bookdown`](https://github.com/robitalec/targets-parameterized-bookdown). Thank you to the developers of all of these great packages. 
+All steps are wrapped up in a [`targets`](https://github.com/ropensci/targets) workflow, and package versions tracked with [`renv`](https://github.com/rstudio/renv/). The result is a [`bookdown`](https://github.com/rstudio/bookdown/) doc with each study on its own page. There's a minimum working example of combining `targets` and `bookdown` available here: [`robitalec/targets-parameterized-bookdown`](https://github.com/robitalec/targets-parameterized-bookdown). Thank you to the developers of all of these great packages. 
 
 
 ## Setup
 
 1. [Register](https://www.movebank.org/cms/webapp?gwt_fragment=page=search_map,action=register) for a Movebank account
-1. Save your credentials with [`keyring`](https://github.com/r-lib/keyring/)
-1. Edit the credentials section in the targets file (`_targets.R`)
-1. Run the setup script to install packages with `renv` and download study data
+1. Run the setup script to install packages with `renv`, save your credentials with [`keyring`](https://github.com/r-lib/keyring/) and download study data
+1. Edit the credentials and path sections in the targets file (`_targets.R`)
+1. Run `targets::tar_make()`
 
 I've decided to remove the study data download step from the targets workflow 
 because during development it was a huge step I didn't want to rerun. I figure
