@@ -64,16 +64,22 @@ saveRDS(details, 'derived/details.Rds')
 # For example, if you'd only like to download GPS data replace details with gps
 # gps <- details[grepl('GPS', sensor_type_ids)]
 
-details[, tryCatch(
-	getEvent(
-		studyid = .BY[[1]],
-		attributes = 'all',
-		save_as = paste0(dlpath, .BY[[1]], '.csv'),
-		accept_license = TRUE
-	),
-	error = function(e)
-		NULL
-), by = id]
+result <-
+	details[, {
+		path <- paste0(file.path(dlpath, .BY[[1]]), '.csv')
+		err <- tryCatch(
+			getEvent(
+				studyid = .BY[[1]],
+				attributes = 'all',
+				save_as = path,
+				accept_license = TRUE
+			),
+			error = function(e)
+				as.character(e)
+		)
+
+		list(path, err)
+	}, by = id]
 
 # Next, take update the paths in the _targets.R file and
 #  run with targets::tar_make()
