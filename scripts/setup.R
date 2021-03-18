@@ -65,21 +65,20 @@ saveRDS(details, 'derived/details.Rds')
 # gps <- details[grepl('GPS', sensor_type_ids)]
 
 result <-
-	details[, {
-		path <- paste0(file.path(dlpath, .BY[[1]]), '.csv')
-		success <- tryCatch(
-			getEvent(
+	details[, tryCatch(
+		list(
+			success = getEvent(
 				studyid = .BY[[1]],
 				attributes = 'all',
-				save_as = path,
+				save_as = paste0(file.path(downpath, .BY[[1]]), '.csv'),
 				accept_license = TRUE
 			),
-			error = function(e)
-				as.character(e)
-		)
-
-		list(path, success)
-	}, by = id]
+			error = ""
+		),
+		error = function(e) {
+			list(success = FALSE, error = as.character(e))
+		}
+	), by = id]
 
 # Next, take update the paths in the _targets.R file and
 #  run with targets::tar_make()
