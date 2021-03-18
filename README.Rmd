@@ -8,7 +8,7 @@ output: github_document
 
 # Movebank summarizer
 
-This project scraps and summarizes data sets available on [Movebank](movebank.org/).
+This project scrapes and summarizes data sets available on [Movebank](movebank.org/).
 There is a huge diversity of data sources with varying license terms, public access/not, 
 taxa. This is an attempt to better understand how accessible and relevant data are
 for my own project. I'm hoping to wrap this up as a more general-use template, so if 
