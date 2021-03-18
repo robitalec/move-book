@@ -9,13 +9,12 @@ source('scripts/functions.R')
 library(data.table)
 library(rmoveapi)
 library(keyring)
-library(move)
 library(taxize)
 library(anytime)
 library(ggplot2)
 library(sf)
-library(mapview)
 library(leaflet)
+library(qs)
 
 # for missing pipe in rmoveapi (?)
 library(magrittr)
@@ -35,7 +34,6 @@ if (.Platform$OS.type == "windows") {
 # Credentials
 service = 'movebank'
 username = 'robitalec'
-login <- movebankLogin(key_list(service)[1, 2], key_get(service, username))
 options(rmoveapi.userid = key_list(service)[1, 2])
 options(rmoveapi.pass = key_get(service, username))
 
@@ -100,7 +98,7 @@ list(
 						 pattern = map(read)),
 
 
-	tar_file(rmd, 'scripts/summarizer/summarizer.Rmd'),
+	tar_file(rmd, 'scripts/summarizer.Rmd'),
 
 
 	tar_target(

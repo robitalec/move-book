@@ -3,12 +3,6 @@
 
 
 # Get details -------------------------------------------------------------
-try_get <- function(study, login = login) {
-	tryCatch(expr = getMovebankStudy(study, login = login),
-					 error = function(cond) return(list(error = as.character(cond))),
-					 warning = function(cond) return(list(warning = as.character(cond))))
-}
-
 get_details <- function(id) {
 	studies <- getStudy(id)
 	setDT(studies)
@@ -18,9 +12,6 @@ get_details <- function(id) {
 	studies[!is.na(timestamp_last_deployed_location),
 					timestamp_last_deployed_location :=
 								anytime(timestamp_last_deployed_location)]
-	# rbindlist(lapply(studies, try_get, login = login),
-	# 					fill = TRUE, use.names = TRUE)
-
 }
 
 
@@ -108,8 +99,6 @@ check_input <- function(path, ...) {
 	} else {
 
 		# Read just 5 rows, to check if there is data
-		# DT <- fread(path, nrows = 5)
-
 		# For now, while issue is open. Careful about temp dir
 		DT <- fread(cmd = paste('head -n 5', path))
 
@@ -144,16 +133,6 @@ count_ids <- function(DT) {
 	DT[, nTag := uniqueN(tag_id)]
 
 	DT[, nRows := .N]
-#
-# 	DT[, sameIndividual := uniqueN(individual_id) == uniqueN(individual_local_identifier)]
-# 	DT[, sameTag := uniqueN(tag_id) == uniqueN(tag_local_identifier)]
-#
-# 	DT[, moreIndividual := uniqueN(individual_id) >= uniqueN(individual_local_identifier)]
-# 	DT[, moreTag := uniqueN(tag_id) >= uniqueN(tag_local_identifier)]
-
-	# Number of relocations by ID
-	# TODO: rbindlist this output?
-	# DT[, nLocByIndividual := list(DT[, .N, .(study_id, individual_id)])]
 
 	unique(DT, by = 'study_id')
 }
@@ -203,16 +182,14 @@ check_nas <- function(DT) {
 count_time <- function(DT) {
 	DT[, lenStudy := -1 * Reduce('-', range(datetime))]
 	DT[, nYears := uniqueN(year(datetime))]
-	# DT[, nMonth := uniqueN(year(datetime)), by = month(datetime)]
 
 	setorder(DT, datetime)
 	DT[, fixRate := difftime(datetime, data.table::shift(datetime),
 													 units = 'hours'),
 		 by = individual_id]
-	# DT[, fixRateSummary := list(summary(as.numeric(fixRate)))]
 
 	cols <- c('study_id', 'sensor_type_id',
-						'lenStudy', 'nYears')#, 'fixRateSummary')
+						'lenStudy', 'nYears')
 
 	unique(DT, by = 'study_id')
 }
@@ -236,15 +213,6 @@ bbox_by_id <- function(DT, path) {
 
 
 # RMarkdown ---------------------------------------------------------------
-change_ext <- function(file, inext, outext) {
-	newfile <- gsub(inext, outext, file)
-	file.rename(file, newfile)
-	newfile
-}
-
-
-
-
 build_rmds <- function(template, id, DT, path) {
 	if(!dir.exists(file.path(path, 'rmd'))) dir.create(file.path(path, 'rmd'))
 	study <- DT$study_id[[1]]
@@ -264,7 +232,3 @@ build_rmds <- function(template, id, DT, path) {
 render_with_deps <- function(index, config, deps) {
 	bookdown::render_book(input = index, config_file = config)
 }
-
-
-
-
