@@ -53,7 +53,7 @@ saveRDS(details, 'derived/details.Rds')
 
 # Download data to disk
 # Set download path
-# dlpath <- 'raw-data'
+# downpath <- 'raw-data'
 
 #  using the rmoveapi::getEvent function instead of move package
 #  because it can download directly to disk
