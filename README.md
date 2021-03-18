@@ -42,3 +42,10 @@ Some things to watch out for:
 * errors in dates (eg. typos, impossible study period date/end ranges)
 * taxons provided are often a list of different taxonomies or taxonomic ranks
 * pay attention to the [Movebank API doc](https://github.com/movebank/movebank-api-doc)
+
+
+## Citing
+This project has been released under a GPL-3 license and with a Zenodo DOI:
+
+[Alec L. Robitaille. robitalec/move-book. Zenodo.](https://doi.org/10.5281/zenodo.4615732)
+
