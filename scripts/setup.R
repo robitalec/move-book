@@ -49,7 +49,7 @@ details <- rbindlist(lapply(studies, get_all_studies),
 
 # Save details
 saveRDS(details, 'derived/details.Rds')
-
+# details <- readRDS('derived/details.Rds')
 
 # Download data to disk
 # Set download path
