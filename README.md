@@ -10,7 +10,7 @@ I'd rather do that with an idea of what others are looking for. In the meantime,
 this can be used and adapted for your own needs. 
 
 We use a number of packages for downloading ([`rmoveapi`](https://github.com/benscarlson/rmoveapi), [`move`](https://gitlab.com/bartk/move/)), processing ([`data.table`](https://github.com/Rdatatable/data.table/), [`anytime`](https://github.com/eddelbuettel/anytime)) and visualizing ([`ggplot2`](https://github.com/tidyverse/ggplot2), [`leaflet`](https://github.com/rstudio/leaflet/)) the data.
-All steps are wrapped up in a [`targets`](https://github.com/ropensci/targets) workflow, and package versions tracked with [`renv`](https://github.com/rstudio/renv/). Thank you to the developers of all of these great packages. 
+All steps are wrapped up in a [`targets`](https://github.com/ropensci/targets) workflow, and package versions tracked with [`renv`](https://github.com/rstudio/renv/). The result is a [`bookdown`](https://github.com/rstudio/bookdown/) doc with each study on it's own page. There's a minimum working example of combining `targets` and `bookdown` available here: [`robitalec/targets-parameterized-bookdown`](https://github.com/robitalec/targets-parameterized-bookdown). Thank you to the developers of all of these great packages. 
 
 
 ## Setup
