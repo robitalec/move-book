@@ -28,6 +28,7 @@ though technically it would be safer and more reliable to have this included.
 
 ## Caveats/lessons learned
 If you are hoping to do something similar, I have two main lessons learned:
+
 * Reduce the data to only what you need as quickly as possible, without going far into analysis or processing. This is directly related to...
 * The data is not homogeneous. Data types do not appear to be strictly enforced, there are many duplicated study names, and there are NAs or errors throughout. This makes it hard to apply the same functions, or combine different datasets programmatically. 
 
