@@ -19,7 +19,7 @@ library(qs)
 # for missing pipe in rmoveapi (?)
 library(magrittr)
 
-# Paths
+# Paths (split between two OS for my own use, simplify if you are just using one computer)
 if (.Platform$OS.type == "windows") {
 	path <- file.path('E:', 'ALR_C2')
 	downpath <- file.path(path, 'All')
