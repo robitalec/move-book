@@ -24,9 +24,9 @@ All steps are wrapped up in a [`targets`](https://github.com/ropensci/targets) w
 
 I've decided to remove the study data download step from the targets workflow 
 because during development it was a huge step I didn't want to rerun. I figure
-folks will do this step once, so it's not worth hanging up the workflow 
-though technically it would be safer and more reliable to have this included. 
-
+folks will do this step once, so it's not worth hanging up the workflow. Since
+the paths are tracked however, targets will only rerun what is needed as data
+are added or removed. 
 
 ## Caveats/lessons learned
 If you are hoping to do something similar, I have two main lessons learned:

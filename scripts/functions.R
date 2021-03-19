@@ -213,6 +213,12 @@ bbox_by_id <- function(DT, path) {
 
 
 # RMarkdown ---------------------------------------------------------------
+change_ext <- function(file, inext, outext) {
+	newfile <- gsub(inext, outext, file)
+	file.rename(file, newfile)
+	newfile
+}
+
 build_rmds <- function(template, id, DT, path) {
 	if(!dir.exists(file.path(path, 'rmd'))) dir.create(file.path(path, 'rmd'))
 	study <- DT$study_id[[1]]
